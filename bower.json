@@ -7,7 +7,6 @@
   ],
   "license": "MIT",
   "homepage": "https://lokesh-coder/github.io/pretty-checkbox",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
