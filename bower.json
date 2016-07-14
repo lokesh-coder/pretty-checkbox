@@ -1,8 +1,8 @@
 {
-  "name": "PrettyCheckbox",
+  "name": "pretty-checkbox",
   "description": "Scalable css3 pretty checkbox and radio buttons",
   "license": "MIT",
   "homepage": "https://lokesh-coder/github.io/pretty-checkbox",
   "ignore": ["Gulpfile.js"],
-  "dependencies": {}
+  "dependencies": {} 
 }
