@@ -1,0 +1,23 @@
+{
+  "name": "PrettyCheckbox",
+  "description": "Scalable css3 pretty checkbox and radio buttons",
+  "main": "Gulpfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "https://lokesh-coder/github.io/pretty-checkbox",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate-sass": "~0.6.4",
+    "bootstrap-sass": "~3.3.6",
+    "mdi": "^1.5.54"
+  }
+}
