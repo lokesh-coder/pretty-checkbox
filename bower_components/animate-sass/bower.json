@@ -1,0 +1,25 @@
+{
+  "name": "animate-sass",
+  "version": "0.6.6",
+  "homepage": "https://github.com/tgdev/animate-sass",
+  "authors": [
+    "Tom Gillard <tomgillar@gmail.com>"
+  ],
+  "description": "A Sass library of Dan Eden's Animate.css",
+  "main": "_animate.scss",
+  "keywords": [
+    "animate-sass",
+    "animate.css",
+    "sass",
+    "css",
+    "css3-animations"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

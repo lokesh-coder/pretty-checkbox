@@ -1,0 +1,28 @@
+.#{$mdi-css-prefix + '-18px'} { font-size: 18px; }
+.#{$mdi-css-prefix + '-24px'} { font-size: 24px; }
+.#{$mdi-css-prefix + '-36px'} { font-size: 36px; }
+.#{$mdi-css-prefix + '-48px'} { font-size: 48px; }
+.#{$mdi-css-prefix}-dark { color: rgba(0, 0, 0, 0.54); }
+.#{$mdi-css-prefix}-dark.mdi-inactive { color: rgba(0, 0, 0, 0.26); }
+.#{$mdi-css-prefix}-light { color: rgba(255, 255, 255, 1); }
+.#{$mdi-css-prefix}-light.mdi-inactive { color: rgba(255, 255, 255, 0.3); }
+$degrees: 45 90 135 180 225 270 315;
+@each $degree in $degrees {
+    .#{$mdi-css-prefix}-rotate-#{$degree} {
+        -webkit-transform: rotate(#{$degree}deg);
+        -ms-transform: rotate(#{$degree}deg);
+        transform: rotate(#{$degree}deg);
+    }
+}
+.#{$mdi-css-prefix}-flip-horizontal {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.#{$mdi-css-prefix}-flip-vertical {
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV";
+}

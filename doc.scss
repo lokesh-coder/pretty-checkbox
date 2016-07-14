@@ -1,0 +1,127 @@
+body{
+  font-family: 'Dosis', sans-serif;
+  color:#444;
+    font-size: 16px;
+}
+a{
+  color:#e17075;
+  text-decoration: none;
+}
+
+pre[class*=language-] {
+    background: rgba(252, 252, 252, 0.29);
+    border-radius: 2px;
+    border-color: #f7f5f5;
+}
+
+code[class*=language-], pre[class*=language-]{
+  font-family: 'Mononoki';
+  font-size: 14px;
+}
+
+strong{
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+header{
+  text-align: center;
+  padding: 50px 0;
+  background: #fcfcfc;
+  p{
+    font-size: 17px;
+        color: #908d8d;
+        margin-bottom: 20px;
+        span>span{
+          color:#444;
+        }
+  }
+  h1{
+    margin: 0 0 20px;
+    color: #e17075;
+  }
+
+  .btn{
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 9px 20px;
+    background: #e17075;
+    color: #fff;
+    min-width: 100px;
+  }
+
+  .btn.default{
+    background: #fff;
+        color: #444;
+        border-color: #e8e4e4;
+  }
+}
+
+section{
+  margin-bottom: 20px;
+  h3{
+    margin: 0 0 20px;
+  }
+  p.sub{
+    text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        .codetoggle{
+          float: right;
+          text-transform: lowercase;
+          font-family: 'Mononoki';
+          font-size: 13px;
+          opacity: 0.5;
+          
+        }
+  }
+  .btn-action{
+    color: #5a5a5a;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 1px solid #c3c3c3;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-family: Mononoki;
+    outline:none;
+    box-shadow: none;
+    &:hover{
+      background-color: #e17075;
+      border-color:#e17075;
+      color:#fff;
+    }
+  }
+  .example{
+    margin-bottom: 30px;
+    border-left: 2px solid #14a2a9;
+    padding-left: 12px;
+    &:hover{
+      border-left-color:#e17075;
+      p{
+        color:#e17075;
+      }
+      .codetoggle{
+       opacity: 1;
+       a{
+         text-decoration: none;
+       }
+      }
+    }
+  }
+}
+
+.code{
+  margin-bottom: 20px;
+}
+
+footer{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 15px;
+  color: #adadad;
+  .mdi{
+    color: #e17075;
+    font-size: 12px;
+  }
+}
