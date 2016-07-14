@@ -1,0 +1,35 @@
+.#{$pretty-class-name}.plain{
+  &>input[type='checkbox']+label,
+  &>input[type='radio']+label{
+    &>i:after{
+      // border-color:transparent;
+    }
+  }
+  &>input[type='checkbox']:checked+label,
+  &>input[type='radio']:checked+label{
+    &>i:after{
+      border-color:transparent;
+    }
+  }
+  &>input[type='checkbox']+label+label,
+  &>input[type='radio']+label+label{
+    &>i:after{
+      border-color:transparent;
+    }
+  }
+  &>input[type='checkbox']:checked+label+label,
+  &>input[type='radio']:checked+label+label{
+    &>i:after{
+      border-color:transparent;
+    }
+  }
+}
+
+.#{$pretty-class-name}.plain.toggle{
+  &>input[type='checkbox']+label,
+  &>input[type='radio']+label{
+    &>i:after{
+      border-color:transparent;  
+    }
+  }
+}

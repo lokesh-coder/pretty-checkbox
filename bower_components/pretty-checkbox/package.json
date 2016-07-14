@@ -1,0 +1,35 @@
+{
+  "name": "PrettyCheckbox",
+  "version": "1.0.0",
+  "description": "Scalable css3 pretty checkbox and radio buttons",
+  "main": "Gulpfile.js",
+  "dependencies": {
+   
+  },
+  "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "bower": "^1.5.1",
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-sass": "^2.3.1",
+    "node-sass": "^3.7.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lokesh-coder/pretty-checkbox"
+  },
+  "keywords": [
+    "one",
+    "page",
+    "app"
+  ],
+  "author": "lokesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lokesh-coder/pretty-checkbox/issues"
+  },
+  "homepage": "https://lokesh-coder.github.io/pretty-checkbox"
+}
