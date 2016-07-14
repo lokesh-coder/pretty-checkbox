@@ -13,7 +13,7 @@ $ bower install pretty-checkbox
 ```
 Add `pretty.min.css` in your html
 ```html
-<link rel="stylesheet" src="../bower_components/pretty-checkbox/src/pretty.min.css"/>
+<link rel="stylesheet" href="../bower_components/pretty-checkbox/src/pretty.min.css"/>
 ```
 
 or you can also import `pretty.scss` in your main scss file.
