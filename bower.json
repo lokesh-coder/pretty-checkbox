@@ -1,8 +1,27 @@
 {
   "name": "pretty-checkbox",
+  "version": "1.0",
   "description": "Scalable css3 pretty checkbox and radio buttons",
   "license": "MIT",
+  "main": "src/pretty.css",
   "homepage": "https://lokesh-coder/github.io/pretty-checkbox",
+  "authors": [
+    "Lokesh <mexican.dirtyfellow@gmail.com>"
+  ],
   "ignore": ["Gulpfile.js"],
-  "dependencies": {} 
+  "dependencies": {} ,
+  "keywords": [
+    "checkbox",
+    "radio",
+    "bootstrap",
+    "css3",
+    "animations"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
