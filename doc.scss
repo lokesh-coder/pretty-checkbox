@@ -11,12 +11,39 @@ a{
 pre[class*=language-] {
     background: rgba(252, 252, 252, 0.29);
     border-radius: 2px;
-    border-color: #f7f5f5;
+    border-color: #f7f5f5; 
+}
+
+.example-code{
+  display: none;
+  margin-top: -30px;
+  margin-bottom: 40px;
+    background: #fefefe;
+    border: 0;
+    border-left: 2px solid #d8d8d8;
+  pre[class*=language-]{ 
+    background: #fefefe;
+    border: 0;
+  }
+  p.sub{
+    padding: 16px 16px 0;
+        margin-bottom: -7px;
+  }
 }
 
 code[class*=language-], pre[class*=language-]{
   font-family: 'Mononoki';
   font-size: 14px;
+}
+
+code.simple{ 
+  padding: 0 4px;
+  font-size: 87%;
+  font-family: 'Mononoki';
+  background: transparent;
+  color: #000;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
 strong{
@@ -96,6 +123,8 @@ section{
     margin-bottom: 30px;
     border-left: 2px solid #14a2a9;
     padding-left: 12px;
+    padding-top: 7px;
+    padding-bottom: 5px;
     &:hover{
       border-left-color:#e17075;
       p{

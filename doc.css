@@ -1,100 +1,172 @@
 body {
   font-family: 'Dosis', sans-serif;
   color: #444;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 a {
   color: #e17075;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 pre[class*=language-] {
   background: rgba(252, 252, 252, 0.29);
   border-radius: 2px;
-  border-color: #f7f5f5; }
+  border-color: #f7f5f5;
+}
+
+.example-code {
+  display: none;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  background: #fefefe;
+  border: 0;
+  border-left: 2px solid #d8d8d8;
+}
+
+.example-code pre[class*=language-] {
+  background: #fefefe;
+  border: 0;
+}
+
+.example-code p.sub {
+  padding: 16px 16px 0;
+  margin-bottom: -7px;
+}
 
 code[class*=language-], pre[class*=language-] {
   font-family: 'Mononoki';
-  font-size: 14px; }
+  font-size: 14px;
+}
+
+code.simple {
+  padding: 0 4px;
+  font-size: 87%;
+  font-family: 'Mononoki';
+  background: transparent;
+  color: #000;
+  border-radius: 3px;
+  font-weight: 500;
+}
 
 strong {
   font-weight: 600;
-  font-size: 0.95em; }
+  font-size: 0.95em;
+}
 
 header {
   text-align: center;
   padding: 50px 0;
-  background: #fcfcfc; }
-  header p {
-    font-size: 17px;
-    color: #908d8d;
-    margin-bottom: 20px; }
-    header p span > span {
-      color: #444; }
-  header h1 {
-    margin: 0 0 20px;
-    color: #e17075; }
-  header .btn {
-    text-transform: uppercase;
-    border-radius: 2px;
-    padding: 9px 20px;
-    background: #e17075;
-    color: #fff;
-    min-width: 100px; }
-  header .btn.default {
-    background: #fff;
-    color: #444;
-    border-color: #e8e4e4; }
+  background: #fcfcfc;
+}
+
+header p {
+  font-size: 17px;
+  color: #908d8d;
+  margin-bottom: 20px;
+}
+
+header p span > span {
+  color: #444;
+}
+
+header h1 {
+  margin: 0 0 20px;
+  color: #e17075;
+}
+
+header .btn {
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 9px 20px;
+  background: #e17075;
+  color: #fff;
+  min-width: 100px;
+}
+
+header .btn.default {
+  background: #fff;
+  color: #444;
+  border-color: #e8e4e4;
+}
 
 section {
-  margin-bottom: 20px; }
-  section h3 {
-    margin: 0 0 20px; }
-  section p.sub {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 15px; }
-    section p.sub .codetoggle {
-      float: right;
-      text-transform: lowercase;
-      font-family: 'Mononoki';
-      font-size: 13px;
-      opacity: 0.5; }
-  section .btn-action {
-    color: #5a5a5a;
-    font-size: 12px;
-    text-transform: uppercase;
-    border: 1px solid #c3c3c3;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    padding: 5px 10px;
-    font-family: Mononoki;
-    outline: none;
-    box-shadow: none; }
-    section .btn-action:hover {
-      background-color: #e17075;
-      border-color: #e17075;
-      color: #fff; }
-  section .example {
-    margin-bottom: 30px;
-    border-left: 2px solid #14a2a9;
-    padding-left: 12px; }
-    section .example:hover {
-      border-left-color: #e17075; }
-      section .example:hover p {
-        color: #e17075; }
-      section .example:hover .codetoggle {
-        opacity: 1; }
-        section .example:hover .codetoggle a {
-          text-decoration: none; }
+  margin-bottom: 20px;
+}
+
+section h3 {
+  margin: 0 0 20px;
+}
+
+section p.sub {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+section p.sub .codetoggle {
+  float: right;
+  text-transform: lowercase;
+  font-family: 'Mononoki';
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+section .btn-action {
+  color: #5a5a5a;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid #c3c3c3;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-family: Mononoki;
+  outline: none;
+  box-shadow: none;
+}
+
+section .btn-action:hover {
+  background-color: #e17075;
+  border-color: #e17075;
+  color: #fff;
+}
+
+section .example {
+  margin-bottom: 30px;
+  border-left: 2px solid #14a2a9;
+  padding-left: 12px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+section .example:hover {
+  border-left-color: #e17075;
+}
+
+section .example:hover p {
+  color: #e17075;
+}
+
+section .example:hover .codetoggle {
+  opacity: 1;
+}
+
+section .example:hover .codetoggle a {
+  text-decoration: none;
+}
 
 .code {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 footer {
   text-align: center;
   margin: 20px 0;
   font-size: 15px;
-  color: #adadad; }
-  footer .mdi {
-    color: #e17075;
-    font-size: 12px; }
+  color: #adadad;
+}
+
+footer .mdi {
+  color: #e17075;
+  font-size: 12px;
+}
