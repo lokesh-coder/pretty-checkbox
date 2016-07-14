@@ -30,7 +30,7 @@ Checkbox markup,
 
 ### checkbox Features
 
-##### Inline checkboxe
+##### Inline checkbox
 ```html
 <div class="pretty inline">
   <input type="checkbox"/> 
@@ -44,7 +44,7 @@ Checkbox markup,
   <label><i class="mdi mdi-check"></i> Monday</label>
 </div>
 ```
-##### Custom icons library
+##### Custom icon library
 ```html
 <div class="pretty inline circle">
   <input type="checkbox"/> 
