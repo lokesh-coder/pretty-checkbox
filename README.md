@@ -1,6 +1,6 @@
 # Pretty checkbox
 
-No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. - **No Javascript**! 
+No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. **Only CSS**! 
 
 Check it out the [Demo](https://lokesh-coder.github.io/pretty-checkbox/) for complete documentation.
 
