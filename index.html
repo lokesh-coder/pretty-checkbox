@@ -24,7 +24,7 @@
 			<h1>PRETTY CHECKBOX</h1>
 			<p class="clearfix">
 				<span class="col-md-6 col-md-offset-3">
-					No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons. - <span>No Javascript!</span>
+					No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. <span>No Javascript!</span>
 				</span>
 			</p>
 			<div class="action">
@@ -36,13 +36,14 @@
 	<div class="container">
 			<div class="col-md-8 col-md-offset-2">
 				<h3>Installation</h3>
-				<p><strong>Step 1:</strong> Download from bower or node </p>
+				<p><strong>Step 1:</strong> Download from <i>bower</i> or <i>npm</i> </p>
 				<div class="code">
-					<pre><code class="language-javascript">&gt; bower install pretty-checkbox</code></pre>
+					<pre><code class="language-javascript">&gt; bower install pretty-checkbox // or
+&gt; npm install pretty-checkbox</code></pre>
 				</div>
 				<p><strong>Step 2:</strong> Add <code class="simple">pretty.css</code> file in your html or import <code class="simple">pretty.scss</code> file in your css/sass file</p>
 				<div class="code">
-					<pre><code class="language-css">@import '../bower_modules/pretty-checkbox/src/pretty.scss';</code></pre>
+					<pre><code class="language-css">@import '../PATH/pretty-checkbox/src/pretty.scss';</code></pre>
 				</div>
 				<p><strong>Step 3:</strong> Add the mark up in your file. Can be used with Bootstrap, Foundation frameworks.</p>
 				<div class="code">
@@ -1079,6 +1080,9 @@
 			});
 			$('.codetoggle').click(function(event){
 				event.preventDefault();
+				var text = $(this).find('a').text();
+				text= (text=='show code')?'hide code':'show code';
+				$(this).find('a').text(text);
 				$(this).first().parents('.example').next().slideToggle();
 			});
 		</script>
