@@ -6,20 +6,26 @@ Check it out the [Demo](https://lokesh-coder.github.io/pretty-checkbox/) for com
 
 ### Get started
 
-Install the library from bower
+Install the library from `bower` or `npm` package manager
 
 ```sh
-$ bower install pretty-checkbox
+> bower install pretty-checkbox
+```
+```sh
+> npm install pretty-checkbox
 ```
 Add `pretty.min.css` in your html
+
 ```html
-<link rel="stylesheet" href="../bower_components/pretty-checkbox/src/pretty.min.css"/>
+<link rel="stylesheet" href="../PATH/pretty-checkbox/src/pretty.min.css"/>
 ```
 
 or you can also import `pretty.scss` in your main scss file.
 ```scss
-@import '../bower_components/pretty-checkbox/src/pretty.scss';
+@import '../PATH/pretty-checkbox/src/pretty.scss';
 ```
+`PATH` is where the library is downloaded.
+
 Checkbox markup,
 ```html
 <div class="pretty">
