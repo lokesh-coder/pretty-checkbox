@@ -58,6 +58,7 @@ Checkbox markup,
   <label><i class="mdi mdi-check"></i> Primary</label>
 </div>
 ```
+Color variants: `primary` `success` `warning` `info` `danger`
 ##### Outline Checkbox color
 ```html
 <div class="pretty inline outline-primary">
@@ -65,6 +66,7 @@ Checkbox markup,
   <label><i class="mdi mdi-check"></i> Outline primary</label>
 </div>
 ```
+Color variants: `outline-primary` `outline-success` `outline-warning` `outline-info` `outline-danger`
 ##### Without border - plain checkbox
 ```html
 <div class="pretty inline outline-success plain">
@@ -131,63 +133,10 @@ Checkbox markup,
   <label><i class="mdi mdi-gender-female"></i> Female</label>
 </div>
 ```
-##### Boxed radio
-```html
-<div class="pretty inline">
-  <input type="radio" name="radio2"> 
-  <label><i class="mdi mdi-check"></i> Check</label>
-</div>
+All the features in the checkbox is supported for radio buttons. It includes 
+`Boxed radio button` `Solid Color radio` `Outline Color radio` `Radio button without border` `Animated radio button` `Disabled radio button` `Toggle radio button`.
 
-```
-##### Solid Color radio
-```html
-<div class="pretty inline circle primary">
-  <input type="radio" name="radio3"> 
-  <label><i class="mdi mdi-check"></i> Primary</label>
-</div>
 
-```
-##### Outline Color radio
-```html
-<div class="pretty inline circle outline-primary">
-  <input type="radio" name="radio4"> 
-  <label><i class="mdi mdi-check"></i> $10</label>
-</div>
-```
-##### Radio button without border
-```html
-<div class="pretty inline circle plain outline-primary">
-  <input type="radio" name="radio5"> 
-  <label><i class="mdi mdi-human"></i> Single</label>
-</div>
-```
-##### Animated radio button
-```html
-<div class="pretty inline circle smooth outline-primary">
-  <input type="radio" name="radio44"> 
-  <label><i class="mdi mdi-emoticon-cool"></i> Cool</label>
-</div>
-```
-##### Disabled radio button
-```html
-<div class="pretty inline circle">
-  <input type="radio" name="radio6" disabled> 
-  <label><i class="mdi mdi-gender-male"></i> Today</label>
-</div>
-```
-##### Toggle radio button
-```html
-<div class="pretty inline circle plain toggle">
-  <input type="radio" name="radio8"> 
-  <label><i class="mdi mdi-bluetooth-off"></i> Bluetooth</label>
-  <label><i class="mdi mdi-bluetooth success"></i> Bluetooth</label>
-</div>
-<div class="pretty inline circle plain toggle">
-  <input type="radio" name="radio8"> 
-  <label><i class="mdi mdi-wifi-off"></i> Wifi</label>
-  <label><i class="mdi mdi-wifi info"></i> Wifi</label>
-</div>
-```
 ##### Toggle radio button without labels
 ```html
 <div class="pretty inline circle plain toggle">
@@ -203,48 +152,16 @@ Checkbox markup,
 ```
 
 ### Custom font library
-##### Font awesome
-```html
-<div class="pretty inline success smooth">
-  <input type="checkbox"> 
-  <label><i class="fa fa-check"></i> fa-check</label>
-</div>
-```
-##### Glyphicon
-```html
-<div class="pretty inline success smooth">
-  <input type="checkbox"> 
-  <label><i class="glyphicon glyphicon-ok"></i> glyphicon-ok</label>
-</div>
-```
-##### Material Design icons (mdi)
-```html
-<div class="pretty inline success smooth">
-  <input type="checkbox"> 
-  <label><i class="mdi mdi-check"></i> mdi-check</label>
-</div>
-```
-##### Material Design icons (zmdi)
-```html
-<div class="pretty inline success smooth">
-  <input type="checkbox"> 
-  <label><i class="zmdi zmdi-check"></i> zmdi-check</label>
-</div>
-```
-##### Typicons
-```html
-<div class="pretty inline success smooth">
-  <input type="checkbox"> 
-  <label><i class="typcn typcn-tick"></i>typcn-tick</label>
-</div>
-```
-##### Ionicons
-```html
-<div class="pretty inline success smooth">
-  <input type="checkbox"> 
-  <label><i class="ion-checkmark-round"></i> ion-checkmark-round</label>
-</div>
-```
+
+This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` ,`Bootstrap Glyphicon` `Material Design icons (mdi)` `Material Design icons (zmdi)` `Typicons` `Ionicons`.
+
+### What else
+
+- Scalable. can be used in any font sizes
+- Used in frameworks like bootstrap, foundation, sematic UI
+- Supported in all mordern browsers, including mobile devices
+- Customizable. see the demo for `sass` settings
+- MIT Licence
 
 Thats all, folks!
 
