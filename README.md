@@ -44,13 +44,7 @@ Checkbox markup,
   <label><i class="mdi mdi-check"></i> Monday</label>
 </div>
 ```
-##### Custom icon library
-```html
-<div class="pretty inline circle">
-  <input type="checkbox"/> 
-  <label><i class="fa fa-check"></i> Fontawesome icon</label>
-</div>
-```
+
 ##### Solid Checkbox color
 ```html
 <div class="pretty inline primary">
@@ -58,7 +52,7 @@ Checkbox markup,
   <label><i class="mdi mdi-check"></i> Primary</label>
 </div>
 ```
-Color variants: `primary` `success` `warning` `info` `danger`
+Color variants: `primary` , `success` , `warning` , `info` , `danger`
 ##### Outline Checkbox color
 ```html
 <div class="pretty inline outline-primary">
@@ -66,7 +60,7 @@ Color variants: `primary` `success` `warning` `info` `danger`
   <label><i class="mdi mdi-check"></i> Outline primary</label>
 </div>
 ```
-Color variants: `outline-primary` `outline-success` `outline-warning` `outline-info` `outline-danger`
+Color variants: `outline-primary` , `outline-success` , `outline-warning` , `outline-info` , `outline-danger`
 ##### Without border - plain checkbox
 ```html
 <div class="pretty inline outline-success plain">
@@ -134,7 +128,7 @@ Color variants: `outline-primary` `outline-success` `outline-warning` `outline-i
 </div>
 ```
 All the features in the checkbox is supported for radio buttons. It includes 
-`Boxed radio button` `Solid Color radio` `Outline Color radio` `Radio button without border` `Animated radio button` `Disabled radio button` `Toggle radio button`.
+`Boxed radio button` , `Solid Color radio` , `Outline Color radio` , `Radio button without border` , `Animated radio button` , `Disabled radio button` , `Toggle radio button`.
 
 
 ##### Toggle radio button without labels
@@ -153,7 +147,7 @@ All the features in the checkbox is supported for radio buttons. It includes
 
 ### Custom font library
 
-This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` ,`Bootstrap Glyphicon` `Material Design icons (mdi)` `Material Design icons (zmdi)` `Typicons` `Ionicons`.
+This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` , `Bootstrap Glyphicon` , `Material Design icons (mdi)` , `Material Design icons (zmdi)` , `Typicons` `Ionicons`.
 
 ### What else
 
