@@ -565,6 +565,20 @@ i[class*="ion-"] {
   transform: scale(0);
 }
 
+.pretty.smooth > input[type='radio']:checked ~ label > i.default:before {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.pretty.smooth > input[type='radio']:checked ~ label > i.default:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
 .pretty.smooth.toggle i:before {
   -webkit-transform: none;
   -moz-transform: none;

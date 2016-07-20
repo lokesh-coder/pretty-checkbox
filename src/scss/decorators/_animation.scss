@@ -17,6 +17,14 @@
 			@include prefixer(transform,scale(0)); 
 		}
 	}
+	&>input[type='radio']:checked~label>i.default{
+		&:before{
+			@include prefixer(transform,scale(0.8));   
+		}
+		&:after{
+			@include prefixer(transform,scale(1));   
+		}
+	}
 }
 .#{$pretty-class-name}.smooth.toggle{ 
 	i{
