@@ -1,0 +1,8 @@
+.#{$pretty-class-name}.circle{
+  label i:after{
+    border-radius: 100px;
+  }
+  label i.default:before{ 
+    border-radius: 100px !important;
+  }
+}

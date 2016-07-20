@@ -1,0 +1,22 @@
+@import 'mixins'; 
+
+@include keyframes(popIn) {
+  0% {
+    @include prefixer(transform, scale(0)); 
+  }
+  100% {
+    @include prefixer(transform, scale(1));
+  }
+};
+@include keyframes(popOut) {
+  0% {
+    @include prefixer(transform, scale(1)); 
+  }
+  100% {
+    @include prefixer(transform, scale(0));
+  }
+};
+
+@mixin animate($animation){
+	@include animation($animation 0.5s cubic-bezier(0.25, 0.1, 0.23, 1.22) forwards);
+}

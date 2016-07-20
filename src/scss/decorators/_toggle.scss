@@ -1,0 +1,23 @@
+.#{$pretty-class-name}.toggle{
+  &>input[type='checkbox']+label,
+  &>input[type='radio']+label{
+    &>i:before{
+      color:inherit;
+    }
+  }
+  &>input[type='checkbox']+label+label,
+  &>input[type='radio']+label+label{
+    display: none; 
+  }
+  &>input[type='checkbox']:checked+label,
+  &>input[type='radio']:checked+label{
+    display: none;
+  }
+  &>input[type='checkbox']:checked+label+label,
+  &>input[type='radio']:checked+label+label{
+    display: inline-block;
+    &>i:before{
+      color:inherit;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@mixin prefixer($property, $value) {
+  -webkit-#{$property}: $value; 
+  -moz-#{$property}: $value; 
+  -o-#{$property}: $value; 
+  #{$property}: $value;
+}
+
+@mixin animation ($value) {
+  @include prefixer($property: animation, $value: $value);
+}
+
+
+@mixin keyframes($animationName) {
+  @keyframes #{$animationName} {
+    @content;
+  }
+  @-webkit-keyframes #{$animationName} {
+    @content; 
+  }
+  @-moz-keyframes #{$animationName} {
+    @content; 
+  }
+  @-o-keyframes #{$animationName} {
+    @content; 
+  }
+}
+
+@mixin transition ($value...) {
+  @if length($value) >= 1 { 
+    @include prefixer($property: transition, $value: $value);
+  } @else { 
+    @include prefixer($property: transition, $value: all 0.15s ease-in 0.05s);
+  }
+}
