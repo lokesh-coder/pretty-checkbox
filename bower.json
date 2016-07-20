@@ -1,6 +1,6 @@
 {
   "name": "pretty-checkbox",
-  "version": "1.2.2",
+  "version": "1.0.0",
   "description": "Scalable css3 pretty checkbox and radio buttons",
   "license": "MIT",
   "main": "src/pretty.css",
