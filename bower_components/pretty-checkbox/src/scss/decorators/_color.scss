@@ -11,6 +11,16 @@ $outline-colors:primary outline-primary #428bca , success outline-success #5cb85
         border-color:nth($color,3)
       }
     }
+    input[type='radio']:checked+ label i.default{ 
+      &:before{
+        background-color:nth($color,3);
+        color:transparent;
+      }
+      &:after{
+        background-color: initial;
+        border-color:nth($color,3)
+      }
+    }
     &.smooth{
       input:checked ~ label i:after{ 
         @include prefixer(transform,scale(1) !important); 

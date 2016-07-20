@@ -30,6 +30,7 @@
       color:transparent;
       position: relative;
       z-index: 999;
+      left: -1px;
     }
     &:after{ 
       content: '\0000';
@@ -45,6 +46,23 @@
   &>input[type='radio']:checked+label>i{
     &:before{
       color:inherit;
+    }
+    &:after{}
+  }
+  &>input[type='radio']+label>i.default{
+    &:before{
+      content: '\0000';
+      border-radius: 2px;
+      @include prefixer(transform,scale(0.8)); 
+      color: transparent;
+      background: transparent;
+      left: 0;
+    }
+    &:after{}
+  }
+  &>input[type='radio']:checked+label>i.default{
+    &:before{
+      background: #aaa;
     }
     &:after{}
   }
