@@ -1,6 +1,6 @@
 {
   "name": "pretty-checkbox",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Scalable css3 pretty checkbox and radio buttons with custom font icon library",
   "main": "src/pretty.min.css",
   "dependencies": {},
@@ -22,7 +22,7 @@
     "radio",
     "bootstrap",
     "css3",
-    "animations"
+    "animation"
   ],
   "author": "lokesh",
   "license": "MIT",

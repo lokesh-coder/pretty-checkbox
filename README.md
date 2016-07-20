@@ -126,11 +126,11 @@ Color variants: `outline-primary` , `outline-success` , `outline-warning` , `out
 ```html
 <div class="pretty inline circle">
   <input type="radio" name="radio1"> 
-  <label><i class="mdi mdi-gender-male"></i> Male</label>
+  <label><i class="default"></i> Default</label>
 </div>
 <div class="pretty inline circle">
   <input type="radio" name="radio1"> 
-  <label><i class="mdi mdi-gender-female"></i> Female</label>
+  <label><i class="mdi mdi-check"></i> With icon</label>
 </div>
 ```
 All the features in the checkbox is supported for radio buttons. It includes 
