@@ -16,11 +16,16 @@ Install the library from `bower` or `npm` package manager
 ```
 Add `pretty.min.css` in your html
 
+From CDN, 
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.0.2/pretty.min.css"/>
+```
+or from the source,
 ```html
 <link rel="stylesheet" href="../PATH/pretty-checkbox/src/pretty.min.css"/>
 ```
 
-or you can also import `pretty.scss` in your main scss file.
+You can also import `pretty.scss` in your main scss file.
 ```scss
 @import '../PATH/pretty-checkbox/src/pretty.scss';
 ```
