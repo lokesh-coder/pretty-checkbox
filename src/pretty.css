@@ -142,6 +142,10 @@
   z-index: 99999999;
 }
 
+.pretty i {
+  font-size: 1em !important;
+}
+
 .pretty i:before {
   margin-right: 5px;
   vertical-align: bottom;
