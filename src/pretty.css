@@ -118,6 +118,35 @@
   }
 }
 
+@media print {
+  .pretty:not(.toggle) input:not(:checked) + label i:before,
+  .pretty > input[type='radio']:checked + label > i.default:before,
+  .pretty i:after {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color: transparent !important;
+  }
+  .pretty input:checked + label i:before {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .pretty.primary input:checked + label i:before {
+    color: white !important;
+  }
+  .pretty.success input:checked + label i:before {
+    color: white !important;
+  }
+  .pretty.info input:checked + label i:before {
+    color: white !important;
+  }
+  .pretty.warning input:checked + label i:before {
+    color: white !important;
+  }
+  .pretty.danger input:checked + label i:before {
+    color: white !important;
+  }
+}
+
 .pretty {
   position: relative;
   line-height: 1;
@@ -184,7 +213,7 @@
 }
 
 .pretty > input[type='radio']:checked + label > i.default:before {
-  background: #aaa;
+  background-color: #aaa !important;
 }
 
 .pretty > input[type='checkbox'][disabled],
@@ -237,17 +266,17 @@
 }
 
 .pretty.primary input:checked + label i:after {
-  background-color: #428bca;
+  background-color: #428bca !important;
   border-color: #428bca;
 }
 
 .pretty.primary input[type='radio']:checked + label i.default:before {
-  background-color: #428bca;
+  background-color: #428bca !important;
   color: transparent;
 }
 
 .pretty.primary input[type='radio']:checked + label i.default:after {
-  background-color: initial;
+  background-color: initial !important;
   border-color: #428bca;
 }
 
@@ -291,17 +320,17 @@
 }
 
 .pretty.success input:checked + label i:after {
-  background-color: #5cb85c;
+  background-color: #5cb85c !important;
   border-color: #5cb85c;
 }
 
 .pretty.success input[type='radio']:checked + label i.default:before {
-  background-color: #5cb85c;
+  background-color: #5cb85c !important;
   color: transparent;
 }
 
 .pretty.success input[type='radio']:checked + label i.default:after {
-  background-color: initial;
+  background-color: initial !important;
   border-color: #5cb85c;
 }
 
@@ -345,17 +374,17 @@
 }
 
 .pretty.info input:checked + label i:after {
-  background-color: #5bc0de;
+  background-color: #5bc0de !important;
   border-color: #5bc0de;
 }
 
 .pretty.info input[type='radio']:checked + label i.default:before {
-  background-color: #5bc0de;
+  background-color: #5bc0de !important;
   color: transparent;
 }
 
 .pretty.info input[type='radio']:checked + label i.default:after {
-  background-color: initial;
+  background-color: initial !important;
   border-color: #5bc0de;
 }
 
@@ -399,17 +428,17 @@
 }
 
 .pretty.warning input:checked + label i:after {
-  background-color: #f0ad4e;
+  background-color: #f0ad4e !important;
   border-color: #f0ad4e;
 }
 
 .pretty.warning input[type='radio']:checked + label i.default:before {
-  background-color: #f0ad4e;
+  background-color: #f0ad4e !important;
   color: transparent;
 }
 
 .pretty.warning input[type='radio']:checked + label i.default:after {
-  background-color: initial;
+  background-color: initial !important;
   border-color: #f0ad4e;
 }
 
@@ -453,17 +482,17 @@
 }
 
 .pretty.danger input:checked + label i:after {
-  background-color: #d9534f;
+  background-color: #d9534f !important;
   border-color: #d9534f;
 }
 
 .pretty.danger input[type='radio']:checked + label i.default:before {
-  background-color: #d9534f;
+  background-color: #d9534f !important;
   color: transparent;
 }
 
 .pretty.danger input[type='radio']:checked + label i.default:after {
-  background-color: initial;
+  background-color: initial !important;
   border-color: #d9534f;
 }
 
