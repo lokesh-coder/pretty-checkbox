@@ -1,0 +1,7 @@
+@media print{
+    .pretty i:after{
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color: transparent !important;
+    }
+} 
