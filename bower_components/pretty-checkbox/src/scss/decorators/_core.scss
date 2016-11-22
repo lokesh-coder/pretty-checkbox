@@ -1,0 +1,78 @@
+.#{$pretty-class-name}{
+  position: relative;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+
+.#{$pretty-class-name}{
+  label{
+    font-weight: normal;
+  }
+  &>input[type='checkbox'],
+  &>input[type='radio']{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 99999999;
+  }
+  i{
+    &:before{
+      margin-right: 5px;
+      vertical-align: bottom;
+      display: inline-block ; 
+      color:transparent;
+      position: relative;
+      z-index: 999;
+      left: -1px;
+    }
+    &:after{ 
+      content: '\0000';
+      border-radius: $pretty-border-radius;
+      border: 1px solid #aaa;
+      position: absolute;
+      color: transparent;
+      left: -1px;
+      top: -1px;
+    }
+  }
+  &>input[type='checkbox']:checked+label>i,
+  &>input[type='radio']:checked+label>i{
+    &:before{
+      color:inherit;
+    }
+    &:after{}
+  }
+  &>input[type='radio']+label>i.default{
+    &:before{
+      content: '\0000';
+      border-radius: 2px;
+      @include prefixer(transform,scale(0.8)); 
+      color: transparent;
+      background: transparent;
+      left: 0;
+    }
+    &:after{}
+  }
+  &>input[type='radio']:checked+label>i.default{
+    &:before{
+      background: #aaa;
+    }
+    &:after{}
+  }
+  &>input[type='checkbox'][disabled],
+  &>input[type='radio'][disabled]{
+    cursor: not-allowed;
+    opacity: 0; 
+    &+label{
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
