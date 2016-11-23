@@ -1,44 +1,52 @@
-.#{$pretty-class-name}.smooth{ 
-	i{
-		&:before{
-			@include prefixer(transition,all 0.5s ease);
-			@include prefixer(transform,scale(0));  
-		}
-		&:after{
-			@include prefixer(transition,all 0.5s ease);
-		}
-	}
-	&>input[type='checkbox']:checked~label>i,
-	&>input[type='radio']:checked~label>i{
-		&:before{
-			@include prefixer(transform,scale(1));
-		}
-		&:after{
-			@include prefixer(transform,scale(0)); 
-		}
-	}
-	&>input[type='radio']:checked~label>i.default{
-		&:before{
-			@include prefixer(transform,scale(0.8));   
-		}
-		&:after{
-			@include prefixer(transform,scale(1));   
-		}
-	}
+.#{$pretty--class-name}.smooth {
+    i {
+        &:before {
+            @include prefixer(transition,all .5s ease);
+            @include prefixer(transform,scale(0));
+        }
+
+        &:after {
+            @include prefixer(transition,all .5s ease);
+        }
+    }
+
+    & > input[type='checkbox']:checked ~ label>i,
+    & > input[type='radio']:checked ~ label>i {
+        &:before {
+            @include prefixer(transform,scale(1));
+        }
+
+        &:after {
+            @include prefixer(transform,scale(0));
+        }
+    }
+
+    & > input[type='radio']:checked ~ label > i.default {
+        &:before {
+            @include prefixer(transform,scale(.8));
+        }
+
+        &:after {
+            @include prefixer(transform,scale(1));
+        }
+    }
 }
-.#{$pretty-class-name}.smooth.toggle{ 
-	i{
-		&:before{
-			@include prefixer(transform,none);  
-		}
-	}
-	&>input[type='checkbox']:checked~label>i,
-	&>input[type='radio']:checked~label>i{
-		&:before{
-			@include prefixer(transform,none);
-		}
-		&:after{
-			@include prefixer(transform,none); 
-		}
-	}
+
+.#{$pretty--class-name}.smooth.toggle {
+    i {
+        &:before {
+            @include prefixer(transform,none);
+        }
+    }
+
+    & > input[type='checkbox']:checked ~ label>i,
+    & > input[type='radio']:checked ~ label>i {
+        &:before {
+            @include prefixer(transform,none);
+        }
+
+        &:after {
+            @include prefixer(transform,none);
+        }
+    }
 }
