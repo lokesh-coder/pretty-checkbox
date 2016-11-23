@@ -22,12 +22,12 @@
     "css3",
     "animations"
   ],
-  "version": "2.0.1",
-  "_release": "2.0.1",
+  "version": "2.0.4",
+  "_release": "2.0.4",
   "_resolution": {
     "type": "version",
-    "tag": "v2.0.1",
-    "commit": "05235cceb2c22eb4a498b2dda0cdac9f2adc1739"
+    "tag": "v2.0.4",
+    "commit": "42fcb174a287e53343ed90db2eca0014995bf01d"
   },
   "_source": "https://github.com/lokesh-coder/pretty-checkbox.git",
   "_target": "*",

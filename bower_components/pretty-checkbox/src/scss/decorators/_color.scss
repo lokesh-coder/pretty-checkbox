@@ -1,5 +1,3 @@
-$outline-colors:primary outline-primary #428bca , success outline-success #5cb85c,info outline-info #5bc0de,warning outline-warning #f0ad4e,danger outline-danger #d9534f;
-
 @each $color in $outline-colors{
   .#{$pretty-class-name}.#{nth($color,1)}{
     input:checked+ label i{ 
@@ -7,17 +5,17 @@ $outline-colors:primary outline-primary #428bca , success outline-success #5cb85
         color:#fff; 
       }
       &:after{
-        background-color:nth($color,3);
+        background-color:nth($color,3) !important;
         border-color:nth($color,3)
       }
     }
     input[type='radio']:checked+ label i.default{ 
       &:before{
-        background-color:nth($color,3);
+        background-color:nth($color,3) !important;
         color:transparent;
       }
       &:after{
-        background-color: initial;
+        background-color: initial !important;
         border-color:nth($color,3)
       }
     }
@@ -30,7 +28,7 @@ $outline-colors:primary outline-primary #428bca , success outline-success #5cb85
   .#{$pretty-class-name}.#{nth($color,2)}{
     input:checked+label i{
       &:before{
-        color:nth($color,3)
+        color:nth($color,3);
       }
       &:after{
         border-color:nth($color,3); 

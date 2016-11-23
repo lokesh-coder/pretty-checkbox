@@ -1,0 +1,287 @@
+body
+{
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+
+    color: #444;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #e17075;
+}
+
+pre[class*=language-]
+{
+    border-color: #f7f5f5;
+    border-radius: 2px;
+    background: rgba(252, 252, 252, .29);
+}
+
+.example-code
+{
+    display: none;
+
+    margin-top: -30px;
+    margin-bottom: 40px;
+
+    border: 0;
+    border-left: 2px solid #d8d8d8;
+    background: #fefefe;
+
+    pre[class*=language-]
+    {
+        border: 0;
+        background: #fefefe;
+    }
+
+    p.sub
+    {
+        margin-bottom: -7px;
+        padding: 16px 16px 0;
+    }
+}
+
+code[class*=language-],
+pre[class*=language-]
+{
+    font-family: 'Mononoki';
+    font-size: 14px;
+}
+
+code.simple
+{
+    font-family: 'Mononoki';
+    font-size: 87%;
+    font-weight: 500;
+    font-style: italic;
+
+    padding: 0 4px;
+
+    color: #000;
+    border-radius: 3px;
+    background: transparent;
+}
+
+strong
+{
+    font-size: .95em;
+    font-weight: 600;
+
+    margin-right: 5px;
+
+    text-transform: uppercase;
+
+    color: #e17075;
+}
+
+header
+{
+    padding: 50px 0;
+
+    text-align: center;
+
+    background: #fcfcfc;
+
+    p
+    {
+        font-size: 17px;
+
+        margin-bottom: 20px;
+
+        color: #908d8d;
+
+        span > span
+        {
+            color: #444;
+        }
+    }
+
+    h1
+    {
+        margin: 0 0 20px;
+
+        color: #e17075;
+    }
+
+    .btn
+    {
+        min-width: 100px;
+        padding: 9px 20px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        border-radius: 2px;
+        background: #e17075;
+
+        &:hover,
+        &:focus,
+        &:active
+        {
+            color: #fff;
+            outline: none;
+            background-color: darken(#e17075, 10%);
+            box-shadow: none;
+        }
+    }
+
+    .btn.default
+    {
+        color: #444;
+        border-color: #e8e4e4;
+        background: #fff;
+
+        &:hover,
+        &:focus,
+        &:active
+        {
+            color: #444;
+            outline: none;
+            background-color: darken(#fafafa, 5%);
+            box-shadow: none;
+        }
+    }
+}
+
+.btn .mdi
+{
+    margin-right: 4px;
+
+    -webkit-transform: scale(1.3);
+       -moz-transform: scale(1.3);
+            transform: scale(1.3);
+}
+
+section
+{
+    margin-bottom: 20px;
+
+    h3
+    {
+        margin: 0 0 20px;
+    }
+
+    p.sub
+    {
+        font-size: 15px;
+        font-weight: 500;
+
+        text-transform: uppercase;
+
+        .codetoggle
+        {
+            font-family: 'Mononoki';
+            font-size: 13px;
+
+            float: right;
+
+            text-transform: lowercase;
+
+            opacity: .5;
+        }
+    }
+
+    .btn-action
+    {
+        font-family: Mononoki;
+        font-size: 12px;
+
+        margin-bottom: 20px;
+        padding: 5px 10px;
+
+        text-transform: uppercase;
+
+        color: #5a5a5a;
+        border: 1px solid #c3c3c3;
+        border-radius: 2px;
+        outline: none;
+        box-shadow: none;
+
+        &:hover
+        {
+            color: #fff;
+            border-color: #e17075;
+            background-color: #e17075;
+        }
+    }
+
+    .example
+    {
+        margin-bottom: 30px;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        padding-left: 12px;
+
+        border-left: 2px solid #14a2a9;
+
+        &:hover
+        {
+            border-left-color: #e17075;
+
+            p
+            {
+                color: #e17075;
+            }
+
+            .codetoggle
+            {
+                opacity: 1;
+
+                a
+                {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .inaction
+        {
+            .syx-highlight
+            {
+                font-family: 'mononoki';
+                font-size: 14px;
+            }
+
+            .var
+            {
+                color: #e17075;
+            }
+
+            .val
+            {
+                color: #152247;
+            }
+
+            .comment
+            {
+                color: #adb0ba;
+            }
+        }
+    }
+}
+
+.code
+{
+    margin-bottom: 20px;
+}
+
+footer
+{
+    font-size: 15px;
+
+    margin: 20px 0;
+
+    text-align: center;
+
+    color: #adadad;
+
+    .mdi
+    {
+        font-size: 12px;
+
+        color: #e17075;
+    }
+}
