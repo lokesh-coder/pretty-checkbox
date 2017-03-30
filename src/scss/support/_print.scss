@@ -1,10 +1,16 @@
 @media print {
-    .#{$pretty--class-name} :not(.toggle) input:not(:checked)+label i:before,
-    .#{$pretty--class-name} > input[type='radio']:checked + label > i.default:before,
-    .#{$pretty--class-name} i:after {
-        -webkit-print-color-adjust: exact;
+    
+    .#{$pretty--class-name} > input:not(:checked)+label i:before{
+         -webkit-print-color-adjust: exact;   
                 print-color-adjust: exact;
         color: transparent !important;
+    }
+    .#{$pretty--class-name} :not(.toggle) input:not(:checked)+label i:before,
+    .#{$pretty--class-name} > input[type='radio']:checked + label > i.default:before,
+    .#{$pretty--class-name} i:after{
+        -webkit-print-color-adjust: exact;   
+                print-color-adjust: exact;
+        color: transparent !important;  
     }
 
     .#{$pretty--class-name} input:checked + label i:before {

@@ -1,4 +1,4 @@
-# Pretty checkbox
+# :heavy_check_mark: Pretty checkbox
 
 No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. **Only CSS**!
 
@@ -21,7 +21,7 @@ Add `pretty.min.css` in your html
 
 From CDN,
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.1.0/pretty.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.0/pretty.min.css"/>
 ```
 or from the source,
 ```html
@@ -70,16 +70,24 @@ Refer the [Documentation](https://lokesh-coder.github.io/pretty-checkbox/) for o
 
 ### Custom font library
 
-This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` , `Bootstrap Glyphicon` , `Material Design icons (mdi)` , `Material Design icons (zmdi)` , `Typicons` `Ionicons`.
+This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` , `Bootstrap Glyphicon` , `Material Design icons (mdi)` , `Material Design icons (zmdi)` , `Typicons` , `Ionicons`.
 
 ### What else
 
-- Scalable. can be used in any font sizes
-- Used in frameworks like bootstrap, foundation, sematic UI
+- Scalable. Can be used in any font sizes
+- Cool animations and toggle features
+- Customizable. See the demo for `sass` settings
+- Used in frameworks like bootstrap, Foundation, Sematic UI
 - Supported in all mordern browsers, including mobile devices
-- Customizable. see the demo for `sass` settings
+- Print friendly
 - MIT Licence
 
 Thats all, folks!
 
-Inspired from Okendoken's [awesome-bootstrap-checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) . contributions are welcome!
+### Inspiration
+
+- Inspired from Okendoken's [awesome-bootstrap-checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox). 
+- Crazy animations are heavily inspired ( copied 😊 ) from [Animista](http://animista.net)
+
+Contributions are welcome! 
+

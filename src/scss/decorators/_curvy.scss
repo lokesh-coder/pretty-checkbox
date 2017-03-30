@@ -1,0 +1,10 @@
+.#{$pretty--class-name}.curvy {
+    label i:after,
+    label i:before {
+        border-radius: 2px;
+    }
+
+    label i.default:before {
+        border-radius: 2px !important;
+    }
+}

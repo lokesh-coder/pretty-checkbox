@@ -1,9 +1,14 @@
 $pretty--class-name: pretty !default;
-$pretty--font-family: 'Material Design Icons' !default;
-$pretty--border-radius: 2px !default;
-$pretty--primary-color: #428bca !default;
-$pretty--success-color: #5cb85c !default;
-$pretty--info-color: #5bc0de !default;
-$pretty--warning-color: #f0ad4e !default;
-$pretty--danger-color: #d9534f !default;
-$outline-colors: (primary outline-primary $pretty--primary-color, success outline-success $pretty--success-color, info outline-info $pretty--info-color, warning outline-warning $pretty--warning-color, danger outline-danger $pretty--danger-color);
+
+$pretty--border-radius: 0 !default;
+
+$pretty--color-primary: #428bca !default;
+$pretty--color-success: #5cb85c !default;
+$pretty--color-info: #5bc0de !default;
+$pretty--color-warning: #f0ad4e !default;
+$pretty--color-danger: #d9534f !default;
+$pretty--color-border: #b9b9b9 !default;
+$pretty--color-radio: #b9b9b9 !default;
+$pretty--color-bg: #fff !default;
+
+$outline-colors: (primary o-primary $pretty--color-primary, success o-success $pretty--color-success, info o-info $pretty--color-info, warning o-warning $pretty--color-warning, danger o-danger $pretty--color-danger);

@@ -1,0 +1,21 @@
+@each $color in $outline-colors {
+    .#{$pretty--class-name}.#{nth($color,1)}.hover:hover {
+        input+ label i {
+            &:before {
+                background-color: transparentize(nth($color, 3),0.5) !important;
+                color: #fff !important;
+            }
+            &:after {
+                border-color: transparentize(nth($color, 3),0.5) !important;
+            }
+        }
+    }
+
+    .#{$pretty--class-name}.#{nth($color,2)}.hover:hover {
+        input+label i {
+            &:before {
+                color: transparentize(nth($color, 3),0.2);
+            }
+        }
+    }
+}

@@ -3,11 +3,12 @@
         input:checked+ label i {
             &:before {
                 color: #fff;
+                background-color: nth($color, 3) !important
             }
 
             &:after {
-                background-color: nth($color, 3) !important;
                 border-color: nth($color, 3);
+                background-color: nth($color, 3) !important
             }
         }
 
@@ -25,7 +26,7 @@
 
         &.smooth {
             input:checked ~ label i:after {
-                @include prefixer(transform,scale(1) !important);
+                transform:scale(1) !important;
             }
         }
     }

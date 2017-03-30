@@ -1,8 +1,6 @@
 .#{$pretty--class-name}.plain {
     & > input[type='checkbox'] + label, & > input[type='radio'] + label {
-        & > i:after {
-            /* border-color:transparent;*/
-        }
+        & > i:after {}
     }
 
     & > input[type='checkbox']:checked + label,
