@@ -1,9 +1,13 @@
+
 body
 {
-    font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-
-    color: #444;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", 
+    "Ubuntu", "Cantarell", "Fira Sans", 
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+      background-color: rgba(252, 252, 252, 0.29);
+    color:#5a656b; 
 }
 
 a
@@ -13,23 +17,30 @@ a
     color: #e17075;
 }
 
+h3{
+      font-size: 17px;
+    margin-bottom: 20px;
+}
+
 pre[class*=language-]
 {
-    border-color: #f7f5f5;
-    border-radius: 2px;
-    background: rgba(252, 252, 252, .29);
+    border-color: #c9d1d6;
+    border-radius: 0;
+    background: #fff;
+
+    &.inline{
+            padding: 0;
+    border: 0;
+    }
 }
 
 .example-code
 {
-    display: none;
-
-    margin-top: -30px;
+    margin-top: -16px;
     margin-bottom: 40px;
-
-    border: 0;
-    border-left: 2px solid #d8d8d8;
+    border: 1px solid #c9d1d6;
     background: #fefefe;
+    display: none;
 
     pre[class*=language-]
     {
@@ -47,19 +58,16 @@ pre[class*=language-]
 code[class*=language-],
 pre[class*=language-]
 {
-    font-family: 'Mononoki';
+    font-family: 'Inconsolata';
     font-size: 14px;
 }
 
 code.simple
 {
-    font-family: 'Mononoki';
-    font-size: 87%;
-    font-weight: 500;
-    font-style: italic;
-
+    font-family: 'Inconsolata'; 
+    font-weight: 700;
     padding: 0 4px;
-
+    font-size:100%;
     color: #000;
     border-radius: 3px;
     background: transparent;
@@ -80,59 +88,59 @@ strong
 header
 {
     padding: 50px 0;
-
     text-align: center;
+    background: #8033b0;
+    border-bottom: 4px solid #75b7dd;
+    background: linear-gradient(to left, #124665 , #8033b0);
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.4;
+        background-image: url("data:image/svg+xml,<svg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><path d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='#9C92AC' fill-opacity='0.4' fill-rule='evenodd'/></svg>");
+    }
 
-    background: #fcfcfc;
+    >.container{
+        position: relative;
+    }
 
     p
     {
-        font-size: 17px;
+            margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.65);
 
-        margin-bottom: 20px;
-
-        color: #908d8d;
-
-        span > span
+        span > span 
         {
-            color: #444;
+                color: rgba(255, 255, 255, 0.77);
+                font-weight: 700;
         }
     }
 
     h1
     {
-        margin: 0 0 20px;
-
-        color: #e17075;
+            margin: 0 0 20px;
+            color: #75b7dd;
+            font-weight: 300;
+                font-size: 48px;
+            letter-spacing: -2px;
     }
 
     .btn
     {
-        min-width: 100px;
-        padding: 9px 20px;
-
-        text-transform: uppercase;
-
-        color: #fff;
-        border-radius: 2px;
-        background: #e17075;
-
-        &:hover,
-        &:focus,
-        &:active
-        {
+            min-width: 100px;
+            padding: 7px 11px;
+            text-transform: uppercase; 
             color: #fff;
-            outline: none;
-            background-color: darken(#e17075, 10%);
-            box-shadow: none;
-        }
-    }
-
-    .btn.default
-    {
-        color: #444;
-        border-color: #e8e4e4;
-        background: #fff;
+            border-radius: 1px;
+            background: #75b7dd;
+            font-weight: 500;
+            font-size: 12px;
+            transition:all 0,5s ease;
 
         &:hover,
         &:focus,
@@ -140,8 +148,8 @@ header
         {
             color: #444;
             outline: none;
-            background-color: darken(#fafafa, 5%);
-            box-shadow: none;
+            background-color: #fff;
+            box-shadow: none; 
         }
     }
 }
@@ -157,7 +165,8 @@ header
 
 section
 {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
+    margin-top: 20px;
 
     h3
     {
@@ -166,39 +175,36 @@ section
 
     p.sub
     {
-        font-size: 15px;
-        font-weight: 500;
-
-        text-transform: uppercase;
+                font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #3b3f42;
+    margin-bottom: 15px;
 
         .codetoggle
         {
-            font-family: 'Mononoki';
-            font-size: 13px;
-
+            font-size: 11px;
             float: right;
-
             text-transform: lowercase;
-
-            opacity: .5;
+            a,a:hover,a:focus,a:active{
+                text-decoration: none;
+            }
         }
     }
 
     .btn-action
     {
-        font-family: Mononoki;
-        font-size: 12px;
-
+        font-size: 11px;
+        font-weight: 700;
         margin-bottom: 20px;
         padding: 5px 10px;
-
         text-transform: uppercase;
-
         color: #5a5a5a;
-        border: 1px solid #c3c3c3;
-        border-radius: 2px;
+        border: 1px solid #c9d1d6;
+        border-radius: 0;
         outline: none;
         box-shadow: none;
+        background: #eef1f3;
 
         &:hover
         {
@@ -210,21 +216,15 @@ section
 
     .example
     {
-        margin-bottom: 30px;
-        padding-top: 7px;
-        padding-bottom: 5px;
-        padding-left: 12px;
-
-        border-left: 2px solid #14a2a9;
+        margin-bottom: 15px;
+            border: 1px solid #c9d1d6;
+    border-radius: 0;
+    background: #fff;
+    padding: 13px;
+    position: relative;
 
         &:hover
         {
-            border-left-color: #e17075;
-
-            p
-            {
-                color: #e17075;
-            }
 
             .codetoggle
             {
@@ -241,7 +241,7 @@ section
         {
             .syx-highlight
             {
-                font-family: 'mononoki';
+                font-family: 'Inconsolata';
                 font-size: 14px;
             }
 
@@ -259,6 +259,22 @@ section
             {
                 color: #adb0ba;
             }
+
+            .browser {
+                display: inline-block;
+                margin-right: 14px;
+                img{
+                    width:14px;
+                    vertical-align: sub;
+                }
+            }
+        }
+
+        .font-size-changer{
+            float: right;
+            position: absolute;
+            top: -1px;
+            right: -1px;
         }
     }
 }
@@ -266,6 +282,21 @@ section
 .code
 {
     margin-bottom: 20px;
+}
+
+.social-share-links{
+    a{
+        font-size: 18px;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 9px;
+        color:#444;
+        padding: 0 4px;
+    }
+    a:hover{
+        background: #444;
+            color: #fff;
+    }
 }
 
 footer

@@ -9,15 +9,15 @@
 		<meta name="author" content="Lokesh">
 		<title>Pretty Checkbox | Scalable next generation checkbox and radio buttons | Documentation </title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css"/>
-		<link href='https://fonts.googleapis.com/css?family=Dosis:400,300,500,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.6.50/css/materialdesignicons.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css"/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.1.0/pretty.min.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.1.0/pretty.min.css"> -->
+		<link rel="stylesheet" href="http://192.168.1.3:3041/src/pretty.css">
 		<link rel="stylesheet" href="./doc.css">
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -34,7 +34,7 @@
 
 	<header>
 		<div class="container">
-			<h1>PRETTY CHECKBOX</h1>
+			<h1>pretty checkbox</h1>
 			<p class="clearfix">
 				<span class="col-md-6 col-md-offset-3">
 					No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. <span>No Javascript!</span>
@@ -42,7 +42,7 @@
 			</p>
 			<div class="action">
 				<a href="https://github.com/lokesh-coder/pretty-checkbox" target="_blank" class="btn"><i class="mdi mdi-github-circle"></i> Github</a>
-				<a href="https://github.com/lokesh-coder/pretty-checkbox/archive/master.zip" class="btn default"><i class="mdi mdi-download"></i> Download</a>
+				<a href="https://github.com/lokesh-coder/pretty-checkbox/archive/master.zip" class="btn"><i class="mdi mdi-download"></i> Download</a>
 			</div>
 		</div>
 	</header>
@@ -57,7 +57,7 @@
 				</div>
         <p><code class="simple">Alternatively</code>, you can also use CDN link</p>
         <div class="code">
-					<pre><code class="language-css">https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.1.0/pretty.min.css</code></pre>
+					<pre><code class="language-css">https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.0/pretty.min.css</code></pre>
 				</div>
 				<p><strong>Step 2:</strong> Add <code class="simple">pretty.css</code> file in your html or import <code class="simple">pretty.scss</code> file in your css/sass file</p>
 				<div class="code">
@@ -80,133 +80,90 @@
 						<p class="sub">Basic checkbox  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty">
-							  <input type="checkbox"/>
-							  <label><i class="mdi mdi-check"></i> Buy vegetables</label>
-							</div>
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Square</label>
+</div>
+<div class="pretty curvy">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Curvy</label> 
+</div>
+<div class="pretty circle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Circle</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Buy vegetables&lt;/label&gt;
-&lt;/div&gt;</code></pre>
-					</div>
-					<div class="example">
-						<p class="sub">Inline Checkboxes  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-close"></i> Buy vegetable</label>
-						</div>
-						<div class="pretty">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-close"></i> Pay car due</label>
-						</div>
-						<div class="pretty">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-close"></i> Switch-off the lights</label>
-						</div>
-					</div>
-					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty inline&quot;&gt;
-  &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Buy vegetable&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Square&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty inline&quot;&gt;
+&lt;div class=&quot;pretty curvy&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Pay car due&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;pretty inline&quot;&gt;
-  &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Switch-off the lights&lt;/label&gt;
-&lt;/div&gt;</code></pre>
-					</div>
-					<div class="example">
-						<p class="sub">Rounded Checkboxes  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty circle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Monday</label>
-						</div>
-						<div class="pretty circle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-close"></i> Tuesday</label>
-						</div>
-						<div class="pretty circle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-plus"></i> Wednesday</label>
-						</div>
-					</div>
-					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty circle&quot;&gt;
-  &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Monday&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Curvy&lt;/label&gt; 
 &lt;/div&gt;
 &lt;div class=&quot;pretty circle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Tuesday&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;pretty circle&quot;&gt;
-  &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt; Wednesday&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Circle&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
 						<p class="sub">Custom Icons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Like?</label>
+						<div class="inaction">
+							<div class="pretty">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-texture"></i> Include</label>
+</div>
+<div class="pretty curvy">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-star"></i> Favorite</label>
+</div>
+<div class="pretty circle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-record"></i> Add</label>
+</div>
 						</div>
-						<div class="pretty">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check-all"></i> Select all</label>
-						</div>
-						<div class="pretty">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-account-plus"></i> Add friend</label>
-						</div>
-					</div>
+					</div> 
 					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty inline&quot;&gt;
+					<pre><code class="language-markup">&lt;div class=&quot;pretty&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Like?&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-texture&quot;&gt;&lt;/i&gt; Include&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty inline&quot;&gt;
+&lt;div class=&quot;pretty curvy&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check-all&quot;&gt;&lt;/i&gt; Select all&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-star&quot;&gt;&lt;/i&gt; Favorite&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty inline&quot;&gt;
+&lt;div class=&quot;pretty circle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-account-plus&quot;&gt;&lt;/i&gt; Add friend&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-record&quot;&gt;&lt;/i&gt; Add&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
 						<p class="sub">Checkbox colors<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty primary">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Primary</label>
-						</div>
-						<div class="pretty success">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Success</label>
-						</div>
-						<div class="pretty warning">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Warning</label>
-						</div>
-						<div class="pretty info">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Info</label>
-						</div>
-						<div class="pretty danger">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Danger</label>
+						<div class="inaction">
+							<div class="pretty primary">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Primary</label>
+</div>
+<div class="pretty success">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Success</label>
+</div>
+<div class="pretty warning">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Warning</label>
+</div>
+<div class="pretty info">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Info</label>
+</div>
+<div class="pretty danger">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Danger</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty primary&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Primary&lt;/label&gt;
@@ -230,127 +187,203 @@
 					</div>
 					<div class="example">
 						<p class="sub">Checkbox outline colors<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty outline-primary">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Primary</label>
-						</div>
-						<div class="pretty outline-success">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Success</label>
-						</div>
-						<div class="pretty outline-warning">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Warning</label>
-						</div>
-						<div class="pretty outline-info">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Info</label>
-						</div>
-						<div class="pretty outline-danger">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Danger</label>
+						<div class="inaction">
+							<div class="pretty o-primary">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Primary</label>
+</div>
+<div class="pretty o-success">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Success</label>
+</div>
+<div class="pretty o-warning">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Warning</label>
+</div>
+<div class="pretty o-info">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Info</label>
+</div>
+<div class="pretty o-danger">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Danger</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty outline-primary&quot;&gt;
+					<pre><code class="language-markup">&lt;div class=&quot;pretty o-primary&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Primary&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty outline-success&quot;&gt;
+&lt;div class=&quot;pretty o-success&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Success&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty outline-warning&quot;&gt;
+&lt;div class=&quot;pretty o-warning&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Warning&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty outline-info&quot;&gt;
+&lt;div class=&quot;pretty o-info&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Info&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty outline-danger&quot;&gt;
+&lt;div class=&quot;pretty o-danger&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Danger&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
-						<p class="sub">Checkbox without box<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty outline-success plain">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-check"></i> Oh, yes!</label>
-						</div>
-						<div class="pretty outline-danger plain">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-close"></i> OMG, no!</label>
+						<p class="sub">Hover effect<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty primary hover">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Solid</label>
+</div>
+<div class="pretty o-success hover">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Outline</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty outline-success plain&quot;&gt;
+					<pre><code class="language-markup">&lt;div class=&quot;pretty primary hover&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Oh, yes!&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Solid&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty outline-danger plain&quot;&gt;
+&lt;div class=&quot;pretty o-success hover&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; OMG, no!&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Outline&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
-						<p class="sub">Animated Checkbox<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty smooth">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-check"></i> Jan</label>
-						</div>
-						<div class="pretty circle smooth">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-check-all"></i> Feb</label>
-						</div>
-						<div class="pretty warning smooth">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-check"></i> Mar</label>
-						</div>
-						<div class="pretty outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-close"></i> Apr</label>
+						<p class="sub">Checkbox without box<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty o-success plain">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-check"></i> Include</label>
+</div>
+<div class="pretty o-danger plain">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-close"></i> Ignore</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
+					<pre><code class="language-markup">&lt;div class=&quot;pretty o-success plain&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;/&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Include&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty o-danger plain&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;/&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Ignore&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+					<div class="example">
+						<p class="sub">Smooth Animation<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty smooth">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Jan</label>
+</div>
+<div class="pretty o-info circle smooth">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check-all"></i> Feb</label>
+</div>
+<div class="pretty danger smooth">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-close"></i> Mar</label>
+</div>
+<div class="pretty success circle smooth">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Apr</label>
+</div>
+						</div>
+					</div>
+					<div class="example-code">
 					<pre><code class="language-markup">&lt;div class=&quot;pretty smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Jan&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle smooth&quot;&gt;
+&lt;div class=&quot;pretty o-info circle smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check-all&quot;&gt;&lt;/i&gt; Feb&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty warning smooth&quot;&gt;
+&lt;div class=&quot;pretty danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Mar&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Mar&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty success circle smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; Apr&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Apr&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
-						<p class="sub">Disabled Checkbox<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty">
-						  <input type="checkbox" disabled>
-						  <label><i class="mdi mdi-check"></i> Disabled</label>
-						</div>
-						<div class="pretty circle">
-						  <input type="checkbox" disabled>
-						  <label><i class="mdi mdi-check"></i> Disabled</label>
-						</div>
-						<div class="pretty success">
-						  <input type="checkbox" checked disabled>
-						  <label><i class="mdi mdi-check"></i> Disabled</label>
+						<p class="sub">Crazy Animation<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty info circle a-bounce">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Bounce</label>
+</div>
+<div class="pretty info circle a-jelly">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Jelly</label>
+</div>
+<div class="pretty info curvy a-tada">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Tada</label>
+</div>
+<div class="pretty info curvy a-vibrate">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Vibrate</label>
+</div>
+<div class="pretty info curvy a-rotate">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> Rotate</label>
+</div>
+
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
+					<pre><code class="language-markup">&lt;div class=&quot;pretty info circle a-bounce&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Bounce&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty info circle a-jelly&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Jelly&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty info curvy a-tada&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Tada&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty info curvy a-vibrate&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Vibrate&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty info curvy a-rotate&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Rotate&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+					</div>
+					<div class="example">
+						<p class="sub">Disabled Checkbox<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty inline">
+  <input type="checkbox" disabled> 
+  <label><i class="mdi mdi-check"></i> Disabled</label>
+</div>
+<div class="pretty circle">
+  <input type="checkbox" disabled> 
+  <label><i class="mdi mdi-check"></i> Disabled</label>
+</div>
+<div class="pretty success">
+  <input type="checkbox" checked disabled> 
+  <label><i class="mdi mdi-check"></i> Disabled</label>
+</div>
+						</div>
+					</div>
+					<div class="example-code">
 					<pre><code class="language-markup">&lt;div class=&quot;pretty inline&quot;&gt;
   &lt;input type=&quot;checkbox&quot; disabled&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Disabled&lt;/label&gt;
@@ -369,14 +402,15 @@
 					<h3 id="toggle-checkbox">Toggle Checkbox</h3>
 					<div class="example">
 						<p class="sub">Toggle between icons<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty toggle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-microphone"></i> ON</label>
-						  <label><i class="mdi mdi-microphone-off"></i> OFF</label>
+						<div class="inaction">
+							<div class="pretty toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-microphone"></i> ON</label>
+  <label><i class="mdi mdi-microphone-off"></i> OFF</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty toggle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-microphone&quot;&gt;&lt;/i&gt; ON&lt;/label&gt;
@@ -385,14 +419,15 @@
 					</div>
 					<div class="example">
 						<p class="sub">Without box<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty plain toggle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-wifi"></i> WIFI ON</label>
-						  <label><i class="mdi mdi-wifi-off"></i> WIFI OFF</label>
+						<div class="inaction">
+							<div class="pretty plain toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-wifi"></i> WIFI ON</label>
+  <label><i class="mdi mdi-wifi-off"></i> WIFI OFF</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty plain toggle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-wifi&quot;&gt;&lt;/i&gt; WIFI ON&lt;/label&gt;
@@ -401,44 +436,66 @@
 					</div>
 					<div class="example">
 						<p class="sub">With colors<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty plain toggle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-eye info"></i> Preview</label>
-						  <label><i class="mdi mdi-eye-off info"></i> Preview</label>
-						</div>
-						<div class="pretty plain toggle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-play"></i> Play</label>
-						  <label><i class="mdi mdi-pause success"></i> Pause</label>
+						<div class="inaction">
+							<div class="pretty plain toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-eye"></i> Preview</label>
+  <label><i class="mdi mdi-eye-off"></i> Preview</label>
+</div>
+<div class="pretty plain toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-play"></i> Play</label>
+  <label><i class="mdi mdi-pause"></i> Pause</label>
+</div>
+<div class="pretty plain toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-email-outline"></i> Read</label>
+  <label><i class="mdi mdi-email-open-outline"></i> Unread</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty plain toggle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-eye info&quot;&gt;&lt;/i&gt; Preview&lt;/label&gt;
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-eye-off info&quot;&gt;&lt;/i&gt; Preview&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-eye&quot;&gt;&lt;/i&gt; Preview&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-eye-off&quot;&gt;&lt;/i&gt; Preview&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;pretty plain toggle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-play&quot;&gt;&lt;/i&gt; Play&lt;/label&gt;
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-pause success&quot;&gt;&lt;/i&gt; Pause&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-pause&quot;&gt;&lt;/i&gt; Pause&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty plain toggle&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;/&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-email-outline&quot;&gt;&lt;/i&gt; Read&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-email-open-outline&quot;&gt;&lt;/i&gt; Unread&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
 						<p class="sub">With toggle colors<span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty plain toggle">
-						  <input type="checkbox"/>
-						  <label><i class="mdi mdi-thumb-up success"></i> Liked</label>
-						  <label><i class="mdi mdi-thumb-down danger"></i> Disliked</label>
+						<div class="inaction">
+							<div class="pretty plain toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-thumb-up success"></i> Good</label>
+  <label><i class="mdi mdi-thumb-down danger"></i> Bad</label>
+</div>
+<div class="pretty plain toggle">
+  <input type="checkbox"/> 
+  <label><i class="mdi mdi-reply info"></i> Reply</label>
+  <label><i class="mdi mdi-share warning"></i> Forward</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty plain toggle&quot;&gt;
   &lt;input type=&quot;checkbox&quot;/&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-thumb-up success&quot;&gt;&lt;/i&gt; Liked&lt;/label&gt;
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-thumb-down danger&quot;&gt;&lt;/i&gt; Disliked&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-thumb-up success&quot;&gt;&lt;/i&gt; Good&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-thumb-down danger&quot;&gt;&lt;/i&gt; Bad&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty plain toggle&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;/&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-reply info&quot;&gt;&lt;/i&gt; Reply&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-share warning&quot;&gt;&lt;/i&gt; Forward&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 				</section>
@@ -448,21 +505,20 @@
 						<p class="sub">Basic Radio buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty circle">
-							  <input type="radio" name="radio1">
-							  <label><i class="default"></i> Male</label>
-							</div>
-							<div class="pretty circle">
-							  <input type="radio" name="radio1">
-							  <label><i class="default"></i> Female</label>
-							</div>
-							<div class="pretty circle">
-							  <input type="radio" name="radio1">
-							  <label><i class="default"></i> Special</label>
-							</div>
+  <input type="radio" name="radio1"> 
+  <label><i class="default"></i> Male</label>
+</div>
+<div class="pretty circle">
+  <input type="radio" name="radio1"> 
+  <label><i class="default"></i> Female</label>
+</div>
+<div class="pretty circle">
+  <input type="radio" name="radio1"> 
+  <label><i class="default"></i> Special</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty circle&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio1&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;default&quot;&gt;&lt;/i&gt; Male&lt;/label&gt;
@@ -480,29 +536,28 @@
 						<p class="sub">With colors  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty circle primary">
-							  <input type="radio" name="radio19">
-							  <label><i class="default"></i> Primary</label>
-							</div>
-							<div class="pretty circle success">
-							  <input type="radio" name="radio19">
-							  <label><i class="default"></i> Success</label>
-							</div>
-							<div class="pretty circle info">
-							  <input type="radio" name="radio19">
-							  <label><i class="default"></i> Info</label>
-							</div>
-							<div class="pretty circle warning">
-							  <input type="radio" name="radio19">
-							  <label><i class="default"></i> Warning</label>
-							</div>
-							<div class="pretty circle danger">
-							  <input type="radio" name="radio19">
-							  <label><i class="default"></i> Danger</label>
-							</div>
+  <input type="radio" name="radio19"> 
+  <label><i class="default"></i> Primary</label>
+</div>
+<div class="pretty circle success">
+  <input type="radio" name="radio19"> 
+  <label><i class="default"></i> Success</label>
+</div>
+<div class="pretty circle info">
+  <input type="radio" name="radio19"> 
+  <label><i class="default"></i> Info</label>
+</div>
+<div class="pretty circle warning">
+  <input type="radio" name="radio19"> 
+  <label><i class="default"></i> Warning</label>
+</div>
+<div class="pretty circle danger">
+  <input type="radio" name="radio19"> 
+  <label><i class="default"></i> Danger</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty circle primary&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio19&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;default&quot;&gt;&lt;/i&gt; Primary&lt;/label&gt;
@@ -527,22 +582,21 @@
 					<div class="example">
 						<p class="sub">Boxed Radio buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
-							<div class="pretty">
-							  <input type="radio" name="radio2">
-							  <label><i class="default"></i> Male</label>
-							</div>
-							<div class="pretty">
-							  <input type="radio" name="radio2">
-							  <label><i class="default"></i> Female</label>
-							</div>
-							<div class="pretty">
-							  <input type="radio" name="radio2">
-							  <label><i class="default"></i> Special</label>
-							</div>
+							<div class="pretty inline">
+  <input type="radio" name="radio2"> 
+  <label><i class="mdi mdi-check"></i> Male</label>
+</div>
+<div class="pretty inline">
+  <input type="radio" name="radio2"> 
+  <label><i class="mdi mdi-check"></i> Female</label>
+</div>
+<div class="pretty inline">
+  <input type="radio" name="radio2"> 
+  <label><i class="mdi mdi-check"></i> Special</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty inline&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio2&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Male&lt;/label&gt;
@@ -560,29 +614,28 @@
 						<p class="sub">With colors  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty primary">
-							  <input type="radio" name="radio18">
-							  <label><i class="default"></i> Primary</label>
-							</div>
-							<div class="pretty success">
-							  <input type="radio" name="radio18">
-							  <label><i class="default"></i> Success</label>
-							</div>
-							<div class="pretty info">
-							  <input type="radio" name="radio18">
-							  <label><i class="default"></i> Info</label>
-							</div>
-							<div class="pretty warning">
-							  <input type="radio" name="radio18">
-							  <label><i class="default"></i> Warning</label>
-							</div>
-							<div class="pretty danger">
-							  <input type="radio" name="radio18">
-							  <label><i class="default"></i> Danger</label>
-							</div>
+  <input type="radio" name="radio18"> 
+  <label><i class="default"></i> Primary</label>
+</div>
+<div class="pretty success">
+  <input type="radio" name="radio18"> 
+  <label><i class="default"></i> Success</label>
+</div>
+<div class="pretty info">
+  <input type="radio" name="radio18"> 
+  <label><i class="default"></i> Info</label>
+</div>
+<div class="pretty warning">
+  <input type="radio" name="radio18"> 
+  <label><i class="default"></i> Warning</label>
+</div>
+<div class="pretty danger">
+  <input type="radio" name="radio18"> 
+  <label><i class="default"></i> Danger</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty primary&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio18&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;default&quot;&gt;&lt;/i&gt; Primary&lt;/label&gt;
@@ -608,29 +661,28 @@
 						<p class="sub">Color Radio buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty circle primary">
-							  <input type="radio" name="radio3">
-							  <label><i class="mdi mdi-check"></i> Primary</label>
-							</div>
-							<div class="pretty circle success">
-							  <input type="radio" name="radio3">
-							  <label><i class="mdi mdi-check"></i> Success</label>
-							</div>
-							<div class="pretty circle info">
-							  <input type="radio" name="radio3">
-							  <label><i class="mdi mdi-check"></i> Info</label>
-							</div>
-							<div class="pretty circle warning">
-							  <input type="radio" name="radio3">
-							  <label><i class="mdi mdi-check"></i> Warning</label>
-							</div>
-							<div class="pretty circle danger">
-							  <input type="radio" name="radio3">
-							  <label><i class="mdi mdi-check"></i> Danger</label>
-							</div>
+  <input type="radio" name="radio3"> 
+  <label><i class="mdi mdi-check"></i> Primary</label>
+</div>
+<div class="pretty circle success">
+  <input type="radio" name="radio3"> 
+  <label><i class="mdi mdi-check"></i> Success</label>
+</div>
+<div class="pretty circle info">
+  <input type="radio" name="radio3"> 
+  <label><i class="mdi mdi-check"></i> Info</label>
+</div>
+<div class="pretty circle warning">
+  <input type="radio" name="radio3"> 
+  <label><i class="mdi mdi-check"></i> Warning</label>
+</div>
+<div class="pretty circle danger">
+  <input type="radio" name="radio3"> 
+  <label><i class="mdi mdi-check"></i> Danger</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty circle primary&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio3&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; Primary&lt;/label&gt;
@@ -655,150 +707,193 @@
 					<div class="example">
 						<p class="sub">Outline color Radio buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
-							<div class="pretty circle outline-primary">
-							  <input type="radio" name="radio4">
-							  <label><i class="mdi mdi-check"></i> $10</label>
-							</div>
-							<div class="pretty circle outline-success">
-							  <input type="radio" name="radio4">
-							  <label><i class="mdi mdi-check-all"></i> $50</label>
-							</div>
-							<div class="pretty circle outline-info">
-							  <input type="radio" name="radio4">
-							  <label><i class="mdi mdi-close"></i> $100</label>
-							</div>
-							<div class="pretty circle outline-warning">
-							  <input type="radio" name="radio4">
-							  <label><i class="mdi mdi-chevron-double-right"></i> $500</label>
-							</div>
-							<div class="pretty circle outline-danger">
-							  <input type="radio" name="radio4">
-							  <label><i class="mdi mdi-plus"></i> $1000</label>
-							</div>
+							<div class="pretty circle o-primary">
+  <input type="radio" name="radio4"> 
+  <label><i class="mdi mdi-check"></i> $10</label>
+</div>
+<div class="pretty circle o-success">
+  <input type="radio" name="radio4"> 
+  <label><i class="mdi mdi-check"></i> $50</label>
+</div>
+<div class="pretty circle o-info">
+  <input type="radio" name="radio4"> 
+  <label><i class="mdi mdi-check"></i> $100</label>
+</div>
+<div class="pretty circle o-warning">
+  <input type="radio" name="radio4"> 
+  <label><i class="mdi mdi-check"></i> $500</label>
+</div>
+<div class="pretty circle o-danger">
+  <input type="radio" name="radio4"> 
+  <label><i class="mdi mdi-check"></i> $1000</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty circle outline-primary&quot;&gt;
+					<pre><code class="language-markup">&lt;div class=&quot;pretty circle o-primary&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; $10&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle outline-success&quot;&gt;
+&lt;div class=&quot;pretty circle o-success&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot;&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-check-all&quot;&gt;&lt;/i&gt; $50&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; $50&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle outline-info&quot;&gt;
+&lt;div class=&quot;pretty circle o-info&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot;&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; $100&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; $100&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle outline-warning&quot;&gt;
+&lt;div class=&quot;pretty circle o-warning&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot;&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-chevron-double-right&quot;&gt;&lt;/i&gt; $500&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; $500&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle outline-danger&quot;&gt;
+&lt;div class=&quot;pretty circle o-danger&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot;&gt; 
-  &lt;label&gt;&lt;i class=&quot;mdi mdi-plus&quot;&gt;&lt;/i&gt; $1000&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; $1000&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
 						<p class="sub">Without Border Radio buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
-							<div class="pretty circle plain outline-primary">
-							  <input type="radio" name="radio5">
-							  <label><i class="mdi mdi-human"></i> Single</label>
-							</div>
-							<div class="pretty circle plain outline-success">
-							  <input type="radio" name="radio5">
-							  <label><i class="mdi mdi-human-male-female"></i> Married</label>
-							</div>
-							<div class="pretty circle plain outline-info">
-							  <input type="radio" name="radio5">
-							  <label><i class="mdi mdi-heart"></i> In relationship</label>
-							</div>
+							<div class="pretty circle plain o-primary">
+  <input type="radio" name="radio5"> 
+  <label><i class="mdi mdi-human"></i> Single</label>
+</div>
+<div class="pretty circle plain o-success">
+  <input type="radio" name="radio5"> 
+  <label><i class="mdi mdi-human-male-female"></i> Married</label>
+</div>
+<div class="pretty circle plain o-info">
+  <input type="radio" name="radio5"> 
+  <label><i class="mdi mdi-heart"></i> In relationship</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty circle plain outline-primary&quot;&gt;
+					<pre><code class="language-markup">&lt;div class=&quot;pretty circle plain o-primary&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio5&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-human&quot;&gt;&lt;/i&gt; Single&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-success&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-success&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio5&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-human-male-female&quot;&gt;&lt;/i&gt; Married&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-info&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-info&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio5&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-heart&quot;&gt;&lt;/i&gt; In relationship&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
-						<p class="sub">Animated  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<p class="sub">Smooth animation  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
-							<div class="pretty circle smooth outline-primary">
-							  <input type="radio" name="radio44">
-							  <label><i class="mdi mdi-emoticon-cool"></i> Cool</label>
-							</div>
-							<div class="pretty circle smooth outline-success">
-							  <input type="radio" name="radio44">
-							  <label><i class="mdi mdi-emoticon"></i> Emotion</label>
-							</div>
-							<div class="pretty circle smooth outline-info">
-							  <input type="radio" name="radio44">
-							  <label><i class="mdi mdi-emoticon-happy"></i> Happy</label>
-							</div>
-							<div class="pretty circle smooth outline-warning">
-							  <input type="radio" name="radio44">
-							  <label><i class="mdi mdi-emoticon-neutral"></i> Neutral</label>
-							</div>
-							<div class="pretty circle smooth outline-danger">
-							  <input type="radio" name="radio44">
-							  <label><i class="mdi mdi-emoticon-devil"></i> Devil</label>
-							</div>
+							<div class="pretty circle smooth o-primary">
+  <input type="radio" name="radio44"> 
+  <label><i class="mdi mdi-emoticon-cool"></i> Cool</label>
+</div>
+<div class="pretty circle smooth o-success">
+  <input type="radio" name="radio44"> 
+  <label><i class="mdi mdi-emoticon"></i> Emotion</label>
+</div>
+<div class="pretty circle smooth o-info">
+  <input type="radio" name="radio44"> 
+  <label><i class="mdi mdi-emoticon-happy"></i> Happy</label>
+</div>
+<div class="pretty circle smooth o-warning">
+  <input type="radio" name="radio44"> 
+  <label><i class="mdi mdi-emoticon-neutral"></i> Neutral</label>
+</div>
+<div class="pretty circle smooth o-danger">
+  <input type="radio" name="radio44"> 
+  <label><i class="mdi mdi-emoticon-devil"></i> Devil</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
-					<pre><code class="language-markup">&lt;div class=&quot;pretty circle smooth outline-primary&quot;&gt;
+					<pre><code class="language-markup">&lt;div class=&quot;pretty circle smooth o-primary&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio44&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-emoticon-cool&quot;&gt;&lt;/i&gt; Cool&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle smooth outline-success&quot;&gt;
+&lt;div class=&quot;pretty circle smooth o-success&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio44&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-emoticon&quot;&gt;&lt;/i&gt; Emotion&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle smooth outline-info&quot;&gt;
+&lt;div class=&quot;pretty circle smooth o-info&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio44&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-emoticon-happy&quot;&gt;&lt;/i&gt; Happy&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle smooth outline-warning&quot;&gt;
+&lt;div class=&quot;pretty circle smooth o-warning&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio44&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-emoticon-neutral&quot;&gt;&lt;/i&gt; Neutral&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle smooth outline-danger&quot;&gt;
+&lt;div class=&quot;pretty circle smooth o-danger&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio44&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-emoticon-devil&quot;&gt;&lt;/i&gt; Devil&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+					<div class="example"> 
+						<p class="sub">Crazy animation  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty circle a-tada smooth o-primary">
+  <input type="radio" name="radio66"> 
+  <label><i class="mdi mdi-weather-lightning"></i> Lightning</label>
+</div>
+<div class="pretty circle a-rotate smooth o-success"> 
+  <input type="radio" name="radio66"> 
+  <label><i class="mdi mdi-weather-partlycloudy"></i> Cloudy</label>
+</div>
+<div class="pretty circle a-bounce smooth o-info">
+  <input type="radio" name="radio66"> 
+  <label><i class="mdi mdi-weather-pouring"></i> Raining</label>
+</div>
+<div class="pretty circle a-jelly smooth o-warning">
+  <input type="radio" name="radio66"> 
+  <label><i class="mdi mdi-weather-snowy"></i> Snowy</label>
+</div>
+<div class="pretty circle a-vibrate smooth o-danger">
+  <input type="radio" name="radio66"> 
+  <label><i class="mdi mdi-weather-windy-variant"></i> Windy</label>
+</div>
+						</div>
+					</div>
+					<div class="example-code">
+					<pre><code class="language-markup">&lt;div class=&quot;pretty circle a-tada smooth o-primary&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio66&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-weather-lightning&quot;&gt;&lt;/i&gt; Lightning&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty circle a-rotate smooth o-success&quot;&gt; 
+  &lt;input type=&quot;radio&quot; name=&quot;radio66&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-weather-partlycloudy&quot;&gt;&lt;/i&gt; Cloudy&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty circle a-bounce smooth o-info&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio66&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-weather-pouring&quot;&gt;&lt;/i&gt; Raining&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty circle a-jelly smooth o-warning&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio66&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-weather-snowy&quot;&gt;&lt;/i&gt; Snowy&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty circle a-vibrate smooth o-danger&quot;&gt;
+  &lt;input type=&quot;radio&quot; name=&quot;radio66&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;mdi mdi-weather-windy-variant&quot;&gt;&lt;/i&gt; Windy&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
 					<div class="example">
 						<p class="sub">Disabled Radio buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty circle">
-							  <input type="radio" name="radio6" disabled>
-							  <label><i class="mdi mdi-gender-male"></i> Today</label>
-							</div>
-							<div class="pretty circle info">
-							  <input type="radio" name="radio6" checked disabled>
-							  <label><i class="mdi mdi-check"></i> Tomorrow</label>
-							</div>
-							<div class="pretty circle">
-							  <input type="radio" name="radio6" disabled>
-							  <label><i class="mdi mdi-gender-male-female"></i> Next week</label>
-							</div>
+  <input type="radio" name="radio6" disabled> 
+  <label><i class="mdi mdi-gender-male"></i> Today</label>
+</div>
+<div class="pretty circle info">
+  <input type="radio" name="radio6" checked disabled> 
+  <label><i class="mdi mdi-check"></i> Tomorrow</label>
+</div>
+<div class="pretty circle">
+  <input type="radio" name="radio6" disabled> 
+  <label><i class="mdi mdi-gender-male-female"></i> Next week</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty circle&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio6&quot; disabled&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-gender-male&quot;&gt;&lt;/i&gt; Today&lt;/label&gt;
@@ -819,24 +914,23 @@
 						<p class="sub">Toggle icons buttons  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty circle plain toggle">
-							  <input type="radio" name="radio8">
-							  <label><i class="mdi mdi-bluetooth-off"></i> Bluetooth</label>
-							  <label><i class="mdi mdi-bluetooth success"></i> Bluetooth</label>
-							</div>
-							<div class="pretty circle plain toggle">
-							  <input type="radio" name="radio8">
-							  <label><i class="mdi mdi-wifi-off"></i> Wifi</label>
-							  <label><i class="mdi mdi-wifi info"></i> Wifi</label>
-							</div>
-							<div class="pretty circle plain toggle">
-							  <input type="radio" name="radio8">
-							  <label><i class="mdi mdi-ethernet-cable-off"></i> Ethernet</label>
-							  <label><i class="mdi mdi-ethernet-cable danger"></i> Ethernet</label>
-							</div>
+  <input type="radio" name="radio8"> 
+  <label><i class="mdi mdi-bluetooth-off"></i> Bluetooth</label>
+  <label><i class="mdi mdi-bluetooth success"></i> Bluetooth</label>
+</div>
+<div class="pretty circle plain toggle">
+  <input type="radio" name="radio8"> 
+  <label><i class="mdi mdi-wifi-off"></i> Wifi</label>
+  <label><i class="mdi mdi-wifi info"></i> Wifi</label>
+</div>
+<div class="pretty circle plain toggle">
+  <input type="radio" name="radio8"> 
+  <label><i class="mdi mdi-ethernet-cable-off"></i> Ethernet</label>
+  <label><i class="mdi mdi-ethernet-cable danger"></i> Ethernet</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty circle plain toggle&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio8&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-bluetooth-off&quot;&gt;&lt;/i&gt; Bluetooth&lt;/label&gt;
@@ -857,19 +951,18 @@
 						<p class="sub">Without labels  <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty circle plain toggle">
-							  <input type="radio" name="radio9" checked>
-							  <label><i class="mdi mdi-microphone-off"></i></label>
-							  <label><i class="mdi mdi-microphone danger"></i></label>
-							</div>
-							<div class="pretty circle plain toggle">
-							  <input type="radio" name="radio9">
-							  <label><i class="mdi mdi-microphone-off"></i></label>
-							  <label><i class="mdi mdi-microphone danger"></i></label>
-							</div>
+  <input type="radio" name="radio9" checked> 
+  <label><i class="mdi mdi-microphone-off"></i></label>
+  <label><i class="mdi mdi-microphone danger"></i></label>
+</div>
+<div class="pretty circle plain toggle">
+  <input type="radio" name="radio9"> 
+  <label><i class="mdi mdi-microphone-off"></i></label>
+  <label><i class="mdi mdi-microphone danger"></i></label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty circle plain toggle&quot;&gt;
   &lt;input type=&quot;radio&quot; name=&quot;radio9&quot; checked&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-microphone-off&quot;&gt;&lt;/i&gt;&lt;/label&gt;
@@ -886,22 +979,23 @@
 					<h3 id="custom-font">Custom Fonts libraries</h3>
 					<div class="example">
 						<p class="sub">Fontawesome <a href="http://fontawesome.io/icons/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty success smooth">
-						  <input type="checkbox">
-						  <label><i class="fa fa-check"></i> fa-check</label>
-						</div>
-						<div class="pretty circle plain outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="fa fa-close"></i> fa-close</label>
-						</div>
-						<div class="pretty plain smooth toggle">
-						  <input type="checkbox">
-						  <label><i class="fa fa-heart-o"></i> fa-heart-o</label>
-						  <label><i class="fa fa-heart info"></i> fa-heart</label>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="fa fa-check"></i> fa-check</label>
+</div>
+<div class="pretty circle plain outline-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="fa fa-close"></i> fa-close</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="fa fa-heart-o"></i> fa-heart-o</label>
+  <label><i class="fa fa-heart info"></i> fa-heart</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; fa-check&lt;/label&gt;
@@ -918,22 +1012,23 @@
 					</div>
 					<div class="example">
 						<p class="sub">Bootstrap Glyphicons <a href="http://getbootstrap.com/components/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty success smooth">
-						  <input type="checkbox">
-						  <label><i class="glyphicon glyphicon-ok"></i> glyphicon-ok</label>
-						</div>
-						<div class="pretty circle plain outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="glyphicon glyphicon-remove"></i> glyphicon-remove</label>
-						</div>
-						<div class="pretty plain smooth toggle">
-						  <input type="checkbox">
-						  <label><i class="glyphicon glyphicon-heart-empty"></i> glyphicon-heart-empty</label>
-						  <label><i class="glyphicon glyphicon-heart info"></i> glyphicon-heart</label>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="glyphicon glyphicon-ok"></i> glyphicon-ok</label>
+</div>
+<div class="pretty circle plain outline-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="glyphicon glyphicon-remove"></i> glyphicon-remove</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="glyphicon glyphicon-heart-empty"></i> glyphicon-heart-empty</label>
+  <label><i class="glyphicon glyphicon-heart info"></i> glyphicon-heart</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt; glyphicon-ok&lt;/label&gt;
@@ -950,22 +1045,23 @@
 					</div>
 					<div class="example">
 						<p class="sub">Material Design icons (mdi) <a href="https://materialdesignicons.com" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty success smooth">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-check"></i> mdi-check</label>
-						</div>
-						<div class="pretty circle plain outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-close"></i> mdi-close</label>
-						</div>
-						<div class="pretty plain smooth toggle">
-						  <input type="checkbox">
-						  <label><i class="mdi mdi-heart-outline"></i> mdi-heart-outline</label>
-						  <label><i class="mdi mdi-heart info"></i> mdi-heart</label>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-check"></i> mdi-check</label>
+</div>
+<div class="pretty circle plain outline-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-close"></i> mdi-close</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="mdi mdi-heart-outline"></i> mdi-heart-outline</label>
+  <label><i class="mdi mdi-heart info"></i> mdi-heart</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; mdi-check&lt;/label&gt;
@@ -982,22 +1078,23 @@
 					</div>
 					<div class="example">
 						<p class="sub">Material Design icons (zmdi) <a href="http://zavoloklom.github.io/material-design-iconic-font/icons.html" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty success smooth">
-						  <input type="checkbox">
-						  <label><i class="zmdi zmdi-check"></i> zmdi-check</label>
-						</div>
-						<div class="pretty circle plain outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="zmdi zmdi-close"></i> zmdi-close</label>
-						</div>
-						<div class="pretty plain smooth toggle">
-						  <input type="checkbox">
-						  <label><i class="zmdi zmdi-favorite-outline"></i> zmdi-favorite-outline</label>
-						  <label><i class="zmdi zmdi-favorite info"></i> zmdi-favorite</label>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="zmdi zmdi-check"></i> zmdi-check</label>
+</div>
+<div class="pretty circle plain outline-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="zmdi zmdi-close"></i> zmdi-close</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="zmdi zmdi-favorite-outline"></i> zmdi-favorite-outline</label>
+  <label><i class="zmdi zmdi-favorite info"></i> zmdi-favorite</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;zmdi zmdi-check&quot;&gt;&lt;/i&gt; zmdi-check&lt;/label&gt;
@@ -1014,22 +1111,23 @@
 					</div>
 					<div class="example">
 						<p class="sub">Typicons <a href="http://www.typicons.com/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty success smooth">
-						  <input type="checkbox">
-						  <label><i class="typcn typcn-tick"></i>typcn-tick</label>
-						</div>
-						<div class="pretty circle plain outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="typcn typcn-times"></i> typcn-times</label>
-						</div>
-						<div class="pretty plain smooth toggle">
-						  <input type="checkbox">
-						  <label><i class="typcn typcn-heart-outline"></i> typcn-heart-outline</label>
-						  <label><i class="typcn typcn-heart info"></i> typcn-heart</label>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="typcn typcn-tick"></i>typcn-tick</label>
+</div>
+<div class="pretty circle plain outline-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="typcn typcn-times"></i> typcn-times</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="typcn typcn-heart-outline"></i> typcn-heart-outline</label>
+  <label><i class="typcn typcn-heart info"></i> typcn-heart</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;typcn typcn-tick&quot;&gt;&lt;/i&gt;typcn-tick&lt;/label&gt;
@@ -1046,22 +1144,23 @@
 					</div>
 					<div class="example">
 						<p class="sub">Ionicons <a href="http://ionicons.com/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
-						<div class="pretty success smooth">
-						  <input type="checkbox">
-						  <label><i class="ion-checkmark-round"></i> ion-checkmark-round</label>
-						</div>
-						<div class="pretty circle plain outline-danger smooth">
-						  <input type="checkbox">
-						  <label><i class="ion-close-round"></i> ion-close-round</label>
-						</div>
-						<div class="pretty plain smooth toggle">
-						  <input type="checkbox">
-						  <label><i class="ion-ios-heart-outline"></i> ion-ios-heart-outline</label>
-						  <label><i class="ion-ios-heart info"></i> ion-ios-heart</label>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="ion-checkmark-round"></i> ion-checkmark-round</label>
+</div>
+<div class="pretty circle plain outline-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="ion-close-round"></i> ion-close-round</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="ion-ios-heart-outline"></i> ion-ios-heart-outline</label>
+  <label><i class="ion-ios-heart info"></i> ion-ios-heart</label>
+</div>
 						</div>
 					</div>
 					<div class="example-code">
-					<p class="sub">code</p>
 					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;ion-checkmark-round&quot;&gt;&lt;/i&gt; ion-checkmark-round&lt;/label&gt;
@@ -1079,35 +1178,41 @@
 					<p>also supports other libraries and custom font icons...</p>
 				</section>
 				<section>
-					<h3>Sass variables</h3>
+					<h3>SCSS variables</h3>
 					<div class="example">
             <p class="sub">Basic settings</p>
-					</div>
-          <div class="example-code show">
-  					<pre><code class="language-css">$pretty--class-name: notsopretty;
-// &lt;div class="nosopretty circle"&gt;
+            <div class="inaction">
+            	<pre class="inline"><code class="language-css">$pretty--class-name: notsopretty; 
+/* &lt;div class=&quot;notsopretty circle&quot;&gt; */
+
+$pretty--border-radius: 0;
 
 $pretty--color-primary: #428bca;
 $pretty--color-success: #5cb85c;
-$pretty--color-danger: #d9534f;
 $pretty--color-info: #5bc0de;
 $pretty--color-warning: #f0ad4e;
+$pretty--color-danger: #d9534f;
 
-$pretty--border-radius: 2px;
+$pretty--color-border: #b9b9b9;
+$pretty--color-radio: #b9b9b9;
+$pretty--color-bg: #fff;
 </code></pre>
-  				</div>
-					<p>Note: Import the pretty.scss file after declaring the variables</p>
+            </div>
+					</div>
+					<p>Note: Import the <code class="simple">pretty.scss</code> file after declaring the variables</p>
 				</section>
 				<section>
-					<h3>Scalable</h3>
+					<h3>More</h3>
 					<div class="example">
 						<p class="sub">Try changing the font size </p>
-						<div class="inaction">
-							<div class="font-size-changer">
-								<span class="btn btn-action plus"><i class="mdi mdi-plus"></i> Increase</span>
-								<span class="btn btn-action minus"><i class="mdi mdi-minus"></i> Decrease</span>
-								<span class="btn btn-action reset"><i class="mdi mdi-reload"></i> Reset</span>
+						<div class="font-size-changer">
+							<div class="btn-group" role="group" >
+							  <button type="button" class="btn btn-action plus"><i class="mdi mdi-plus"></i> Increase</button>
+							  <button type="button" class="btn btn-action minus"><i class="mdi mdi-minus"></i> Decrease</button>
+							  <button type="button" class="btn btn-action reset"><i class="mdi mdi-reload"></i> Reset</button>
 							</div>
+						</div>
+						<div class="inaction">
 							<div class="pretty danger smooth" id="customFontSize">
 							  <input type="checkbox"/>
 							  <label><i class="mdi mdi-check"></i> Solid</label>
@@ -1118,46 +1223,21 @@ $pretty--border-radius: 2px;
 							</div>
 						</div>
 					</div>
-				</section>
-				<section>
-					<h3 id="browser-compatability">Browser Compatability</h3>
 					<div class="example">
-						<p class="sub">Internet Explorer</p>
+						<p class="sub">Browser Compatability</p>
 						<div class="inaction">
-							<i class="mdi mdi-internet-explorer"></i> > = 9
+							<div class="browser"><img src="images/edge.png"> > = 10</div>
+							<div class="browser"><img src="images/firefox.png"> > = 3.6</div>
+							<div class="browser"><img src="images/chrome.png"> > = 14</div>
+							<div class="browser"><img src="images/safari.png"> > = 6</div>
+							<div class="browser"><img src="images/opera.png"> > = 11.6</div>
 						</div>
 					</div>
-					<div class="example">
-						<p class="sub">Google Chrome</p>
-						<div class="inaction">
-							<i class="mdi mdi-google-chrome"></i> > = 14
-						</div>
-					</div>
-					<div class="example">
-						<p class="sub">Mozilla Firefox</p>
-						<div class="inaction">
-							<i class="mdi mdi-firefox"></i> > = 3.6
-						</div>
-					</div>
-					<div class="example">
-						<p class="sub">Apple Safari</p>
-						<div class="inaction">
-							<i class="mdi mdi-apple-safari"></i> > = 6
-						</div>
-					</div>
-					<div class="example">
-						<p class="sub">Opera</p>
-						<div class="inaction">
-							<i class="mdi mdi-opera"></i> > = 11.6
-						</div>
-					</div>
-				</section>
-				<section>
-					<h3 id="thanks">Thanks</h3>
 					<div class="example">
 						<p class="sub">Inspiration</p>
 						<div class="inaction">
-							This project is inspired from <strong>Okendoken's</strong> <a href="https://github.com/flatlogic/awesome-bootstrap-checkbox" target="_blank">awesome-bootstrap-checkbox</a> library.
+							<i class="mdi mdi-chevron-right"></i> This project is inspired from <a href="https://github.com/flatlogic/awesome-bootstrap-checkbox" target="_blank">awesome-bootstrap-checkbox</a> library. <br>
+							<i class="mdi mdi-chevron-right"></i> Crazy animations are heavily inspired ( copied 😊  ) from <a href="http://animista.net" target="_blank">Animista</a> CSS animation generator.
 						</div>
 					</div>
 					<div class="example">
@@ -1169,8 +1249,28 @@ $pretty--border-radius: 2px;
 					<div class="example">
 						<p class="sub">Licence</p>
 						<div class="inaction">
-							The MIT License (MIT) <br>
-							You are free to do to anything with this code!
+							The MIT License (MIT)
+						</div>
+					</div>
+					<div class="example">
+						<p class="sub">You like it? Share!</p>
+						<div class="inaction">
+							<div class="social-share-links">
+								<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//lokesh-coder.github.io/pretty-checkbox/" target="_blank">
+									<i class="mdi mdi-facebook"></i>
+								</a>
+								<a href="https://twitter.com/home?status=Scalable%20CSS3%20pretty%20checkbox%20%26%20radio%20buttons%20with%20custom%20font%20icon%20library.%20No%20Javascript!%20https%3A//lokesh-coder.github.io/pretty-checkbox/%20%23prettyCheckbox" target="_blank">
+									<i class="mdi mdi-twitter"></i>
+								</a>
+
+								<a href="https://plus.google.com/share?url=https%3A//lokesh-coder.github.io/pretty-checkbox/" target="_blank">
+									<i class="mdi mdi-google-plus"></i>
+								</a>
+
+								<a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//lokesh-coder.github.io/pretty-checkbox/&title=PRETTY%20CHECKBOX&summary=No%20more%20boring%20old%20fashioned%20checkboxes.%20New%20scalable%20CSS3%20pretty%20checkbox%20and%20radio%20buttons%20with%20custom%20font%20icon%20library.%20No%20Javascript!&source=https%3A//github.com/lokesh-coder/pretty-checkbox" target="_blank">
+									<i class="mdi mdi-linkedin"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -1182,7 +1282,7 @@ $pretty--border-radius: 2px;
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script>
 		<script>
-			var size=16;
+			var size=14;
 			$('.btn-action.plus').click(function(){
 				if(size<100)size+=3;
 				$('.font-size-changer~div').attr('style','font-size:'+size+'px');
@@ -1192,14 +1292,17 @@ $pretty--border-radius: 2px;
 				$('.font-size-changer~div').attr('style','font-size:'+size+'px');
 			});
 			$('.btn-action.reset').click(function(){
-				size=16;
+				size=14; 
 				$('.font-size-changer~div').attr('style','font-size:'+size+'px');
 			});
 			$('.codetoggle').click(function(event){
 				event.preventDefault();
 				var text = $(this).find('a').text();
+				var icon = $(this).find('i').attr('class');
 				text= (text=='show code')?'hide code':'show code';
+				icon= (icon=='mdi mdi-code-tags')?'mdi mdi-chevron-double-up':'mdi mdi-code-tags';
 				$(this).find('a').text(text);
+				$(this).find('i').attr('class',icon);
 				$(this).first().parents('.example').next().slideToggle();
 			});
 		</script>

@@ -4,7 +4,8 @@
   "description": "Scalable css3 pretty checkbox and radio buttons",
   "main": "Gulpfile.js",
   "dependencies": {
-    "gulp-file-include": "^0.13.7"
+    "gulp-file-include": "^0.13.7",
+    "gulp-html-entities": "0.0.3"
   },
   "devDependencies": {
     "gulp-rename": "^1.2.2",

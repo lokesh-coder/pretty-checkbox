@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
+var entities = require('gulp-html-entities');
 var reload = browserSync.reload;
 var fileinclude = require('gulp-file-include');
 
@@ -48,11 +49,22 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('./'));
 });
 
+gulp.task('encode', function() {
+  return gulp.src('./codes/plain/*.html')
+    .pipe(entities('encode'))
+    .pipe(gulp.dest('./codes/encoded/'));
+});
+gulp.task('decode', function() {
+  return gulp.src('./codes/encoded/*.html')
+    .pipe(entities('decode'))
+    .pipe(gulp.dest('./codes/plain/'));
+});
+
 gulp.task('bs-reload', function() {
   browserSync.reload();
 });
 
 gulp.task('default', ['sass', 'browser-sync','fileinclude'], function() {
   gulp.watch("*.scss", ['sass', 'bs-reload']);
-  gulp.watch("*.html", ['fileinclude', 'bs-reload']);
+  gulp.watch("**/*.html", ['fileinclude', 'encode']);
 });
