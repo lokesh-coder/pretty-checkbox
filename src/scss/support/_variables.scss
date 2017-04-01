@@ -11,4 +11,8 @@ $pretty--color-border: #b9b9b9 !default;
 $pretty--color-radio: #b9b9b9 !default;
 $pretty--color-bg: #fff !default;
 
+$pretty--gmdi-class-name:'g-mdi';
+$pretty--gmdi-name:'Material Icons';
+$pretty--gmdi-attr:'data-icon';
+
 $outline-colors: (primary o-primary $pretty--color-primary, success o-success $pretty--color-success, info o-info $pretty--color-info, warning o-warning $pretty--color-warning, danger o-danger $pretty--color-danger);

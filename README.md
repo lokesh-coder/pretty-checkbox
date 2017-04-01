@@ -21,7 +21,7 @@ Add `pretty.min.css` in your html
 
 From CDN,
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.0/pretty.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty.min.css"/>
 ```
 or from the source,
 ```html
@@ -70,7 +70,7 @@ Refer the [Documentation](https://lokesh-coder.github.io/pretty-checkbox/) for o
 
 ### Custom font library
 
-This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` , `Bootstrap Glyphicon` , `Material Design icons (mdi)` , `Material Design icons (zmdi)` , `Typicons` , `Ionicons`.
+This library supports wide variety of font icon libraries. Currently tested with `FontAwesome` , `Bootstrap Glyphicon` , `Google Material Design icons(material.io)`, `Material Design icons (mdi)` , `Material Design icons (zmdi)` , `Typicons` , `Ionicons`.
 
 ### What else
 

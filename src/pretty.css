@@ -1,3 +1,17 @@
+.pretty > input + label > i.g-mdi:before,
+.pretty > input + label + label > i.g-mdi:before {
+  content: attr(data-icon);
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
 @media print {
   .pretty > input:not(:checked) + label i:before {
     -webkit-print-color-adjust: exact;

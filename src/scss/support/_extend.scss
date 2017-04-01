@@ -1,0 +1,14 @@
+.#{$pretty--class-name} {
+	& > input + label>i.#{$pretty--gmdi-class-name}:before,
+	& > input + label+label > i.#{$pretty--gmdi-class-name}:before{
+		content:attr(#{$pretty--gmdi-attr});
+		display: inline-block;
+	    font: normal normal normal 24px/1 $pretty--gmdi-name;
+	    font-size: inherit;
+	    text-rendering: auto;
+	    line-height: inherit;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    transform: translate(0, 0);
+	}
+}
