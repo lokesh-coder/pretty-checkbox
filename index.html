@@ -8,15 +8,17 @@
 		<meta name="keywords" content="checkbox,radio,bootstrap,css3,animations">
 		<meta name="author" content="Lokesh">
 		<title>Pretty Checkbox | Scalable next generation checkbox and radio buttons | Documentation </title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+		<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+		<link async href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 	  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.8.36/css/materialdesignicons.min.css"/>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css"/>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.0/pretty.min.css">
+	  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
+	  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css"/>
+	  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
+	  <link async href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty.min.css">
 		<link rel="stylesheet" href="./doc.css">
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -56,7 +58,7 @@
 				</div>
         <p><code class="simple">Alternatively</code>, you can also use CDN link</p>
         <div class="code">
-					<pre><code class="language-css">https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.0/pretty.min.css</code></pre>
+					<pre><code class="language-css">https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty.min.css</code></pre>
 				</div>
 				<p><strong>Step 2:</strong> Add <code class="simple">pretty.css</code> file in your html or import <code class="simple">pretty.scss</code> file in your css/sass file</p>
 				<div class="code">
@@ -976,14 +978,14 @@
 				</section>
 				<section>
 					<h3 id="custom-font">Custom Fonts libraries</h3>
-					<div class="example">
+					<div class="example" id="custom-font-fa">
 						<p class="sub">Fontawesome <a href="http://fontawesome.io/icons/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty success smooth">
   <input type="checkbox"> 
   <label><i class="fa fa-check"></i> fa-check</label>
 </div>
-<div class="pretty circle plain outline-danger smooth">
+<div class="pretty circle plain o-danger smooth">
   <input type="checkbox"> 
   <label><i class="fa fa-close"></i> fa-close</label>
 </div>
@@ -999,7 +1001,7 @@
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt; fa-check&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;fa fa-close&quot;&gt;&lt;/i&gt; fa-close&lt;/label&gt;
 &lt;/div&gt;
@@ -1009,14 +1011,14 @@
   &lt;label&gt;&lt;i class=&quot;fa fa-heart info&quot;&gt;&lt;/i&gt; fa-heart&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
-					<div class="example">
+					<div class="example" id="custom-font-glyph">
 						<p class="sub">Bootstrap Glyphicons <a href="http://getbootstrap.com/components/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty success smooth">
   <input type="checkbox"> 
   <label><i class="glyphicon glyphicon-ok"></i> glyphicon-ok</label>
 </div>
-<div class="pretty circle plain outline-danger smooth">
+<div class="pretty circle plain o-danger smooth">
   <input type="checkbox"> 
   <label><i class="glyphicon glyphicon-remove"></i> glyphicon-remove</label>
 </div>
@@ -1032,7 +1034,7 @@
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/i&gt; glyphicon-ok&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/i&gt; glyphicon-remove&lt;/label&gt;
 &lt;/div&gt;
@@ -1042,14 +1044,14 @@
   &lt;label&gt;&lt;i class=&quot;glyphicon glyphicon-heart info&quot;&gt;&lt;/i&gt; glyphicon-heart&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
-					<div class="example">
+					<div class="example" id="custom-font-mdi">
 						<p class="sub">Material Design icons (mdi) <a href="https://materialdesignicons.com" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty success smooth">
   <input type="checkbox"> 
   <label><i class="mdi mdi-check"></i> mdi-check</label>
 </div>
-<div class="pretty circle plain outline-danger smooth">
+<div class="pretty circle plain o-danger smooth">
   <input type="checkbox"> 
   <label><i class="mdi mdi-close"></i> mdi-close</label>
 </div>
@@ -1065,7 +1067,7 @@
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-check&quot;&gt;&lt;/i&gt; mdi-check&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;mdi mdi-close&quot;&gt;&lt;/i&gt; mdi-close&lt;/label&gt;
 &lt;/div&gt;
@@ -1075,14 +1077,14 @@
   &lt;label&gt;&lt;i class=&quot;mdi mdi-heart info&quot;&gt;&lt;/i&gt; mdi-heart&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
-					<div class="example">
+					<div class="example" id="custom-font-zmdi">
 						<p class="sub">Material Design icons (zmdi) <a href="http://zavoloklom.github.io/material-design-iconic-font/icons.html" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty success smooth">
   <input type="checkbox"> 
   <label><i class="zmdi zmdi-check"></i> zmdi-check</label>
 </div>
-<div class="pretty circle plain outline-danger smooth">
+<div class="pretty circle plain o-danger smooth">
   <input type="checkbox"> 
   <label><i class="zmdi zmdi-close"></i> zmdi-close</label>
 </div>
@@ -1098,7 +1100,7 @@
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;zmdi zmdi-check&quot;&gt;&lt;/i&gt; zmdi-check&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;zmdi zmdi-close&quot;&gt;&lt;/i&gt; zmdi-close&lt;/label&gt;
 &lt;/div&gt;
@@ -1108,14 +1110,14 @@
   &lt;label&gt;&lt;i class=&quot;zmdi zmdi-favorite info&quot;&gt;&lt;/i&gt; zmdi-favorite&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
-					<div class="example">
+					<div class="example" id="custom-font-typicons">
 						<p class="sub">Typicons <a href="http://www.typicons.com/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty success smooth">
   <input type="checkbox"> 
   <label><i class="typcn typcn-tick"></i>typcn-tick</label>
 </div>
-<div class="pretty circle plain outline-danger smooth">
+<div class="pretty circle plain o-danger smooth">
   <input type="checkbox"> 
   <label><i class="typcn typcn-times"></i> typcn-times</label>
 </div>
@@ -1131,7 +1133,7 @@
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;typcn typcn-tick&quot;&gt;&lt;/i&gt;typcn-tick&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;typcn typcn-times&quot;&gt;&lt;/i&gt; typcn-times&lt;/label&gt;
 &lt;/div&gt;
@@ -1141,14 +1143,14 @@
   &lt;label&gt;&lt;i class=&quot;typcn typcn-heart info&quot;&gt;&lt;/i&gt; typcn-heart&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
-					<div class="example">
+					<div class="example" id="custom-font-ionicons">
 						<p class="sub">Ionicons <a href="http://ionicons.com/" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
 						<div class="inaction">
 							<div class="pretty success smooth">
   <input type="checkbox"> 
   <label><i class="ion-checkmark-round"></i> ion-checkmark-round</label>
 </div>
-<div class="pretty circle plain outline-danger smooth">
+<div class="pretty circle plain o-danger smooth">
   <input type="checkbox"> 
   <label><i class="ion-close-round"></i> ion-close-round</label>
 </div>
@@ -1164,7 +1166,7 @@
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;ion-checkmark-round&quot;&gt;&lt;/i&gt; ion-checkmark-round&lt;/label&gt;
 &lt;/div&gt;
-&lt;div class=&quot;pretty circle plain outline-danger smooth&quot;&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
   &lt;input type=&quot;checkbox&quot;&gt; 
   &lt;label&gt;&lt;i class=&quot;ion-close-round&quot;&gt;&lt;/i&gt; ion-close-round&lt;/label&gt;
 &lt;/div&gt;
@@ -1174,7 +1176,41 @@
   &lt;label&gt;&lt;i class=&quot;ion-ios-heart info&quot;&gt;&lt;/i&gt; ion-ios-heart&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 					</div>
-					<p>also supports other libraries and custom font icons...</p>
+					<div class="example" id="custom-font-gmdi">
+						<p class="sub">Google Material Design Icons <a href="https://material.io/icons" target="_blank"><i class="mdi mdi-link-variant"></i></a> <span class="codetoggle"><i class="mdi mdi-code-tags"></i> <a href="#">show code</a></span></p>
+						<div class="inaction">
+							<div class="pretty success smooth">
+  <input type="checkbox"> 
+  <label><i class="g-mdi" data-icon="done"></i> done</label>
+</div>
+<div class="pretty circle plain o-danger smooth">
+  <input type="checkbox"> 
+  <label><i class="g-mdi" data-icon="clear"></i> clear</label>
+</div>
+<div class="pretty plain smooth toggle">
+  <input type="checkbox"> 
+  <label><i class="g-mdi" data-icon="favorite_border"></i> favorite_border</label>
+  <label><i class="g-mdi info" data-icon="favorite"></i> favorite</label>
+</div>
+						</div>
+					</div>
+					<div class="example-code">
+					<pre><code class="language-markup">&lt;div class=&quot;pretty success smooth&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;g-mdi&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt; done&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty circle plain o-danger smooth&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;g-mdi&quot; data-icon=&quot;clear&quot;&gt;&lt;/i&gt; clear&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;pretty plain smooth toggle&quot;&gt;
+  &lt;input type=&quot;checkbox&quot;&gt; 
+  &lt;label&gt;&lt;i class=&quot;g-mdi&quot; data-icon=&quot;favorite_border&quot;&gt;&lt;/i&gt; favorite_border&lt;/label&gt;
+  &lt;label&gt;&lt;i class=&quot;g-mdi info&quot; data-icon=&quot;favorite&quot;&gt;&lt;/i&gt; favorite&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+					<p> Google material design icons are quite different from other icon fonts. So we need to add a class <code class="simple">g-mdi</code> and an attribute with the icon name <code class="simple">data-icon="icon_name"</code>.</p>
+					<p>Also supports other libraries and custom font icons...</p>
 				</section>
 				<section>
 					<h3>SCSS variables</h3>
@@ -1191,10 +1227,14 @@ $pretty--color-success: #5cb85c;
 $pretty--color-info: #5bc0de;
 $pretty--color-warning: #f0ad4e;
 $pretty--color-danger: #d9534f;
-
 $pretty--color-border: #b9b9b9;
 $pretty--color-radio: #b9b9b9;
 $pretty--color-bg: #fff;
+
+/* Google material design icons */
+$pretty--gmdi-class-name:&apos;g-mdi&apos;;
+$pretty--gmdi-name:&apos;Material Icons&apos;;
+$pretty--gmdi-attr:&apos;data-icon&apos;;
 </code></pre>
             </div>
 					</div>
