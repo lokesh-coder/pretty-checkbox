@@ -1,5 +1,7 @@
 # :heavy_check_mark: Pretty checkbox
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lokesh-coder/pretty-checkbox.svg)](https://greenkeeper.io/)
+
 No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. **Only CSS**!
 
 Check it out the [Demo](https://lokesh-coder.github.io/pretty-checkbox/) for complete documentation.
