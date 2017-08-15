@@ -30,14 +30,15 @@
         display: inline-block;
         box-sizing: initial;
         min-width: 1em;
-        margin-right: 2px;
+        margin-right: $pretty--i-margin-right;
         padding: 1px;
         text-align: center;
 
         &:before {
             position: relative;
             z-index: 999;
-            left: 0;
+            left: $pretty--border-size;
+            top: $pretty--border-size;
             display: inline-block;
             vertical-align: bottom;
             color: transparent;
@@ -52,7 +53,7 @@
             height: 100%;
             content: '\0000';
             color: transparent;
-            border: 1px solid $pretty--color-border;
+            border: $pretty--border-size solid $pretty--color-border;
             border-radius: $pretty--border-radius;
         }
     }
@@ -67,7 +68,7 @@
 
     & > input[type='radio'] + label > i.default {
         &:before {
-            left: 0;
+            left: $pretty--border-size;
             min-width: 1em;
             content: '\0000';
             color: transparent;
