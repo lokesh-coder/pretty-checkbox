@@ -1,3 +1,15 @@
+.pretty > input + label > i.g-mdi {
+  font-family: "Material Icons";
+  text-rendering: optimizelegibility;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  font-style: normal;
+  text-transform: none;
+  line-height: 1;
+  display: inline-block;
+  overflow: hidden;
+}
+
 .pretty > input + label > i.g-mdi:before,
 .pretty > input + label + label > i.g-mdi:before {
   content: attr(data-icon);
@@ -60,7 +72,7 @@
 .pretty > input[type='checkbox'],
 .pretty > input[type='radio'] {
   position: absolute;
-  z-index: 99999999;
+  z-index: 9;
   top: 0;
   left: 0;
   display: block;
@@ -84,7 +96,7 @@
 
 .pretty i:before {
   position: relative;
-  z-index: 999;
+  z-index: 8;
   left: 0;
   display: inline-block;
   vertical-align: bottom;
@@ -102,6 +114,7 @@
   color: transparent;
   border: 1px solid #b9b9b9;
   border-radius: 0;
+  box-sizing: border-box;
 }
 
 .pretty > input[type='checkbox']:checked + label > i:before,
@@ -137,11 +150,13 @@
   opacity: 0.5;
 }
 
+.pretty.plain > input[type='checkbox']:indeterminate ~ label > i > i:after,
 .pretty.plain > input[type='checkbox']:checked + label > i:after,
 .pretty.plain > input[type='radio']:checked + label > i:after {
   border-color: transparent;
 }
 
+.pretty.plain > input[type='checkbox']:indeterminate ~ label > i:after,
 .pretty.plain > input[type='checkbox'] + label + label > i:after,
 .pretty.plain > input[type='radio'] + label + label > i:after {
   border-color: transparent;
@@ -447,6 +462,15 @@
   color: inherit;
 }
 
+.pretty.toggle > input[type='checkbox'] ~ label.unsteady,
+.pretty.toggle > input[type='checkbox']:indeterminate ~ label:not(.unsteady) {
+  display: none;
+}
+
+.pretty.toggle > input[type='checkbox']:indeterminate ~ label.unsteady {
+  display: inline-block;
+}
+
 .pretty.toggle > input[type='checkbox'] + label + label,
 .pretty.toggle > input[type='radio'] + label + label {
   display: none;
@@ -533,14 +557,12 @@
 }
 
 .pretty.smooth i:before {
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
 .pretty.smooth i:after {
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 

@@ -13,7 +13,7 @@
     & > input[type='checkbox'],
     & > input[type='radio'] {
         position: absolute;
-        z-index: 99999999;
+        z-index: 9;
         top: 0;
         left: 0;
         display: block;
@@ -36,7 +36,7 @@
 
         &:before {
             position: relative;
-            z-index: 999;
+            z-index: 8;
             left: 0;
             display: inline-block;
             vertical-align: bottom;
@@ -54,6 +54,7 @@
             color: transparent;
             border: 1px solid $pretty--color-border;
             border-radius: $pretty--border-radius;
+            box-sizing: border-box;
         }
     }
 

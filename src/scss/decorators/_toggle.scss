@@ -5,6 +5,15 @@
         }
     }
 
+    & > input[type='checkbox']  ~ label.unsteady,
+    & > input[type='checkbox']:indeterminate  ~ label:not(.unsteady){
+        display: none
+    }
+
+    & > input[type='checkbox']:indeterminate  ~ label.unsteady{
+        display: inline-block;
+    }
+
     & > input[type='checkbox'] + label+label,
     & > input[type='radio'] + label+label {
         display: none;

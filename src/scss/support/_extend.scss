@@ -1,4 +1,14 @@
 .#{$pretty--class-name} {
+	& > input + label > i.#{$pretty--gmdi-class-name}{
+		font-family: $pretty--gmdi-name;
+		text-rendering: optimizelegibility;
+		font-feature-settings: "liga";
+		font-style: normal;
+		text-transform: none;
+		line-height: 1;
+		display: inline-block;
+		overflow: hidden;
+	}
 	& > input + label>i.#{$pretty--gmdi-class-name}:before,
 	& > input + label+label > i.#{$pretty--gmdi-class-name}:before{
 		content:attr(#{$pretty--gmdi-attr});

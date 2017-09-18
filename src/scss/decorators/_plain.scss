@@ -3,6 +3,8 @@
         & > i:after {}
     }
 
+
+    & > input[type='checkbox']:indeterminate ~ label > i,
     & > input[type='checkbox']:checked + label,
     & > input[type='radio']:checked + label {
         & > i:after {
@@ -10,6 +12,7 @@
         }
     }
 
+    & > input[type='checkbox']:indeterminate ~ label ,
     & > input[type='checkbox'] + label+label,
     & > input[type='radio'] + label+label {
         & > i:after {
