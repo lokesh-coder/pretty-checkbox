@@ -1,0 +1,19 @@
+$pretty--color-default:#bdc3c7 !default;
+$pretty--color-error:#f95e5e !default;
+$pretty--color-box-bg: $pretty--color-default !default;
+$pretty--color-box-border: $pretty--color-default !default;
+$pretty--radius-box: 0% !default;
+$pretty--box-width:1em;
+$pretty--box-height:1em;
+
+$primary:#428bca;
+$info:#5bc0de;
+$success:#5cb85c;
+$warning:#f0ad4e;
+$danger:#d9534f;
+
+$sets: (primary, $primary),
+        (info, $info),
+        (success, $success),
+        (warning, $warning),
+        (danger, $danger);

@@ -1,0 +1,21 @@
+.pretty.pretty-toggle {
+    input[type='checkbox']~.state {
+        &.on {
+            display: none;
+        }
+        &.off,
+        .icon,
+        .svg,
+        img {
+            display: inline-block;
+        }
+    }
+    input[type='checkbox']:checked~.state {
+        &.on {
+            display: inline-block;
+        }
+        &.off {
+            display: none;
+        }
+    }
+}

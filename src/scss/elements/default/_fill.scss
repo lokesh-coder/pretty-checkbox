@@ -1,0 +1,8 @@
+.pretty.pretty-default.fill {
+    input[type='checkbox']:checked+.state label {
+        &:after {
+            background-color: $pretty--color-box-bg;
+            transform: scale(1);
+        }
+    }
+}

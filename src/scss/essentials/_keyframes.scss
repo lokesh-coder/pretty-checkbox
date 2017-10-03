@@ -1,0 +1,71 @@
+@keyframes tada {
+    0% {
+        transform: scale(7);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: scale(1.5);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: scale(1.24);
+        animation-timing-function: ease-in;
+    }
+    89% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: scale(1.04);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes jelly {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateZ(-200px) rotate(-45deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0) rotate(0);
+        opacity: 1;
+    }
+}

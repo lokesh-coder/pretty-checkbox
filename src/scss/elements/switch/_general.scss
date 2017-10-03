@@ -1,0 +1,45 @@
+// switch
+.pretty.pretty-switch {
+    .state {
+        position: relative;
+        &:before {
+            content: '';
+            border: 1px solid $pretty--color-default;
+            border-radius: 10px;
+            width: 2em;
+            display: inline-block;
+            box-sizing: unset;
+            height: calc(#{$pretty--box-height} + 2px);
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        label {
+            text-indent: 1em;
+            &:before,
+            &:after {
+                transition: all 0.5s ease;
+                border-radius: 100%;
+                left: 0;
+                border-color: transparent;
+                transform: scale(0.8);
+                top: 0.1em;
+            }
+            &:after {
+                background-color: $pretty--color-default;
+            }
+        }
+    }
+    input[type='checkbox']:checked+.state {
+        &:before {
+            border-color: #2ecc71;
+        }
+        label:before {
+            opacity: 0;
+        }
+        label:after {
+            background-color: #2ecc71;
+            left: 1em;
+        }
+    }
+}

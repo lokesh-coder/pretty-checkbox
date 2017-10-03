@@ -1,0 +1,44 @@
+.pretty {          
+@each $set, $color in $sets {
+    input[type='checkbox']:checked+.state.pc-#{$set} {
+          .icon,
+          .svg svg,
+          .svg svg>* {
+              color: #fff;
+              stroke: #fff;
+          }
+          label {
+              &:after {
+                  background-color: $color !important;
+                  color: #fff;
+              }
+          }
+      }
+      input[type='checkbox']:checked+.state.pc-#{$set}-o {
+          .icon,
+          .svg svg,
+          .svg svg>* {
+              stroke: $color;
+              color: $color;
+          }
+          label {
+              &:before {
+                  border-color: $color !important;
+              }
+              &:after {
+                  background-color: $color !important;
+              }
+          }
+      }
+      &.pretty-icon,
+      &.pretty-svg {
+          input[type='checkbox']:checked+.state.pc-#{$set}-o {
+              label {
+                  &:after {
+                      background-color: transparent !important;
+                  }
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,52 @@
+.pretty * {
+    box-sizing: border-box;
+}
+
+// common
+.pretty {
+    position: relative;
+    display: inline-block;
+    margin-right: 1em;
+    input[type='checkbox'] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+    .state {
+        label {
+            position: relative;
+            text-indent: 0.3em;
+            font-weight: normal;
+            margin: 0;
+            text-indent: 1.5em;
+            &:before,
+            &:after {
+                content: '';
+                width: calc(#{$pretty--box-width} + 2px);
+                height: calc(#{$pretty--box-height} + 2px);
+                display: inline-block;
+                box-sizing: border-box;
+                border-radius: $pretty--radius-box;
+                border: 1px solid transparent;
+                z-index: 0; // note
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: 0.2em;
+                
+            }
+            &:before {
+                background-color: transparent;
+                border-color: $pretty--color-box-border;
+                margin-right: 0.1em;
+            }
+        }
+    }
+}

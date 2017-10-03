@@ -1,0 +1,24 @@
+// svg
+.pretty.pretty-svg {
+    .state {
+        .svg {
+            display: none;
+            position: absolute;
+            font-size: 1em;
+            width: calc(1em + 2px);
+            height: calc(1em + 2px);
+            top: 0;
+            left: 0;
+            z-index: 0;
+            text-align: center;
+            line-height: normal;
+        }
+        svg {
+            width: calc(1em + 2px);
+            height: calc(1em + 2px);
+        }
+    }
+    input[type='checkbox']:checked+.state .svg {
+        display: inline-block;
+    }
+}

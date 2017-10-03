@@ -1,0 +1,15 @@
+.pretty.pretty-round {
+    input[type='checkbox']+.state label {
+        &:before,
+        &:after {
+            border-radius: 100%;
+        }
+    }
+    &.pretty-icon .state .icon {
+        border-radius: 100%;
+        overflow: hidden;
+        &:before {
+            transform: scale(0.8);
+        }
+    }
+}

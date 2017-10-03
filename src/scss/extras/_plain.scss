@@ -1,0 +1,9 @@
+.pretty.pretty-plain {
+    input[type='checkbox']:checked~.state label,
+    &.pretty-toggle input[type='checkbox']~.state label {
+        &:before {
+            background-color: transparent !important;
+            border-color: transparent !important;
+        }
+    }
+}

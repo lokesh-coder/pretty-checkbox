@@ -1,0 +1,17 @@
+.pretty.pretty-default.thick {
+    input[type='checkbox']+.state label {
+        &:before {
+            border-width: 0.13em;
+        }
+    }
+    input[type='checkbox']:checked+.state label {
+        &:before,
+        &:after {
+            border-width: 0.13em;
+        }
+        &:after {
+            background-color: $pretty--color-box-bg;
+            transform: scale(0.4);
+        }
+    }
+}

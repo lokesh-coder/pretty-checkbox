@@ -1,0 +1,16 @@
+// switch
+.pretty.pretty-switch.slim {
+    .state {
+        &:before {
+            height: 0.1em;
+            background: $pretty--color-default;
+            top: 0.56em;
+        }
+    }
+    input[type='checkbox']:checked+.state {
+        &:before {
+            border-color: #2ecc71;
+            background-color: #2ecc71;
+        }
+    }
+}

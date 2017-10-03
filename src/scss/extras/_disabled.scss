@@ -1,0 +1,9 @@
+.pretty {
+    input[type='checkbox'][disabled] {
+        display: none;
+        cursor: not-allowed;
+        &~* {
+            opacity: 0.5;
+        }
+    }
+}

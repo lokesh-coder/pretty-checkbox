@@ -1,0 +1,13 @@
+@media print {
+    .pretty {
+        .state {
+            &:before,
+            label:before,
+            label:after {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    }
+}

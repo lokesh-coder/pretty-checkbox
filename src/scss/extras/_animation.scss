@@ -1,0 +1,112 @@
+// animation
+.pretty.pretty-smooth-animation {
+    input[type='checkbox']+.state {
+        .icon,
+        .svg,
+        img {
+            display: inline-block;
+            transform: scale(0);
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        label:after {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+    }
+    input[type='checkbox']:checked+.state {
+        .icon,
+        .svg,
+        img,
+        label:after {
+            transform: scale(1);
+            opacity: 1;
+        }
+        img {
+            transform: scale(0.8);
+        }
+        label:after {
+            opacity: 1;
+        }
+    }
+}
+
+.pretty.pretty-tada-animation {
+    input[type='checkbox']+.state {
+        .icon,
+        .svg,
+        img {
+            display: inline-block;
+            opacity: 0;
+        }
+        label:after {
+            opacity: 0;
+        }
+    }
+    input[type='checkbox']:checked+.state {
+        .icon,
+        .svg,
+        img,
+        label:after {
+            animation: tada 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 alternate;
+            opacity: 1;
+        }
+        label:after {
+            opacity: 1;
+        }
+    }
+}
+
+.pretty.pretty-jelly-animation {
+    input[type='checkbox']+.state {
+        .icon,
+        .svg,
+        img {
+            display: inline-block;
+            opacity: 0;
+            animation-fill-mode: reverse;
+        }
+        label:after {
+            opacity: 0;
+        }
+    }
+    input[type='checkbox']:checked+.state {
+        .icon,
+        .svg,
+        img,
+        label:after {
+            animation: jelly 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both alternate;
+            opacity: 1;
+        }
+        label:before {
+            border-color: transparent;
+        }
+    }
+}
+
+.pretty.pretty-rotate-animation {
+    input[type='checkbox']+.state {
+        .icon,
+        .svg,
+        img {
+            display: inline-block;
+            opacity: 0;
+            animation-fill-mode: reverse;
+        }
+        label:after {
+            opacity: 0;
+        }
+    }
+    input[type='checkbox']:checked+.state {
+        .icon,
+        .svg,
+        img,
+        label:after {
+            animation: rotate 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both alternate;
+            opacity: 1;
+        }
+        label:before {
+            border-color: transparent;
+        }
+    }
+}
