@@ -6,6 +6,7 @@
   position: relative;
   display: inline-block;
   margin-right: 1em;
+  line-height: unset;
 }
 
 .pretty input[type='checkbox'] {
@@ -23,7 +24,7 @@
 
 .pretty .state label {
   position: relative;
-  text-indent: 0.3em;
+  display: inline-block;
   font-weight: normal;
   margin: 0;
   text-indent: 1.5em;
@@ -41,7 +42,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  margin-top: 0.2em;
+  top: calc(calc(50% - calc(100% - 1em)) - 1px);
 }
 
 .pretty .state label:before {
@@ -281,7 +282,7 @@
   z-index: 1;
   text-align: center;
   line-height: normal;
-  margin-top: 0.2em;
+  top: calc(calc(50% - calc(100% - 1em)) - 1px);
 }
 
 .pretty.pretty-icon .state .icon:before {
@@ -299,6 +300,9 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .pretty.pretty-icon input[type='checkbox']:checked + .state .icon {
@@ -317,6 +321,7 @@
   width: calc(1em + 2px);
   height: calc(1em + 2px);
   top: 0;
+  top: calc(calc(50% - calc(100% - 1em)) - 1px);
   left: 0;
   z-index: 0;
   text-align: center;
@@ -338,6 +343,7 @@
   width: calc(1em + 2px);
   height: calc(1em + 2px);
   top: 0;
+  top: calc(calc(50% - calc(100% - 1em)) - 2px);
   left: 0;
   z-index: 0;
   text-align: center;
@@ -364,11 +370,11 @@
   height: calc(1em + 2px);
   position: absolute;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .pretty.pretty-switch .state label {
-  text-indent: 1em;
+  text-indent: 2.5em;
 }
 
 .pretty.pretty-switch .state label:before, .pretty.pretty-switch .state label:after {
@@ -378,7 +384,6 @@
   border-color: transparent;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
-  top: 0.1em;
 }
 
 .pretty.pretty-switch .state label:after {
@@ -415,7 +420,7 @@
 .pretty.pretty-switch.slim .state:before {
   height: 0.1em;
   background: #bdc3c7;
-  top: 0.56em;
+  top: calc(50% - 1.5px);
 }
 
 .pretty.pretty-switch.slim input[type='checkbox']:checked + .state:before {

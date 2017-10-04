@@ -12,10 +12,10 @@
             height: calc(#{$pretty--box-height} + 2px);
             position: absolute;
             top: 0;
-            z-index: -1;
+            z-index: 0;
         }
         label {
-            text-indent: 1em;
+            text-indent: 2.5em;
             &:before,
             &:after {
                 transition: all 0.5s ease;
@@ -23,7 +23,6 @@
                 left: 0;
                 border-color: transparent;
                 transform: scale(0.8);
-                top: 0.1em;
             }
             &:after {
                 background-color: $pretty--color-default;

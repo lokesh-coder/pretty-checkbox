@@ -8,6 +8,7 @@
             width: calc(1em + 2px);
             height: calc(1em + 2px);
             top: 0;
+            top:calc(calc(50% - calc(100% - 1em)) - 1px);
             left: 0;
             z-index: 0;
             text-align: center;

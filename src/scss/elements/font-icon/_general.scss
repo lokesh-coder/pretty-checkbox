@@ -12,7 +12,7 @@
             z-index: 1;
             text-align: center;
             line-height: normal;
-            margin-top: 0.2em;
+            top:calc(calc(50% - calc(100% - 1em)) - 1px);
         }
         .icon:before {
             line-height: normal;
@@ -23,6 +23,7 @@
             display: flex;
             flex: 1;
             justify-content: center;
+            align-items: center;
         }
     }
     input[type='checkbox']:checked+.state {

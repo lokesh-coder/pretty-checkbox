@@ -4,7 +4,7 @@
         &:before {
             height: 0.1em;
             background: $pretty--color-default;
-            top: 0.56em;
+            top:calc(50% - 1.5px);
         }
     }
     input[type='checkbox']:checked+.state {
