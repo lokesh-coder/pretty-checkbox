@@ -5,14 +5,16 @@
         &:before {
             content: '';
             border: 1px solid $pretty--color-default;
-            border-radius: 10px;
+            border-radius: 60px;
             width: 2em;
             display: inline-block;
             box-sizing: unset;
             height: calc(#{$pretty--box-height} + 2px);
             position: absolute;
             top: 0;
+            top:calc(calc(50% - calc(100% - 1em)) - 2px);
             z-index: 0;
+            transition: all 0.5s ease;
         }
         label {
             text-indent: 2.5em;
