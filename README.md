@@ -1,6 +1,6 @@
-# :heavy_check_mark: Pretty checkbox
+# Pretty checkbox
 
-No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. **Only CSS**!
+a tiny **css library** to make your checkboxes and radio buttons more creative.
 
 ![alt text](./preview.png "Logo Title Text 1")
 
@@ -8,11 +8,8 @@ Check it out the [Demo](https://lokesh-coder.github.io/pretty-checkbox/) for com
 
 ### Get started
 
-Install the library from `bower` , `npm` or `yarn` package manager
+Install the library from `npm` or `yarn` package manager
 
-```sh
-> bower install pretty-checkbox
-```
 ```sh
 > npm install pretty-checkbox
 ```
@@ -23,7 +20,7 @@ Add `pretty.min.css` in your html
 
 From CDN,
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/3.0.0/pretty.min.css"/>
 ```
 or from the source,
 ```html
