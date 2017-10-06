@@ -52,6 +52,10 @@
   margin-right: 0.1em;
 }
 
+.pretty .state.--is-hover {
+  display: none;
+}
+
 @-webkit-keyframes tada {
   0% {
     -webkit-transform: scale(7);
@@ -246,19 +250,19 @@
   }
 }
 
-.pretty.--default.--fill input[type='checkbox']:checked + .state label:after {
+.pretty.--default.--fill input[type='checkbox']:checked ~ .state label:after {
   background-color: #bdc3c7;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.pretty.--default input[type='checkbox']:checked + .state label:after {
+.pretty.--default input[type='checkbox']:checked ~ .state label:after {
   background-color: #bdc3c7;
   -webkit-transform: scale(0.6);
   transform: scale(0.6);
 }
 
-.pretty.--default.--thick input[type='checkbox'] + .state label:before {
+.pretty.--default.--thick input[type='checkbox'] ~ .state label:before {
   border-width: 0.13em;
 }
 
@@ -306,12 +310,12 @@
   align-items: center;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state .icon {
+.pretty.--icon input[type='checkbox']:checked ~ .state .icon {
   display: inline-block;
   vertical-align: top;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state label:before {
+.pretty.--icon input[type='checkbox']:checked ~ .state label:before {
   border-color: #5a656b;
 }
 
@@ -334,7 +338,7 @@
   height: calc(1em + 2px);
 }
 
-.pretty.--svg input[type='checkbox']:checked + .state .svg {
+.pretty.--svg input[type='checkbox']:checked ~ .state .svg {
   display: inline-block;
 }
 
@@ -353,7 +357,7 @@
   transform: scale(0.8);
 }
 
-.pretty.--image input[type='checkbox']:checked + .state img {
+.pretty.--image input[type='checkbox']:checked ~ .state img {
   display: inline-block;
 }
 
@@ -393,29 +397,29 @@
   background-color: #bdc3c7;
 }
 
-.pretty.--switch input[type='checkbox']:checked + .state:before {
+.pretty.--switch input[type='checkbox']:checked ~ .state:before {
   border-color: #2ecc71;
 }
 
-.pretty.--switch input[type='checkbox']:checked + .state label:before {
+.pretty.--switch input[type='checkbox']:checked ~ .state label:before {
   opacity: 0;
 }
 
-.pretty.--switch input[type='checkbox']:checked + .state label:after {
+.pretty.--switch input[type='checkbox']:checked ~ .state label:after {
   background-color: #2ecc71;
   left: 1em;
 }
 
-.pretty.--switch.--fill input[type='checkbox']:checked + .state:before {
+.pretty.--switch.--fill input[type='checkbox']:checked ~ .state:before {
   border-color: #2ecc71;
   background-color: #2ecc71;
 }
 
-.pretty.--switch.--fill input[type='checkbox']:checked + .state label:before {
+.pretty.--switch.--fill input[type='checkbox']:checked ~ .state label:before {
   opacity: 0;
 }
 
-.pretty.--switch.--fill input[type='checkbox']:checked + .state label:after {
+.pretty.--switch.--fill input[type='checkbox']:checked ~ .state label:after {
   background-color: #fff;
   left: 1em;
 }
@@ -426,7 +430,7 @@
   top: calc(50% - 1.5px);
 }
 
-.pretty.--switch.--slim input[type='checkbox']:checked + .state:before {
+.pretty.--switch.--slim input[type='checkbox']:checked ~ .state:before {
   border-color: #2ecc71;
   background-color: #2ecc71;
 }
@@ -456,7 +460,7 @@
   border-color: transparent !important;
 }
 
-.pretty.--round input[type='checkbox'] + .state label:before, .pretty.--round input[type='checkbox'] + .state label:after {
+.pretty.--round input[type='checkbox'] ~ .state label:before, .pretty.--round input[type='checkbox'] ~ .state label:after {
   border-radius: 100%;
 }
 
@@ -470,7 +474,7 @@
   transform: scale(0.8);
 }
 
-.pretty.--curve input[type='checkbox'] + .state label:before, .pretty.--curve input[type='checkbox'] + .state label:after {
+.pretty.--curve input[type='checkbox'] ~ .state label:before, .pretty.--curve input[type='checkbox'] ~ .state label:after {
   border-radius: 20%;
 }
 
@@ -557,29 +561,29 @@
   border-color: transparent;
 }
 
-.pretty.--rotate input[type='checkbox'] + .state .icon,
-.pretty.--rotate input[type='checkbox'] + .state .svg,
-.pretty.--rotate input[type='checkbox'] + .state img {
+.pretty.--rotate input[type='checkbox'] ~ .state .icon,
+.pretty.--rotate input[type='checkbox'] ~ .state .svg,
+.pretty.--rotate input[type='checkbox'] ~ .state img {
   display: inline-block;
   opacity: 0;
   -webkit-animation-fill-mode: reverse;
   animation-fill-mode: reverse;
 }
 
-.pretty.--rotate input[type='checkbox'] + .state label:after {
+.pretty.--rotate input[type='checkbox'] ~ .state label:after {
   opacity: 0;
 }
 
-.pretty.--rotate input[type='checkbox']:checked + .state .icon,
-.pretty.--rotate input[type='checkbox']:checked + .state .svg,
-.pretty.--rotate input[type='checkbox']:checked + .state img,
-.pretty.--rotate input[type='checkbox']:checked + .state label:after {
+.pretty.--rotate input[type='checkbox']:checked ~ .state .icon,
+.pretty.--rotate input[type='checkbox']:checked ~ .state .svg,
+.pretty.--rotate input[type='checkbox']:checked ~ .state img,
+.pretty.--rotate input[type='checkbox']:checked ~ .state label:after {
   -webkit-animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 both alternate;
   animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 both alternate;
   opacity: 1;
 }
 
-.pretty.--rotate input[type='checkbox']:checked + .state label:before {
+.pretty.--rotate input[type='checkbox']:checked ~ .state label:before {
   border-color: transparent;
 }
 
@@ -592,158 +596,178 @@
   opacity: 0.5;
 }
 
-.pretty input[type='checkbox']:checked + .state.--primary .icon,
-.pretty input[type='checkbox']:checked + .state.--primary .svg svg,
-.pretty input[type='checkbox']:checked + .state.--primary .svg svg > * {
+.pretty input[type='checkbox']:checked ~ .state.--primary .icon,
+.pretty input[type='checkbox']:checked ~ .state.--primary .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--primary .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--primary label:after {
+.pretty input[type='checkbox']:checked ~ .state.--primary label:after {
   background-color: #428bca !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--primary-o .icon,
-.pretty input[type='checkbox']:checked + .state.--primary-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.--primary-o .svg svg > * {
+.pretty input[type='checkbox']:checked ~ .state.--primary-o .icon,
+.pretty input[type='checkbox']:checked ~ .state.--primary-o .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--primary-o .svg svg > * {
   stroke: #428bca;
   color: #428bca;
 }
 
-.pretty input[type='checkbox']:checked + .state.--primary-o label:before {
+.pretty input[type='checkbox']:checked ~ .state.--primary-o label:before {
   border-color: #428bca !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--primary-o label:after {
+.pretty input[type='checkbox']:checked ~ .state.--primary-o label:after {
   background-color: #428bca !important;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state.--primary-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--primary-o label:after {
+.pretty.--fill input[type='checkbox']:checked ~ .state.--primary-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--info .icon,
-.pretty input[type='checkbox']:checked + .state.--info .svg svg,
-.pretty input[type='checkbox']:checked + .state.--info .svg svg > * {
+.pretty.--icon input[type='checkbox']:checked ~ .state.--primary-o label:after, .pretty.--svg input[type='checkbox']:checked ~ .state.--primary-o label:after {
+  background-color: transparent !important;
+}
+
+.pretty input[type='checkbox']:checked ~ .state.--info .icon,
+.pretty input[type='checkbox']:checked ~ .state.--info .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--info .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--info label:after {
+.pretty input[type='checkbox']:checked ~ .state.--info label:after {
   background-color: #5bc0de !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--info-o .icon,
-.pretty input[type='checkbox']:checked + .state.--info-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.--info-o .svg svg > * {
+.pretty input[type='checkbox']:checked ~ .state.--info-o .icon,
+.pretty input[type='checkbox']:checked ~ .state.--info-o .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--info-o .svg svg > * {
   stroke: #5bc0de;
   color: #5bc0de;
 }
 
-.pretty input[type='checkbox']:checked + .state.--info-o label:before {
+.pretty input[type='checkbox']:checked ~ .state.--info-o label:before {
   border-color: #5bc0de !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--info-o label:after {
+.pretty input[type='checkbox']:checked ~ .state.--info-o label:after {
   background-color: #5bc0de !important;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state.--info-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--info-o label:after {
+.pretty.--fill input[type='checkbox']:checked ~ .state.--info-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--success .icon,
-.pretty input[type='checkbox']:checked + .state.--success .svg svg,
-.pretty input[type='checkbox']:checked + .state.--success .svg svg > * {
+.pretty.--icon input[type='checkbox']:checked ~ .state.--info-o label:after, .pretty.--svg input[type='checkbox']:checked ~ .state.--info-o label:after {
+  background-color: transparent !important;
+}
+
+.pretty input[type='checkbox']:checked ~ .state.--success .icon,
+.pretty input[type='checkbox']:checked ~ .state.--success .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--success .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--success label:after {
+.pretty input[type='checkbox']:checked ~ .state.--success label:after {
   background-color: #5cb85c !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--success-o .icon,
-.pretty input[type='checkbox']:checked + .state.--success-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.--success-o .svg svg > * {
+.pretty input[type='checkbox']:checked ~ .state.--success-o .icon,
+.pretty input[type='checkbox']:checked ~ .state.--success-o .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--success-o .svg svg > * {
   stroke: #5cb85c;
   color: #5cb85c;
 }
 
-.pretty input[type='checkbox']:checked + .state.--success-o label:before {
+.pretty input[type='checkbox']:checked ~ .state.--success-o label:before {
   border-color: #5cb85c !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--success-o label:after {
+.pretty input[type='checkbox']:checked ~ .state.--success-o label:after {
   background-color: #5cb85c !important;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state.--success-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--success-o label:after {
+.pretty.--fill input[type='checkbox']:checked ~ .state.--success-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--warning .icon,
-.pretty input[type='checkbox']:checked + .state.--warning .svg svg,
-.pretty input[type='checkbox']:checked + .state.--warning .svg svg > * {
+.pretty.--icon input[type='checkbox']:checked ~ .state.--success-o label:after, .pretty.--svg input[type='checkbox']:checked ~ .state.--success-o label:after {
+  background-color: transparent !important;
+}
+
+.pretty input[type='checkbox']:checked ~ .state.--warning .icon,
+.pretty input[type='checkbox']:checked ~ .state.--warning .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--warning .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--warning label:after {
+.pretty input[type='checkbox']:checked ~ .state.--warning label:after {
   background-color: #f0ad4e !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--warning-o .icon,
-.pretty input[type='checkbox']:checked + .state.--warning-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.--warning-o .svg svg > * {
+.pretty input[type='checkbox']:checked ~ .state.--warning-o .icon,
+.pretty input[type='checkbox']:checked ~ .state.--warning-o .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--warning-o .svg svg > * {
   stroke: #f0ad4e;
   color: #f0ad4e;
 }
 
-.pretty input[type='checkbox']:checked + .state.--warning-o label:before {
+.pretty input[type='checkbox']:checked ~ .state.--warning-o label:before {
   border-color: #f0ad4e !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--warning-o label:after {
+.pretty input[type='checkbox']:checked ~ .state.--warning-o label:after {
   background-color: #f0ad4e !important;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state.--warning-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--warning-o label:after {
+.pretty.--fill input[type='checkbox']:checked ~ .state.--warning-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--danger .icon,
-.pretty input[type='checkbox']:checked + .state.--danger .svg svg,
-.pretty input[type='checkbox']:checked + .state.--danger .svg svg > * {
+.pretty.--icon input[type='checkbox']:checked ~ .state.--warning-o label:after, .pretty.--svg input[type='checkbox']:checked ~ .state.--warning-o label:after {
+  background-color: transparent !important;
+}
+
+.pretty input[type='checkbox']:checked ~ .state.--danger .icon,
+.pretty input[type='checkbox']:checked ~ .state.--danger .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--danger .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--danger label:after {
+.pretty input[type='checkbox']:checked ~ .state.--danger label:after {
   background-color: #d9534f !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.--danger-o .icon,
-.pretty input[type='checkbox']:checked + .state.--danger-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.--danger-o .svg svg > * {
+.pretty input[type='checkbox']:checked ~ .state.--danger-o .icon,
+.pretty input[type='checkbox']:checked ~ .state.--danger-o .svg svg,
+.pretty input[type='checkbox']:checked ~ .state.--danger-o .svg svg > * {
   stroke: #d9534f;
   color: #d9534f;
 }
 
-.pretty input[type='checkbox']:checked + .state.--danger-o label:before {
+.pretty input[type='checkbox']:checked ~ .state.--danger-o label:before {
   border-color: #d9534f !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.--danger-o label:after {
+.pretty input[type='checkbox']:checked ~ .state.--danger-o label:after {
   background-color: #d9534f !important;
 }
 
-.pretty.--icon input[type='checkbox']:checked + .state.--danger-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--danger-o label:after {
+.pretty.--fill input[type='checkbox']:checked ~ .state.--danger-o label:after {
+  background-color: transparent !important;
+}
+
+.pretty.--icon input[type='checkbox']:checked ~ .state.--danger-o label:after, .pretty.--svg input[type='checkbox']:checked ~ .state.--danger-o label:after {
   background-color: transparent !important;
 }
 
@@ -755,6 +779,18 @@
     print-color-adjust: exact;
     color-adjust: exact;
   }
+}
+
+.pretty.--has-hover input[type='checkbox']:hover ~ .state:not(.--is-hover) {
+  display: none;
+}
+
+.pretty.--has-hover input[type='checkbox']:hover ~ .state.--is-hover {
+  display: block;
+}
+
+.pretty.--has-hover input[type='checkbox']:hover ~ .state.--is-hover .icon {
+  display: block;
 }
 
 /*

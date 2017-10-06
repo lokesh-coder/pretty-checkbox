@@ -15,7 +15,7 @@
             transform: scale(0.8);
         }
     }
-    input[type='checkbox']:checked+.state img {
+    input[type='checkbox']:checked~.state img {
         display: inline-block;
     }
 }

@@ -31,7 +31,7 @@
             }
         }
     }
-    input[type='checkbox']:checked+.state {
+    input[type='checkbox']:checked~.state {
         &:before {
             border-color: #2ecc71;
         }

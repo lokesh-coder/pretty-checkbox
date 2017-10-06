@@ -19,7 +19,7 @@
             height: calc(1em + 2px);
         }
     }
-    input[type='checkbox']:checked+.state .svg {
+    input[type='checkbox']:checked~.state .svg {
         display: inline-block;
     }
 }

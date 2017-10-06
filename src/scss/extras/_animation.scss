@@ -85,7 +85,7 @@
 }
 
 .pretty.--rotate {
-    input[type='checkbox']+.state {
+    input[type='checkbox']~.state {
         .icon,
         .svg,
         img {
@@ -97,7 +97,7 @@
             opacity: 0;
         }
     }
-    input[type='checkbox']:checked+.state {
+    input[type='checkbox']:checked~.state {
         .icon,
         .svg,
         img,

@@ -26,7 +26,7 @@
             align-items: center;
         }
     }
-    input[type='checkbox']:checked+.state {
+    input[type='checkbox']:checked~.state {
         .icon {
             display: inline-block;
             vertical-align: top;

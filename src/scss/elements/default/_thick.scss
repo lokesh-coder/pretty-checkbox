@@ -1,5 +1,5 @@
 .pretty.--default.--thick {
-    input[type='checkbox']+.state label {
+    input[type='checkbox']~.state label {
         &:before {
             border-width: 0.13em;
         }
