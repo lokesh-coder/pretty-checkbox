@@ -2,6 +2,8 @@
 
 No more boring old fashioned checkboxes. New scalable CSS3 pretty checkbox and radio buttons with custom font icon library. **Only CSS**!
 
+![alt text](./preview.png "Logo Title Text 1")
+
 Check it out the [Demo](https://lokesh-coder.github.io/pretty-checkbox/) for complete documentation.
 
 ### Get started
