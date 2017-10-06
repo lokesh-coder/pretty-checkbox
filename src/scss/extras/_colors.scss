@@ -1,6 +1,6 @@
 .pretty {          
 @each $set, $color in $sets {
-    input[type='checkbox']:checked+.state.pc-#{$set} {
+    input[type='checkbox']:checked+.state.--#{$set} {
           .icon,
           .svg svg,
           .svg svg>* {
@@ -14,7 +14,7 @@
               }
           }
       }
-      input[type='checkbox']:checked+.state.pc-#{$set}-o {
+      input[type='checkbox']:checked+.state.--#{$set}-o {
           .icon,
           .svg svg,
           .svg svg>* {
@@ -30,9 +30,9 @@
               }
           }
       }
-      &.pretty-icon,
-      &.pretty-svg {
-          input[type='checkbox']:checked+.state.pc-#{$set}-o {
+      &.--icon,
+      &.--svg {
+          input[type='checkbox']:checked+.state.--#{$set}-o {
               label {
                   &:after {
                       background-color: transparent !important;

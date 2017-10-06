@@ -1,11 +1,11 @@
-.pretty.pretty-round {
+.pretty.--round {
     input[type='checkbox']+.state label {
         &:before,
         &:after {
             border-radius: 100%;
         }
     }
-    &.pretty-icon .state .icon {
+    &.--icon .state .icon {
         border-radius: 100%;
         overflow: hidden;
         &:before {

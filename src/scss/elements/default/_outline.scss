@@ -1,4 +1,4 @@
-.pretty.pretty-default {
+.pretty.--default {
     input[type='checkbox']:checked+.state label {
         &:after {
             background-color: $pretty--color-box-bg;

@@ -246,33 +246,33 @@
   }
 }
 
-.pretty.pretty-default.fill input[type='checkbox']:checked + .state label:after {
+.pretty.--default.--fill input[type='checkbox']:checked + .state label:after {
   background-color: #bdc3c7;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.pretty.pretty-default input[type='checkbox']:checked + .state label:after {
+.pretty.--default input[type='checkbox']:checked + .state label:after {
   background-color: #bdc3c7;
   -webkit-transform: scale(0.6);
   transform: scale(0.6);
 }
 
-.pretty.pretty-default.thick input[type='checkbox'] + .state label:before {
+.pretty.--default.--thick input[type='checkbox'] + .state label:before {
   border-width: 0.13em;
 }
 
-.pretty.pretty-default.thick input[type='checkbox']:checked + .state label:before, .pretty.pretty-default.thick input[type='checkbox']:checked + .state label:after {
+.pretty.--default.--thick input[type='checkbox']:checked + .state label:before, .pretty.--default.--thick input[type='checkbox']:checked + .state label:after {
   border-width: 0.13em;
 }
 
-.pretty.pretty-default.thick input[type='checkbox']:checked + .state label:after {
+.pretty.--default.--thick input[type='checkbox']:checked + .state label:after {
   background-color: #bdc3c7;
   -webkit-transform: scale(0.4);
   transform: scale(0.4);
 }
 
-.pretty.pretty-icon .state .icon {
+.pretty.--icon .state .icon {
   display: none;
   position: absolute;
   font-size: 1em;
@@ -286,7 +286,7 @@
   top: calc(calc(50% - calc(100% - 1em)) - 1px);
 }
 
-.pretty.pretty-icon .state .icon:before {
+.pretty.--icon .state .icon:before {
   line-height: normal;
   margin: 0;
   width: 100%;
@@ -306,16 +306,16 @@
   align-items: center;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state .icon {
+.pretty.--icon input[type='checkbox']:checked + .state .icon {
   display: inline-block;
   vertical-align: top;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state label:before {
+.pretty.--icon input[type='checkbox']:checked + .state label:before {
   border-color: #5a656b;
 }
 
-.pretty.pretty-svg .state .svg {
+.pretty.--svg .state .svg {
   display: none;
   position: absolute;
   font-size: 1em;
@@ -329,16 +329,16 @@
   line-height: normal;
 }
 
-.pretty.pretty-svg .state svg {
+.pretty.--svg .state svg {
   width: calc(1em + 2px);
   height: calc(1em + 2px);
 }
 
-.pretty.pretty-svg input[type='checkbox']:checked + .state .svg {
+.pretty.--svg input[type='checkbox']:checked + .state .svg {
   display: inline-block;
 }
 
-.pretty.pretty-image .state img {
+.pretty.--image .state img {
   display: none;
   position: absolute;
   width: calc(1em + 2px);
@@ -353,15 +353,15 @@
   transform: scale(0.8);
 }
 
-.pretty.pretty-image input[type='checkbox']:checked + .state img {
+.pretty.--image input[type='checkbox']:checked + .state img {
   display: inline-block;
 }
 
-.pretty.pretty-switch .state {
+.pretty.--switch .state {
   position: relative;
 }
 
-.pretty.pretty-switch .state:before {
+.pretty.--switch .state:before {
   content: '';
   border: 1px solid #bdc3c7;
   border-radius: 60px;
@@ -376,11 +376,11 @@
   transition: all 0.5s ease;
 }
 
-.pretty.pretty-switch .state label {
+.pretty.--switch .state label {
   text-indent: 2.5em;
 }
 
-.pretty.pretty-switch .state label:before, .pretty.pretty-switch .state label:after {
+.pretty.--switch .state label:before, .pretty.--switch .state label:after {
   transition: all 0.5s ease;
   border-radius: 100%;
   left: 0;
@@ -389,94 +389,94 @@
   transform: scale(0.8);
 }
 
-.pretty.pretty-switch .state label:after {
+.pretty.--switch .state label:after {
   background-color: #bdc3c7;
 }
 
-.pretty.pretty-switch input[type='checkbox']:checked + .state:before {
+.pretty.--switch input[type='checkbox']:checked + .state:before {
   border-color: #2ecc71;
 }
 
-.pretty.pretty-switch input[type='checkbox']:checked + .state label:before {
+.pretty.--switch input[type='checkbox']:checked + .state label:before {
   opacity: 0;
 }
 
-.pretty.pretty-switch input[type='checkbox']:checked + .state label:after {
+.pretty.--switch input[type='checkbox']:checked + .state label:after {
   background-color: #2ecc71;
   left: 1em;
 }
 
-.pretty.pretty-switch.fill input[type='checkbox']:checked + .state:before {
+.pretty.--switch.--fill input[type='checkbox']:checked + .state:before {
   border-color: #2ecc71;
   background-color: #2ecc71;
 }
 
-.pretty.pretty-switch.fill input[type='checkbox']:checked + .state label:before {
+.pretty.--switch.--fill input[type='checkbox']:checked + .state label:before {
   opacity: 0;
 }
 
-.pretty.pretty-switch.fill input[type='checkbox']:checked + .state label:after {
+.pretty.--switch.--fill input[type='checkbox']:checked + .state label:after {
   background-color: #fff;
   left: 1em;
 }
 
-.pretty.pretty-switch.slim .state:before {
+.pretty.--switch.--slim .state:before {
   height: 0.1em;
   background: #bdc3c7;
   top: calc(50% - 1.5px);
 }
 
-.pretty.pretty-switch.slim input[type='checkbox']:checked + .state:before {
+.pretty.--switch.--slim input[type='checkbox']:checked + .state:before {
   border-color: #2ecc71;
   background-color: #2ecc71;
 }
 
-.pretty.pretty-toggle input[type='checkbox'] ~ .state.on {
+.pretty.--toggle input[type='checkbox'] ~ .state.on {
   display: none;
 }
 
-.pretty.pretty-toggle input[type='checkbox'] ~ .state.off,
-.pretty.pretty-toggle input[type='checkbox'] ~ .state .icon,
-.pretty.pretty-toggle input[type='checkbox'] ~ .state .svg,
-.pretty.pretty-toggle input[type='checkbox'] ~ .state img {
+.pretty.--toggle input[type='checkbox'] ~ .state.off,
+.pretty.--toggle input[type='checkbox'] ~ .state .icon,
+.pretty.--toggle input[type='checkbox'] ~ .state .svg,
+.pretty.--toggle input[type='checkbox'] ~ .state img {
   display: inline-block;
 }
 
-.pretty.pretty-toggle input[type='checkbox']:checked ~ .state.on {
+.pretty.--toggle input[type='checkbox']:checked ~ .state.on {
   display: inline-block;
 }
 
-.pretty.pretty-toggle input[type='checkbox']:checked ~ .state.off {
+.pretty.--toggle input[type='checkbox']:checked ~ .state.off {
   display: none;
 }
 
-.pretty.pretty-plain input[type='checkbox']:checked ~ .state label:before,
-.pretty.pretty-plain.pretty-toggle input[type='checkbox'] ~ .state label:before {
+.pretty.--plain input[type='checkbox']:checked ~ .state label:before,
+.pretty.--plain.--toggle input[type='checkbox'] ~ .state label:before {
   background-color: transparent !important;
   border-color: transparent !important;
 }
 
-.pretty.pretty-round input[type='checkbox'] + .state label:before, .pretty.pretty-round input[type='checkbox'] + .state label:after {
+.pretty.--round input[type='checkbox'] + .state label:before, .pretty.--round input[type='checkbox'] + .state label:after {
   border-radius: 100%;
 }
 
-.pretty.pretty-round.pretty-icon .state .icon {
+.pretty.--round.--icon .state .icon {
   border-radius: 100%;
   overflow: hidden;
 }
 
-.pretty.pretty-round.pretty-icon .state .icon:before {
+.pretty.--round.--icon .state .icon:before {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
 
-.pretty.pretty-curve input[type='checkbox'] + .state label:before, .pretty.pretty-curve input[type='checkbox'] + .state label:after {
+.pretty.--curve input[type='checkbox'] + .state label:before, .pretty.--curve input[type='checkbox'] + .state label:after {
   border-radius: 20%;
 }
 
-.pretty.pretty-smooth-animation input[type='checkbox'] + .state .icon,
-.pretty.pretty-smooth-animation input[type='checkbox'] + .state .svg,
-.pretty.pretty-smooth-animation input[type='checkbox'] + .state img {
+.pretty.--smooth input[type='checkbox'] + .state .icon,
+.pretty.--smooth input[type='checkbox'] + .state .svg,
+.pretty.--smooth input[type='checkbox'] + .state img {
   display: inline-block;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -484,102 +484,102 @@
   transition: all 0.5s ease;
 }
 
-.pretty.pretty-smooth-animation input[type='checkbox'] + .state label:after {
+.pretty.--smooth input[type='checkbox'] + .state label:after {
   opacity: 0;
   transition: all 0.5s ease;
 }
 
-.pretty.pretty-smooth-animation input[type='checkbox']:checked + .state .icon,
-.pretty.pretty-smooth-animation input[type='checkbox']:checked + .state .svg,
-.pretty.pretty-smooth-animation input[type='checkbox']:checked + .state img,
-.pretty.pretty-smooth-animation input[type='checkbox']:checked + .state label:after {
+.pretty.--smooth input[type='checkbox']:checked + .state .icon,
+.pretty.--smooth input[type='checkbox']:checked + .state .svg,
+.pretty.--smooth input[type='checkbox']:checked + .state img,
+.pretty.--smooth input[type='checkbox']:checked + .state label:after {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
 
-.pretty.pretty-smooth-animation input[type='checkbox']:checked + .state img {
+.pretty.--smooth input[type='checkbox']:checked + .state img {
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
 }
 
-.pretty.pretty-smooth-animation input[type='checkbox']:checked + .state label:after {
+.pretty.--smooth input[type='checkbox']:checked + .state label:after {
   opacity: 1;
 }
 
-.pretty.pretty-tada-animation input[type='checkbox'] + .state .icon,
-.pretty.pretty-tada-animation input[type='checkbox'] + .state .svg,
-.pretty.pretty-tada-animation input[type='checkbox'] + .state img {
+.pretty.--tada input[type='checkbox'] + .state .icon,
+.pretty.--tada input[type='checkbox'] + .state .svg,
+.pretty.--tada input[type='checkbox'] + .state img {
   display: inline-block;
   opacity: 0;
 }
 
-.pretty.pretty-tada-animation input[type='checkbox'] + .state label:after {
+.pretty.--tada input[type='checkbox'] + .state label:after {
   opacity: 0;
 }
 
-.pretty.pretty-tada-animation input[type='checkbox']:checked + .state .icon,
-.pretty.pretty-tada-animation input[type='checkbox']:checked + .state .svg,
-.pretty.pretty-tada-animation input[type='checkbox']:checked + .state img,
-.pretty.pretty-tada-animation input[type='checkbox']:checked + .state label:after {
+.pretty.--tada input[type='checkbox']:checked + .state .icon,
+.pretty.--tada input[type='checkbox']:checked + .state .svg,
+.pretty.--tada input[type='checkbox']:checked + .state img,
+.pretty.--tada input[type='checkbox']:checked + .state label:after {
   -webkit-animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   opacity: 1;
 }
 
-.pretty.pretty-tada-animation input[type='checkbox']:checked + .state label:after {
+.pretty.--tada input[type='checkbox']:checked + .state label:after {
   opacity: 1;
 }
 
-.pretty.pretty-jelly-animation input[type='checkbox'] + .state .icon,
-.pretty.pretty-jelly-animation input[type='checkbox'] + .state .svg,
-.pretty.pretty-jelly-animation input[type='checkbox'] + .state img {
+.pretty.--jelly input[type='checkbox'] + .state .icon,
+.pretty.--jelly input[type='checkbox'] + .state .svg,
+.pretty.--jelly input[type='checkbox'] + .state img {
   display: inline-block;
   opacity: 0;
   -webkit-animation-fill-mode: reverse;
   animation-fill-mode: reverse;
 }
 
-.pretty.pretty-jelly-animation input[type='checkbox'] + .state label:after {
+.pretty.--jelly input[type='checkbox'] + .state label:after {
   opacity: 0;
 }
 
-.pretty.pretty-jelly-animation input[type='checkbox']:checked + .state .icon,
-.pretty.pretty-jelly-animation input[type='checkbox']:checked + .state .svg,
-.pretty.pretty-jelly-animation input[type='checkbox']:checked + .state img,
-.pretty.pretty-jelly-animation input[type='checkbox']:checked + .state label:after {
+.pretty.--jelly input[type='checkbox']:checked + .state .icon,
+.pretty.--jelly input[type='checkbox']:checked + .state .svg,
+.pretty.--jelly input[type='checkbox']:checked + .state img,
+.pretty.--jelly input[type='checkbox']:checked + .state label:after {
   -webkit-animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 both alternate;
   animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 both alternate;
   opacity: 1;
 }
 
-.pretty.pretty-jelly-animation input[type='checkbox']:checked + .state label:before {
+.pretty.--jelly input[type='checkbox']:checked + .state label:before {
   border-color: transparent;
 }
 
-.pretty.pretty-rotate-animation input[type='checkbox'] + .state .icon,
-.pretty.pretty-rotate-animation input[type='checkbox'] + .state .svg,
-.pretty.pretty-rotate-animation input[type='checkbox'] + .state img {
+.pretty.--rotate input[type='checkbox'] + .state .icon,
+.pretty.--rotate input[type='checkbox'] + .state .svg,
+.pretty.--rotate input[type='checkbox'] + .state img {
   display: inline-block;
   opacity: 0;
   -webkit-animation-fill-mode: reverse;
   animation-fill-mode: reverse;
 }
 
-.pretty.pretty-rotate-animation input[type='checkbox'] + .state label:after {
+.pretty.--rotate input[type='checkbox'] + .state label:after {
   opacity: 0;
 }
 
-.pretty.pretty-rotate-animation input[type='checkbox']:checked + .state .icon,
-.pretty.pretty-rotate-animation input[type='checkbox']:checked + .state .svg,
-.pretty.pretty-rotate-animation input[type='checkbox']:checked + .state img,
-.pretty.pretty-rotate-animation input[type='checkbox']:checked + .state label:after {
+.pretty.--rotate input[type='checkbox']:checked + .state .icon,
+.pretty.--rotate input[type='checkbox']:checked + .state .svg,
+.pretty.--rotate input[type='checkbox']:checked + .state img,
+.pretty.--rotate input[type='checkbox']:checked + .state label:after {
   -webkit-animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 both alternate;
   animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 both alternate;
   opacity: 1;
 }
 
-.pretty.pretty-rotate-animation input[type='checkbox']:checked + .state label:before {
+.pretty.--rotate input[type='checkbox']:checked + .state label:before {
   border-color: transparent;
 }
 
@@ -592,158 +592,158 @@
   opacity: 0.5;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-primary .icon,
-.pretty input[type='checkbox']:checked + .state.pc-primary .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-primary .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--primary .icon,
+.pretty input[type='checkbox']:checked + .state.--primary .svg svg,
+.pretty input[type='checkbox']:checked + .state.--primary .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-primary label:after {
+.pretty input[type='checkbox']:checked + .state.--primary label:after {
   background-color: #428bca !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-primary-o .icon,
-.pretty input[type='checkbox']:checked + .state.pc-primary-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-primary-o .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--primary-o .icon,
+.pretty input[type='checkbox']:checked + .state.--primary-o .svg svg,
+.pretty input[type='checkbox']:checked + .state.--primary-o .svg svg > * {
   stroke: #428bca;
   color: #428bca;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-primary-o label:before {
+.pretty input[type='checkbox']:checked + .state.--primary-o label:before {
   border-color: #428bca !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-primary-o label:after {
+.pretty input[type='checkbox']:checked + .state.--primary-o label:after {
   background-color: #428bca !important;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state.pc-primary-o label:after, .pretty.pretty-svg input[type='checkbox']:checked + .state.pc-primary-o label:after {
+.pretty.--icon input[type='checkbox']:checked + .state.--primary-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--primary-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-info .icon,
-.pretty input[type='checkbox']:checked + .state.pc-info .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-info .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--info .icon,
+.pretty input[type='checkbox']:checked + .state.--info .svg svg,
+.pretty input[type='checkbox']:checked + .state.--info .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-info label:after {
+.pretty input[type='checkbox']:checked + .state.--info label:after {
   background-color: #5bc0de !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-info-o .icon,
-.pretty input[type='checkbox']:checked + .state.pc-info-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-info-o .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--info-o .icon,
+.pretty input[type='checkbox']:checked + .state.--info-o .svg svg,
+.pretty input[type='checkbox']:checked + .state.--info-o .svg svg > * {
   stroke: #5bc0de;
   color: #5bc0de;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-info-o label:before {
+.pretty input[type='checkbox']:checked + .state.--info-o label:before {
   border-color: #5bc0de !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-info-o label:after {
+.pretty input[type='checkbox']:checked + .state.--info-o label:after {
   background-color: #5bc0de !important;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state.pc-info-o label:after, .pretty.pretty-svg input[type='checkbox']:checked + .state.pc-info-o label:after {
+.pretty.--icon input[type='checkbox']:checked + .state.--info-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--info-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-success .icon,
-.pretty input[type='checkbox']:checked + .state.pc-success .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-success .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--success .icon,
+.pretty input[type='checkbox']:checked + .state.--success .svg svg,
+.pretty input[type='checkbox']:checked + .state.--success .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-success label:after {
+.pretty input[type='checkbox']:checked + .state.--success label:after {
   background-color: #5cb85c !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-success-o .icon,
-.pretty input[type='checkbox']:checked + .state.pc-success-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-success-o .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--success-o .icon,
+.pretty input[type='checkbox']:checked + .state.--success-o .svg svg,
+.pretty input[type='checkbox']:checked + .state.--success-o .svg svg > * {
   stroke: #5cb85c;
   color: #5cb85c;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-success-o label:before {
+.pretty input[type='checkbox']:checked + .state.--success-o label:before {
   border-color: #5cb85c !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-success-o label:after {
+.pretty input[type='checkbox']:checked + .state.--success-o label:after {
   background-color: #5cb85c !important;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state.pc-success-o label:after, .pretty.pretty-svg input[type='checkbox']:checked + .state.pc-success-o label:after {
+.pretty.--icon input[type='checkbox']:checked + .state.--success-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--success-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-warning .icon,
-.pretty input[type='checkbox']:checked + .state.pc-warning .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-warning .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--warning .icon,
+.pretty input[type='checkbox']:checked + .state.--warning .svg svg,
+.pretty input[type='checkbox']:checked + .state.--warning .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-warning label:after {
+.pretty input[type='checkbox']:checked + .state.--warning label:after {
   background-color: #f0ad4e !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-warning-o .icon,
-.pretty input[type='checkbox']:checked + .state.pc-warning-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-warning-o .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--warning-o .icon,
+.pretty input[type='checkbox']:checked + .state.--warning-o .svg svg,
+.pretty input[type='checkbox']:checked + .state.--warning-o .svg svg > * {
   stroke: #f0ad4e;
   color: #f0ad4e;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-warning-o label:before {
+.pretty input[type='checkbox']:checked + .state.--warning-o label:before {
   border-color: #f0ad4e !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-warning-o label:after {
+.pretty input[type='checkbox']:checked + .state.--warning-o label:after {
   background-color: #f0ad4e !important;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state.pc-warning-o label:after, .pretty.pretty-svg input[type='checkbox']:checked + .state.pc-warning-o label:after {
+.pretty.--icon input[type='checkbox']:checked + .state.--warning-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--warning-o label:after {
   background-color: transparent !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-danger .icon,
-.pretty input[type='checkbox']:checked + .state.pc-danger .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-danger .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--danger .icon,
+.pretty input[type='checkbox']:checked + .state.--danger .svg svg,
+.pretty input[type='checkbox']:checked + .state.--danger .svg svg > * {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-danger label:after {
+.pretty input[type='checkbox']:checked + .state.--danger label:after {
   background-color: #d9534f !important;
   color: #fff;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-danger-o .icon,
-.pretty input[type='checkbox']:checked + .state.pc-danger-o .svg svg,
-.pretty input[type='checkbox']:checked + .state.pc-danger-o .svg svg > * {
+.pretty input[type='checkbox']:checked + .state.--danger-o .icon,
+.pretty input[type='checkbox']:checked + .state.--danger-o .svg svg,
+.pretty input[type='checkbox']:checked + .state.--danger-o .svg svg > * {
   stroke: #d9534f;
   color: #d9534f;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-danger-o label:before {
+.pretty input[type='checkbox']:checked + .state.--danger-o label:before {
   border-color: #d9534f !important;
 }
 
-.pretty input[type='checkbox']:checked + .state.pc-danger-o label:after {
+.pretty input[type='checkbox']:checked + .state.--danger-o label:after {
   background-color: #d9534f !important;
 }
 
-.pretty.pretty-icon input[type='checkbox']:checked + .state.pc-danger-o label:after, .pretty.pretty-svg input[type='checkbox']:checked + .state.pc-danger-o label:after {
+.pretty.--icon input[type='checkbox']:checked + .state.--danger-o label:after, .pretty.--svg input[type='checkbox']:checked + .state.--danger-o label:after {
   background-color: transparent !important;
 }
 

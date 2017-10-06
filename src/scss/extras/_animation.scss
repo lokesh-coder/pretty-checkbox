@@ -1,5 +1,5 @@
 // animation
-.pretty.pretty-smooth-animation {
+.pretty.--smooth {
     input[type='checkbox']+.state {
         .icon,
         .svg,
@@ -31,7 +31,7 @@
     }
 }
 
-.pretty.pretty-tada-animation {
+.pretty.--tada {
     input[type='checkbox']+.state {
         .icon,
         .svg,
@@ -57,7 +57,7 @@
     }
 }
 
-.pretty.pretty-jelly-animation {
+.pretty.--jelly {
     input[type='checkbox']+.state {
         .icon,
         .svg,
@@ -84,7 +84,7 @@
     }
 }
 
-.pretty.pretty-rotate-animation {
+.pretty.--rotate {
     input[type='checkbox']+.state {
         .icon,
         .svg,
