@@ -1,9 +1,9 @@
 .pretty.--toggle {
     input[type='checkbox']~.state {
-        &.on {
+        &.--on {
             display: none;
         }
-        &.off,
+        &.--off,
         .icon,
         .svg,
         img {
@@ -11,10 +11,10 @@
         }
     }
     input[type='checkbox']:checked~.state {
-        &.on {
+        &.--on {
             display: inline-block;
         }
-        &.off {
+        &.--off {
             display: none;
         }
     }

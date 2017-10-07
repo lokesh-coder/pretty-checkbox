@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-// common
 .pretty {
     position: relative;
     display: inline-block;
@@ -51,7 +50,8 @@
                 margin-right: 0.1em;
             }
         }
-        &.--is-hover{
+        &.--is-hover,
+        &.--is-indeterminate{
             display: none;
         }
     }

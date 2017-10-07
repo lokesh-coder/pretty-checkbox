@@ -1,7 +1,9 @@
 .pretty {
     @each $set,
     $color in $sets {
-        input[type='checkbox']:checked~.state.--#{$set} {
+        input[type='checkbox']:checked~.state.--#{$set},
+        input[type='checkbox']:hover~.state.--#{$set}
+         {
             .icon,
             .svg svg,
             .svg svg>* {
@@ -15,7 +17,8 @@
                 }
             }
         }
-        input[type='checkbox']:checked~.state.--#{$set}-o {
+        input[type='checkbox']:checked~.state.--#{$set}-o,
+        input[type='checkbox']:hover~.state.--#{$set}-o {
             .icon,
             .svg svg,
             .svg svg>* {
@@ -42,10 +45,54 @@
         }
         &.--icon,
         &.--svg {
-            input[type='checkbox']:checked~.state.--#{$set}-o {
+            input[type='checkbox']~.state.--#{$set}-o { 
                 label {
                     &:after {
                         background-color: transparent !important;
+                    }
+                }
+            }
+        }
+        &.--toggle{
+            input[type='checkbox']~.state.--off.--#{$set} {
+                .icon{
+                    color:#fff;
+                }
+                label {
+                    &:after {
+                        background-color: $color !important;
+                        color:#fff;
+                    }
+                }
+            }
+            input[type='checkbox']~.state.--off.--#{$set}-o {
+                .icon{
+                    color:$color;
+                }
+                label {
+                    &:before {
+                        border-color: $color !important;
+                    }
+                    &:after {
+                        background-color:$color;
+                    }
+                }
+            }
+        }
+        &.--switch{
+            input[type='checkbox']:checked~.state.--#{$set} {
+                &:before {
+                    border-color: $color;
+                }
+                label:after {
+                    background-color: #fff !important;
+                }
+            }
+            &.--slim,&.--fill{
+                input[type='checkbox']:checked~.state.--#{$set} {
+                    &:before {
+                        border-color: $color;
+                        background-color: $color;
                     }
                 }
             }

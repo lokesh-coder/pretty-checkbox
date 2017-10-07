@@ -9,8 +9,8 @@
     }
     input[type='checkbox']:checked~.state {
         &:before {
-            border-color: #2ecc71;
-            background-color: #2ecc71;
+            border-color: $dark;
+            background-color: $dark;
         }
     }
 }
