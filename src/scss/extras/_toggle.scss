@@ -1,5 +1,6 @@
 .pretty.--toggle {
-    input[type='checkbox']~.state {
+    input[type='checkbox']~.state ,
+    input[type='radio']~.state {
         &.--on {
             display: none;
         }
@@ -10,7 +11,8 @@
             display: inline-block;
         }
     }
-    input[type='checkbox']:checked~.state {
+    input[type='checkbox']:checked~.state ,
+    input[type='radio']:checked~.state {
         &.--on {
             display: inline-block;
         }

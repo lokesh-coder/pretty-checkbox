@@ -4,18 +4,19 @@
 
 .pretty {
     position: relative;
-    display: inline-block;
+    display: inline-block; 
     margin-right: 1em;
     line-height: unset;
     white-space: nowrap;
-    input[type='checkbox'] {
+    input[type='checkbox'] ,
+    input[type='radio'] {
         position: absolute;
         left: 0;
         top: 0;
         min-width: 1em;
         width: 100%;
         height: 100%;
-        z-index: 2;
+        z-index: $pretty--z-index-front;
         opacity: 0;
         margin: 0;
         padding: 0;
@@ -23,11 +24,11 @@
     }
     .state {
         label {
-            position: relative;
+            position: initial;
             display: inline-block;
             font-weight: normal;
             margin: 0;
-            text-indent: 1.5em;
+            text-indent:$pretty--label-text-offset;
             &:before,
             &:after {
                 content: '';
@@ -37,7 +38,7 @@
                 box-sizing: border-box;
                 border-radius: $pretty--radius-box;
                 border: 1px solid transparent;
-                z-index: 0; // note
+                z-index: $pretty--z-index-back; // note
                 position: absolute;
                 left: 0;
                 top: 0;

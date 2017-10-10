@@ -1,9 +1,10 @@
 // switch
 .pretty.--switch.--fill {
-    input[type='checkbox']:checked~.state {
+    input[type='checkbox']:checked~.state ,
+    input[type='radio']:checked~.state {
         &:before {
-            border-color: $dark;
-            background-color: $dark;
+            border-color: $pretty--color-dark;
+            background-color: $pretty--color-dark;
         }
         label:before {
             opacity: 0;

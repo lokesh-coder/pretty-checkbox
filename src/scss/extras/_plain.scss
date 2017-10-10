@@ -1,6 +1,8 @@
 .pretty.--plain {
     input[type='checkbox']:checked~.state label,
-    &.--toggle input[type='checkbox']~.state label {
+    input[type='radio']:checked~.state label,
+    &.--toggle input[type='checkbox']~.state label ,
+    &.--toggle input[type='radio']~.state label {
         &:before {
             content:none;
         }

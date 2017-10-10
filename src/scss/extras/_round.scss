@@ -1,5 +1,6 @@
 .pretty.--round {
-    input[type='checkbox']~.state label {
+    input[type='checkbox']~.state label ,
+    input[type='radio']~.state label {
         &:before,
         &:after {
             border-radius: 100%;

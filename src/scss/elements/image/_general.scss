@@ -9,13 +9,14 @@
             top: 0;
             top:calc(calc(50% - calc(100% - 1em)) - 2px);
             left: 0;
-            z-index: 0;
+            z-index: $pretty--z-index-back;
             text-align: center;
             line-height: normal;
             transform: scale(0.8);
         }
     }
-    input[type='checkbox']:checked~.state img {
+    input[type='checkbox']:checked~.state img ,
+    input[type='radio']:checked~.state img {
         display: inline-block;
     }
 }

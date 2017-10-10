@@ -1,6 +1,7 @@
 // animation
 .pretty.--smooth {
-    input[type='checkbox']+.state {
+    input[type='checkbox']+.state,
+    input[type='radio']+.state {
         .icon,
         .svg,
         img {
@@ -9,12 +10,16 @@
             opacity: 0;
             transition: all 0.5s ease;
         }
+        label:before {
+            transition: all 0.5s ease;
+        }
         label:after {
             opacity: 0;
             transition: all 0.5s ease;
         }
     }
-    input[type='checkbox']:checked+.state {
+    input[type='checkbox']:checked+.state,
+    input[type='radio']:checked+.state {
         .icon,
         .svg,
         img,
@@ -29,10 +34,18 @@
             opacity: 1;
         }
     }
+    &.--plain input[type='checkbox']:checked+.state,
+    &.--plain input[type='radio']:checked+.state {
+        label:before {
+            content: '';
+            transform: scale(0);
+        }
+    }
 }
 
 .pretty.--tada {
-    input[type='checkbox']+.state {
+    input[type='checkbox']+.state,
+    input[type='radio']+.state {
         .icon,
         .svg,
         img {
@@ -43,7 +56,8 @@
             opacity: 0;
         }
     }
-    input[type='checkbox']:checked+.state {
+    input[type='checkbox']:checked+.state,
+    input[type='radio']:checked+.state {
         .icon,
         .svg,
         img,
@@ -58,7 +72,8 @@
 }
 
 .pretty.--jelly {
-    input[type='checkbox']+.state {
+    input[type='checkbox']+.state,
+    input[type='radio']+.state {
         .icon,
         .svg,
         img {
@@ -70,7 +85,8 @@
             opacity: 0;
         }
     }
-    input[type='checkbox']:checked+.state {
+    input[type='checkbox']:checked+.state,
+    input[type='radio']:checked+.state {
         .icon,
         .svg,
         img,
@@ -85,7 +101,8 @@
 }
 
 .pretty.--rotate {
-    input[type='checkbox']~.state {
+    input[type='checkbox']~.state,
+    input[type='radio']~.state {
         .icon,
         .svg,
         img {
@@ -97,7 +114,8 @@
             opacity: 0;
         }
     }
-    input[type='checkbox']:checked~.state {
+    input[type='checkbox']:checked~.state,
+    input[type='radio']:checked~.state {
         .icon,
         .svg,
         img,

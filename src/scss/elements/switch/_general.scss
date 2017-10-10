@@ -13,11 +13,11 @@
             position: absolute;
             top: 0;
             top:calc(calc(50% - calc(100% - 1em)) - 2px);
-            z-index: 0;
+            z-index: $pretty--z-index-back;
             transition: all 0.5s ease;
         }
         label {
-            text-indent: 2.5em;
+            text-indent: $pretty--label-text-offset-switch;
             &:before,
             &:after {
                 transition: all 0.5s ease;
@@ -31,15 +31,16 @@
             }
         }
     }
-    input[type='checkbox']:checked~.state {
+    input[type='checkbox']:checked~.state ,
+    input[type='radio']:checked~.state {
         &:before {
-            border-color: $dark;
+            border-color: $pretty--color-dark;
         }
         label:before {
             opacity: 0;
         }
         label:after {
-            background-color: $dark;
+            background-color: $pretty--color-dark;
             left: 1em;
         }
     }

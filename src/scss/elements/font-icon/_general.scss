@@ -9,10 +9,11 @@
             height: calc(1em + 2px);
             top: 0;
             left: 0;
-            z-index: 1;
+            z-index: $pretty--z-index-between;
             text-align: center;
             line-height: normal;
             top:calc(calc(50% - calc(100% - 1em)) - 1px);
+            border:1px solid transparent; 
         }
         .icon:before {
             line-height: normal;
@@ -24,9 +25,11 @@
             flex: 1;
             justify-content: center;
             align-items: center;
+            line-height: 1;
         }
     }
-    input[type='checkbox']:checked~.state {
+    input[type='checkbox']:checked~.state ,
+    input[type='radio']:checked~.state {
         .icon {
             display: inline-block;
             vertical-align: top;

@@ -1,5 +1,6 @@
 .pretty {
-    input[type='checkbox'][disabled] {
+    input[type='checkbox'][disabled],
+    input[type='radio'][disabled] {
         display: none;
         cursor: not-allowed;
         &~* {

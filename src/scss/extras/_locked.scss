@@ -1,0 +1,7 @@
+.pretty.--locked {
+    input[type='checkbox'],
+    input[type='radio'] {
+        display: none;
+        cursor: not-allowed;
+    }
+}

@@ -7,10 +7,11 @@
             top:calc(50% - 1.5px);
         }
     }
-    input[type='checkbox']:checked~.state {
+    input[type='checkbox']:checked~.state ,
+    input[type='radio']:checked~.state {
         &:before {
-            border-color: $dark;
-            background-color: $dark;
+            border-color: $pretty--color-dark;
+            background-color: $pretty--color-dark;
         }
     }
 }

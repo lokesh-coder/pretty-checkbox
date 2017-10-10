@@ -6,15 +6,23 @@ $pretty--radius-box: 0% !default;
 $pretty--box-width:1em;
 $pretty--box-height:1em;
 
-$primary:#428bca;
-$info:#5bc0de;
-$success:#5cb85c;
-$warning:#f0ad4e;
-$danger:#d9534f;
-$dark:#5a656b;
+$pretty--color-primary:#428bca !default;
+$pretty--color-info:#5bc0de !default;
+$pretty--color-success:#5cb85c !default;
+$pretty--color-warning:#f0ad4e !default;
+$pretty--color-danger:#d9534f !default;
+$pretty--color-dark:#5a656b !default;
 
-$sets: (primary, $primary),
-        (info, $info),
-        (success, $success),
-        (warning, $warning),
-        (danger, $danger);
+$pretty--z-index-back:0;
+$pretty--z-index-between:1;
+$pretty--z-index-front:2;
+
+$pretty--label-text-offset:1.5em;
+$pretty--label-text-offset-switch:2.5em;
+
+$pretty--sets: 
+        (primary, $pretty--color-primary),
+        (info, $pretty--color-info),
+        (success, $pretty--color-success),
+        (warning, $pretty--color-warning),
+        (danger, $pretty--color-danger);
