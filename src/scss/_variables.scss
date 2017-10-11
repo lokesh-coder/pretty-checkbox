@@ -20,6 +20,12 @@ $pretty--z-index-front:2;
 $pretty--label-text-offset:1.5em;
 $pretty--label-text-offset-switch:2.5em;
 
+$pretty-top-offset-old:calc(calc(50% - calc(100% - 1em)) - 1px);
+$pretty-top:8;
+$pretty-top-switch:($pretty-top*2)*1%;   
+$pretty-top-offset:calc(calc(0% - calc(100% - 1em)) - #{$pretty-top * 1%});
+$pretty-top-offset-switch: calc(calc(0% - calc(100% - 1em)) - #{$pretty-top-switch});
+
 $pretty--sets: 
         (primary, $pretty--color-primary),
         (info, $pretty--color-info),

@@ -12,7 +12,7 @@
             height: calc(#{$pretty--box-height} + 2px);
             position: absolute;
             top: 0;
-            top:calc(calc(50% - calc(100% - 1em)) - 2px);
+            top:$pretty-top-offset-switch;
             z-index: $pretty--z-index-back;
             transition: all 0.5s ease;
         }

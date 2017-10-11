@@ -7,7 +7,7 @@
             width: calc(1em + 2px);
             height: calc(1em + 2px);
             top: 0;
-            top:calc(calc(50% - calc(100% - 1em)) - 2px);
+            top:$pretty-top-offset;
             left: 0;
             z-index: $pretty--z-index-back;
             text-align: center;

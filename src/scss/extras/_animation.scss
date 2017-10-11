@@ -34,6 +34,12 @@
             opacity: 1;
         }
     }
+    &.--default:not(.--fill) input[type='checkbox']:checked+.state,
+    &.--default:not(.--fill) input[type='radio']:checked+.state{
+        label:after {
+            transform: scale(0.6);
+        }
+    }
     &.--plain input[type='checkbox']:checked+.state,
     &.--plain input[type='radio']:checked+.state {
         label:before {

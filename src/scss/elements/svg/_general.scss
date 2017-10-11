@@ -12,7 +12,7 @@
             z-index: $pretty--z-index-between;
             text-align: center;
             line-height: normal;
-            top:calc(calc(50% - calc(100% - 1em)) - 1px);
+            top:$pretty-top-offset;
             border:1px solid transparent;
         }
         svg {
