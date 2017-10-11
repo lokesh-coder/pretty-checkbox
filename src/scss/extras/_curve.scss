@@ -1,6 +1,5 @@
-.pretty.--curve {
-    input[type='checkbox']~.state label,
-    input[type='radio']~.state label {
+.#{$pretty--class-name}.--curve {
+    input~.state label {
         &:before,
         &:after {
             border-radius: 20%;

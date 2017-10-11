@@ -1,15 +1,35 @@
-.pretty * {
+.#{$pretty--class-name} * {
     box-sizing: border-box;
 }
 
-.pretty {
+.#{$pretty--class-name} input:not([type='checkbox']):not([type='radio']) {
+    display: none;
+    @if $pretty--env=='DEV'{
+        +*:after {
+            content: $pretty--dev-err;
+            border: 1px solid #dedede;
+            border-left: 3px solid #d9534f;
+            padding: 9px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #d9534f;
+            position: absolute;
+            z-index: 3;
+            background: #fbfbfb;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.#{$pretty--class-name} {
     position: relative;
     display: inline-block; 
     margin-right: 1em;
     line-height: unset;
     white-space: nowrap;
-    input[type='checkbox'] ,
-    input[type='radio'] {
+    line-height: 1;
+    input{
         position: absolute;
         left: 0;
         top: 0;
@@ -28,7 +48,8 @@
             display: inline-block;
             font-weight: normal;
             margin: 0;
-            text-indent:$pretty--label-text-offset;
+            text-indent:$pretty--label-text-offset; 
+            min-width: calc(#{$pretty--box-width} + 2px);
             &:before,
             &:after {
                 content: '';
@@ -41,14 +62,13 @@
                 z-index: $pretty--z-index-back; // note
                 position: absolute;
                 left: 0;
-                top: 0;
-                top:calc(calc(50% - calc(100% - 1em)) - 1px); 
+                top: 0; 
+                top:$pretty-top-offset;
                 
             }
             &:before {
                 background-color: transparent;
                 border-color: $pretty--color-box-border;
-                margin-right: 0.1em;
             }
         }
         &.--is-hover,

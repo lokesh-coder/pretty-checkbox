@@ -1,5 +1,5 @@
 // switch
-.pretty.--switch {
+.#{$pretty--class-name}.--switch {
     .state {
         position: relative;
         &:before {
@@ -31,8 +31,7 @@
             }
         }
     }
-    input[type='checkbox']:checked~.state ,
-    input[type='radio']:checked~.state {
+    input:checked~.state {
         &:before {
             border-color: $pretty--color-dark;
         }

@@ -1,5 +1,5 @@
 // icon
-.pretty.--icon {
+.#{$pretty--class-name}.--icon {
     .state {
         .icon {
             display: none;
@@ -28,8 +28,7 @@
             line-height: 1;
         }
     }
-    input[type='checkbox']:checked~.state ,
-    input[type='radio']:checked~.state {
+    input:checked~.state {
         .icon {
             display: inline-block;
             vertical-align: top;

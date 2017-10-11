@@ -1,5 +1,5 @@
 // svg
-.pretty.--svg {
+.#{$pretty--class-name}.--svg {
     .state {
         .svg {
             display: none;
@@ -28,8 +28,7 @@
              line-height: 1;
         }
     }
-    input[type='checkbox']:checked~.state .svg ,
-    input[type='radio']:checked~.state .svg {
+    input:checked~.state .svg {
         display: inline-block;
     }
 }

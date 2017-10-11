@@ -1,4 +1,4 @@
-.pretty.--has-indeterminate{
+.#{$pretty--class-name}.--has-indeterminate{
     input[type='checkbox']:indeterminate ~.state:not(.--is-indeterminate){
         display: none;
     }

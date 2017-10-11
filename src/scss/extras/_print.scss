@@ -1,5 +1,5 @@
 @media print {
-    .pretty {
+    .#{$pretty--class-name} {
         .state {
             &:before,
             label:before,

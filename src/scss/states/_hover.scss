@@ -1,10 +1,8 @@
-.pretty.--has-hover{
-    input[type='checkbox']:hover ~.state:not(.--is-hover),
-    input[type='radio']:hover ~.state:not(.--is-hover){
+.#{$pretty--class-name}.--has-hover{
+    input:hover ~.state:not(.--is-hover){
         display: none;
     }
-    input[type='checkbox']:hover ~.state.--is-hover,
-    input[type='radio']:hover ~.state.--is-hover{
+    input:hover ~.state.--is-hover{
         display: block;
         .icon{
             display: block;

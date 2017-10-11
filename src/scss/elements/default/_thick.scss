@@ -1,6 +1,5 @@
-.pretty.--default.--thick {
-    input[type='checkbox']~.state label ,
-    input[type='radio']~.state label {
+.#{$pretty--class-name}.--default.--thick {
+    input~.state label {
         &:before,
         &:after {
             border-width: 0.13em;
@@ -9,8 +8,7 @@
             transform: scale(0.4) !important;
         }
     }
-    input[type='checkbox']:checked+.state label ,
-    input[type='radio']:checked+.state label {
+    input:checked+.state label {
         &:after {
             background-color: $pretty--color-box-bg;
         }

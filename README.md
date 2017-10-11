@@ -90,3 +90,55 @@ Thats all, folks!
 
 Contributions are welcome! 
 
+
+Basic Checkbox
+    Square
+    Curve
+    Round
+    Switch
+Colors
+    Solid
+    Outline
+    Switch
+    Mixed
+Font icons
+    General
+Svg
+    General
+Image
+    General
+Plain
+Toggle
+States
+    Hover
+    Focus
+    Indeterminate
+Disabled
+Lock
+
+Radio Buttons
+    General
+    Colors
+Tested Font Icons
+    Font Awesome
+    MDI
+    GMDI
+    ZMDI
+    Ionic
+    Ion
+    tyicons
+    gylph
+Tested Svg
+    UIKit
+    Feathers
+Scalability
+SCSS Customize
+    import
+    settings
+More
+    Browser support
+    Frameworks
+    Inspiration
+    Support
+    Contribution
+    Licence

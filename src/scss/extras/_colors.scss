@@ -1,10 +1,9 @@
-.pretty {
+.#{$pretty--class-name} {
     @each $set,
     $color in $pretty--sets {
         input[type='checkbox']:checked~.state.--#{$set},
         input[type='radio']:checked~.state.--#{$set},
-        &.--has-hover input[type='checkbox']:hover~.state.--#{$set},
-        &.--has-hover input[type='radio']:hover~.state.--#{$set} {
+        &.--has-hover input:hover~.state.--#{$set} {
             .icon,
             svg.svg,
             .svg svg,
@@ -19,10 +18,8 @@
                 }
             }
         }
-        input[type='checkbox']:checked~.state.--#{$set}-o,
-        input[type='radio']:checked~.state.--#{$set}-o,
-        &.--has-hover input[type='radio']:hover~.state.--#{$set}-o,
-        &.--has-hover input[type='checkbox']:hover~.state.--#{$set}-o {
+        input:checked~.state.--#{$set}-o,
+        &.--has-hover input:hover~.state.--#{$set}-o {
             .icon,
             svg.svg,
             .svg svg,
@@ -40,8 +37,7 @@
             }
         }
         &.--fill {
-            input[type='checkbox']:checked~.state.--#{$set}-o,
-            input[type='radio']:checked~.state.--#{$set}-o {
+            input:checked~.state.--#{$set}-o {
                 label {
                     &:after {
                         background-color: transparent !important;
@@ -51,8 +47,7 @@
         }
         &.--icon,
         &.--svg {
-            input[type='checkbox']~.state.--#{$set}-o,
-            input[type='radio']~.state.--#{$set}-o {
+            input~.state.--#{$set}-o {
                 label {
                     &:after {
                         background-color: transparent !important;
@@ -61,8 +56,7 @@
             }
         }
         &.--toggle {
-            input[type='checkbox']~.state.--off.--#{$set},
-            input[type='radio']~.state.--off.--#{$set} {
+            input~.state.--off.--#{$set} {
                 .icon {
                     color: #fff;
                 }
@@ -73,8 +67,7 @@
                     }
                 }
             }
-            input[type='radio']~.state.--off.--#{$set}-o,
-            input[type='checkbox']~.state.--off.--#{$set}-o {
+            input~.state.--off.--#{$set}-o {
                 .icon {
                     color: $color;
                 }
@@ -89,8 +82,7 @@
             }
         }
         &.--switch {
-            input[type='radio']:checked~.state.--#{$set},
-            input[type='checkbox']:checked~.state.--#{$set} {
+            input:checked~.state.--#{$set} {
                 &:before {
                     border-color: $color;
                     background-color: $color;
@@ -99,16 +91,14 @@
                     background-color: #fff !important;
                 }
             }
-            input[type='radio']:checked~.state.--#{$set}-o,
-            input[type='checkbox']:checked~.state.--#{$set}-o {
+            input:checked~.state.--#{$set}-o {
                 &:before {
                     border-color: $color;
                 }
             }
             &.--slim,
             &.--fill {
-                input[type='radio']:checked~.state.--#{$set},
-                input[type='checkbox']:checked~.state.--#{$set} {
+                input:checked~.state.--#{$set} {
                     &:before {
                         border-color: $color;
                         background-color: $color;
@@ -119,8 +109,7 @@
                 }
             }
             &.--slim {
-                input[type='checkbox']:checked~.state.--#{$set}-o ,
-                input[type='radio']:checked~.state.--#{$set}-o {
+                input:checked~.state.--#{$set}-o {
                     &:before {
                         border-color: darken($color,20%); 
                         background-color: darken($color,20%);
