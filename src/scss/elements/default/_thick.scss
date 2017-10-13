@@ -1,16 +1,11 @@
 .#{$pretty--class-name}.--default.--thick {
-    input~.state label {
+    .state label {
         &:before,
         &:after {
             border-width: 0.13em;
         }
         &:after {
             transform: scale(0.4) !important;
-        }
-    }
-    input:checked+.state label {
-        &:after {
-            background-color: $pretty--color-box-bg;
         }
     }
 }

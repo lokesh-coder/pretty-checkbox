@@ -1,5 +1,5 @@
 .#{$pretty--class-name}.--round {
-    input~.state label {
+    .state label {
         &:before,
         &:after {
             border-radius: 100%;

@@ -2,10 +2,10 @@
 .#{$pretty--class-name}.--image {
     .state {
         img {
-            display: none;
+            opacity: 0;
             position: absolute;
-            width: calc(1em + 2px);
-            height: calc(1em + 2px);
+            width: $pretty--box-size;
+            height: $pretty--box-size;
             top: 0;
             top:$pretty-top-offset;
             left: 0;
@@ -16,6 +16,6 @@
         }
     }
     input:checked~.state img {
-        display: inline-block;
+        opacity: 1;
     }
 }

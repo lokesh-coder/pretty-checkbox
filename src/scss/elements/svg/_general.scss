@@ -2,33 +2,33 @@
 .#{$pretty--class-name}.--svg {
     .state {
         .svg {
-            display: none;
             position: absolute;
             font-size: 1em;
-            width: calc(#{$pretty--box-width} + 2px);
-            height: calc(1em + 2px);
+            width: $pretty--box-size;
+            height: $pretty--box-size;
             top: 0;
             left: 0;
             z-index: $pretty--z-index-between;
             text-align: center;
             line-height: normal;
-            top:$pretty-top-offset;
-            border:1px solid transparent;
+            top: $pretty-top-offset;
+            border: 1px solid transparent;
+            opacity: 0;
         }
         svg {
-             line-height: normal;
-             margin: 0;
-             width: 100%;
-             height: 100%;
-             text-align: center;
-             display: flex;
-             flex: 1;
-             justify-content: center;
-             align-items: center;
-             line-height: 1;
+            line-height: normal;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            line-height: 1;
         }
     }
     input:checked~.state .svg {
-        display: inline-block;
+        opacity: 1;
     }
 }

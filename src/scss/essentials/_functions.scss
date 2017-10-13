@@ -1,0 +1,13 @@
+@function innerBoxProps($scale,$size){
+    $oWidth:$size;
+    $oHeight:$size;
+    $iScale:$scale;
+    $topOffset:8%;
+    $iWidth:calc(calc(#{$oHeight} * #{$iScale}) / 2);
+    $iHeight:calc(calc(#{$oWidth} * #{$iScale}) / 2);
+    $iPosTop:calc(calc(#{$oHeight} - #{$iHeight}) / 2);
+    $iPosLeft:calc(calc(#{$oWidth} - #{$iWidth}) / 2);
+    $iPosTopWOffset:calc(#{$iPosTop} - #{$topOffset});
+
+    @return $iWidth, $iHeight, $iPosTopWOffset, $iPosLeft;
+}

@@ -1,0 +1,14 @@
+@mixin innerBox($scale:1.5,$size:$pretty--box-size){
+    width:nth(innerBoxProps($scale,$size), 1);
+    height:nth(innerBoxProps($scale,$size), 2);
+    top:nth(innerBoxProps($scale,$size), 3);
+    left:nth(innerBoxProps($scale,$size), 4);
+}
+
+@mixin box($scale:2){
+    $s:calc(((1em + 2px) - 1em) / #{$scale});
+    border: $s solid rgb(255, 255, 255);
+    width: calc( 1em);
+    height: calc( 1em);
+    margin: 1px;
+}

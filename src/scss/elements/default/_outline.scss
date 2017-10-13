@@ -1,5 +1,5 @@
 .#{$pretty--class-name}.--default {
-    input~.state label {
+    .state label {
         &:after {
             transform: scale(0.6);
         }

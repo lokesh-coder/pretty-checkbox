@@ -1,122 +1,44 @@
 .#{$pretty--class-name} {
     @each $set,
     $color in $pretty--sets {
-        input[type='checkbox']:checked~.state.--#{$set},
-        input[type='radio']:checked~.state.--#{$set},
-        &.--has-hover input:hover~.state.--#{$set} {
+        input:checked~.state.--#{$set} {
+            label:after {
+                background-color: $color;
+            }
             .icon,
-            svg.svg,
-            .svg svg,
-            .svg svg>* {
+            .svg {
                 color: #fff;
                 stroke: #fff;
             }
-            label {
-                &:after {
-                    background-color: $color !important;
-                    color: #fff;
-                }
-            }
         }
-        input:checked~.state.--#{$set}-o,
-        &.--has-hover input:hover~.state.--#{$set}-o {
+        input:checked~.state.--#{$set}-o {
+            label:before {
+                border-color: $color;
+            }
+            label:after {
+                background-color: transparent;
+            }
             .icon,
-            svg.svg,
-            .svg svg,
-            .svg svg>* {
-                stroke: $color;
+            .svg,
+            svg {
                 color: $color;
-            }
-            label {
-                &:before {
-                    border-color: $color !important;
-                }
-                &:after {
-                    background-color: $color !important;
-                }
+                stroke: $color;
             }
         }
-        &.--fill {
-            input:checked~.state.--#{$set}-o {
-                label {
-                    &:after {
-                        background-color: transparent !important;
-                    }
-                }
+        &.--default:not(.--fill) input:checked~.state.--#{$set}-o label {
+            &:after {
+                background-color: $color;
             }
         }
-        &.--icon,
-        &.--svg {
-            input~.state.--#{$set}-o {
-                label {
-                    &:after {
-                        background-color: transparent !important;
-                    }
-                }
-            }
+        &.--switch input:checked~.state.--#{$set}:before {
+            border-color: $color;
         }
-        &.--toggle {
-            input~.state.--off.--#{$set} {
-                .icon {
-                    color: #fff;
-                }
-                label {
-                    &:after {
-                        background-color: $color !important;
-                        color: #fff;
-                    }
-                }
-            }
-            input~.state.--off.--#{$set}-o {
-                .icon {
-                    color: $color;
-                }
-                label {
-                    &:before {
-                        border-color: $color !important;
-                    }
-                    &:after {
-                        background-color: $color;
-                    }
-                }
-            }
+        &.--switch.--fill input:checked~.state.--#{$set}:before {
+            background-color: $color;
         }
-        &.--switch {
-            input:checked~.state.--#{$set} {
-                &:before {
-                    border-color: $color;
-                    background-color: $color;
-                }
-                label:after {
-                    background-color: #fff !important;
-                }
-            }
-            input:checked~.state.--#{$set}-o {
-                &:before {
-                    border-color: $color;
-                }
-            }
-            &.--slim,
-            &.--fill {
-                input:checked~.state.--#{$set} {
-                    &:before {
-                        border-color: $color;
-                        background-color: $color;
-                    }
-                    label:after {
-                        background-color: $color !important;
-                    }
-                }
-            }
-            &.--slim {
-                input:checked~.state.--#{$set}-o {
-                    &:before {
-                        border-color: darken($color,20%); 
-                        background-color: darken($color,20%);
-                        zoom:0;
-                    }
-                }
-            }
+        &.--switch.--slim input:checked~.state.--#{$set}:before {
+            border-color: darken($color, 20%);
+            background-color: darken($color, 20%);
         }
     }
 }

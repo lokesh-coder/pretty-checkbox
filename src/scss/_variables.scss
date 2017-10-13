@@ -6,6 +6,7 @@ $pretty--color-box-border: $pretty--color-default !default;
 $pretty--radius-box: 0% !default;
 $pretty--box-width:1em;
 $pretty--box-height:1em;
+$pretty--box-size:calc(1em + 2px);
 $pretty--color-primary:#428bca !default; 
 $pretty--color-info:#5bc0de !default;
 $pretty--color-success:#5cb85c !default;

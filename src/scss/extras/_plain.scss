@@ -1,6 +1,6 @@
 .#{$pretty--class-name}.--plain {
     input:checked~.state label,
-    &.--toggle input~.state label {
+    &.--toggle .state label {
         &:before {
             content:none;
         }

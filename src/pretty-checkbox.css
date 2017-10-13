@@ -51,15 +51,31 @@
   left: 0;
   top: 0;
   top: calc(calc(0% - calc(100% - 1em)) - 8%);
+  background-color: transparent;
 }
 
 .pretty .state label:before {
-  background-color: transparent;
   border-color: #bdc3c7;
 }
 
 .pretty .state.--is-hover, .pretty .state.--is-indeterminate {
   display: none;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes tada {
@@ -256,16 +272,12 @@
   }
 }
 
-.pretty.--default.--fill input ~ .state label:after {
+.pretty.--default.--fill .state label:after {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.pretty.--default.--fill input:checked ~ .state label:after {
-  background-color: #bdc3c7;
-}
-
-.pretty.--default input ~ .state label:after {
+.pretty.--default .state label:after {
   -webkit-transform: scale(0.6);
   transform: scale(0.6);
 }
@@ -274,21 +286,17 @@
   background-color: #bdc3c7;
 }
 
-.pretty.--default.--thick input ~ .state label:before, .pretty.--default.--thick input ~ .state label:after {
+.pretty.--default.--thick .state label:before, .pretty.--default.--thick .state label:after {
   border-width: 0.13em;
 }
 
-.pretty.--default.--thick input ~ .state label:after {
+.pretty.--default.--thick .state label:after {
   -webkit-transform: scale(0.4) !important;
   transform: scale(0.4) !important;
 }
 
-.pretty.--default.--thick input:checked + .state label:after {
-  background-color: #bdc3c7;
-}
-
 .pretty.--icon .state .icon {
-  display: none;
+  display: inline-block;
   position: absolute;
   font-size: 1em;
   width: calc(1em + 2px);
@@ -300,6 +308,7 @@
   line-height: normal;
   top: calc(calc(0% - calc(100% - 1em)) - 8%);
   border: 1px solid transparent;
+  opacity: 0;
 }
 
 .pretty.--icon .state .icon:before {
@@ -324,8 +333,7 @@
 }
 
 .pretty.--icon input:checked ~ .state .icon {
-  display: inline-block;
-  vertical-align: top;
+  opacity: 1;
 }
 
 .pretty.--icon input:checked ~ .state label:before {
@@ -333,7 +341,6 @@
 }
 
 .pretty.--svg .state .svg {
-  display: none;
   position: absolute;
   font-size: 1em;
   width: calc(1em + 2px);
@@ -345,6 +352,7 @@
   line-height: normal;
   top: calc(calc(0% - calc(100% - 1em)) - 8%);
   border: 1px solid transparent;
+  opacity: 0;
 }
 
 .pretty.--svg .state svg {
@@ -369,11 +377,11 @@
 }
 
 .pretty.--svg input:checked ~ .state .svg {
-  display: inline-block;
+  opacity: 1;
 }
 
 .pretty.--image .state img {
-  display: none;
+  opacity: 0;
   position: absolute;
   width: calc(1em + 2px);
   height: calc(1em + 2px);
@@ -388,7 +396,7 @@
 }
 
 .pretty.--image input:checked ~ .state img {
-  display: inline-block;
+  opacity: 1;
 }
 
 .pretty.--switch .state {
@@ -465,31 +473,35 @@
   background-color: #5a656b;
 }
 
-.pretty.--toggle input ~ .state.--on {
+.pretty.--toggle .state.--on {
+  opacity: 0;
   display: none;
 }
 
-.pretty.--toggle input ~ .state.--off,
-.pretty.--toggle input ~ .state .icon,
-.pretty.--toggle input ~ .state .svg,
-.pretty.--toggle input ~ .state img {
+.pretty.--toggle .state.--off,
+.pretty.--toggle .state .icon,
+.pretty.--toggle .state .svg,
+.pretty.--toggle .state img {
+  opacity: 1;
   display: inline-block;
 }
 
 .pretty.--toggle input:checked ~ .state.--on {
+  opacity: 1;
   display: inline-block;
 }
 
 .pretty.--toggle input:checked ~ .state.--off {
+  opacity: 0;
   display: none;
 }
 
 .pretty.--plain input:checked ~ .state label:before,
-.pretty.--plain.--toggle input ~ .state label:before {
+.pretty.--plain.--toggle .state label:before {
   content: none;
 }
 
-.pretty.--round input ~ .state label:before, .pretty.--round input ~ .state label:after {
+.pretty.--round .state label:before, .pretty.--round .state label:after {
   border-radius: 100%;
 }
 
@@ -503,67 +515,31 @@
   transform: scale(0.8);
 }
 
-.pretty.--curve input ~ .state label:before, .pretty.--curve input ~ .state label:after {
+.pretty.--curve .state label:before, .pretty.--curve .state label:after {
   border-radius: 20%;
 }
 
-.pretty.--smooth input + .state .icon,
-.pretty.--smooth input + .state .svg,
-.pretty.--smooth input + .state img {
-  display: inline-block;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.pretty.--smooth input + .state label:before {
-  transition: all 0.5s ease;
-}
-
-.pretty.--smooth input + .state label:after {
-  opacity: 0;
-  transition: all 0.5s ease;
+.pretty.--smooth input:checked + .state label:after {
+  transition: all 0.3s ease;
 }
 
 .pretty.--smooth input:checked + .state .icon,
 .pretty.--smooth input:checked + .state .svg,
-.pretty.--smooth input:checked + .state img,
-.pretty.--smooth input:checked + .state label:after {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-}
-
 .pretty.--smooth input:checked + .state img {
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
+  -webkit-animation: zoom 0.3s ease-in;
+  animation: zoom 0.3s ease-in;
 }
 
-.pretty.--smooth input:checked + .state label:after {
-  opacity: 1;
-}
-
-.pretty.--smooth.--default:not(.--fill) input:checked + .state label:after {
-  -webkit-transform: scale(0.6);
-  transform: scale(0.6);
+.pretty.--smooth.--default input:checked + .state label:after {
+  -webkit-animation: zoom 0.2s ease;
+  animation: zoom 0.2s ease;
 }
 
 .pretty.--smooth.--plain input:checked + .state label:before {
   content: '';
   -webkit-transform: scale(0);
   transform: scale(0);
-}
-
-.pretty.--tada input + .state .icon,
-.pretty.--tada input + .state .svg,
-.pretty.--tada input + .state img {
-  display: inline-block;
-  opacity: 0;
-}
-
-.pretty.--tada input + .state label:after {
-  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .pretty.--tada input:checked + .state .icon,
@@ -573,23 +549,6 @@
   -webkit-animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   opacity: 1;
-}
-
-.pretty.--tada input:checked + .state label:after {
-  opacity: 1;
-}
-
-.pretty.--jelly input + .state .icon,
-.pretty.--jelly input + .state .svg,
-.pretty.--jelly input + .state img {
-  display: inline-block;
-  opacity: 0;
-  -webkit-animation-fill-mode: reverse;
-  animation-fill-mode: reverse;
-}
-
-.pretty.--jelly input + .state label:after {
-  opacity: 0;
 }
 
 .pretty.--jelly input:checked + .state .icon,
@@ -603,19 +562,6 @@
 
 .pretty.--jelly input:checked + .state label:before {
   border-color: transparent;
-}
-
-.pretty.--rotate input ~ .state .icon,
-.pretty.--rotate input ~ .state .svg,
-.pretty.--rotate input ~ .state img {
-  display: inline-block;
-  opacity: 0;
-  -webkit-animation-fill-mode: reverse;
-  animation-fill-mode: reverse;
-}
-
-.pretty.--rotate input ~ .state label:after {
-  opacity: 0;
 }
 
 .pretty.--rotate input:checked ~ .state .icon,
@@ -645,514 +591,214 @@
   cursor: not-allowed;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--primary .icon,
-.pretty input[type='checkbox']:checked ~ .state.--primary svg.svg,
-.pretty input[type='checkbox']:checked ~ .state.--primary .svg svg,
-.pretty input[type='checkbox']:checked ~ .state.--primary .svg svg > *,
-.pretty input[type='radio']:checked ~ .state.--primary .icon,
-.pretty input[type='radio']:checked ~ .state.--primary svg.svg,
-.pretty input[type='radio']:checked ~ .state.--primary .svg svg,
-.pretty input[type='radio']:checked ~ .state.--primary .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--primary .icon,
-.pretty.--has-hover input:hover ~ .state.--primary svg.svg,
-.pretty.--has-hover input:hover ~ .state.--primary .svg svg,
-.pretty.--has-hover input:hover ~ .state.--primary .svg svg > * {
+.pretty input:checked ~ .state.--primary label:after {
+  background-color: #428bca;
+}
+
+.pretty input:checked ~ .state.--primary .icon,
+.pretty input:checked ~ .state.--primary .svg {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--primary label:after,
-.pretty input[type='radio']:checked ~ .state.--primary label:after,
-.pretty.--has-hover input:hover ~ .state.--primary label:after {
-  background-color: #428bca !important;
-  color: #fff;
+.pretty input:checked ~ .state.--primary-o label:before {
+  border-color: #428bca;
+}
+
+.pretty input:checked ~ .state.--primary-o label:after {
+  background-color: transparent;
 }
 
 .pretty input:checked ~ .state.--primary-o .icon,
-.pretty input:checked ~ .state.--primary-o svg.svg,
-.pretty input:checked ~ .state.--primary-o .svg svg,
-.pretty input:checked ~ .state.--primary-o .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--primary-o .icon,
-.pretty.--has-hover input:hover ~ .state.--primary-o svg.svg,
-.pretty.--has-hover input:hover ~ .state.--primary-o .svg svg,
-.pretty.--has-hover input:hover ~ .state.--primary-o .svg svg > * {
+.pretty input:checked ~ .state.--primary-o .svg,
+.pretty input:checked ~ .state.--primary-o svg {
+  color: #428bca;
   stroke: #428bca;
-  color: #428bca;
 }
 
-.pretty input:checked ~ .state.--primary-o label:before,
-.pretty.--has-hover input:hover ~ .state.--primary-o label:before {
-  border-color: #428bca !important;
-}
-
-.pretty input:checked ~ .state.--primary-o label:after,
-.pretty.--has-hover input:hover ~ .state.--primary-o label:after {
-  background-color: #428bca !important;
-}
-
-.pretty.--fill input:checked ~ .state.--primary-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--icon input ~ .state.--primary-o label:after, .pretty.--svg input ~ .state.--primary-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--primary .icon {
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--primary label:after {
-  background-color: #428bca !important;
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--primary-o .icon {
-  color: #428bca;
-}
-
-.pretty.--toggle input ~ .state.--off.--primary-o label:before {
-  border-color: #428bca !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--primary-o label:after {
+.pretty.--default:not(.--fill) input:checked ~ .state.--primary-o label:after {
   background-color: #428bca;
 }
 
 .pretty.--switch input:checked ~ .state.--primary:before {
   border-color: #428bca;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--primary:before {
   background-color: #428bca;
 }
 
-.pretty.--switch input:checked ~ .state.--primary label:after {
-  background-color: #fff !important;
-}
-
-.pretty.--switch input:checked ~ .state.--primary-o:before {
-  border-color: #428bca;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--primary:before, .pretty.--switch.--fill input:checked ~ .state.--primary:before {
-  border-color: #428bca;
-  background-color: #428bca;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--primary label:after, .pretty.--switch.--fill input:checked ~ .state.--primary label:after {
-  background-color: #428bca !important;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--primary-o:before {
+.pretty.--switch.--slim input:checked ~ .state.--primary:before {
   border-color: #245682;
   background-color: #245682;
-  zoom: 0;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--info .icon,
-.pretty input[type='checkbox']:checked ~ .state.--info svg.svg,
-.pretty input[type='checkbox']:checked ~ .state.--info .svg svg,
-.pretty input[type='checkbox']:checked ~ .state.--info .svg svg > *,
-.pretty input[type='radio']:checked ~ .state.--info .icon,
-.pretty input[type='radio']:checked ~ .state.--info svg.svg,
-.pretty input[type='radio']:checked ~ .state.--info .svg svg,
-.pretty input[type='radio']:checked ~ .state.--info .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--info .icon,
-.pretty.--has-hover input:hover ~ .state.--info svg.svg,
-.pretty.--has-hover input:hover ~ .state.--info .svg svg,
-.pretty.--has-hover input:hover ~ .state.--info .svg svg > * {
+.pretty input:checked ~ .state.--info label:after {
+  background-color: #5bc0de;
+}
+
+.pretty input:checked ~ .state.--info .icon,
+.pretty input:checked ~ .state.--info .svg {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--info label:after,
-.pretty input[type='radio']:checked ~ .state.--info label:after,
-.pretty.--has-hover input:hover ~ .state.--info label:after {
-  background-color: #5bc0de !important;
-  color: #fff;
+.pretty input:checked ~ .state.--info-o label:before {
+  border-color: #5bc0de;
+}
+
+.pretty input:checked ~ .state.--info-o label:after {
+  background-color: transparent;
 }
 
 .pretty input:checked ~ .state.--info-o .icon,
-.pretty input:checked ~ .state.--info-o svg.svg,
-.pretty input:checked ~ .state.--info-o .svg svg,
-.pretty input:checked ~ .state.--info-o .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--info-o .icon,
-.pretty.--has-hover input:hover ~ .state.--info-o svg.svg,
-.pretty.--has-hover input:hover ~ .state.--info-o .svg svg,
-.pretty.--has-hover input:hover ~ .state.--info-o .svg svg > * {
+.pretty input:checked ~ .state.--info-o .svg,
+.pretty input:checked ~ .state.--info-o svg {
+  color: #5bc0de;
   stroke: #5bc0de;
-  color: #5bc0de;
 }
 
-.pretty input:checked ~ .state.--info-o label:before,
-.pretty.--has-hover input:hover ~ .state.--info-o label:before {
-  border-color: #5bc0de !important;
-}
-
-.pretty input:checked ~ .state.--info-o label:after,
-.pretty.--has-hover input:hover ~ .state.--info-o label:after {
-  background-color: #5bc0de !important;
-}
-
-.pretty.--fill input:checked ~ .state.--info-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--icon input ~ .state.--info-o label:after, .pretty.--svg input ~ .state.--info-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--info .icon {
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--info label:after {
-  background-color: #5bc0de !important;
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--info-o .icon {
-  color: #5bc0de;
-}
-
-.pretty.--toggle input ~ .state.--off.--info-o label:before {
-  border-color: #5bc0de !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--info-o label:after {
+.pretty.--default:not(.--fill) input:checked ~ .state.--info-o label:after {
   background-color: #5bc0de;
 }
 
 .pretty.--switch input:checked ~ .state.--info:before {
   border-color: #5bc0de;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--info:before {
   background-color: #5bc0de;
 }
 
-.pretty.--switch input:checked ~ .state.--info label:after {
-  background-color: #fff !important;
-}
-
-.pretty.--switch input:checked ~ .state.--info-o:before {
-  border-color: #5bc0de;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--info:before, .pretty.--switch.--fill input:checked ~ .state.--info:before {
-  border-color: #5bc0de;
-  background-color: #5bc0de;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--info label:after, .pretty.--switch.--fill input:checked ~ .state.--info label:after {
-  background-color: #5bc0de !important;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--info-o:before {
+.pretty.--switch.--slim input:checked ~ .state.--info:before {
   border-color: #2390b0;
   background-color: #2390b0;
-  zoom: 0;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--success .icon,
-.pretty input[type='checkbox']:checked ~ .state.--success svg.svg,
-.pretty input[type='checkbox']:checked ~ .state.--success .svg svg,
-.pretty input[type='checkbox']:checked ~ .state.--success .svg svg > *,
-.pretty input[type='radio']:checked ~ .state.--success .icon,
-.pretty input[type='radio']:checked ~ .state.--success svg.svg,
-.pretty input[type='radio']:checked ~ .state.--success .svg svg,
-.pretty input[type='radio']:checked ~ .state.--success .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--success .icon,
-.pretty.--has-hover input:hover ~ .state.--success svg.svg,
-.pretty.--has-hover input:hover ~ .state.--success .svg svg,
-.pretty.--has-hover input:hover ~ .state.--success .svg svg > * {
+.pretty input:checked ~ .state.--success label:after {
+  background-color: #5cb85c;
+}
+
+.pretty input:checked ~ .state.--success .icon,
+.pretty input:checked ~ .state.--success .svg {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--success label:after,
-.pretty input[type='radio']:checked ~ .state.--success label:after,
-.pretty.--has-hover input:hover ~ .state.--success label:after {
-  background-color: #5cb85c !important;
-  color: #fff;
+.pretty input:checked ~ .state.--success-o label:before {
+  border-color: #5cb85c;
+}
+
+.pretty input:checked ~ .state.--success-o label:after {
+  background-color: transparent;
 }
 
 .pretty input:checked ~ .state.--success-o .icon,
-.pretty input:checked ~ .state.--success-o svg.svg,
-.pretty input:checked ~ .state.--success-o .svg svg,
-.pretty input:checked ~ .state.--success-o .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--success-o .icon,
-.pretty.--has-hover input:hover ~ .state.--success-o svg.svg,
-.pretty.--has-hover input:hover ~ .state.--success-o .svg svg,
-.pretty.--has-hover input:hover ~ .state.--success-o .svg svg > * {
+.pretty input:checked ~ .state.--success-o .svg,
+.pretty input:checked ~ .state.--success-o svg {
+  color: #5cb85c;
   stroke: #5cb85c;
-  color: #5cb85c;
 }
 
-.pretty input:checked ~ .state.--success-o label:before,
-.pretty.--has-hover input:hover ~ .state.--success-o label:before {
-  border-color: #5cb85c !important;
-}
-
-.pretty input:checked ~ .state.--success-o label:after,
-.pretty.--has-hover input:hover ~ .state.--success-o label:after {
-  background-color: #5cb85c !important;
-}
-
-.pretty.--fill input:checked ~ .state.--success-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--icon input ~ .state.--success-o label:after, .pretty.--svg input ~ .state.--success-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--success .icon {
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--success label:after {
-  background-color: #5cb85c !important;
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--success-o .icon {
-  color: #5cb85c;
-}
-
-.pretty.--toggle input ~ .state.--off.--success-o label:before {
-  border-color: #5cb85c !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--success-o label:after {
+.pretty.--default:not(.--fill) input:checked ~ .state.--success-o label:after {
   background-color: #5cb85c;
 }
 
 .pretty.--switch input:checked ~ .state.--success:before {
   border-color: #5cb85c;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--success:before {
   background-color: #5cb85c;
 }
 
-.pretty.--switch input:checked ~ .state.--success label:after {
-  background-color: #fff !important;
-}
-
-.pretty.--switch input:checked ~ .state.--success-o:before {
-  border-color: #5cb85c;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--success:before, .pretty.--switch.--fill input:checked ~ .state.--success:before {
-  border-color: #5cb85c;
-  background-color: #5cb85c;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--success label:after, .pretty.--switch.--fill input:checked ~ .state.--success label:after {
-  background-color: #5cb85c !important;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--success-o:before {
+.pretty.--switch.--slim input:checked ~ .state.--success:before {
   border-color: #357935;
   background-color: #357935;
-  zoom: 0;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--warning .icon,
-.pretty input[type='checkbox']:checked ~ .state.--warning svg.svg,
-.pretty input[type='checkbox']:checked ~ .state.--warning .svg svg,
-.pretty input[type='checkbox']:checked ~ .state.--warning .svg svg > *,
-.pretty input[type='radio']:checked ~ .state.--warning .icon,
-.pretty input[type='radio']:checked ~ .state.--warning svg.svg,
-.pretty input[type='radio']:checked ~ .state.--warning .svg svg,
-.pretty input[type='radio']:checked ~ .state.--warning .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--warning .icon,
-.pretty.--has-hover input:hover ~ .state.--warning svg.svg,
-.pretty.--has-hover input:hover ~ .state.--warning .svg svg,
-.pretty.--has-hover input:hover ~ .state.--warning .svg svg > * {
+.pretty input:checked ~ .state.--warning label:after {
+  background-color: #f0ad4e;
+}
+
+.pretty input:checked ~ .state.--warning .icon,
+.pretty input:checked ~ .state.--warning .svg {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--warning label:after,
-.pretty input[type='radio']:checked ~ .state.--warning label:after,
-.pretty.--has-hover input:hover ~ .state.--warning label:after {
-  background-color: #f0ad4e !important;
-  color: #fff;
+.pretty input:checked ~ .state.--warning-o label:before {
+  border-color: #f0ad4e;
+}
+
+.pretty input:checked ~ .state.--warning-o label:after {
+  background-color: transparent;
 }
 
 .pretty input:checked ~ .state.--warning-o .icon,
-.pretty input:checked ~ .state.--warning-o svg.svg,
-.pretty input:checked ~ .state.--warning-o .svg svg,
-.pretty input:checked ~ .state.--warning-o .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--warning-o .icon,
-.pretty.--has-hover input:hover ~ .state.--warning-o svg.svg,
-.pretty.--has-hover input:hover ~ .state.--warning-o .svg svg,
-.pretty.--has-hover input:hover ~ .state.--warning-o .svg svg > * {
+.pretty input:checked ~ .state.--warning-o .svg,
+.pretty input:checked ~ .state.--warning-o svg {
+  color: #f0ad4e;
   stroke: #f0ad4e;
-  color: #f0ad4e;
 }
 
-.pretty input:checked ~ .state.--warning-o label:before,
-.pretty.--has-hover input:hover ~ .state.--warning-o label:before {
-  border-color: #f0ad4e !important;
-}
-
-.pretty input:checked ~ .state.--warning-o label:after,
-.pretty.--has-hover input:hover ~ .state.--warning-o label:after {
-  background-color: #f0ad4e !important;
-}
-
-.pretty.--fill input:checked ~ .state.--warning-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--icon input ~ .state.--warning-o label:after, .pretty.--svg input ~ .state.--warning-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--warning .icon {
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--warning label:after {
-  background-color: #f0ad4e !important;
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--warning-o .icon {
-  color: #f0ad4e;
-}
-
-.pretty.--toggle input ~ .state.--off.--warning-o label:before {
-  border-color: #f0ad4e !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--warning-o label:after {
+.pretty.--default:not(.--fill) input:checked ~ .state.--warning-o label:after {
   background-color: #f0ad4e;
 }
 
 .pretty.--switch input:checked ~ .state.--warning:before {
   border-color: #f0ad4e;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--warning:before {
   background-color: #f0ad4e;
 }
 
-.pretty.--switch input:checked ~ .state.--warning label:after {
-  background-color: #fff !important;
-}
-
-.pretty.--switch input:checked ~ .state.--warning-o:before {
-  border-color: #f0ad4e;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--warning:before, .pretty.--switch.--fill input:checked ~ .state.--warning:before {
-  border-color: #f0ad4e;
-  background-color: #f0ad4e;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--warning label:after, .pretty.--switch.--fill input:checked ~ .state.--warning label:after {
-  background-color: #f0ad4e !important;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--warning-o:before {
+.pretty.--switch.--slim input:checked ~ .state.--warning:before {
   border-color: #c77c11;
   background-color: #c77c11;
-  zoom: 0;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--danger .icon,
-.pretty input[type='checkbox']:checked ~ .state.--danger svg.svg,
-.pretty input[type='checkbox']:checked ~ .state.--danger .svg svg,
-.pretty input[type='checkbox']:checked ~ .state.--danger .svg svg > *,
-.pretty input[type='radio']:checked ~ .state.--danger .icon,
-.pretty input[type='radio']:checked ~ .state.--danger svg.svg,
-.pretty input[type='radio']:checked ~ .state.--danger .svg svg,
-.pretty input[type='radio']:checked ~ .state.--danger .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--danger .icon,
-.pretty.--has-hover input:hover ~ .state.--danger svg.svg,
-.pretty.--has-hover input:hover ~ .state.--danger .svg svg,
-.pretty.--has-hover input:hover ~ .state.--danger .svg svg > * {
+.pretty input:checked ~ .state.--danger label:after {
+  background-color: #d9534f;
+}
+
+.pretty input:checked ~ .state.--danger .icon,
+.pretty input:checked ~ .state.--danger .svg {
   color: #fff;
   stroke: #fff;
 }
 
-.pretty input[type='checkbox']:checked ~ .state.--danger label:after,
-.pretty input[type='radio']:checked ~ .state.--danger label:after,
-.pretty.--has-hover input:hover ~ .state.--danger label:after {
-  background-color: #d9534f !important;
-  color: #fff;
+.pretty input:checked ~ .state.--danger-o label:before {
+  border-color: #d9534f;
+}
+
+.pretty input:checked ~ .state.--danger-o label:after {
+  background-color: transparent;
 }
 
 .pretty input:checked ~ .state.--danger-o .icon,
-.pretty input:checked ~ .state.--danger-o svg.svg,
-.pretty input:checked ~ .state.--danger-o .svg svg,
-.pretty input:checked ~ .state.--danger-o .svg svg > *,
-.pretty.--has-hover input:hover ~ .state.--danger-o .icon,
-.pretty.--has-hover input:hover ~ .state.--danger-o svg.svg,
-.pretty.--has-hover input:hover ~ .state.--danger-o .svg svg,
-.pretty.--has-hover input:hover ~ .state.--danger-o .svg svg > * {
+.pretty input:checked ~ .state.--danger-o .svg,
+.pretty input:checked ~ .state.--danger-o svg {
+  color: #d9534f;
   stroke: #d9534f;
-  color: #d9534f;
 }
 
-.pretty input:checked ~ .state.--danger-o label:before,
-.pretty.--has-hover input:hover ~ .state.--danger-o label:before {
-  border-color: #d9534f !important;
-}
-
-.pretty input:checked ~ .state.--danger-o label:after,
-.pretty.--has-hover input:hover ~ .state.--danger-o label:after {
-  background-color: #d9534f !important;
-}
-
-.pretty.--fill input:checked ~ .state.--danger-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--icon input ~ .state.--danger-o label:after, .pretty.--svg input ~ .state.--danger-o label:after {
-  background-color: transparent !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--danger .icon {
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--danger label:after {
-  background-color: #d9534f !important;
-  color: #fff;
-}
-
-.pretty.--toggle input ~ .state.--off.--danger-o .icon {
-  color: #d9534f;
-}
-
-.pretty.--toggle input ~ .state.--off.--danger-o label:before {
-  border-color: #d9534f !important;
-}
-
-.pretty.--toggle input ~ .state.--off.--danger-o label:after {
+.pretty.--default:not(.--fill) input:checked ~ .state.--danger-o label:after {
   background-color: #d9534f;
 }
 
 .pretty.--switch input:checked ~ .state.--danger:before {
   border-color: #d9534f;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--danger:before {
   background-color: #d9534f;
 }
 
-.pretty.--switch input:checked ~ .state.--danger label:after {
-  background-color: #fff !important;
-}
-
-.pretty.--switch input:checked ~ .state.--danger-o:before {
-  border-color: #d9534f;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--danger:before, .pretty.--switch.--fill input:checked ~ .state.--danger:before {
-  border-color: #d9534f;
-  background-color: #d9534f;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--danger label:after, .pretty.--switch.--fill input:checked ~ .state.--danger label:after {
-  background-color: #d9534f !important;
-}
-
-.pretty.--switch.--slim input:checked ~ .state.--danger-o:before {
+.pretty.--switch.--slim input:checked ~ .state.--danger:before {
   border-color: #a02622;
   background-color: #a02622;
-  zoom: 0;
 }
 
 @media print {

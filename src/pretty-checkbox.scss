@@ -1,6 +1,8 @@
 @import './scss/variables';
 @import './scss/core';
 @import './scss/essentials/keyframes';
+@import './scss/essentials/functions';
+@import './scss/essentials/mixins';
 @import './scss/elements/default/fill';
 @import './scss/elements/default/outline';
 @import './scss/elements/default/thick';
@@ -21,7 +23,8 @@
 @import './scss/extras/print';
 @import './scss/states/hover';
 @import './scss/states/focus';
-@import './scss/states/indeterminate';
+@import './scss/states/indeterminate'; 
+
 
 /*
 

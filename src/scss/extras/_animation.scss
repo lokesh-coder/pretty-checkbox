@@ -1,62 +1,30 @@
 // animation
 .#{$pretty--class-name}.--smooth {
-    input+.state {
-        .icon,
-        .svg,
-        img {
-            display: inline-block;
-            transform: scale(0);
-            opacity: 0;
-            transition: all 0.5s ease;
-        }
-        label:before {
-            transition: all 0.5s ease;
-        }
-        label:after {
-            opacity: 0;
-            transition: all 0.5s ease;
-        }
-    }
     input:checked+.state {
+        label:after {
+            transition: all 0.3s ease;
+        }
         .icon,
         .svg,
-        img,
-        label:after {
-            transform: scale(1);
-            opacity: 1;
-        }
         img {
-            transform: scale(0.8);
-        }
-        label:after {
-            opacity: 1;
+            animation: zoom 0.3s ease-in;
         }
     }
-    &.--default:not(.--fill) input:checked+.state{
+    &.--default input:checked+.state {
         label:after {
-            transform: scale(0.6);
+            animation: zoom 0.2s ease;
         }
     }
     &.--plain input:checked+.state {
         label:before {
             content: '';
             transform: scale(0);
+            transition: all 0.5s ease;
         }
     }
 }
 
 .#{$pretty--class-name}.--tada {
-    input+.state {
-        .icon,
-        .svg,
-        img {
-            display: inline-block;
-            opacity: 0;
-        }
-        label:after {
-            opacity: 0;
-        }
-    }
     input:checked+.state {
         .icon,
         .svg,
@@ -65,25 +33,10 @@
             animation: tada 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 alternate;
             opacity: 1;
         }
-        label:after {
-            opacity: 1;
-        }
     }
 }
 
 .#{$pretty--class-name}.--jelly {
-    input+.state {
-        .icon,
-        .svg,
-        img {
-            display: inline-block;
-            opacity: 0;
-            animation-fill-mode: reverse;
-        }
-        label:after {
-            opacity: 0;
-        }
-    }
     input:checked+.state {
         .icon,
         .svg,
@@ -99,18 +52,6 @@
 }
 
 .#{$pretty--class-name}.--rotate {
-    input~.state {
-        .icon,
-        .svg,
-        img {
-            display: inline-block;
-            opacity: 0;
-            animation-fill-mode: reverse;
-        }
-        label:after {
-            opacity: 0;
-        }
-    }
     input:checked~.state {
         .icon,
         .svg,

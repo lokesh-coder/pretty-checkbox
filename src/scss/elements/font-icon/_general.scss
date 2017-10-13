@@ -2,18 +2,19 @@
 .#{$pretty--class-name}.--icon {
     .state {
         .icon {
-            display: none;
+            display: inline-block;
             position: absolute;
             font-size: 1em;
-            width: calc(#{$pretty--box-width} + 2px);
-            height: calc(1em + 2px);
+            width: $pretty--box-size;
+            height: $pretty--box-size;
             top: 0;
             left: 0;
-            z-index: $pretty--z-index-between;
+            z-index: $pretty--z-index-between; 
             text-align: center;
             line-height: normal;
             top:$pretty-top-offset;
             border:1px solid transparent; 
+            opacity: 0;
         }
         .icon:before {
             line-height: normal;
@@ -30,8 +31,7 @@
     }
     input:checked~.state {
         .icon {
-            display: inline-block;
-            vertical-align: top;
+            opacity: 1;
         }
         label:before {
             border-color: #5a656b;

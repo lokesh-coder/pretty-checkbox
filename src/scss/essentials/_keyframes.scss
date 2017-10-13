@@ -1,3 +1,12 @@
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+
 @keyframes tada {
     0% {
         transform: scale(7);
