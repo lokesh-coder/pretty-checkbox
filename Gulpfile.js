@@ -27,14 +27,14 @@ gulp.task('sass', function() {
         browsers: ['> 5%','last 2 versions'],
         cascade: false
     }))
-    .pipe(gulp.dest('src/'))
+    .pipe(gulp.dest('src/css'))
     .pipe(sass({
       outputStyle: 'compressed'
     }))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('src/'))
+    .pipe(gulp.dest('src/css/minified'))
     .pipe(browserSync.reload({
       stream: true
     }));

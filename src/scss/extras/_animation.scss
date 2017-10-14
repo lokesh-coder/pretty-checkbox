@@ -1,5 +1,8 @@
 // animation
 .#{$pretty--class-name}.--smooth {
+    label:before,label:after{
+        transition: all 0.5s ease;
+    }
     input:checked+.state {
         label:after {
             transition: all 0.3s ease;
@@ -7,7 +10,7 @@
         .icon,
         .svg,
         img {
-            animation: zoom 0.3s ease-in;
+            animation: zoom 0.2s ease;
         }
     }
     &.--default input:checked+.state {
@@ -42,7 +45,7 @@
         .svg,
         img,
         label:after {
-            animation: jelly 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both alternate;
+            animation: jelly 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
             opacity: 1;
         }
         label:before {
@@ -57,8 +60,8 @@
         .svg,
         img,
         label:after {
-            animation: rotate 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 both alternate;
-            opacity: 1;
+            animation: rotate 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            opacity: 1; 
         }
         label:before {
             border-color: transparent;

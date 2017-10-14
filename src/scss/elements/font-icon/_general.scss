@@ -6,7 +6,7 @@
             position: absolute;
             font-size: 1em;
             width: $pretty--box-size;
-            height: $pretty--box-size;
+            height: $pretty--box-size; 
             top: 0;
             left: 0;
             z-index: $pretty--z-index-between; 
@@ -15,6 +15,7 @@
             top:$pretty-top-offset;
             border:1px solid transparent; 
             opacity: 0;
+            transform: scale(1.1); 
         }
         .icon:before {
             line-height: normal;
