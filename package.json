@@ -1,15 +1,16 @@
 {
   "name": "pretty-checkbox",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Scalable css3 pretty checkbox and radio buttons with custom font icon library",
-  "main": "src/pretty.min.css",
+  "main": "dist/pretty.min.css",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.1",
+    "sass-lint": "^1.12.0"
   },
   "scripts": {},
   "repository": {
