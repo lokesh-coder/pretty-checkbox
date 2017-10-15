@@ -5,4 +5,7 @@
             content:none;
         }
     }
+    &.--plain .icon{
+        transform: scale(1.1);
+    }
 }
