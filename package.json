@@ -8,8 +8,10 @@
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-header-comment": "^0.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.6.1",
     "sass-lint": "^1.12.0"
   },
   "scripts": {},
@@ -24,7 +26,7 @@
     "css3",
     "animation"
   ],
-  "author": "lokesh",
+  "author": "Lokesh Rajendran",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lokesh-coder/pretty-checkbox/issues"

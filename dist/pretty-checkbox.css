@@ -1,3 +1,21 @@
+/**
+ * pretty-checkbox.css - https://lokesh-coder.github.io/pretty-checkbox
+ *
+ * Version: 3.0.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Lokesh rajendran
+ */
+
+/**
+ * pretty-checkbox.css : https://lokesh-coder.github.io/pretty-checkbox
+ * 
+ * Version: 3.0.0
+ * Generated: 2017
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Author: Lokesh
+ */
+
 .pretty * {
   box-sizing: border-box;
 }
@@ -554,6 +572,7 @@
 .pretty.--tada:not(.--default) input:checked + .state .icon,
 .pretty.--tada:not(.--default) input:checked + .state .svg,
 .pretty.--tada:not(.--default) input:checked + .state img,
+.pretty.--tada:not(.--default) input:checked + .state label:before,
 .pretty.--tada:not(.--default) input:checked + .state label:after {
   -webkit-animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
@@ -563,7 +582,8 @@
 .pretty.--jelly:not(.--default) input:checked + .state .icon,
 .pretty.--jelly:not(.--default) input:checked + .state .svg,
 .pretty.--jelly:not(.--default) input:checked + .state img,
-.pretty.--jelly:not(.--default) input:checked + .state label:before {
+.pretty.--jelly:not(.--default) input:checked + .state label:before,
+.pretty.--jelly:not(.--default) input:checked + .state label:after {
   -webkit-animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 1;
@@ -576,6 +596,7 @@
 .pretty.--rotate:not(.--default) input:checked ~ .state .icon,
 .pretty.--rotate:not(.--default) input:checked ~ .state .svg,
 .pretty.--rotate:not(.--default) input:checked ~ .state img,
+.pretty.--rotate:not(.--default) input:checked ~ .state label:before,
 .pretty.--rotate:not(.--default) input:checked ~ .state label:after {
   -webkit-animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -808,6 +829,19 @@
 .pretty.--switch.--slim input:checked ~ .state.--danger:before {
   border-color: #a02622;
   background-color: #a02622;
+}
+
+.pretty.--bigger label:before,
+.pretty.--bigger label:after,
+.pretty.--bigger .icon,
+.pretty.--bigger .svg,
+.pretty.--bigger .img {
+  font-size: 1.2em !important;
+  top: calc((0% - (100% - 1em)) - 35%) !important;
+}
+
+.pretty.--bigger label {
+  text-indent: calc((1.2em * 2) / 1.5);
 }
 
 @media print {

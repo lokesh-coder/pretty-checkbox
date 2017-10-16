@@ -5,7 +5,7 @@
     }
     input:checked+.state {
         label:after {
-            transition: all 0.3s ease;
+            transition: all 0.3s ease; 
         }
         .icon,
         .svg,
@@ -32,6 +32,7 @@
         .icon,
         .svg,
         img,
+        label:before,
         label:after {
             animation: tada 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 alternate;
             opacity: 1;
@@ -44,7 +45,8 @@
         .icon,
         .svg,
         img,
-        label:before { 
+        label:before,
+        label:after { 
             animation: jelly 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
             opacity: 1;
         }
@@ -59,6 +61,7 @@
         .icon,
         .svg,
         img,
+        label:before,
         label:after {
             animation: rotate 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
             opacity: 1; 
