@@ -1,22 +1,20 @@
 <h1 align="center">
   <br>
-  <a href="https://lokesh-coder.github.io/pretty-checkbox/"><img src="logo.png" alt="Pretty checkbox" width="100"></a>
+  <a href="logo.png" alt="Pretty checkbox" width="100"></a>
   <br> <br> pretty-checkbox.css <br>
 </h1>
 
 <h4 align="center">A pure css library to beautify checkbox and radio buttons.</h4>
 
 <p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
+ <a href="#">
+    <img src="https://img.shields.io/github/release/lokesh-coder/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Github Release">
   </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/amitmerchant1990">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
+   <a href="#">
+    <img src="https://img.shields.io/npm/l/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Licence">
   </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+   <a href="#">
+    <img src="  https://img.shields.io/github/size/lokesh-coder/pretty-checkbox/src/pretty.min.css.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Size">
   </a>
 </p>
 <br>
@@ -24,11 +22,12 @@
 
 ### Features
 * Basic
-  - Four styles ( Default, round, Curve, Switch )
-  - Three Different variants ( Default, Fill, Thick )
-  - Five colors ( Primary, Success, Info, Warning, Danger )
-  - Two color types ( Solid and Outline )
-  - Four types of animation (Smooth, Tada, Jelly, Rotate )
+  - **Shapes** - *Square*, *Curve*, *Round* 
+  - **Variants** - *Default*, *Fill*, *Thick*
+  - **Colors** - *Primary*, *Success*, *Info*, *Warning*, *Danger* 
+  - **Color types** - *Solid*, *Outline*
+  - **Animations** - *Smooth*, *Tada*, *Jelly*, *Rotate*
+ * Switch - iOS style - *Outline*, *Fill*, *Slim*
  * Responsive
  * No Javascript
  * Custom Font Icons
@@ -36,11 +35,11 @@
  * Image 
  * Toggle
  * Lock
- * State ( Focus, Hover, Inderterminate )
- * Supports frameworks like bootstrap, Foundation, Sematic UI, Bulma
+ * State - *Focus*, *Hover*, *Inderterminate*
+ * Supports frameworks - *Bootstrap*, *Foundation*, *Sematic UI*, *Bulma*, ...
  * Customize nearly everything with SCSS
  * Print friendly
- * and more...
+ * and more... ( *I am kidding, thats all!* )
 
 ### Demo and documentation
 
@@ -57,10 +56,12 @@ Install the library from `npm` or `yarn` package manager
 ```
 Add `pretty-checkbox.min.css` in your html
 
+
 **From CDN**
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty-checkbox.min.css"/>
 ```
+
 
 **Manual download**
 
@@ -69,6 +70,7 @@ Download the source from github
 <link rel="stylesheet" href="../<PATH>/pretty-checkbox/dist/pretty-checkbox.min.css"/>
 ```
 `<PATH>` is where the library is downloaded.
+
 
 **SCSS**
 
@@ -244,3 +246,6 @@ Thanks for all those good people who spend their valuable time and helped to imp
 
 ### Licence
 This project is licensed under the MIT License - see the LICENSE.md file for details
+
+
+<div align="center"><sub>Built with ❤️ </sub></div>
