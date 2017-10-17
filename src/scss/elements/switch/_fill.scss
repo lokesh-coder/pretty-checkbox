@@ -1,0 +1,18 @@
+// switch
+.#{$pretty--class-name}.--switch.--fill {
+  input:checked ~ .state {
+    &:before {
+      border-color: $pretty--color-dark;
+      background-color: $pretty--color-dark;
+    }
+
+    label:before {
+      opacity: 0;
+    }
+
+    label:after {
+      background-color: #fff;
+      left: 1em;
+    }
+  }
+}

@@ -1,0 +1,868 @@
+/* 
+Pretty, isn't it?
+*/
+.pretty * {
+  box-sizing: border-box;
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+  display: none;
+}
+
+.pretty {
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  line-height: unset;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.pretty input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 1em;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.pretty .state label {
+  position: initial;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0;
+  text-indent: 1.5em;
+  min-width: calc(1em + 2px);
+}
+
+.pretty .state label:before, .pretty .state label:after {
+  content: '';
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 0%;
+  border: 1px solid transparent;
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  top: calc(calc(0% - calc(100% - 1em)) - 8%);
+  background-color: transparent;
+}
+
+.pretty .state label:before {
+  border-color: #bdc3c7;
+}
+
+.pretty .state.--is-hover, .pretty .state.--is-indeterminate {
+  display: none;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(7);
+    transform: scale(7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(1.24);
+    transform: scale(1.24);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(7);
+    transform: scale(7);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  72% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  81% {
+    -webkit-transform: scale(1.24);
+    transform: scale(1.24);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  89% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  95% {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@-webkit-keyframes jelly {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jelly {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translateZ(-200px) rotate(-45deg);
+    transform: translateZ(-200px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0);
+    transform: translateZ(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translateZ(-200px) rotate(-45deg);
+    transform: translateZ(-200px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0);
+    transform: translateZ(0) rotate(0);
+    opacity: 1;
+  }
+}
+
+.pretty.--default.--fill .state label:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.pretty.--default .state label:after {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.pretty.--default input:checked ~ .state label:after {
+  background-color: #bdc3c7;
+}
+
+.pretty.--default.--thick .state label:before, .pretty.--default.--thick .state label:after {
+  border-width: 0.13em;
+}
+
+.pretty.--default.--thick .state label:after {
+  -webkit-transform: scale(0.4) !important;
+  transform: scale(0.4) !important;
+}
+
+.pretty.--icon .state .icon {
+  display: inline-block;
+  position: absolute;
+  font-size: 1em;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  line-height: normal;
+  top: calc(calc(0% - calc(100% - 1em)) - 8%);
+  border: 1px solid transparent;
+  opacity: 0;
+}
+
+.pretty.--icon .state .icon:before {
+  line-height: normal;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.pretty.--icon input:checked ~ .state .icon {
+  opacity: 1;
+}
+
+.pretty.--icon input:checked ~ .state label:before {
+  border-color: #5a656b;
+}
+
+.pretty.--svg .state .svg {
+  position: absolute;
+  font-size: 1em;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  line-height: normal;
+  top: calc(calc(0% - calc(100% - 1em)) - 8%);
+  border: 1px solid transparent;
+  opacity: 0;
+}
+
+.pretty.--svg .state svg {
+  line-height: normal;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.pretty.--svg input:checked ~ .state .svg {
+  opacity: 1;
+}
+
+.pretty.--image .state img {
+  opacity: 0;
+  position: absolute;
+  width: calc(1em + 2px);
+  height: calc(1em + 2px);
+  top: 0;
+  top: calc(calc(0% - calc(100% - 1em)) - 8%);
+  left: 0;
+  z-index: 0;
+  text-align: center;
+  line-height: normal;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.pretty.--image input:checked ~ .state img {
+  opacity: 1;
+}
+
+.pretty.--switch .state {
+  position: relative;
+}
+
+.pretty.--switch .state:before {
+  content: '';
+  border: 1px solid #bdc3c7;
+  border-radius: 60px;
+  width: 2em;
+  display: inline-block;
+  box-sizing: unset;
+  height: calc(1em + 2px);
+  position: absolute;
+  top: 0;
+  top: calc(calc(0% - calc(100% - 1em)) - 16%);
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+.pretty.--switch .state label {
+  text-indent: 2.5em;
+}
+
+.pretty.--switch .state label:before, .pretty.--switch .state label:after {
+  transition: all 0.5s ease;
+  border-radius: 100%;
+  left: 0;
+  border-color: transparent;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.pretty.--switch .state label:after {
+  background-color: #bdc3c7;
+}
+
+.pretty.--switch input:checked ~ .state:before {
+  border-color: #5a656b;
+}
+
+.pretty.--switch input:checked ~ .state label:before {
+  opacity: 0;
+}
+
+.pretty.--switch input:checked ~ .state label:after {
+  background-color: #5a656b;
+  left: 1em;
+}
+
+.pretty.--switch.--fill input:checked ~ .state:before {
+  border-color: #5a656b;
+  background-color: #5a656b;
+}
+
+.pretty.--switch.--fill input:checked ~ .state label:before {
+  opacity: 0;
+}
+
+.pretty.--switch.--fill input:checked ~ .state label:after {
+  background-color: #fff;
+  left: 1em;
+}
+
+.pretty.--switch.--slim .state:before {
+  height: 0.1em;
+  background: #bdc3c7;
+  top: calc(50% - 0.1em);
+}
+
+.pretty.--switch.--slim input:checked ~ .state:before {
+  border-color: #5a656b;
+  background-color: #5a656b;
+}
+
+.pretty.--toggle .state.--on {
+  opacity: 0;
+  display: none;
+}
+
+.pretty.--toggle .state.--off,
+.pretty.--toggle .state .icon,
+.pretty.--toggle .state .svg,
+.pretty.--toggle .state img {
+  opacity: 1;
+  display: inline-block;
+}
+
+.pretty.--toggle input:checked ~ .state.--on {
+  opacity: 1;
+  display: inline-block;
+}
+
+.pretty.--toggle input:checked ~ .state.--off {
+  opacity: 0;
+  display: none;
+}
+
+.pretty.--plain input:checked ~ .state label:before,
+.pretty.--plain.--toggle .state label:before {
+  content: none;
+}
+
+.pretty.--plain.--plain .icon {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.pretty.--round .state label:before, .pretty.--round .state label:after {
+  border-radius: 100%;
+}
+
+.pretty.--round.--icon .state .icon {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.pretty.--round.--icon .state .icon:before {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.pretty.--curve .state label:before, .pretty.--curve .state label:after {
+  border-radius: 20%;
+}
+
+.pretty.--smooth label:before, .pretty.--smooth label:after, .pretty.--smooth .icon, .pretty.--smooth .svg {
+  transition: all 0.5s ease;
+}
+
+.pretty.--smooth input:checked + .state label:after {
+  transition: all 0.3s ease;
+}
+
+.pretty.--smooth input:checked + .state .icon,
+.pretty.--smooth input:checked + .state .svg,
+.pretty.--smooth input:checked + .state img {
+  -webkit-animation: zoom 0.2s ease;
+  animation: zoom 0.2s ease;
+}
+
+.pretty.--smooth.--default input:checked + .state label:after {
+  -webkit-animation: zoom 0.2s ease;
+  animation: zoom 0.2s ease;
+}
+
+.pretty.--smooth.--plain input:checked + .state label:before {
+  content: '';
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.pretty.--tada:not(.--default) input:checked + .state .icon,
+.pretty.--tada:not(.--default) input:checked + .state .svg,
+.pretty.--tada:not(.--default) input:checked + .state img,
+.pretty.--tada:not(.--default) input:checked + .state label:before,
+.pretty.--tada:not(.--default) input:checked + .state label:after {
+  -webkit-animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
+  animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
+  opacity: 1;
+}
+
+.pretty.--jelly:not(.--default) input:checked + .state .icon,
+.pretty.--jelly:not(.--default) input:checked + .state .svg,
+.pretty.--jelly:not(.--default) input:checked + .state img,
+.pretty.--jelly:not(.--default) input:checked + .state label:before,
+.pretty.--jelly:not(.--default) input:checked + .state label:after {
+  -webkit-animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 1;
+}
+
+.pretty.--jelly:not(.--default) input:checked + .state label:before {
+  border-color: transparent;
+}
+
+.pretty.--rotate:not(.--default) input:checked ~ .state .icon,
+.pretty.--rotate:not(.--default) input:checked ~ .state .svg,
+.pretty.--rotate:not(.--default) input:checked ~ .state img,
+.pretty.--rotate:not(.--default) input:checked ~ .state label:before,
+.pretty.--rotate:not(.--default) input:checked ~ .state label:after {
+  -webkit-animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 1;
+}
+
+.pretty.--rotate:not(.--default) input:checked ~ .state label:before {
+  border-color: transparent;
+}
+
+.pretty input[disabled] {
+  display: none;
+  cursor: not-allowed;
+}
+
+.pretty input[disabled] ~ * {
+  opacity: 0.5;
+}
+
+.pretty.--locked input {
+  display: none;
+  cursor: not-allowed;
+}
+
+.pretty input:checked ~ .state.--primary label:after {
+  background-color: #428bca;
+}
+
+.pretty input:checked ~ .state.--primary .icon,
+.pretty input:checked ~ .state.--primary .svg {
+  color: #fff;
+  stroke: #fff;
+}
+
+.pretty input:checked ~ .state.--primary-o label:before {
+  border-color: #428bca;
+}
+
+.pretty input:checked ~ .state.--primary-o label:after {
+  background-color: transparent;
+}
+
+.pretty input:checked ~ .state.--primary-o .icon,
+.pretty input:checked ~ .state.--primary-o .svg,
+.pretty input:checked ~ .state.--primary-o svg {
+  color: #428bca;
+  stroke: #428bca;
+}
+
+.pretty.--default:not(.--fill) input:checked ~ .state.--primary-o label:after {
+  background-color: #428bca;
+}
+
+.pretty.--switch input:checked ~ .state.--primary:before {
+  border-color: #428bca;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--primary:before {
+  background-color: #428bca;
+}
+
+.pretty.--switch.--slim input:checked ~ .state.--primary:before {
+  border-color: #245682;
+  background-color: #245682;
+}
+
+.pretty input:checked ~ .state.--info label:after {
+  background-color: #5bc0de;
+}
+
+.pretty input:checked ~ .state.--info .icon,
+.pretty input:checked ~ .state.--info .svg {
+  color: #fff;
+  stroke: #fff;
+}
+
+.pretty input:checked ~ .state.--info-o label:before {
+  border-color: #5bc0de;
+}
+
+.pretty input:checked ~ .state.--info-o label:after {
+  background-color: transparent;
+}
+
+.pretty input:checked ~ .state.--info-o .icon,
+.pretty input:checked ~ .state.--info-o .svg,
+.pretty input:checked ~ .state.--info-o svg {
+  color: #5bc0de;
+  stroke: #5bc0de;
+}
+
+.pretty.--default:not(.--fill) input:checked ~ .state.--info-o label:after {
+  background-color: #5bc0de;
+}
+
+.pretty.--switch input:checked ~ .state.--info:before {
+  border-color: #5bc0de;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--info:before {
+  background-color: #5bc0de;
+}
+
+.pretty.--switch.--slim input:checked ~ .state.--info:before {
+  border-color: #2390b0;
+  background-color: #2390b0;
+}
+
+.pretty input:checked ~ .state.--success label:after {
+  background-color: #5cb85c;
+}
+
+.pretty input:checked ~ .state.--success .icon,
+.pretty input:checked ~ .state.--success .svg {
+  color: #fff;
+  stroke: #fff;
+}
+
+.pretty input:checked ~ .state.--success-o label:before {
+  border-color: #5cb85c;
+}
+
+.pretty input:checked ~ .state.--success-o label:after {
+  background-color: transparent;
+}
+
+.pretty input:checked ~ .state.--success-o .icon,
+.pretty input:checked ~ .state.--success-o .svg,
+.pretty input:checked ~ .state.--success-o svg {
+  color: #5cb85c;
+  stroke: #5cb85c;
+}
+
+.pretty.--default:not(.--fill) input:checked ~ .state.--success-o label:after {
+  background-color: #5cb85c;
+}
+
+.pretty.--switch input:checked ~ .state.--success:before {
+  border-color: #5cb85c;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--success:before {
+  background-color: #5cb85c;
+}
+
+.pretty.--switch.--slim input:checked ~ .state.--success:before {
+  border-color: #357935;
+  background-color: #357935;
+}
+
+.pretty input:checked ~ .state.--warning label:after {
+  background-color: #f0ad4e;
+}
+
+.pretty input:checked ~ .state.--warning .icon,
+.pretty input:checked ~ .state.--warning .svg {
+  color: #fff;
+  stroke: #fff;
+}
+
+.pretty input:checked ~ .state.--warning-o label:before {
+  border-color: #f0ad4e;
+}
+
+.pretty input:checked ~ .state.--warning-o label:after {
+  background-color: transparent;
+}
+
+.pretty input:checked ~ .state.--warning-o .icon,
+.pretty input:checked ~ .state.--warning-o .svg,
+.pretty input:checked ~ .state.--warning-o svg {
+  color: #f0ad4e;
+  stroke: #f0ad4e;
+}
+
+.pretty.--default:not(.--fill) input:checked ~ .state.--warning-o label:after {
+  background-color: #f0ad4e;
+}
+
+.pretty.--switch input:checked ~ .state.--warning:before {
+  border-color: #f0ad4e;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--warning:before {
+  background-color: #f0ad4e;
+}
+
+.pretty.--switch.--slim input:checked ~ .state.--warning:before {
+  border-color: #c77c11;
+  background-color: #c77c11;
+}
+
+.pretty input:checked ~ .state.--danger label:after {
+  background-color: #d9534f;
+}
+
+.pretty input:checked ~ .state.--danger .icon,
+.pretty input:checked ~ .state.--danger .svg {
+  color: #fff;
+  stroke: #fff;
+}
+
+.pretty input:checked ~ .state.--danger-o label:before {
+  border-color: #d9534f;
+}
+
+.pretty input:checked ~ .state.--danger-o label:after {
+  background-color: transparent;
+}
+
+.pretty input:checked ~ .state.--danger-o .icon,
+.pretty input:checked ~ .state.--danger-o .svg,
+.pretty input:checked ~ .state.--danger-o svg {
+  color: #d9534f;
+  stroke: #d9534f;
+}
+
+.pretty.--default:not(.--fill) input:checked ~ .state.--danger-o label:after {
+  background-color: #d9534f;
+}
+
+.pretty.--switch input:checked ~ .state.--danger:before {
+  border-color: #d9534f;
+}
+
+.pretty.--switch.--fill input:checked ~ .state.--danger:before {
+  background-color: #d9534f;
+}
+
+.pretty.--switch.--slim input:checked ~ .state.--danger:before {
+  border-color: #a02622;
+  background-color: #a02622;
+}
+
+.pretty.--bigger label:before,
+.pretty.--bigger label:after,
+.pretty.--bigger .icon,
+.pretty.--bigger .svg,
+.pretty.--bigger .img {
+  font-size: 1.2em !important;
+  top: calc((0% - (100% - 1em)) - 35%) !important;
+}
+
+.pretty.--bigger label {
+  text-indent: calc((1.2em * 2) / 1.5);
+}
+
+@media print {
+  .pretty .state:before,
+  .pretty .state label:before,
+  .pretty .state label:after {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.pretty.--has-hover input:hover ~ .state:not(.--is-hover) {
+  display: none;
+}
+
+.pretty.--has-hover input:hover ~ .state.--is-hover {
+  display: block;
+}
+
+.pretty.--has-hover input:hover ~ .state.--is-hover .icon {
+  display: block;
+}
+
+.pretty.--has-focus input:focus ~ .state label:before {
+  box-shadow: 0px 0px 3px 0px #bdc3c7;
+}
+
+.pretty.--has-indeterminate input[type='checkbox']:indeterminate ~ .state:not(.--is-indeterminate) {
+  display: none;
+}
+
+.pretty.--has-indeterminate input[type='checkbox']:indeterminate ~ .state.--is-indeterminate {
+  display: block;
+}
+
+.pretty.--has-indeterminate input[type='checkbox']:indeterminate ~ .state.--is-indeterminate .icon {
+  display: block;
+}

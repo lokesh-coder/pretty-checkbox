@@ -3,11 +3,13 @@ var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
+var headerComment = require('gulp-header-comment');
 var reload = browserSync.reload;
 
 module.exports = gulp;
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
   browserSync({
     port: 3040,
     server: {
@@ -17,33 +19,50 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('sass', function() {
+gulp.task('build:sass', function () {
   return gulp.src('src/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'expanded'
-    })
-    .on('error', sass.logError))
+        outputStyle: 'expanded'
+      })
+      .on('error', sass.logError))
     .pipe(autoprefixer({
-        browsers: ['> 5%','last 2 versions'],
-        cascade: false
+      browsers: ['> 5%', 'last 2 versions'],
+      cascade: false
     }))
-    .pipe(gulp.dest('src/'))
+    .pipe(gulp.dest('dist'))
     .pipe(sass({
       outputStyle: 'compressed'
     }))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('src/'))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
     }));
 });
 
-gulp.task('bs-reload', function() {
+
+gulp.task('append:header', function () {
+  return gulp.src('dist/**/*.css')
+    .pipe(headerComment(`
+      pretty-checkbox.css - <%= pkg.homepage %>
+
+      Version: v<%= pkg.version %>
+      Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+      Copyright (c) <%= moment().format('YYYY') %> <%= _.capitalize(pkg.author) %>
+    `))
+    .pipe(gulp.dest('./dist/'))
+});
+
+
+gulp.task('bs-reload', function () {
   browserSync.reload();
 });
 
-gulp.task('default', ['sass', 'browser-sync'], function() {
-  gulp.watch("src/**/*.scss", ['sass', 'bs-reload']);
+gulp.task('default', ['build:sass', 'browser-sync'], function () {
+  gulp.watch("src/**/*.scss", ['build:sass', 'bs-reload']);
 });

@@ -1,0 +1,12 @@
+.#{$pretty--class-name}.--plain {
+  input:checked ~ .state label,
+  &.--toggle .state label {
+    &:before {
+      content: none;
+    }
+  }
+
+  &.--plain .icon {
+    transform: scale(1.1);
+  }
+}

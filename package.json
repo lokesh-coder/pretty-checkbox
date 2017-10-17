@@ -1,17 +1,39 @@
 {
   "name": "pretty-checkbox",
-  "version": "2.2.1",
-  "description": "Scalable css3 pretty checkbox and radio buttons with custom font icon library",
-  "main": "src/pretty.min.css",
+  "version": "3.0.0",
+  "description": "A pure css library to beautify checkbox and radio buttons.",
+  "main": "dist/pretty.min.css",
+  "scripts": {
+    "lint": "stylelint \"src\\**\\*.scss\" --syntax scss --fix",
+    "format": "stylefmt -r src/**/*.scss",
+    "build": "gulp build:sass",
+    "git-build": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
+    "clean:tmp": "rimraf coverage dist tmp docs",
+    "clean:all": "npm run clean:tmp && rimraf node_modules",
+    "release": "corp-semantic-release --branch master",
+    "release-log": "conventional-github-releaser -p angular -r 0",
+    "prebuild": "rimraf dist tmp",
+    "prebuild:watch": "rimraf dist tmp"
+  },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-header-comment": "^0.2.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylelint": "^5.0.0",
+    "stylefmt": "^6.0.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-recommended": "^1.0.0",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-scss": "^2.1.0",
+    "rimraf": "2.6.1",
+    "conventional-github-releaser": "^1.1.12",
+    "corp-semantic-release": "^6.1.0"
   },
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lokesh-coder/pretty-checkbox.git"
@@ -20,10 +42,16 @@
     "checkbox",
     "radio",
     "bootstrap",
+    "fonticon",
+    "icon",
+    "svg",
+    "switch",
+    "toggle",
+    "sass",
     "css3",
     "animation"
   ],
-  "author": "lokesh",
+  "author": "Lokesh Rajendran",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lokesh-coder/pretty-checkbox/issues"

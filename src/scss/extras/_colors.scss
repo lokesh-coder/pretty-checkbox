@@ -1,0 +1,51 @@
+.#{$pretty--class-name} {
+  @each $set, $color in $pretty--colors {
+    input:checked ~ .state.--#{$set} {
+      label:after {
+        background-color: $color;
+      }
+
+      .icon,
+      .svg {
+        color: #fff;
+        stroke: #fff;
+      }
+    }
+
+    input:checked ~ .state.--#{$set}-o {
+      label:before {
+        border-color: $color;
+      }
+
+      label:after {
+        background-color: transparent;
+      }
+
+      .icon,
+      .svg,
+      svg {
+        color: $color;
+        stroke: $color;
+      }
+    }
+
+    &.--default:not(.--fill) input:checked ~ .state.--#{$set}-o label {
+      &:after {
+        background-color: $color;
+      }
+    }
+
+    &.--switch input:checked ~ .state.--#{$set}:before {
+      border-color: $color;
+    }
+
+    &.--switch.--fill input:checked ~ .state.--#{$set}:before {
+      background-color: $color;
+    }
+
+    &.--switch.--slim input:checked ~ .state.--#{$set}:before {
+      border-color: darken($color, 20%);
+      background-color: darken($color, 20%);
+    }
+  }
+}

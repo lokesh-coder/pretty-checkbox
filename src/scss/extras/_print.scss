@@ -1,0 +1,15 @@
+@media print {
+  .#{$pretty--class-name} {
+    .state {
+      &:before,
+      label {
+        &:before,
+        &:after {
+          color-adjust: exact;
+          /* stylelint-disable */
+          print-color-adjust: exact;
+        }
+      }
+    }
+  }
+}

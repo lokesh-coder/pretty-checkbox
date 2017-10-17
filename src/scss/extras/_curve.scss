@@ -1,0 +1,8 @@
+.#{$pretty--class-name}.--curve {
+  .state label {
+    &:before,
+    &:after {
+      border-radius: $pretty--curve-radius;
+    }
+  }
+}

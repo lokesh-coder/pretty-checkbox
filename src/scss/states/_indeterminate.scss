@@ -1,0 +1,13 @@
+.#{$pretty--class-name}.--has-indeterminate {
+  input[type='checkbox']:indeterminate ~.state:not(.--is-indeterminate) {
+    display: none;
+  }
+
+  input[type='checkbox']:indeterminate ~.state.--is-indeterminate {
+    display: block;
+
+    .icon {
+      display: block;
+    }
+  }
+}
