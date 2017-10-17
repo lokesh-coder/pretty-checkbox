@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="logo.png" alt="Pretty checkbox" width="100"></a>
+  <a href=""><img src="logo.png" alt="Pretty checkbox" width="100"></a>
   <br> <br> pretty-checkbox.css <br>
 </h1>
 
