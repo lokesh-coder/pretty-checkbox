@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/npm/l/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Licence">
   </a>
    <a href="#">
-    <img src="  https://img.shields.io/github/size/lokesh-coder/pretty-checkbox/src/pretty.min.css.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Size">
+    <img src="https://img.shields.io/github/size/lokesh-coder/pretty-checkbox/src/pretty.min.css.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Size">
   </a>
 </p>
 <br>
