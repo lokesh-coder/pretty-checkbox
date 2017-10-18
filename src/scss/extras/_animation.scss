@@ -79,3 +79,11 @@
     }
   }
 }
+
+.#{$pretty--class-name}.--pulse:not(.--switch) {
+  input:checked ~ .state {
+    label:before {
+      animation: pulse 1s;
+    }
+  }
+}
