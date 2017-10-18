@@ -1,0 +1,11 @@
+<div class="btn btn-block btn-collapse" *ngIf="!show" (click)="reveal()">
+  <i class="mdi mdi-unfold-more-horizontal"></i> {{before}}
+</div>
+
+<section class="reveal" *ngIf="show">
+  <ng-content></ng-content>
+</section>
+
+<div class="btn btn-block btn-collapse" *ngIf="show" (click)="hide()">
+  <i class="mdi mdi-unfold-more-horizontal"></i> {{after}}
+</div>

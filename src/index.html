@@ -1,14 +1,88 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>PrettyCheckboxDoc</title>
+  <title>Pretty checkbox | Documntation</title>
+  <meta name="description" content="A pure css library to beautify the checkbox anf radio buttons ">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!-- APP BASE PATH -->
   <base href="/">
 
+  <!-- PWA -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#8033b0">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:image" content="assets/favicons/og-image.jpg">
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description" content="A pure css library to beautify checkbox and radio buttons.">
+  <meta property="og:url" content="https://lokesh-coder.github.io/pretty-checkbox/">
+  <meta property="og:title" content="pretty-checkbox.css">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="@lokesh-coder">
+  <meta name="twitter:title" content="pretty-checkbox.css">
+  <meta name="twitter:description" content="A pure css library to beautify checkbox and radio buttons.">
+  <meta name="twitter:image" content="/assets/favicons/og-image.jpg">
+
+  <!-- PREFETCH -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- CODE HIGHLIGHT -->
+  <link async href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" />
+
+  <!-- FONT IVON LIBARARIES -->
+  <link async rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+  />
+  <link async href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" />
+  <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+
+  <!-- PRETTY CHECKBOX -->
+  <link async rel="stylesheet" href="https://192.168.43.188:3040/dist/pretty-checkbox.min.css">
+
+
 </head>
+
 <body>
-  <app-root></app-root>
+  <doc-root></doc-root>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./ngsw-worker.js')
+          .then(reg => {
+            console.log('[App] Successful service worker registration', reg);
+          })
+          .catch(err =>
+            console.error('[App] Service worker registration failed', err)
+          );
+      });
+    }
+
+  </script>
+
+  <!-- UIKITS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+  <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </body>
+
 </html>

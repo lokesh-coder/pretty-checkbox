@@ -1,0 +1,48 @@
+{
+  "index": "/index.html",
+  "appData": {
+    "test": true
+  },
+  "assetGroups": [{
+    "name": "appshell",
+    "resources": {
+      "files": [
+        "/assets/**/*",
+        "!/ngsw-worker.js"
+      ],
+      "versionedFiles": [
+        "/**/*.html",
+        "/**/*.js",
+        "/**/*.css"
+      ],
+      "urls": [
+        "https://fonts.googleapis.com/css?family=Inconsolata:400,700",
+        "https://fonts.gstatic.com/s/materialicons/v29/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2"
+      ]
+    }
+  }],
+  "dataGroups": [{
+    "name": "api-freshness",
+    "urls": [
+      "/timeline"
+    ],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "3d",
+      "timeout": "1m",
+      "strategy": "freshness"
+    }
+  },
+  {
+    "name": "api-performance",
+    "urls": [
+      "/favorites"
+    ],
+    "cacheConfig": {
+      "maxSize": 100,
+      "maxAge": "3d",
+      "timeout": "1m",
+      "strategy": "performance"
+    }
+  }]
+}

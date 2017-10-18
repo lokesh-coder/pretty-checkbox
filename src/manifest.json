@@ -1,0 +1,27 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "PWAtter",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "short_name": "PWAtter",
+  "theme_color": "#105B63",
+  "description": "",
+  "orientation": "any",
+  "background_color": "#DB9E36",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./assets/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+  },
+  {
+      "src": "./assets/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }
+  ]
+}

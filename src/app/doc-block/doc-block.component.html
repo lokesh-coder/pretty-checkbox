@@ -1,0 +1,19 @@
+<div class="card mb-3">
+  <div class="card-header bg-transparent d-flex justify-content-between">
+      <h6 class="mb-0">{{heading}} 
+        <a *ngIf="link" [href]="link" target="_blank" class="highlight ml-2 mdi mdi-open-in-new"></a>
+      </h6>
+      <ng-container [ngTemplateOutlet]="action"></ng-container>
+      <span *ngIf="!hideCodeLink" class="show-code" (click)="toggleDemoCode()"><i class="mdi mdi-code-tags"></i> {{openExample?'hide code':'show code'}}</span>
+  </div>
+  <div class="card-body">
+    <ng-content select="div>div"></ng-content>
+    <div #codePlaceholder></div>
+  </div>
+  <div class="card-body card-info" *ngIf="info">
+    <ng-container [ngTemplateOutlet]="info"></ng-container>
+  </div>
+  <div class="card-footer animated fadeIn" *ngIf="openExample">
+    <prism-block [code]="snippet" [language]="lang"></prism-block>
+  </div>
+</div>

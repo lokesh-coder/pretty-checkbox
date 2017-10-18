@@ -1,0 +1,21 @@
+:host() {
+  div {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: rgba(166, 178, 185, 0.43);
+    padding: 0.5em;
+    &:hover {
+      background-color: #23527c;
+    }
+  }
+  i {
+    font-size: 2rem;
+    line-height: 1;
+    vertical-align: initial;
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+  }
+}

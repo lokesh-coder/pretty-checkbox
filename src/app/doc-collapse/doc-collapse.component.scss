@@ -1,0 +1,16 @@
+.btn-collapse {
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 0;
+  font-size: 1em;
+  font-weight: 500;
+  color: #828b90;
+  cursor: pointer;
+  padding: 1em;
+  margin-bottom: 1em;
+  &:hover {
+    background: #f7f7f7;
+    border-color: #e6dfdf;
+    color: #90a1ad;
+  }
+}
