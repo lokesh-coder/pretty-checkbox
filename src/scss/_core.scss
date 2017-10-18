@@ -63,7 +63,7 @@
         height: $pretty--box-size;
         display: inline-block;
         box-sizing: border-box;
-        border-radius: $pretty--radius-box;
+        border-radius: 0;
         border: 1px solid transparent;
         z-index: $pretty--z-index-back;
         position: absolute;
