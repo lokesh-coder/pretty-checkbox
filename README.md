@@ -19,6 +19,12 @@
 </p>
 <br>
 
+<div class="highlight highlight-source-shell">
+<pre>
+<div align="center"><strong >Demo and documentation</strong></div>
+<div align="center"><a align="center" href="https://lokesh-coder.github.io/pretty-checkbox/">https://lokesh-coder.github.io/pretty-checkbox/</a></div>
+</pre>
+</div>
 
 ### Features
 * Basic
@@ -41,14 +47,10 @@
  * Print friendly
  * and more... ( *I am kidding, thats all!* )
 
-### Demo and documentation
-
-:globe_with_meridians: https://lokesh-coder.github.io/pretty-checkbox/
-
 ### Installation
-**From CLI**
+- **From CLI**
 
-Install the library from `npm` or `yarn` package manager
+Install the library from [`npm`](https://www.npmjs.com/package/pretty-checkbox) or [`yarn`](https://yarnpkg.com/en/package/pretty-checkbox) package manager
 
 ```sh
 > npm install pretty-checkbox // or
@@ -56,14 +58,16 @@ Install the library from `npm` or `yarn` package manager
 ```
 Add `pretty-checkbox.min.css` in your html
 
+<br>
 
-**From CDN**
+- **From CDN** ( [Jsdelivr ](https://www.jsdelivr.com/package/npm/pretty-checkbox) )
 ```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretty-checkbox/2.2.1/pretty-checkbox.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3/dist/pretty-checkbox.min.css"/>
 ```
 
+<br>
 
-**Manual download**
+- **Manual download** ( [Github](https://github.com/lokesh-coder/pretty-checkbox/archive/master.zip) )
 
 Download the source from github
 ```html
@@ -71,6 +75,7 @@ Download the source from github
 ```
 `<PATH>` is where the library is downloaded.
 
+<br>
 
 **SCSS**
 
@@ -79,18 +84,21 @@ You can also import `pretty-checkbox.scss` in your main scss file.
 @import '~pretty-checkbox/src/pretty.scss';
 ```
 
+Please refer the document for SCSS settings.
+
+
 ### Usage
 
 
 Pretty checkbox comes with many styles,
 
-| Style class | Description             |
-| :---------- | :---------------------- |
-| `--default` | Basic checkbox          |
-| `--switch`  | iOs like toggle switch  |
-| `--icon`    | using custom font icons |
-| `--svg`     | using custom SVG        |
-| `--image`   | using small images      |
+| Class name  | Description              |
+| :---------- | :----------------------- |
+| `--default` | Basic style              |
+| `--switch`  | iOS like toggle style    |
+| `--icon`    | Custom font icons        |
+| `--svg`     | Custom SVG files, markup |
+| `--image`   | Tiny images              |
 
 And three shapes `--round` `--curve` `--square` (default)
 
@@ -119,9 +127,9 @@ You can combine them.
   </div>
 ```
 
+<div align="center"><strong >---</strong></div>
 
 #### Switch checkbox,
-
 
 Switch has three variants `--outline` `--fill` `--slim`
 
@@ -134,9 +142,9 @@ Switch has three variants `--outline` `--fill` `--slim`
 </div>
 ```
 
-#### Custom Font icons,
+<div align="center"><strong >---</strong></div>
 
-checkbox with fonticon,
+#### Custom Font icons,
 
 ```html
 <div class="pretty --icon">
@@ -147,15 +155,24 @@ checkbox with fonticon,
 	</div>
 </div>
 ```
-> **Note**: class `icon` should be added along with icon class names
 
-> **Note**: For icons to work, you need to add appropriate font icons library. In above example , we used font awesome icon. So, FontAwesome should be included separately. 
+<blockquote>
+    <sub>
+    	<strong>Note</strong>: class `icon` should be added along with icon class names
+    </sub>
+</blockquote>
 
-Checkout the documentation for tested font icon libraries.
+<blockquote>
+    <sub>
+    	<strong>Note</strong>: For icons to work, you need to add appropriate font icons library. In above example , we used font awesome icon. So, FontAwesome should be included separately. 
+    </sub>
+</blockquote>
+
+<p> Checkout the documentation for tested font icon libraries.</p>
+
+<div align="center"><strong >---</strong></div>
 
 #### SVG
-
-checkbox with svg,
 
 ```html
 <div class="pretty --svg">
@@ -169,13 +186,17 @@ checkbox with svg,
 
 Support, SVG file in img tag, svg markup (`<svg> ... </svg>`)
 
-> Note: class `svg` to be added in img tag or svg tag.
+<blockquote>
+    <sub>
+    	<strong>Note</strong>: class `svg` to be added in img tag or svg tag.
+    </sub>
+</blockquote>
 
 Checkout the documentation for different formats and tested svg libraries.
 
-#### Image
+<div align="center"><strong >---</strong></div>
 
-checkbox with image,
+#### Image
 
 ```html
   <div class="pretty --image">
@@ -187,11 +208,17 @@ checkbox with image,
   </div>
 ```
 
-Support, SVG file in img tag, svg markup (`<svg> ... </svg>`)
+Supports any type of valid image format.
 
-> Note: class `svg` to be added in img tag or svg tag.
+<blockquote>
+    <sub>
+    	<strong>Note</strong>: class `image` to be added in img tag.
+    </sub>
+</blockquote>
 
 Checkout the documentation for different formats and tested svg libraries.
+
+<div align="center"><strong >---</strong></div>
 
 #### Colors
 
@@ -207,7 +234,11 @@ And five outline colors  `--primary-o` `--success-o` `--warning-o` `--info-o` `-
       </div>
   </div>
 ```
-> Note: Color class must be added in state class. Solid colors and Ouline colors have distinct role in font icons and toggle feature.
+<blockquote>
+    <sub>
+    	<strong>Note</strong>: Color class must be added in state class. Solid colors and Ouline colors have distinct role in font icons and toggle feature.
+    </sub>
+</blockquote>
 
 Checkout the documentation for complete demo of color combinations with above styles.
 
@@ -215,37 +246,37 @@ Checkout the documentation for complete demo of color combinations with above st
 
 There are more features like  ***Radio buttons*** , ***Toggle*** , ***States*** , ***Animations*** , ***Border less*** , ***Lock*** , ***Scale***, ***SCSS Settings***. 
 
-Please refer the documentation to learn about them.
+Please refer the documentation to know about them.
 
 
 ### Browser support
 `IE >= 10`   `Firefox >= 3.6`   `Chrome >= 14`   `Safari >= 6`   `Opera >= 11.6`
 
 ### Font Icon libraries
-* Font awesome
-* Bootstrap Glyphicons
-* Material icon ( MDI )
-* Material icon ( ZMDI )
-* Ion icons
-* Typeicons
-* Material icon ( Google )
-* Others not tested, But will work.
+* [Font awesome](http://fontawesome.io/icons/)
+* [Bootstrap Glyphicons](https://getbootstrap.com/docs/3.3/components/#glyphicons)
+* [Material icon ( MDI )](https://materialdesignicons.com/)
+* [Material icon ( ZMDI )](http://zavoloklom.github.io/material-design-iconic-font/icons.html)
+* [Ion icons](http://ionicons.com/)
+* [Typicons](http://www.typicons.com/)
+* [Material icon ( Google )](https://material.io/icons)
+* Others not tested, but will work ( 99% ).
 
 
 ### SVG
-* UIKit
-* Feathers
+* [UIKit](https://getuikit.com/docs/icon)
+* [Feathers](https://feathericons.com/)
 * Others
 
 ### Inspiration
-- Inspired from Okendoken's [awesome-bootstrap-checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox). 
-- Animations are heavily inspired ( copied 😊 ) from [Animista](http://animista.net)
+- [awesome-bootstrap-checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) - Idea
+- [Animista](http://animista.net) - Animations
 
 ### Contributions
-Thanks for all those good people who spend their valuable time and helped to improve this library. Any Contributions are welcome!
+Thanks to all those good people who spend their valuable time and helped to improve this library. Any Contributions are welcome!
 
 ### Licence
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License
 
 
-<div align="center"><sub>Built with ❤️ </sub></div>
+<div align="center"><sub>❤</sub></div> 
