@@ -15,7 +15,8 @@ gulp.task('browser-sync', function () {
     server: {
       baseDir: "./",
       directory: true
-    }
+    },
+    https: true
   });
 });
 
@@ -27,7 +28,7 @@ gulp.task('build:sass', function () {
       })
       .on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['> 5%', 'last 2 versions'],
+      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('dist'))
