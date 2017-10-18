@@ -1,3 +1,13 @@
+/**
+ * pretty-checkbox.css 
+ *
+ * A pure CSS library to beautify checkbox and radio buttons.
+ *
+ * Source: https://github.com/lokesh-coder/pretty-checkbox
+ * Demo: https://lokesh-coder.github.io/pretty-checkbox/
+ *
+ */
+
 @import './scss/variables';
 @import './scss/core';
 @import './scss/essentials/keyframes';
@@ -12,6 +22,9 @@
 @import './scss/elements/switch/general';
 @import './scss/elements/switch/fill';
 @import './scss/elements/switch/slim';
+@import './scss/states/hover';
+@import './scss/states/focus';
+@import './scss/states/indeterminate';
 @import './scss/extras/toggle';
 @import './scss/extras/plain';
 @import './scss/extras/round';
@@ -22,6 +35,3 @@
 @import './scss/extras/colors';
 @import './scss/extras/scale';
 @import './scss/extras/print';
-@import './scss/states/hover';
-@import './scss/states/focus';
-@import './scss/states/indeterminate';
