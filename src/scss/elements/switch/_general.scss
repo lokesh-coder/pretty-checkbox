@@ -1,53 +1,46 @@
 // switch
 .#{$pretty--class-name}.--switch {
-  .state {
-    position: relative;
-
-    &:before {
-      content: '';
-      border: 1px solid $pretty--color-default;
-      border-radius: 60px;
-      width: 2em;
-      display: inline-block;
-      box-sizing: unset;
-      height: calc(#{$pretty--box-height} + 2px);
-      position: absolute;
-      top: 0;
-      top: $pretty-top-offset-switch;
-      z-index: $pretty--z-index-back;
-      transition: all 0.5s ease;
+    .state {
+        position: relative;
+        &:before {
+            content: '';
+            border: 1px solid $pretty--color-default;
+            border-radius: 60px;
+            width: 2em;
+            display: inline-block;
+            box-sizing: unset;
+            height: $pretty--box-size;
+            position: absolute;
+            top: 0;
+            top: $pretty-top-offset-switch;
+            z-index: $pretty--z-index-back;
+            transition: all 0.5s ease; 
+        }
+        label {
+            text-indent: $pretty--label-text-offset-switch;
+            &:before,
+            &:after {
+                transition: all 0.5s ease;
+                border-radius: 100%;
+                left: 0;
+                border-color: transparent;
+                transform: scale(0.8);
+            }
+            &:after {
+                background-color: $pretty--color-default;
+            }
+        }
     }
-
-    label {
-      text-indent: $pretty--label-text-offset-switch;
-
-      &:before,
-      &:after {
-        transition: all 0.5s ease;
-        border-radius: 100%;
-        left: 0;
-        border-color: transparent;
-        transform: scale(0.8);
-      }
-
-      &:after {
-        background-color: $pretty--color-default;
-      }
+    input:checked~.state {
+        &:before {
+            border-color: $pretty--color-dark;
+        }
+        label:before {
+            opacity: 0;
+        }
+        label:after {
+            background-color: $pretty--color-dark;
+            left: 1em;
+        }
     }
-  }
-
-  input:checked ~ .state {
-    &:before {
-      border-color: $pretty--color-dark;
-    }
-
-    label:before {
-      opacity: 0;
-    }
-
-    label:after {
-      background-color: $pretty--color-dark;
-      left: 1em;
-    }
-  }
 }
