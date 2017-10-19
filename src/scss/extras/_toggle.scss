@@ -1,28 +1,28 @@
 .#{$pretty--class-name}.--toggle {
-  .state {
-    &.--on {
-      opacity: 0;
-      display: none;
+    .state {
+        &.--on {
+            opacity: 0;
+            display: none;
+        }
+        &.--off,
+        .icon,
+        .svg,
+        img {
+            opacity: 1;
+            display: inline-block;
+        }
+        &.--off .icon {
+            color: $pretty--color-default;
+        }
     }
-
-    &.--off,
-    .icon,
-    .svg,
-    img {
-      opacity: 1;
-      display: inline-block;
+    input:checked~.state {
+        &.--on {
+            opacity: 1;
+            display: inline-block;
+        }
+        &.--off {
+            opacity: 0;
+            display: none;
+        }
     }
-  }
-
-  input:checked ~ .state {
-    &.--on {
-      opacity: 1;
-      display: inline-block;
-    }
-
-    &.--off {
-      opacity: 0;
-      display: none;
-    }
-  }
 }

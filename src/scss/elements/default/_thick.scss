@@ -1,12 +1,11 @@
 .#{$pretty--class-name}.--default.--thick {
-  .state label {
-    &:before,
-    &:after {
-      border-width: 0.13em;
+    .state label {
+        &:before,
+        &:after {
+            border-width: calc(1em / 7);
+        }
+        &:after {
+            transform: scale(0.4) !important;
+        }
     }
-
-    &:after {
-      transform: scale(0.4) !important;
-    }
-  }
 }

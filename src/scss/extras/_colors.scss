@@ -1,6 +1,7 @@
 .#{$pretty--class-name} {
-  @each $set, $color in $pretty--colors {
-    input:checked ~ .state.--#{$set} {
+  @each $name, $color in $pretty--colors {
+    input:checked ~ .state.--#{$name},
+    &.--toggle .state.--#{$name} {
       label:after {
         background-color: $color;
       }
@@ -12,7 +13,8 @@
       }
     }
 
-    input:checked ~ .state.--#{$set}-o {
+    input:checked ~ .state.--#{$name}-o,
+     &.--toggle .state.--#{$name}-o {
       label:before {
         border-color: $color;
       }
@@ -29,21 +31,21 @@
       }
     }
 
-    &.--default:not(.--fill) input:checked ~ .state.--#{$set}-o label {
+    &.--default:not(.--fill) input:checked ~ .state.--#{$name}-o label {
       &:after {
         background-color: $color;
       }
     }
 
-    &.--switch input:checked ~ .state.--#{$set}:before {
+    &.--switch input:checked ~ .state.--#{$name}:before {
       border-color: $color;
     }
 
-    &.--switch.--fill input:checked ~ .state.--#{$set}:before {
+    &.--switch.--fill input:checked ~ .state.--#{$name}:before {
       background-color: $color;
     }
 
-    &.--switch.--slim input:checked ~ .state.--#{$set}:before {
+    &.--switch.--slim input:checked ~ .state.--#{$name}:before {
       border-color: darken($color, 20%);
       background-color: darken($color, 20%);
     }
