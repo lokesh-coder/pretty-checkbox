@@ -7,10 +7,10 @@
 <h4 align="center">A pure CSS library to beautify checkbox and radio buttons.</h4>
 
 <p align="center">
- <a href="#">
+ <a href="https://github.com/lokesh-coder/pretty-checkbox/releases">
     <img src="https://img.shields.io/github/release/lokesh-coder/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Github Release">
   </a>
-   <a href="#">
+   <a href="LICENSE">
     <img src="https://img.shields.io/npm/l/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Licence">
   </a>
    <a href="#">
