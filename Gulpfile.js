@@ -110,7 +110,3 @@ gulp.task('build', function (cb) {
 gulp.task('default', ['compile:scss', 'browser-sync'], function () {
   gulp.watch("src/**/*.scss", ['compile:scss', 'browser-sync-reload']);
 });
-
-
-
-

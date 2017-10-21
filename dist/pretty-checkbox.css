@@ -414,6 +414,10 @@
   opacity: 1;
 }
 
+.pretty.p-switch input {
+  width: 2em;
+}
+
 .pretty.p-switch .state {
   position: relative;
 }
