@@ -473,7 +473,7 @@
 }
 
 .pretty.p-switch.p-fill input:checked ~ .state label:after {
-  background-color: #fff;
+  background-color: #fff !important;
   left: 1em;
 }
 
