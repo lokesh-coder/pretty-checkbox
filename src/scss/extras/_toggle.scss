@@ -1,0 +1,32 @@
+.#{$pretty--class-name}.p-toggle {
+  .state {
+    &.p-on {
+      opacity: 0;
+      display: none;
+    }
+
+    &.p-off,
+    .icon,
+    .svg,
+    img {
+      opacity: 1;
+      display: inherit;
+    }
+
+    &.p-off .icon {
+      color: $pretty--color-default;
+    }
+  }
+
+  input:checked ~ .state {
+    &.p-on {
+      opacity: 1;
+      display: inherit;
+    }
+
+    &.p-off {
+      opacity: 0;
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.#{$pretty--class-name}.p-default {
+  .state label {
+    &:after {
+      transform: scale(0.6);
+    }
+  }
+
+  input:checked ~ .state label {
+    &:after {
+      background-color: $pretty--color-default !important;
+    }
+  }
+}

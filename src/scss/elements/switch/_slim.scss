@@ -1,0 +1,16 @@
+.#{$pretty--class-name}.p-switch.p-slim {
+  .state {
+    &:before {
+      height: 0.1em;
+      background: $pretty--color-default !important;
+      top: calc(50% - 0.1em);
+    }
+  }
+
+  input:checked ~ .state {
+    &:before {
+      border-color: $pretty--color-dark;
+      background-color: $pretty--color-dark !important;
+    }
+  }
+}

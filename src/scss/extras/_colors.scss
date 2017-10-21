@@ -1,0 +1,53 @@
+.#{$pretty--class-name} {
+  @each $name, $color in $pretty--colors {
+    input:checked ~ .state.p-#{$name},
+    &.p-toggle .state.p-#{$name} {
+      label:after {
+        background-color: $color !important;
+      }
+
+      .icon,
+      .svg {
+        color: #fff;
+        stroke: #fff;
+      }
+    }
+
+    input:checked ~ .state.p-#{$name}-o,
+    &.p-toggle .state.p-#{$name}-o {
+      label:before {
+        border-color: $color;
+      }
+
+      label:after {
+        background-color: transparent;
+      }
+
+      .icon,
+      .svg,
+      svg {
+        color: $color;
+        stroke: $color;
+      }
+    }
+
+    &.p-default:not(.p-fill) input:checked ~ .state.p-#{$name}-o label {
+      &:after {
+        background-color: $color !important;
+      }
+    }
+
+    &.p-switch input:checked ~ .state.p-#{$name}:before {
+      border-color: $color;
+    }
+
+    &.p-switch.p-fill input:checked ~ .state.p-#{$name}:before {
+      background-color: $color !important;
+    }
+
+    &.p-switch.p-slim input:checked ~ .state.p-#{$name}:before {
+      border-color: darken($color, 20%);
+      background-color: darken($color, 20%) !important;
+    }
+  }
+}

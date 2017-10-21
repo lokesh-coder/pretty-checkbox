@@ -1,0 +1,15 @@
+.#{$pretty--class-name}.p-switch.p-fill {
+    input:checked~.state {
+        &:before {
+            border-color: $pretty--color-dark;
+            background-color: $pretty--color-dark !important;
+        }
+        label:before {
+            opacity: 0;
+        }
+        label:after {
+            background-color: #fff !important;
+            left: 1em;
+        }
+    }
+}
