@@ -4,7 +4,7 @@
   <br> <br> pretty-checkbox.css <br>
 </h1>
 
-<h4 align="center">A pure css library to beautify checkbox and radio buttons.</h4>
+<h4 align="center">A pure CSS library to beautify checkbox and radio buttons.</h4>
 
 <p align="center">
  <a href="#">
@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/npm/l/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Licence">
   </a>
    <a href="#">
-    <img src="https://img.shields.io/github/size/lokesh-coder/pretty-checkbox/src/pretty.min.css.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Size">
+    <img src="https://img.shields.io/npm/dm/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Downloads">
   </a>
 </p>
 <br>
@@ -103,7 +103,7 @@ Pretty checkbox comes with many styles,
 And three shapes `p-round` `p-curve` `p-square` (default)
 
 
-#### Basic checkbox,
+#### Basic checkbox
 
 ```html
 <div class="pretty p-default">
@@ -129,7 +129,7 @@ You can combine them.
 
 <div align="center"><strong >---</strong></div>
 
-#### Switch checkbox,
+#### Switch checkbox
 
 Switch has three variants `p-outline` `p-fill` `p-slim`
 
@@ -144,7 +144,7 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 
 <div align="center"><strong >---</strong></div>
 
-#### Custom Font icons,
+#### Custom Font icons
 
 ```html
 <div class="pretty p-icon">
