@@ -39,17 +39,18 @@
   - **Animations** - *Smooth*, *Tada*, *Jelly*, *Pulse*, *Rotate*
  * Switch - iOS style - *Outline*, *Fill*, *Slim*
  * Responsive
- * No Javascript
+ * No JavaScript
  * Custom Font Icons
- * Svg Icons
+ * SVG Icons
  * Image support
- * Toggle between icons / svg's / images
+ * Toggle between icons / SVG's / images
  * Lock
- * State - *Focus*, *Hover*, *Inderterminate*
+ * State - *Focus*, *Hover*, *Indeterminate*
  * Supports frameworks - *Bootstrap*, *Foundation*, *Sematic UI*, *Bulma*, ...
  * Customize nearly everything with SCSS
+ * Supports all modern browsers, including mobile devices
  * Print friendly
- * and more... ( *I am kidding, thats all!* )
+ * and more... ( *I am kidding, that's all!* )
 
 ### Installation
 - **From CLI**
@@ -174,14 +175,14 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 
 <div align="right">
  <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#fonticons">
- etails</a></sub></i>
+ more details</a></sub></i>
 </div>
 
 <div align="center"><strong >---</strong></div>
 
 #### SVG
 
-Supports SVG file in <img/> tag, svg markup (`<svg> ... </svg>`)
+Supports SVG file in <img/> tag, markup (`<svg> ... </svg>`) and sprites  
 
 ```html
   <div class="pretty p-svg">
@@ -291,7 +292,7 @@ Works in all modern browsers.
 ### Contributions
 Thanks to all those good people who spend their valuable time and helped to improve this library. Any Contributions are welcome!
 
-### Licence
+### License
 This project is licensed under the MIT License
 
 
