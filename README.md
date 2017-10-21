@@ -60,16 +60,16 @@ Add `pretty-checkbox.min.css` in your html
 
 <br>
 
-- **From CDN** ( [jsDelivr ](https://www.jsdelivr.com/package/npm/pretty-checkbox) )
+- **From CDN** ( [`jsDelivr`](https://www.jsdelivr.com/package/npm/pretty-checkbox) )
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3/dist/pretty-checkbox.min.css"/>
 ```
 
 <br>
 
-- **Manual download** ( [Github](https://github.com/lokesh-coder/pretty-checkbox/archive/master.zip) )
+- **Manual download** ( [`Github`](https://github.com/lokesh-coder/pretty-checkbox/archive/master.zip) )
 
-Download the source from github
+Download the source from Github.
 ```html
 <link rel="stylesheet" href="../<PATH>/pretty-checkbox/dist/pretty-checkbox.min.css"/>
 ```
