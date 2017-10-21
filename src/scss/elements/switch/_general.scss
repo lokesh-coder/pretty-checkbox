@@ -1,5 +1,8 @@
 // switch
 .#{$pretty--class-name}.p-switch {
+  input{
+    width:2em;
+  }
   .state {
     position: relative;
 
