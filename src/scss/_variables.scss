@@ -36,4 +36,4 @@ $pretty-top-offset-switch: calc((0% - (100% - 1em)) - #{$pretty-top-switch});
 
 // dev 
 $pretty--debug: false !default;
-$pretty--err-message: 'Invalid input type!' !default;
+$pretty--err-message: 'Error: Invalid input type!' !default;
