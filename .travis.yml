@@ -14,7 +14,7 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - sleep 3
   - git remote rm origin
-  - git remote add origin https://${GH_TOKEN}@github.com/lokesh-coder/hug.css.git
+  - git remote add origin https://${GH_TOKEN}@github.com/lokesh-coder/pretty-checkbox.git
   - 'if [ ${TRAVIS_PULL_REQUEST} = "false" ]; then
     git fetch && git checkout master;
     git config push.default current;
