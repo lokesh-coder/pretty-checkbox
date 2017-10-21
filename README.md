@@ -259,7 +259,8 @@ Please refer the [documentation](https://lokesh-coder.github.io/pretty-checkbox/
 
 ### Browser support
 
-Works in all latest browsers.
+Works in all modern browsers.
+
 `Chrome >= 26` `Firefox >= 16` `Safari >= 6.1` `Opera >= 15` `IE >= 9`
 
 ### Font Icon libraries
