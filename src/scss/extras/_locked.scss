@@ -1,0 +1,6 @@
+.#{$pretty--class-name}.p-locked {
+  input {
+    display: none;
+    cursor: not-allowed;
+  }
+}

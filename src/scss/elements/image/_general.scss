@@ -1,0 +1,21 @@
+.#{$pretty--class-name}.p-image {
+  .state {
+    img {
+      opacity: 0;
+      position: absolute;
+      width: $pretty--box-size;
+      height: $pretty--box-size;
+      top: 0;
+      top: $pretty-top-offset;
+      left: 0;
+      z-index: $pretty--z-index-back;
+      text-align: center;
+      line-height: normal;
+      transform: scale(0.8);
+    }
+  }
+
+  input:checked ~ .state img {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,7 @@
+.#{$pretty--class-name}.p-default.p-fill {
+  .state label {
+    &:after {
+      transform: scale(1);
+    }
+  }
+}

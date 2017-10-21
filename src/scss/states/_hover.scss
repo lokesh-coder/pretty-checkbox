@@ -1,0 +1,13 @@
+.#{$pretty--class-name}.p-has-hover {
+  input:hover ~ .state:not(.p-is-hover) {
+    display: none;
+  }
+
+  input:hover ~ .state.p-is-hover {
+    display: block;
+
+    .icon {
+      display: block;
+    }
+  }
+}

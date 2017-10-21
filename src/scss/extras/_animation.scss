@@ -1,0 +1,89 @@
+.#{$pretty--class-name}.p-smooth {
+  label:before,
+  label:after,
+  .icon,
+  .svg {
+    transition: all 0.5s ease;
+  }
+
+  input:checked + .state {
+    label:after {
+      transition: all 0.3s ease;
+    }
+
+    .icon,
+    .svg,
+    img {
+      animation: zoom 0.2s ease;
+    }
+  }
+
+  &.p-default input:checked + .state {
+    label:after {
+      animation: zoom 0.2s ease;
+    }
+  }
+
+  &.p-plain input:checked + .state {
+    label:before {
+      content: '';
+      transform: scale(0);
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.#{$pretty--class-name}.p-tada:not(.p-default) {
+  input:checked + .state {
+    .icon,
+    .svg,
+    img,
+    label:before,
+    label:after {
+      animation: tada 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 alternate;
+      opacity: 1;
+    }
+  }
+}
+
+.#{$pretty--class-name}.p-jelly:not(.p-default) {
+  input:checked + .state {
+    .icon,
+    .svg,
+    img,
+    label:before,
+    label:after {
+      animation: jelly 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      opacity: 1;
+    }
+
+    label:before {
+      border-color: transparent;
+    }
+  }
+}
+
+.#{$pretty--class-name}.p-rotate:not(.p-default) {
+  input:checked ~ .state {
+    .icon,
+    .svg,
+    img,
+    label:before,
+    label:after {
+      animation: rotate 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      opacity: 1;
+    }
+
+    label:before {
+      border-color: transparent;
+    }
+  }
+}
+
+.#{$pretty--class-name}.p-pulse:not(.p-switch) {
+  input:checked ~ .state {
+    label:before {
+      animation: pulse 1s;
+    }
+  }
+}

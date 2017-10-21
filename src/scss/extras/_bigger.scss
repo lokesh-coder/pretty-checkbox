@@ -1,0 +1,14 @@
+.#{$pretty--class-name}.p-bigger {
+  label:before,
+  label:after,
+  .icon,
+  .svg,
+  .img {
+    font-size: $pretty--2x !important;
+    top: calc((0% - (100% - 1em)) - 35%) !important;
+  }
+
+  label {
+    text-indent: 1.7em;
+  }
+}

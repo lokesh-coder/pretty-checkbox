@@ -1,0 +1,12 @@
+.#{$pretty--class-name}.p-default.p-thick {
+  .state label {
+    &:before,
+    &:after {
+      border-width: calc(1em / 7);
+    }
+
+    &:after {
+      transform: scale(0.4) !important;
+    }
+  }
+}
