@@ -6,6 +6,21 @@
   display: none;
 }
 
+.pretty input:not([type='checkbox']):not([type='radio']) + *:after {
+  content: "Invalid input type!";
+  border: 1px solid #dedede;
+  border-left: 3px solid #d9534f;
+  padding: 9px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #d9534f;
+  position: absolute;
+  z-index: 3;
+  background: #fbfbfb;
+  top: 0;
+  left: 0;
+}
+
 .pretty {
   position: relative;
   display: inline-block;
