@@ -102,15 +102,15 @@ gulp.task('set:header', function () {
     .pipe(gulp.dest('dist'))
 });
 
-
-
-
-gulp.task('default', ['build:sass', 'browser-sync'], function () {
-  gulp.watch("src/**/*.scss", ['build:sass', 'browser-sync-reload']);
-});
-
 gulp.task('build', function (cb) {
-  gulpSequence('lint:scss','clean:dist', 'compile:scss', 'format:css', 'minify:css', 'set:header', cb)
+  gulpSequence('lint:scss', 'clean:dist', 'compile:scss', 'format:css', 'minify:css', 'set:header', cb)
 });
+
+
+gulp.task('default', ['compile:scss', 'browser-sync'], function () {
+  gulp.watch("src/**/*.scss", ['compile:scss', 'browser-sync-reload']);
+});
+
+
 
 

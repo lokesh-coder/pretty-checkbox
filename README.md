@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="logo.png" alt="Pretty checkbox" width="100"></a>
+  <a href="https://lokesh-coder.github.io/pretty-checkbox/"><img src="logo.png" alt="Pretty checkbox" width="100"></a>
   <br> <br> pretty-checkbox.css <br>
 </h1>
 
@@ -24,6 +24,10 @@
 <div align="center"><strong >Demo and documentation</strong></div>
 <div align="center"><a align="center" href="https://lokesh-coder.github.io/pretty-checkbox/">https://lokesh-coder.github.io/pretty-checkbox/</a></div>
 </pre>
+</div>
+
+<div align="center">
+<img src="preview.gif" alt="Pretty checkbox preview" width="100">
 </div>
 
 ### Features
@@ -281,7 +285,7 @@ Works in all modern browsers.
 * Others
 
 ### Inspiration
-- [awesome-bootstrap-checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) - Idea
+- [Awesome Bootstrap Checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) - Idea
 - [Animista](http://animista.net) - Animations
 
 ### Contributions
