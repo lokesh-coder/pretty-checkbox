@@ -1,0 +1,61 @@
+{% macro section(heading,d) %}
+<section class="section">
+	<h5 class="mb-3">{{heading}}</h5>
+	<div class="content">
+		{{d | safe}}
+	</div>
+</section>
+{% endmacro %}
+
+{% macro code(hint,language='html') %}
+	<div class="card mb-3">
+	  <div class="card-body p-0">
+<pre>
+	<code class="language-{{language}}">{{hint}}</code>
+</pre>
+	  </div>
+	</div>
+{% endmacro %}
+
+ {% macro block(hint,heading,options={}) %}
+<div class="block card mb-3">
+	<div class="card-header bg-transparent d-flex justify-content-between">
+		<h6 class="mb-0">{{heading}}
+			{% if options.link %}
+			<a  href="{{options.link}}" target="_blank" class="highlight ml-2 mdi mdi-open-in-new"></a>
+			{% endif %}
+		</h6>
+		{{options.action|safe}}
+		<div class="show-code" data-module="showcode">show code <i class="mdi mdi-code-tags"></i> </div>
+	</div>
+	<div class="card-body">
+		{{hint|safe}}
+	</div>
+	<div class="card-footer pt-0 animated hide">
+		<pre><code class="language-{{options.lang|d('html')}}">{{hint}}</code></pre>
+	</div>
+</div>
+{% endmacro %}
+
+
+{% macro codeblock(hint,heading,language='scss') %}
+<div class="card mb-3">
+  <div class="card-header bg-transparent d-flex justify-content-between">
+    <h6 class="mb-0">{{heading}}</h6>
+  </div>
+  <div class="card-body px-0 pt-0">
+    	<pre><code class="language-{{language}}">{{hint}}</code></pre>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro contentblock(heading,content) %}
+<div class="card mb-3">
+  <div class="card-header bg-transparent d-flex justify-content-between">
+    <h6 class="mb-0">{{heading}}</h6>
+  </div>
+  <div class="card-body">
+    {{content|safe}}
+  </div>
+</div>
+{% endmacro %}

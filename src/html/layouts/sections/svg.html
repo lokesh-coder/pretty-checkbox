@@ -1,0 +1,6 @@
+ {% set desc %}
+    <p>Adding svg icon is very similar to adding font icons. Add class <strong>p-svg</strong> to <i>.pretty</i> and <strong>svg</strong> to <i> &lt;svg&gt;</i> tag or <i>&lt;img&gt;</i> tag ( if svg file url is used as img source ). </p>
+	    {{block(checkbox_svg,'General')}}
+        <p class="note">SVG's are quite different and unpredictable to apply colors properly. This library tries to color it based on few assumptions. Sometimes, it might return weird results. Dont curse me, in those cases. </p>
+{% endset %} 
+{{section('Svg',desc)}}

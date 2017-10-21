@@ -1,0 +1,11 @@
+ {% set desc %}
+ <p>Styling radio buttons are very similar to checkbox. All those features mentioned above, will wotk for radio buttons.</p>
+    {{block(radio_basic,'Basic')}}
+    {{block(radio_colors,'Colors')}}
+    {{block(radio_icons_solid,'Solid color and icons')}}
+    {{block(radio_icons,'Outline colors')}}
+    {{block(radio_animations,'Animations')}}
+    {{block(radio_plain,'Plain')}}
+    {{block(radio_switch,'Switch')}}
+{% endset %} 
+{{section('Radio buttons',desc)}}

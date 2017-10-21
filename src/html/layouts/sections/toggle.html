@@ -1,0 +1,11 @@
+{% set desc %}
+<p>Toggles are simple show / hide type. Add class <strong>p-toggle</strong> to <i>.pretty</i>.</p>
+        <p>Previously, we have seen example with one state. Now we need to add similar state. Each one will have class <strong>p-on</strong> and <strong>p-off</strong> class. By default <i>p-off</i> state will be visible. On checking, <i>p-on</i> will be visible. </p>
+        {{block(checkbox_toggle_basic,'Simple')}}
+        {{block(checkbox_toggle_icon,'With icon')}}
+        {{block(checkbox_toggle_plain,'Without border')}}
+        {{block(checkbox_toggle_icon_color,'With color')}}
+        {{block(checkbox_toggle_icon_only,'Without label')}}
+        <p class="note">Checkbox styles cannot be mixed. If it is <strong>p-svg</strong> style, both states should be svg.</p>
+{% endset %} 
+{{section('Toggle',desc)}}

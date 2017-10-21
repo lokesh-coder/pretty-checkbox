@@ -1,0 +1,7 @@
+{% set desc %}
+    <p>These are couple of well known svg libraries which is tested at this moment.</p>
+    {{block(checkbox_svg_uikit,'UIKit',{link:'https://getuikit.com/docs/icon'})}}
+    {{block(checkbox_svg_feathers,'Feathers',{link:'https://feathericons.com/'})}}
+    <p class="note">But my instict says, other libraries also should work. </p>
+{% endset %} 
+{{section('Tested SVG libraries',desc)}}

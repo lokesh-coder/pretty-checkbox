@@ -1,0 +1,26 @@
+ {% set desc %}
+	<p>
+		<span class="s-highlight">Step 1</span> : Download from
+		<a href="https://yarnpkg.com/en/package/pretty-checkbox" target="_blank">yarn</a> or
+		<a href="https://www.npmjs.com/package/pretty-checkbox" target="_blank">npm</a>
+	</p>
+	{{code(install_cli,'css')}}
+	<p>
+		<strong>Alternatively</strong>, you can also use CDN link
+	</p>
+	{{code(install_cdn,'css')}}
+	<p>
+		<span class="s-highlight">Step 2</span> : Add
+		<strong>dist/pretty-checkbox.min.css</strong> file in your html or import
+		<strong>src/pretty-checkbox.scss</strong> file in your scss file
+	</p>
+	{{code(install_import,'css')}}
+	<p>
+		<span class="s-highlight">Step 3</span> : Add the mark up in your file. Can be used with
+		<i>Bootstrap</i>,
+		<i>Foundation</i>,
+		<i>Bulma</i> frameworks.
+	</p>
+	{{code(install_basic)}}
+{% endset %} 
+{{section('Installation',desc)}}

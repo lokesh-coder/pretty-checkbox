@@ -1,0 +1,57 @@
+{% set desc %}
+<p>
+    There are five colors.
+    <span class="color-preview primary"></span>
+    <span class="color-preview success"></span>
+    <span class="color-preview warning"></span>
+    <span class="color-preview info"></span>
+    <span class="color-preview danger"></span>. Can be used as
+    <i>Solid</i> (
+    <strong>p-primary</strong> ) or
+    <i>Outline</i> (
+    <strong>p-primary-o</strong> ).
+</p>
+<p>To apply colors, add class
+    <strong>p-primary</strong> to
+    <i>.state</i> class inside
+    <i>.pretty</i>
+</p>
+{{block(checkbox_colors_solid,'Solid')}}
+{{block(checkbox_colors_mixed,'Mixed')}}
+
+<div class="btn btn-block btn-collapse" id="collapse-before" data-module="collapse" data-name="before" >
+  <i class="mdi mdi-unfold-more-horizontal"></i> Show colors for all combinations
+</div>
+
+<div class="more-colors hide" id="collapse-section">
+    {{block(checkbox_colors_default_outline,'Outline')}}
+    {{block(checkbox_colors_default_fill,'Square & Fill')}}
+    {{block(checkbox_colors_default_fill_outline,'Square & Fill & Outline')}}
+    {{block(checkbox_colors_default_thick,'Square & Thick')}}
+    {{block(checkbox_colors_default_thick_outline,'Square & Thick & Outline')}}
+
+    {{block(checkbox_colors_curve,'Curve')}}
+    {{block(checkbox_colors_curve_outline,'Curve & Outline')}}
+    {{block(checkbox_colors_curve_fill,'Curve & Fill')}}
+    {{block(checkbox_colors_curve_fill_outline,'Curve & Fill & Outline')}}
+    {{block(checkbox_colors_curve_thick,'Curve & Thick')}}
+    {{block(checkbox_colors_curve_thick_outline,'Curve & Thick & Outline')}}
+
+    {{block(checkbox_colors_round,'Round')}}
+    {{block(checkbox_colors_round_outline,'Round & Outline')}}
+    {{block(checkbox_colors_round_fill,'Round & Fill')}}
+    {{block(checkbox_colors_round_fill_outline,'Round & Fill & Outline')}}
+    {{block(checkbox_colors_round_thick,'Round & Thick')}}
+    {{block(checkbox_colors_round_thick_outline,'Round & Thick & Outline')}}
+
+    {{block(checkbox_colors_switch,'Switch')}}
+</div>
+
+<div class="btn btn-block btn-collapse hide" id="collapse-after" data-module="collapse" data-name="after">
+  <i class="mdi mdi-unfold-more-horizontal"></i> Hide combinations
+</div>
+
+<p class="note">Colors can be added, removed, changed from SCSS settings. </p>
+{% endset %} {{section('Colors',desc)}}
+
+

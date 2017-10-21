@@ -1,0 +1,14 @@
+ {% set desc %}
+  <p>Here's the tested font icon libraries. But however, other icon libraries, and icons created from <i>icomoon</i>, <i>fontastic</i> should also work.</p>
+
+        {{block(checkbox_fonticon_fontawesome,'Font awesome',{link:'http://fontawesome.io/icons/'})}}
+        {{block(checkbox_fonticon_glyphicon,'Bootstrap Glyphicons',{link:'http://fontawesome.io/icons/'})}}
+        {{block(checkbox_fonticon_mdi,'Material icon ( MDI )',{link:'https://materialdesignicons.com/'})}}
+        {{block(checkbox_fonticon_zmdi,'Material icon ( ZMDI )',{link:'http://zavoloklom.github.io/material-design-iconic-font/icons.html'})}}
+        {{block(checkbox_fonticon_typcn,'Typeicons',{link:'http://www.typicons.com/'})}}
+        {{block(checkbox_fonticon_ion,'Ion icons',{link:'http://ionicons.com/'})}}
+        {{block(checkbox_fonticon_gmdi,'Material icon ( Google )',{link:'https://material.io/icons'})}}
+
+        <p class="note">Some font icons might have inaccurate 'X' aspect ratio or some alignment issue. In those cases, the icon will have minute extra space in top or bottom. No worries, it is quite easy to fix it youself :)  </p>
+{% endset %} 
+{{section('Tested font icon libraries',desc)}}

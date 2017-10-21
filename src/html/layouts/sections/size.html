@@ -1,0 +1,6 @@
+{% set desc %}
+    <p>Basically, all the checkbox and radio buttons are sized based on the font size. Bigger the font size, bigger the checkbox and radio. Sometimes, you might need to scale it bit bigger. To do so, add class <strong>p-bigger</strong> to <i>.pretty</i></p>
+    {{block(bigger,'Bigger')}}
+    <p class="note">Alternatively, we can also set <strong>font-size</strong> property to class <i>.pretty</i> </p>
+{% endset %} 
+{{section('Size',desc)}}

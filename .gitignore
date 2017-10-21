@@ -1,0 +1,32 @@
+# Node
+node_modules
+npm-debug.log
+package-lock.json
+.npmrc
+
+# Yarn
+yarn-error.log
+yarn.lock
+
+# JetBrains
+.idea/
+
+# VS Code
+.vscode/
+.history
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Temporary files
+coverage/
+docs
+tmp
+test
+
+# Logs
+.log

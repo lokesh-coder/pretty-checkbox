@@ -1,0 +1,11 @@
+ {% set desc %}
+<p>These are simple checkboxes with three shapes. Add class
+            <strong>p-default</strong> as like mentioned in above example.
+        </p>
+        <p>By default, it will be in
+            <i>Square</i> shape. To change, add class
+            <strong>p-curve</strong> or
+            <strong>p-round</strong>.
+        </p>
+        {{block(checkbox_basic_square,'Default')}} {{block(checkbox_basic_curve,'Curve')}} {{block(checkbox_basic_round,'Round')}} 
+{% endset %} {{section('Basic checkbox',desc)}}

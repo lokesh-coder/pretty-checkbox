@@ -1,0 +1,12 @@
+
+{% set action %}
+<button class="btn btn-small ml-auto mr-2" data-module="indeterminate">Apply</button>
+{% endset %} 
+
+{% set desc %}
+ <p>These are checkbox and radio button states like <i>hover</i>, <i>focus</i>, <i>indeterminate</i>. Please check the example code for details.</p>
+    {{block(checkbox_state_hover,'Hover')}}
+    {{block(checkbox_state_focus,'Focus')}}
+    {{block(checkbox_state_indeterminate,'Indeterminate',{action:action})}}
+{% endset %} 
+{{section('States',desc)}}

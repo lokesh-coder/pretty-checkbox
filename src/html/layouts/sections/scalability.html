@@ -1,0 +1,8 @@
+{% set action %}
+<input class="slider col-md-4 ml-auto mr-2" type="range" value="14" min="14" max="100" step="1" id="slider" data-module="slider">
+{% endset %} 
+
+{% set desc %}
+{{block(scalability,'Try changing font size',{action:action,hideCodeLink:true})}}
+{% endset %} 
+{{section('Scalability',desc)}}

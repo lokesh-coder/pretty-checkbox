@@ -1,0 +1,10 @@
+ {% set desc %}
+<p>To animate, add class <strong>p-smooth</strong> or <strong>p-jelly</strong> or <strong>p-tada</strong> or <strong>p-rotate</strong> or <strong>p-pulse</strong> to <i>.pretty</i></p>
+        {{block(checkbox_animations_smooth,'Smooth')}}
+        {{block(checkbox_animations_jelly,'Jelly')}}
+        {{block(checkbox_animations_tada,'Tada')}}
+        {{block(checkbox_animations_rotate,'Rotate')}}
+        {{block(checkbox_animations_pulse,'Pulse')}}
+        <p class="note">Due to the nature of different checkbox design, certain animations are not applicable in some combinations that were disussed below.</p>
+{% endset %} 
+{{section('Animations',desc)}}
