@@ -1,8 +1,7 @@
 // icon
-.#{$pretty--class-name}.--icon {
+.#{$pretty--class-name}.p-icon {
   .state {
     .icon {
-      display: inline-block;
       position: absolute;
       font-size: 1em;
       width: $pretty--box-size;

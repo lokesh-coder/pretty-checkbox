@@ -1,4 +1,4 @@
-.#{$pretty--class-name}.--smooth {
+.#{$pretty--class-name}.p-smooth {
   label:before,
   label:after,
   .icon,
@@ -18,13 +18,13 @@
     }
   }
 
-  &.--default input:checked + .state {
+  &.p-default input:checked + .state {
     label:after {
       animation: zoom 0.2s ease;
     }
   }
 
-  &.--plain input:checked + .state {
+  &.p-plain input:checked + .state {
     label:before {
       content: '';
       transform: scale(0);
@@ -33,7 +33,7 @@
   }
 }
 
-.#{$pretty--class-name}.--tada:not(.--default) {
+.#{$pretty--class-name}.p-tada:not(.p-default) {
   input:checked + .state {
     .icon,
     .svg,
@@ -46,7 +46,7 @@
   }
 }
 
-.#{$pretty--class-name}.--jelly:not(.--default) {
+.#{$pretty--class-name}.p-jelly:not(.p-default) {
   input:checked + .state {
     .icon,
     .svg,
@@ -63,7 +63,7 @@
   }
 }
 
-.#{$pretty--class-name}.--rotate:not(.--default) {
+.#{$pretty--class-name}.p-rotate:not(.p-default) {
   input:checked ~ .state {
     .icon,
     .svg,
@@ -80,7 +80,7 @@
   }
 }
 
-.#{$pretty--class-name}.--pulse:not(.--switch) {
+.#{$pretty--class-name}.p-pulse:not(.p-switch) {
   input:checked ~ .state {
     label:before {
       animation: pulse 1s;

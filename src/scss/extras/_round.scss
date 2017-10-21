@@ -1,4 +1,4 @@
-.#{$pretty--class-name}.--round {
+.#{$pretty--class-name}.p-round {
   .state label {
     &:before,
     &:after {
@@ -6,7 +6,7 @@
     }
   }
 
-  &.--icon .state .icon {
+  &.p-icon .state .icon {
     border-radius: 100%;
     overflow: hidden;
 

@@ -1,4 +1,4 @@
-.#{$pretty--class-name}.--bigger {
+.#{$pretty--class-name}.p-bigger {
   label:before,
   label:after,
   .icon,
@@ -9,6 +9,6 @@
   }
 
   label {
-    text-indent: calc((#{$pretty--2x} * 2) / 1.5);
+    text-indent: 1.7em;
   }
 }

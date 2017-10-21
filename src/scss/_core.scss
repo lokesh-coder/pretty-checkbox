@@ -61,7 +61,7 @@
         content: '';
         width: $pretty--box-size;
         height: $pretty--box-size;
-        display: inline-block;
+        display: block;
         box-sizing: border-box;
         border-radius: 0;
         border: 1px solid transparent;
@@ -77,8 +77,8 @@
       }
     }
 
-    &.--is-hover,
-    &.--is-indeterminate {
+    &.p-is-hover,
+    &.p-is-indeterminate {
       display: none;
     }
   }
