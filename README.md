@@ -27,7 +27,7 @@
 </div>
 
 <div align="center">
-<img src="preview.gif" alt="Pretty checkbox preview" width="100">
+<img src="preview.gif" alt="Pretty checkbox preview"/>
 </div>
 
 ### Features
