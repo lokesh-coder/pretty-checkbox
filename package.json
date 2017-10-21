@@ -51,7 +51,10 @@
     "toggle",
     "sass",
     "css3",
-    "animation"
+    "animation",
+    "pretty",
+    "check",
+    "colors"
   ],
   "author": "Lokesh Rajendran",
   "license": "MIT",

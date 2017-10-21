@@ -52,7 +52,8 @@
   min-width: calc(1em + 2px);
 }
 
-.pretty .state label:before, .pretty .state label:after {
+.pretty .state label:before,
+.pretty .state label:after {
   content: '';
   width: calc(1em + 2px);
   height: calc(1em + 2px);
@@ -71,7 +72,8 @@
   border-color: #bdc3c7;
 }
 
-.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+.pretty .state.p-is-hover,
+.pretty .state.p-is-indeterminate {
   display: none;
 }
 
@@ -319,7 +321,8 @@
   background-color: #bdc3c7 !important;
 }
 
-.pretty.p-default.p-thick .state label:before, .pretty.p-default.p-thick .state label:after {
+.pretty.p-default.p-thick .state label:before,
+.pretty.p-default.p-thick .state label:after {
   border-width: calc(1em / 7);
 }
 
@@ -455,7 +458,8 @@
   text-indent: 2.5em;
 }
 
-.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+.pretty.p-switch .state label:before,
+.pretty.p-switch .state label:after {
   transition: all 0.5s ease;
   border-radius: 100%;
   left: 0;
@@ -574,7 +578,8 @@
   transform: scale(1.1);
 }
 
-.pretty.p-round .state label:before, .pretty.p-round .state label:after {
+.pretty.p-round .state label:before,
+.pretty.p-round .state label:after {
   border-radius: 100%;
 }
 
@@ -589,7 +594,8 @@
   transform: scale(0.8);
 }
 
-.pretty.p-curve .state label:before, .pretty.p-curve .state label:after {
+.pretty.p-curve .state label:before,
+.pretty.p-curve .state label:after {
   border-radius: 20%;
 }
 
@@ -955,5 +961,3 @@
     print-color-adjust: exact;
   }
 }
-
-/*# sourceMappingURL=maps/pretty-checkbox.css.map */
