@@ -32,14 +32,14 @@
   - **Variants** - *Default*, *Fill*, *Thick*
   - **Colors** - *Primary*, *Success*, *Info*, *Warning*, *Danger* 
   - **Color types** - *Solid*, *Outline*
-  - **Animations** - *Smooth*, *Tada*, *Jelly*, *Rotate*
+  - **Animations** - *Smooth*, *Tada*, *Jelly*, *Pulse*, *Rotate*
  * Switch - iOS style - *Outline*, *Fill*, *Slim*
  * Responsive
  * No Javascript
  * Custom Font Icons
  * Svg Icons
- * Image 
- * Toggle
+ * Image support
+ * Toggle between icons / svg's / images
  * Lock
  * State - *Focus*, *Hover*, *Inderterminate*
  * Supports frameworks - *Bootstrap*, *Foundation*, *Sematic UI*, *Bulma*, ...
@@ -60,7 +60,7 @@ Add `pretty-checkbox.min.css` in your html
 
 <br>
 
-- **From CDN** ( [Jsdelivr ](https://www.jsdelivr.com/package/npm/pretty-checkbox) )
+- **From CDN** ( [jsDelivr ](https://www.jsdelivr.com/package/npm/pretty-checkbox) )
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3/dist/pretty-checkbox.min.css"/>
 ```
@@ -94,19 +94,19 @@ Pretty checkbox comes with many styles,
 
 | Class name  | Description              |
 | :---------- | :----------------------- |
-| `--default` | Basic style              |
-| `--switch`  | iOS like toggle style    |
-| `--icon`    | Custom font icons        |
-| `--svg`     | Custom SVG files, markup |
-| `--image`   | Tiny images              |
+| `p-default` | Basic style              |
+| `p-switch`  | iOS like toggle style    |
+| `p-icon`    | Custom font icons        |
+| `p-svg`     | Custom SVG files, markup |
+| `p-image`   | Tiny images              |
 
-And three shapes `--round` `--curve` `--square` (default)
+And three shapes `p-round` `p-curve` `p-square` (default)
 
 
 #### Basic checkbox,
 
 ```html
-<div class="pretty --default">
+<div class="pretty p-default">
 	<input type="checkbox">
 	<div class="state">
 		<label>Check me</label>
@@ -114,12 +114,12 @@ And three shapes `--round` `--curve` `--square` (default)
 </div>
 ```
 
-Basic checkbox has three variants `--fill` `--thick` `--outline` (default)
+Basic checkbox has three variants `p-fill` `p-thick` `p-outline` (default)
 
 You can combine them.
 
 ```html
-  <div class="pretty --default --curve --fill">
+  <div class="pretty p-default p-curve p-fill">
       <input type="checkbox" />
       <div class="state">
           <label>Fill</label>
@@ -131,10 +131,10 @@ You can combine them.
 
 #### Switch checkbox,
 
-Switch has three variants `--outline` `--fill` `--slim`
+Switch has three variants `p-outline` `p-fill` `p-slim`
 
 ```html
-<div class="pretty --switch --fill">
+<div class="pretty p-switch p-fill">
     <input type="checkbox" />
     <div class="state">
         <label>On</label>
@@ -147,7 +147,7 @@ Switch has three variants `--outline` `--fill` `--slim`
 #### Custom Font icons,
 
 ```html
-<div class="pretty --icon">
+<div class="pretty p-icon">
 	<input type="checkbox">
 	<div class="state">
     	<i class="icon fa fa-check"></i>
@@ -175,7 +175,7 @@ Switch has three variants `--outline` `--fill` `--slim`
 #### SVG
 
 ```html
-<div class="pretty --svg">
+<div class="pretty p-svg">
 	<input type="checkbox">
 	<div class="state">
     	<img class="svg" src="file.svg">
@@ -199,7 +199,7 @@ Checkout the documentation for different formats and tested svg libraries.
 #### Image
 
 ```html
-  <div class="pretty --image">
+  <div class="pretty p-image">
       <input type="checkbox" />
       <div class="state">
           <img class="image" src="/check.png">
@@ -222,14 +222,14 @@ Checkout the documentation for different formats and tested svg libraries.
 
 #### Colors
 
-There are five solid colors `--primary` `--success` `--warning` `--info` `--danger`
+There are five solid colors `p-primary` `p-success` `p-warning` `p-info` `p-danger`
 
-And five outline colors  `--primary-o` `--success-o` `--warning-o` `--info-o` `--danger-o`
+And five outline colors  `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p-danger-o`
 
 ```html
-  <div class="pretty --default --curve --thick">
+  <div class="pretty p-default p-curve p-thick">
       <input type="checkbox" />
-      <div class="state --warning">
+      <div class="state p-warning">
           <label>Warning</label>
       </div>
   </div>
@@ -250,7 +250,9 @@ Please refer the documentation to know about them.
 
 
 ### Browser support
-`IE >= 10`   `Firefox >= 3.6`   `Chrome >= 14`   `Safari >= 6`   `Opera >= 11.6`
+
+Works in all latest browsers.
+`Chrome >= 26` `Firefox >= 16` `Safari >= 6.1` `Opera >= 15` `IE >= 9`
 
 ### Font Icon libraries
 * [Font awesome](http://fontawesome.io/icons/)
