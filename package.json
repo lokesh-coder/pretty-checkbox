@@ -4,39 +4,41 @@
   "description": "A pure css library to beautify checkbox and radio buttons.",
   "main": "dist/pretty.min.css",
   "scripts": {
-    "lint": "stylelint \"src\\**\\*.scss\" --syntax scss --fix",
-    "format": "stylefmt -r src/**/*.scss",
-    "build": "gulp build:sass",
-    "git-build": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
-    "clean:tmp": "rimraf coverage dist tmp docs",
-    "clean:all": "npm run clean:tmp && rimraf node_modules",
+    "lint":"gulp lint:scss",
+    "fix": "stylelint \"src\\**\\*.scss\" --syntax scss --fix",
+    "format": "gulp css:format",
+    "build": "gulp build",
+    "ci": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
     "release": "corp-semantic-release --branch master",
-    "release-log": "conventional-github-releaser -p angular -r 0",
-    "prebuild": "rimraf dist tmp",
-    "prebuild:watch": "rimraf dist tmp"
+    "log": "conventional-github-releaser -p angular -r 0"
   },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.8.2",
+    "conventional-github-releaser": "^1.1.12",
+    "corp-semantic-release": "^6.1.0",
+    "del": "^3.0.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.9.0",
     "gulp-header-comment": "^0.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
+    "gulp-sequence": "^0.4.6",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylefmt": "^1.1.0",
     "gulp-stylelint": "^5.0.0",
+    "rimraf": "2.6.1",
     "stylefmt": "^6.0.0",
     "stylelint": "^8.2.0",
     "stylelint-config-recommended": "^1.0.0",
     "stylelint-config-recommended-scss": "^2.0.0",
-    "stylelint-scss": "^2.1.0",
-    "rimraf": "2.6.1",
-    "conventional-github-releaser": "^1.1.12",
-    "corp-semantic-release": "^6.1.0"
+    "stylelint-scss": "^2.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lokesh-coder/pretty-checkbox.git"
+    "url": "git+https://github.com/lokesh-coder/pretty-checkbox.git",
+    "link": "https://github.com/lokesh-coder/pretty-checkbox"
   },
   "keywords": [
     "checkbox",
