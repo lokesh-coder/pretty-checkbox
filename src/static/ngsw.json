@@ -32,7 +32,7 @@
     {
       "name": "api-freshness",
       "patterns": [
-        "https:\\/\\/192\\.168\\.43\\.188\\:3040\\/dist\\/pretty-checkbox\\.min\\.css"
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/pretty-checkbox@3\\/dist\\/pretty-checkbox\\.min\\.css"
       ],
       "strategy": "freshness",
       "maxSize": 100,
