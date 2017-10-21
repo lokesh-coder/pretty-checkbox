@@ -47,7 +47,7 @@
  * Lock
  * State - *Focus*, *Hover*, *Indeterminate*
  * Supports frameworks - *Bootstrap*, *Foundation*, *Sematic UI*, *Bulma*, ...
- * Customize nearly everything with SCSS
+ * SCSS customization
  * Supports all modern browsers, including mobile devices
  * Print friendly
  * and more... ( *I am kidding, that's all!* )
