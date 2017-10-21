@@ -168,11 +168,15 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
     </sub>
 </blockquote>
 
-<p> Checkout the documentation for tested font icon libraries.</p>
+<div align="right">
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#fonticons">more details</a</sub></i>
+</div>
 
 <div align="center"><strong >---</strong></div>
 
 #### SVG
+
+Supports SVG file in <img/> tag, svg markup (`<svg> ... </svg>`)
 
 ```html
   <div class="pretty p-svg">
@@ -184,19 +188,21 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
   </div>
 ```
 
-Support, SVG file in img tag, svg markup (`<svg> ... </svg>`)
-
 <blockquote>
     <sub>
     	<strong>Note</strong>: class `svg` to be added in img tag or svg tag.
     </sub>
 </blockquote>
 
-Checkout the documentation for different formats and tested svg libraries.
+<div align="right">
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#svg">more details</a</sub></i>
+</div>
 
 <div align="center"><strong >---</strong></div>
 
 #### Image
+
+Supports any type of valid image format.
 
 ```html
   <div class="pretty p-image">
@@ -208,15 +214,15 @@ Checkout the documentation for different formats and tested svg libraries.
   </div>
 ```
 
-Supports any type of valid image format.
-
 <blockquote>
     <sub>
     	<strong>Note</strong>: class `image` to be added in img tag.
     </sub>
 </blockquote>
 
-Checkout the documentation for different formats and tested svg libraries.
+<div align="right">
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#image">more details</a</sub></i>
+</div>
 
 <div align="center"><strong >---</strong></div>
 
@@ -240,13 +246,15 @@ And five outline colors  `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p
     </sub>
 </blockquote>
 
-Checkout the documentation for complete demo of color combinations with above styles.
+<div align="right">
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#colors">more details</a</sub></i>
+</div>
 
 ### More
 
 There are more features like  ***Radio buttons*** , ***Toggle*** , ***States*** , ***Animations*** , ***Border less*** , ***Lock*** , ***Scale***, ***SCSS Settings***. 
 
-Please refer the documentation to know about them.
+Please refer the [documentation](https://lokesh-coder.github.io/pretty-checkbox/) to know about them.
 
 
 ### Browser support
