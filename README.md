@@ -169,7 +169,8 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#fonticons">more details</a</sub></i>
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#fonticons">
+ etails</a></sub></i>
 </div>
 
 <div align="center"><strong >---</strong></div>
@@ -195,7 +196,7 @@ Supports SVG file in <img/> tag, svg markup (`<svg> ... </svg>`)
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#svg">more details</a</sub></i>
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#svg">more details</a></sub></i>
 </div>
 
 <div align="center"><strong >---</strong></div>
@@ -221,7 +222,7 @@ Supports any type of valid image format.
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#image">more details</a</sub></i>
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#image">more details</a></sub></i>
 </div>
 
 <div align="center"><strong >---</strong></div>
@@ -247,7 +248,7 @@ And five outline colors  `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#colors">more details</a</sub></i>
+ <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#colors">more details</a></sub></i>
 </div>
 
 ### More
