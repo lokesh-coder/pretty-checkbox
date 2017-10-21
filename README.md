@@ -106,12 +106,12 @@ And three shapes `p-round` `p-curve` `p-square` (default)
 #### Basic checkbox
 
 ```html
-<div class="pretty p-default">
-	<input type="checkbox">
-	<div class="state">
-		<label>Check me</label>
-	</div>
-</div>
+  <div class="pretty p-default">
+    <input type="checkbox" />
+    <div class="state">
+      <label>Check me</label>
+    </div>
+  </div>
 ```
 
 Basic checkbox has three variants `p-fill` `p-thick` `p-outline` (default)
@@ -120,10 +120,10 @@ You can combine them.
 
 ```html
   <div class="pretty p-default p-curve p-fill">
-      <input type="checkbox" />
-      <div class="state">
-          <label>Fill</label>
-      </div>
+    <input type="checkbox" />
+    <div class="state">
+      <label>Fill</label>
+    </div>
   </div>
 ```
 
@@ -134,12 +134,12 @@ You can combine them.
 Switch has three variants `p-outline` `p-fill` `p-slim`
 
 ```html
-<div class="pretty p-switch p-fill">
+  <div class="pretty p-switch p-fill">
     <input type="checkbox" />
     <div class="state">
-        <label>On</label>
+      <label>On</label>
     </div>
-</div>
+  </div>
 ```
 
 <div align="center"><strong >---</strong></div>
@@ -147,13 +147,13 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 #### Custom Font icons
 
 ```html
-<div class="pretty p-icon">
-	<input type="checkbox">
-	<div class="state">
-    	<i class="icon fa fa-check"></i>
-		<label>Check me</label>
-	</div>
-</div>
+  <div class="pretty p-icon">
+    <input type="checkbox">
+    <div class="state">
+      <i class="icon fa fa-check"></i>
+      <label>Check me</label>
+    </div>
+  </div>
 ```
 
 <blockquote>
@@ -175,13 +175,13 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 #### SVG
 
 ```html
-<div class="pretty p-svg">
-	<input type="checkbox">
-	<div class="state">
-    	<img class="svg" src="file.svg">
-		<label>Check me</label>
-	</div>
-</div>
+  <div class="pretty p-svg">
+    <input type="checkbox">
+    <div class="state">
+      <img class="svg" src="file.svg" />
+      <label>Check me</label>
+    </div>
+  </div>
 ```
 
 Support, SVG file in img tag, svg markup (`<svg> ... </svg>`)
@@ -200,11 +200,11 @@ Checkout the documentation for different formats and tested svg libraries.
 
 ```html
   <div class="pretty p-image">
-      <input type="checkbox" />
-      <div class="state">
-          <img class="image" src="/check.png">
-          <label>Block</label>
-      </div>
+    <input type="checkbox" />
+    <div class="state">
+      <img class="image" src="/check.png" />
+      <label>Block</label>
+    </div>
   </div>
 ```
 
@@ -228,10 +228,10 @@ And five outline colors  `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p
 
 ```html
   <div class="pretty p-default p-curve p-thick">
-      <input type="checkbox" />
-      <div class="state p-warning">
-          <label>Warning</label>
-      </div>
+    <input type="checkbox" />
+    <div class="state p-warning">
+      <label>Warning</label>
+    </div>
   </div>
 ```
 <blockquote>
