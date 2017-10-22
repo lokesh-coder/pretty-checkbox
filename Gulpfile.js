@@ -5,7 +5,7 @@ var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var headerComment = require('gulp-header-comment');
-const gulpStylelint = require('gulp-stylelint');
+var gulpStylelint = require('gulp-stylelint');
 var stylefmt = require('gulp-stylefmt');
 let cleanCSS = require('gulp-clean-css');
 var gulpSequence = require('gulp-sequence')
@@ -15,7 +15,6 @@ var reload = browserSync.reload;
 module.exports = gulp;
 
 /* BROWSER SYNC */
-
 gulp.task('browser-sync', function () {
   browserSync({
     port: 3040,
@@ -27,30 +26,31 @@ gulp.task('browser-sync', function () {
   });
 });
 
+/* BROWSER SYNC RELOAD */
 gulp.task('browser-sync-reload', function () {
   browserSync.reload();
 });
 
 /* LIST SCSS */
-gulp.task('lint:scss', function() {
+gulp.task('lint:scss', function () {
   return gulp
     .src('src/**/*.scss')
     .pipe(gulpStylelint({
-      reporters: [
-        { formatter: 'string', console: true }
-      ]
+      reporters: [{
+        formatter: 'string',
+        console: true
+      }]
     }));
 });
-
 
 /* COMPILE SCSS */
 gulp.task('compile:scss', function () {
   return gulp.src('src/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'expanded'
-    })
-      .on('error', sass.logError))
+        outputStyle: 'expanded'
+      })
+    .on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['> 5%', 'last 4 versions'],
       cascade: false
@@ -63,7 +63,6 @@ gulp.task('compile:scss', function () {
 });
 
 /* FORMAT CSS */
-
 gulp.task('format:css', function () {
   return gulp.src('dist/*.css')
     .pipe(stylefmt())
@@ -78,7 +77,9 @@ gulp.task('clean:dist', function () {
 /* MINIFY CSS */
 gulp.task('minify:css', () => {
   return gulp.src('dist/*.css')
-    .pipe(cleanCSS({ compatibility: 'ie9' }))
+    .pipe(cleanCSS({
+      compatibility: 'ie9'
+    }))
     .pipe(rename({
       suffix: '.min'
     }))
@@ -86,13 +87,12 @@ gulp.task('minify:css', () => {
 });
 
 /* SET HEADER */
-
 gulp.task('set:header', function () {
   return gulp.src('dist/*.css')
     .pipe(headerComment(`
       pretty-checkbox.css
 
-      A pure CSS library to beautify checkbox and radio buttons.
+      A pure CSS library to beautify checkbox and radio buttons
 
       Source: <%= pkg.repository.link %>
       Demo: <%= pkg.homepage %>
@@ -105,7 +105,6 @@ gulp.task('set:header', function () {
 gulp.task('build', function (cb) {
   gulpSequence('lint:scss', 'clean:dist', 'compile:scss', 'format:css', 'minify:css', 'set:header', cb)
 });
-
 
 gulp.task('default', ['compile:scss', 'browser-sync'], function () {
   gulp.watch("src/**/*.scss", ['compile:scss', 'browser-sync-reload']);

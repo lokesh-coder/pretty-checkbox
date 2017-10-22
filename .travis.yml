@@ -9,16 +9,6 @@ notifications:
   email: false
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
-before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - sleep 3
-  - git remote rm origin
-  - git remote add origin https://${GH_TOKEN}@github.com/lokesh-coder/hug.css.git
-  - 'if [ ${TRAVIS_PULL_REQUEST} = "false" ]; then
-    git fetch && git checkout master;
-    git config push.default current;
-  fi'
 after_success:
   - 'if [ ${TRAVIS_PULL_REQUEST} = "false" ]; then
       npm run ci;
@@ -26,7 +16,6 @@ after_success:
       npm publish --access=public;
       npm run log;
     fi'
-
 branches:
   only:
     - staging
