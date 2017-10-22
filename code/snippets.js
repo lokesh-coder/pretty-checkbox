@@ -8,7 +8,7 @@ c.install_cli =
 
 c.install_cdn =
 `
-    https://cdn.jsdelivr.net/npm/pretty-checkbox/dist/pretty.min.css
+    https://cdn.jsdelivr.net/npm/pretty-checkbox@3/dist/pretty-checkbox.min.css
 `;
 
 c.install_import =
