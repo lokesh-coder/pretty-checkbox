@@ -1,8 +1,8 @@
 {
   "name": "pretty-checkbox",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A pure css library to beautify checkbox and radio buttons.",
-  "main": "dist/pretty.min.css",
+  "main": "dist/pretty-checkbox.min.css",
   "scripts": {
     "lint":"gulp lint:scss",
     "fix": "stylelint \"src\\**\\*.scss\" --syntax scss --fix",
