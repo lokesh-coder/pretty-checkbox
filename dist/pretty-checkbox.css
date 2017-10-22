@@ -1,24 +1,20 @@
+/**
+ * pretty-checkbox.css
+ *
+ * A pure CSS library to beautify checkbox and radio buttons
+ *
+ * Source: https://github.com/lokesh-coder/pretty-checkbox
+ * Demo: https://lokesh-coder.github.io/pretty-checkbox
+ *
+ * Copyright (c) 2017 Lokesh rajendran
+ */
+
 .pretty * {
   box-sizing: border-box;
 }
 
 .pretty input:not([type='checkbox']):not([type='radio']) {
   display: none;
-}
-
-.pretty input:not([type='checkbox']):not([type='radio']) + *:after {
-  content: "Invalid input type!";
-  border: 1px solid #dedede;
-  border-left: 3px solid #d9534f;
-  padding: 9px;
-  font-size: 1em;
-  font-weight: 600;
-  color: #d9534f;
-  position: absolute;
-  z-index: 3;
-  background: #fbfbfb;
-  top: 0;
-  left: 0;
 }
 
 .pretty {
@@ -433,7 +429,7 @@
 }
 
 .pretty.p-switch input {
-  width: 2em;
+  min-width: 2em;
 }
 
 .pretty.p-switch .state {
