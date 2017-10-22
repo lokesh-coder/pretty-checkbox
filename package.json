@@ -9,7 +9,7 @@
     "format": "gulp css:format",
     "build": "gulp build",
     "ci": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
-    "release": "corp-semantic-release --branch master",
+    "release": "corp-semantic-release -- --branch master",
     "log": "conventional-github-releaser -p angular -r 0"
   },
   "dependencies": {},
