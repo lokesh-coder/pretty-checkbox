@@ -1,6 +1,6 @@
 {
   "name": "pretty-checkbox",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A pure css library to beautify checkbox and radio buttons.",
   "main": "dist/pretty.min.css",
   "scripts": {
