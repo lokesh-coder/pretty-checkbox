@@ -27,7 +27,13 @@ $pretty--label-text-offset-switch: 2.5em !default;
 $pretty--2x: 1.2em !default;
 
 // color set
-$pretty--colors: (primary, $pretty--color-primary), (info, $pretty--color-info), (success, $pretty--color-success), (warning, $pretty--color-warning), (danger, $pretty--color-danger) !default;
+$pretty--colors:(
+  primary:$pretty--color-primary,
+  info:$pretty--color-info,
+  success:$pretty--color-success,
+  warning:$pretty--color-warning,
+  danger:$pretty--color-danger
+) !default;
 
 // position
 $pretty-top: 8;
