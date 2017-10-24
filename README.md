@@ -256,6 +256,13 @@ And five outline colors  `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p
  <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#colors">more details</a></sub></i>
 </div>
 
+<br/>
+<div align="center">
+  <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/oqBTKj7tpRLQSYXLQDUT1ank/lokesh-coder/pretty-checkbox'>
+  <img alt='Sponsor' width='100%' height='68' src='https://app.codesponsor.io/embed/oqBTKj7tpRLQSYXLQDUT1ank/lokesh-coder/pretty-checkbox.svg' />
+</a>
+</div>
+
 ### More
 
 There are more features like  ***Radio buttons*** , ***Toggle*** , ***States*** , ***Animations*** , ***Border less*** , ***Lock*** , ***Scale***, ***SCSS Settings***. 
