@@ -86,7 +86,7 @@ Download the source from Github.
 
 You can also import `pretty-checkbox.scss` in your main scss file.
 ```scss
-@import '~pretty-checkbox/src/pretty.scss';
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
 ```
 
 Please refer the document for SCSS settings.
