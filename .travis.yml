@@ -9,7 +9,6 @@ notifications:
   email: false
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
-
 after_success:
   - 'if [ ${TRAVIS_PULL_REQUEST} = "false" ]; then
       npm run ci;
