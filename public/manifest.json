@@ -6,10 +6,10 @@
   "display": "standalone",
   "start_url": "./?utm_source=web_app_manifest",
   "short_name": "Pretty checkbox",
-  "theme_color": "#105B63",
+  "theme_color": "#75b7dd",
   "description": "",
   "orientation": "any",
-  "background_color": "#DB9E36",
+  "background_color": "#8033b0",
   "related_applications": [],
   "prefer_related_applications": false,
   "icons": [
