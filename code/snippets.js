@@ -1078,7 +1078,7 @@ c.checkbox_animations_jelly =
 c.checkbox_animations_tada =
 `
     <!--
-        jelly animation is not applicable to
+        tada animation is not applicable to
         p-default style
     -->
 
@@ -1109,7 +1109,7 @@ c.checkbox_animations_tada =
 c.checkbox_animations_rotate =
 `
     <!--
-        jelly animation is not applicable to
+        rotate animation is not applicable to
         p-default and p-switch style
     -->
 
@@ -1132,7 +1132,7 @@ c.checkbox_animations_rotate =
 c.checkbox_animations_pulse =
 `
     <!--
-        jelly animation is not applicable to
+        pulse animation is not applicable to
         p-default and p-switch style
     -->
 
