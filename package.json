@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "yarn run blendid",
-    "build": "yarn run blendid -- build"
+    "build": "yarn run blendid -- build",
+    "publish":"npm run build && ngh --dir public"
   },
   "gh-pages-deploy": {
     "staticpath": "public",

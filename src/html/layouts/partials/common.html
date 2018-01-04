@@ -1,5 +1,5 @@
-{% macro section(heading,d) %}
-<section class="section">
+{% macro section(heading,d,id='') %}
+<section class="section" id="{{id}}">
 	<h5 class="mb-3">{{heading}}</h5>
 	<div class="content">
 		{{d | safe}}

@@ -1,8 +1,8 @@
 body {
     font-size: 14px;
-    background-color: rgba(252, 252, 252, 0.29);
+    background-color: #f1f3f5;
     color: $col--text;
-    font-family: $font--family;
+    font-family: $font--family; 
 }
 
 .jumbotron {
@@ -11,7 +11,7 @@ body {
     background: $col--primary;
     border-bottom: 4px solid $col--sec;
     background: linear-gradient(to left, #124665, $col--primary);
-    position: relative;
+    position: relative; 
     color: #fff;
     h1 {
         margin: 0 0 20px;

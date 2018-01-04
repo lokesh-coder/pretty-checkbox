@@ -129,6 +129,7 @@
     <div>The MIT License</div>
 {% endset %} 
 
+
 {% set desc %}
         {{contentblock('Browser Compatability',browsers)}}
         {{contentblock('Framework Compatability',frameworks)}}
@@ -138,4 +139,4 @@
         {{contentblock('Credits',credits)}}
         {{contentblock('Licence',licence)}}
 {% endset %} 
-{{section('More',desc)}}
+{{section('More',desc,'more')}}

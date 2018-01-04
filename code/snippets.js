@@ -8,7 +8,7 @@ c.install_cli =
 
 c.install_cdn =
 `
-    https://cdn.jsdelivr.net/npm/pretty-checkbox@3/dist/pretty-checkbox.min.css
+    https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css
 `;
 
 c.install_import =
@@ -1200,7 +1200,7 @@ c.checkbox_svg =
     <div class="pretty p-svg p-plain">
         <input type="checkbox" />
         <div class="state">
-            <img class="svg" src="/svg/open-iconic/task.svg">
+            <img class="svg" src="svg/open-iconic/task.svg">
             <label>Done</label>
         </div>
     </div>
@@ -1232,7 +1232,7 @@ c.checkbox_image =
     <div class="pretty p-image p-plain">
         <input type="checkbox" />
         <div class="state">
-            <img class="image" src="/img/checked/001.png">
+            <img class="image" src="img/checked/001.png">
             <label>Agree</label>
         </div>
     </div>
@@ -1240,7 +1240,7 @@ c.checkbox_image =
     <div class="pretty p-image p-plain">
         <input type="checkbox" />
         <div class="state">
-            <img class="image" src="/img/checked/002.png">
+            <img class="image" src="img/checked/002.png">
             <label>Subscribe</label>
         </div>
     </div>
@@ -1248,7 +1248,7 @@ c.checkbox_image =
     <div class="pretty p-image p-plain">
         <input type="checkbox" />
         <div class="state">
-            <img class="image" src="/img/checked/003.png">
+            <img class="image" src="img/checked/003.png">
             <label>Cancel</label>
         </div>
     </div>
@@ -1256,7 +1256,7 @@ c.checkbox_image =
     <div class="pretty p-image p-plain">
         <input type="checkbox" />
         <div class="state">
-            <img class="image" src="/img/checked/004.png">
+            <img class="image" src="img/checked/004.png">
             <label>Yes</label>
         </div>
     </div>
@@ -1708,7 +1708,7 @@ c.checkbox_svg_feathers =
     <div class="pretty p-svg p-plain p-bigger p-smooth">
         <input type="checkbox" />
         <div class="state">
-            <img class="svg" src="/svg/feathers/check-circle.svg"/>
+            <img class="svg" src="svg/feathers/check-circle.svg"/>
             <label>circle</label>
         </div>
     </div>
