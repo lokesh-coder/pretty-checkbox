@@ -1,0 +1,63 @@
+{
+  "name": "pretty-checkbox",
+  "version": "4.0.0-alpha.0",
+  "description": "A pure css library to beautify checkbox and radio buttons.",
+  "main": "dist/pretty-checkbox.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "cross-env NODE_ENV=development webpack-dev-server --open --config webpack/webpack.common.js",
+    "build": "cross-env NODE_ENV=development webpack --config webpack/webpack.common.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokesh-coder/pretty-checkbox.git"
+  },
+  "keywords": [
+    "checkbox",
+    "radio",
+    "bootstrap",
+    "fonticon",
+    "icon",
+    "svg",
+    "switch",
+    "toggle",
+    "sass",
+    "css3",
+    "animation",
+    "pretty",
+    "check",
+    "colors"
+  ],
+  "author": "Lokesh Rajendran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lokesh-coder/pretty-checkbox/issues"
+  },
+  "homepage": "https://github.com/lokesh-coder/pretty-checkbox#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^6.2.0",
+    "@commitlint/config-conventional": "^6.1.3",
+    "autoprefixer": "^8.5.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.1.5",
+    "css-loader": "^0.28.11",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.1",
+    "stylefmt": "^6.0.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.1.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "selector-type-no-unknown": [true, { "ignoreTypes": ["/choosy-/"] }]
+  }
+}
