@@ -1,0 +1,35 @@
+input[type='checkbox'][data-pretty] {
+  appearance: none;
+  outline: none;
+  width: $pretty--box-size;
+  height: $pretty--box-size;
+  display: inline-flex;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+@include container {
+  @include smooth-font();
+  display: inline-flex;
+  box-sizing: border-box;
+  border: 1px solid clr('border');
+  width: $pretty--box-size;
+  height: $pretty--box-size;
+  position: relative;
+  left: -($pretty--box-size + $pretty--box-offset);
+  top: -1px;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+@include elem('*') {
+  display: none;
+}
+
+@include elem('*', true) {
+  display: inherit;
+}

@@ -1,0 +1,11 @@
+@include container {
+  &[class*='-shape-'] {
+    overflow: hidden;
+  }
+  &.-shape-round {
+    border-radius: 100%;
+  }
+  &.-shape-curve {
+    border-radius: $pretty--curve-radius;
+  }
+}

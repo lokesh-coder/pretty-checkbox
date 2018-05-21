@@ -1,2 +1,7 @@
 @import './scss/config';
-@import './scss/core';
+@import './scss/utils/_index';
+@import './scss/core/_index';
+@import './scss/containers/_index';
+@import './scss/elements/_index';
+@import './scss/addons/_index';
+@import './scss/modifiers/_index';

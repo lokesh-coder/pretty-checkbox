@@ -1,0 +1,61 @@
+//basic
+<input type="checkbox" data-pretty>
+<span class="p-basic">
+  <i class="p--fill"></i>
+</span>
+
+// options
+<input type="checkbox" data-pretty>
+<span class="p-basic -shape-round -size-md -anim-smooth">
+  <i class="p--fill"></i>
+</span>
+
+//icon
+<input type="checkbox" data-pretty>
+<span class="p-basic -shape-round -size-md -anim-smooth">
+  <i class="p--icon fa fa-check"></i>
+</span>
+
+//svg
+<input type="checkbox" data-pretty>
+<span class="p-basic -shape-round -size-md -anim-smooth">
+  <svg class="p--svg"></svg>
+</span>
+
+//switch
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth">
+  <i class="p--svg"></i>
+</span>
+
+//toggle
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -has-toggle">
+  <i class="p--fill -is-on"></i>
+  <i class="p--icon -is-off"></i>
+</span>
+
+//state hover
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -has-hover">
+  <i class="p--fill"></i>
+  <i class="p--icon -is-hover"></i>
+</span>
+
+//state
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -state-disabled">
+  <i class="p--fill"></i>
+</span>
+
+//state
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -state-inactive">
+  <i class="p--fill"></i>
+</span>
+
+//state
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -has-indeterminate">
+  <i class="p--fill -is-indeterminate"></i>
+</span>

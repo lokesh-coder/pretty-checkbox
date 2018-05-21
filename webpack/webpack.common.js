@@ -38,6 +38,12 @@ module.exports = {
             options: { minimize: ENV === 'production', sourceMap: true }
           },
           {
+            loader: 'postcss-loader',
+            options: {
+              plugins: loader => [require('autoprefixer')(), require('stylelint')()]
+            }
+          },
+          {
             loader: 'sass-loader',
             options: {}
           }

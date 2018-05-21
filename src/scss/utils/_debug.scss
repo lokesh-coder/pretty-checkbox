@@ -1,0 +1,14 @@
+@if ($pretty--debug) {
+  div,
+  ul {
+    box-shadow: 0px 0px 1px 0px #e3505a;
+  }
+  section {
+    box-shadow: 0px 0px 1px 1px #187fe5;
+  }
+
+  span,
+  li {
+    box-shadow: 0px 0px 1px 0px #212529;
+  }
+}

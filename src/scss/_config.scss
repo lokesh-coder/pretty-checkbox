@@ -1,1 +1,28 @@
 $pretty--class-name: 'pretty';
+$pretty--box-size: 14px;
+$pretty--box-offset: 4px;
+$pretty--debug: false;
+$pretty--colors-basic: (
+  'border': #c8cad3,
+  'bg': #868896
+);
+$pretty--colors-theme: (
+  'success': #2ecc71,
+  'warning': #e67e22,
+  'danger': #e74c3c,
+  'dark': #34495e,
+  'info': #3498db
+);
+$pretty--colors: (
+  'basic': $pretty--colors-basic,
+  'theme': $pretty--colors-theme
+);
+
+$pretty--sizes: (
+  'sm': 0.9rem,
+  'md': 1rem,
+  'lg': 1.4rem,
+  'xl': 4rem
+);
+
+$pretty--curve-radius: 2px;
