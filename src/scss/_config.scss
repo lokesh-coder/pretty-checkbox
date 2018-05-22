@@ -1,4 +1,5 @@
 $pretty--class-name: 'pretty';
+$pretty--base-font-size: 16px;
 $pretty--box-size: 14px;
 $pretty--box-offset: 4px;
 $pretty--debug: false;
@@ -19,10 +20,11 @@ $pretty--colors: (
 );
 
 $pretty--sizes: (
-  'sm': 0.9rem,
-  'md': 1rem,
-  'lg': 1.4rem,
-  'xl': 4rem
+  'sm': 14px,
+  'md': 16px,
+  'lg': 18px,
+  'xl': 20px,
+  'xxl': 22px
 );
 
 $pretty--curve-radius: 2px;
