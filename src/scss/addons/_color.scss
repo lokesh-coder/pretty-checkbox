@@ -1,0 +1,11 @@
+@include container {
+  @each $color in $pretty--colors-theme {
+    &.-col-#{nth($color,1)} {
+      border-color: nth($color, 2);
+      background-color: lighten(nth($color, 2), 40%);
+      .p--fill {
+        background-color: nth($color, 2);
+      }
+    }
+  }
+}
