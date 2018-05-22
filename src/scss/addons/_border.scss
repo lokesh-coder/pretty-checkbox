@@ -1,0 +1,8 @@
+@include container {
+  &.-border-thick {
+    border-width: 2px;
+  }
+  &.-border-none {
+    border-width: 0;
+  }
+}
