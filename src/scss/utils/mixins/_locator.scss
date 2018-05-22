@@ -1,3 +1,15 @@
+@mixin checkbox($checked: false) {
+  @if $checked==true {
+    input[type='checkbox'][data-pretty]:checked {
+      @content;
+    }
+  } @else {
+    input[type='checkbox'][data-pretty] {
+      @content;
+    }
+  }
+}
+
 @mixin container($checked: false) {
   @if $checked==true {
     input[type='checkbox'][data-pretty]:checked + span {
