@@ -1,4 +1,4 @@
-input[type='checkbox'][data-pretty] {
+@include checkbox {
   appearance: none;
   outline: none;
   width: $pretty--box-size;
@@ -19,11 +19,14 @@ input[type='checkbox'][data-pretty] {
   height: $pretty--box-size;
   position: relative;
   left: -($pretty--box-size + $pretty--box-offset);
+  margin-right: -($pretty--box-size);
   top: -1px;
   z-index: -1;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
+  padding: 2px;
+  overflow: hidden;
 }
 
 @include elem('*') {
