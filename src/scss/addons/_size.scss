@@ -1,0 +1,19 @@
+@include checkbox {
+  @each $size in $pretty--sizes {
+    &.-size-#{nth($size,1)} {
+      width: rem(nth($size, 2));
+      height: rem(nth($size, 2));
+    }
+  }
+}
+
+@include container {
+  @each $size in $pretty--sizes {
+    &.-size-#{nth($size,1)} {
+      width: rem(nth($size, 2));
+      height: rem(nth($size, 2));
+      left: -(nth($size, 2) + $pretty--box-offset);
+      margin-right: -(nth($size, 2));
+    }
+  }
+}
