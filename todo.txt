@@ -59,3 +59,27 @@
 <span class="p-switch -shape-thin -size-md -anim-smooth -has-indeterminate">
   <i class="p--fill -is-indeterminate"></i>
 </span>
+
+//html character / emoji?
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -has-indeterminate">
+  <i class="p--char">✅</i>●★☆✔✖
+</span>
+
+//css variables
+<input type="checkbox" data-pretty>
+<span class="p-switch -shape-thin -size-md -anim-smooth -has-indeterminate" style="--col:red">
+  <i class="p--fill"></i>
+</span>
+
+Inspirations..!
+
+https://css-tricks.com/recreating-the-twitter-heart-animation/
+https://dribbble.com/shots/3749485-Checkbox-transition
+
+https://dribbble.com/shots/2182807-Checkbox
+
+https://dribbble.com/shots/3870026-Theme-Dark
+
+//doc
+https://dribbble.com/shots/3975318-TWIP-Travanality
