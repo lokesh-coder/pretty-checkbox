@@ -1,19 +1,27 @@
+@mixin checkboxSize($size) {
+  width: rem($size);
+  height: rem($size);
+}
+
+@mixin containerSize($size) {
+  width: rem($size);
+  height: rem($size);
+  left: -($size + $pretty--box-offset);
+  margin-right: -($size);
+}
+
 @include checkbox {
   @each $size in $pretty--sizes {
-    &.-size-#{nth($size,1)} {
-      width: rem(nth($size, 2));
-      height: rem(nth($size, 2));
+    &.-size-#{nth($size, 1)} {
+      @include checkboxSize(nth($size, 2));
     }
   }
 }
 
 @include container {
   @each $size in $pretty--sizes {
-    &.-size-#{nth($size,1)} {
-      width: rem(nth($size, 2));
-      height: rem(nth($size, 2));
-      left: -(nth($size, 2) + $pretty--box-offset);
-      margin-right: -(nth($size, 2));
+    &.-size-#{nth($size, 1)} {
+      @include containerSize(nth($size, 2));
     }
   }
 }

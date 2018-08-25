@@ -28,3 +28,12 @@ $pretty--sizes: (
 );
 
 $pretty--curve-radius: 2px;
+
+$pretty--theme-funny: (
+  name: 'funny',
+  container: 'basic',
+  size: 'md',
+  color: #2ecc71,
+  border: 'thick',
+  core: 'fill'
+);

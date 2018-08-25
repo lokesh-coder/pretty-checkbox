@@ -1,34 +1,34 @@
 @mixin checkbox($checked: false) {
   @if $checked==true {
-    input[type='checkbox'][data-pretty]:checked {
+    input[type='checkbox'].pretty:checked {
       @content;
     }
   } @else {
-    input[type='checkbox'][data-pretty] {
+    input[type='checkbox'].pretty {
       @content;
     }
   }
 }
 
-@mixin container($checked: false) {
+@mixin container($checked: false, $theme: '') {
   @if $checked==true {
-    input[type='checkbox'][data-pretty]:checked + span {
+    input[type='checkbox'].pretty#{$theme}:checked + span {
       @content;
     }
   } @else {
-    input[type='checkbox'][data-pretty] + span {
+    input[type='checkbox'].pretty#{$theme} + span {
       @content;
     }
   }
 }
 
-@mixin elem($target, $checked: false) {
+@mixin elem($target, $checked: false, $theme: '') {
   @if $checked == true {
-    input[type='checkbox'][data-pretty]:checked + span > #{$target} {
+    input[type='checkbox'].pretty#{$theme}:checked + span > #{$target} {
       @content;
     }
   } @else {
-    input[type='checkbox'][data-pretty] + span > #{$target} {
+    input[type='checkbox'].pretty#{$theme} + span > #{$target} {
       @content;
     }
   }

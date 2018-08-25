@@ -10,7 +10,7 @@
   vertical-align: middle;
   box-sizing: border-box;
 }
-@include container {
+@include container(false, '') {
   @include smooth-font();
   display: inline-flex;
   box-sizing: border-box;
