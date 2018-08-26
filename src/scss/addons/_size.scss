@@ -18,10 +18,8 @@
   }
 }
 
-@include container {
-  @each $size in $pretty--sizes {
-    &.-size-#{nth($size, 1)} {
-      @include containerSize(nth($size, 2));
-    }
+@each $size in $pretty--sizes {
+  @include container($class: '.-size-#{nth($size, 1)}') {
+    @include containerSize(nth($size, 2));
   }
 }

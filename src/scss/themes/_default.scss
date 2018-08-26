@@ -4,9 +4,9 @@ $color: map-get($pretty--theme-funny, 'color');
 $border: map-get($pretty--theme-funny, 'border');
 $core: map-get($pretty--theme-funny, 'core');
 
-@include elem('*', true, $theme: '.-theme-funny') {
-  @include fill;
-}
-@include container(true, $theme: '.-theme-funny') {
-  @include color($color);
-}
+// @include elem('*', true, $theme: '.-theme-funny') {
+//   @include fill;
+// }
+// @include container(true, $theme: '.-theme-funny') {
+//   @include color($color);
+// }

@@ -1,14 +1,12 @@
-@include container {
-  &.-shape-round {
+@include container($class: '.-shape-round') {
+  border-radius: 100%;
+  .p--fill {
     border-radius: 100%;
-    .p--fill {
-      border-radius: 100%;
-    }
   }
-  &.-shape-curve {
+}
+@include container($class: '.-shape-curve') {
+  border-radius: $pretty--curve-radius;
+  .p--fill {
     border-radius: $pretty--curve-radius;
-    .p--fill {
-      border-radius: $pretty--curve-radius;
-    }
   }
 }

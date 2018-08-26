@@ -10,7 +10,7 @@
   vertical-align: middle;
   box-sizing: border-box;
 }
-@include container(false, '') {
+@include container(false) {
   @include smooth-font();
   display: inline-flex;
   box-sizing: border-box;
@@ -33,6 +33,6 @@
   display: none;
 }
 
-@include elem('*', true) {
+@include elem('*', $checked: true) {
   display: inherit;
 }

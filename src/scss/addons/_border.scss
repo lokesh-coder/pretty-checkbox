@@ -1,8 +1,7 @@
-@include container {
-  &.-border-thick {
-    border-width: 2px;
-  }
-  &.-border-none {
-    border-width: 0;
-  }
+@include container($class: '.-border-thick') {
+  border-width: 2px;
+}
+
+@include container($class: '.-border-none') {
+  border-width: 0;
 }
