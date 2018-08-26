@@ -5,6 +5,12 @@
   i {
     background-color: $color;
   }
+  .p--check,
+  .p--cross {
+    &:before {
+      color: $color;
+    }
+  }
 }
 
 @each $color in $pretty--colors-theme {

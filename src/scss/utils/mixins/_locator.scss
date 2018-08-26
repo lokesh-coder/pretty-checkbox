@@ -22,13 +22,13 @@
   }
 }
 
-@mixin elem($target, $checked: false, $theme: '') {
+@mixin elem($target, $checked: false, $class: '') {
   @if $checked == true {
-    input[type='checkbox'].pretty#{$theme}:checked + span > #{$target} {
+    input[type='checkbox'].pretty#{$class}:checked + span > #{$target} {
       @content;
     }
   } @else {
-    input[type='checkbox'].pretty#{$theme} + span > #{$target} {
+    input[type='checkbox'].pretty#{$class} + span > #{$target} {
       @content;
     }
   }

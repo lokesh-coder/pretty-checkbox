@@ -1,5 +1,9 @@
 @include container($class: '.-border-thick') {
   border-width: 2px;
+  .p--check:before,
+  .p--cross:before {
+    font-weight: bold;
+  }
 }
 
 @include container($class: '.-border-none') {

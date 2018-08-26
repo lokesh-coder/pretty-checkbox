@@ -18,6 +18,11 @@ $pretty--colors: (
   'basic': $pretty--colors-basic,
   'theme': $pretty--colors-theme
 );
+$pretty--font-family: 'pretty' !default;
+$pretty--font-path: './scss/icons' !default;
+
+$pretty--icon-check: '\e92b';
+$pretty--icon-x: '\ea02';
 
 $pretty--sizes: (
   'sm': 14px,

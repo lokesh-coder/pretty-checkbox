@@ -1,0 +1,31 @@
+@mixin baseIcon {
+  font-family: '#{$pretty--font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$icons: (
+  'i.p--check': $pretty--icon-check,
+  'i.p--cross': $pretty--icon-x
+);
+
+@each $icon in $icons {
+  @include elem(nth($icon,1), true) {
+    @include baseIcon;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    &:before {
+      content: nth($icon,2);
+    }
+  }
+}
