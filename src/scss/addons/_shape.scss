@@ -1,4 +1,4 @@
-@include container($class: '.-shape-round') {
+@include container($class: '.-shape-round:not(.-type-switch)') {
   border-radius: 100%;
   .p--fill {
     border-radius: 100%;

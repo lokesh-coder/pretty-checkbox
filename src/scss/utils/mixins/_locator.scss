@@ -1,10 +1,10 @@
-@mixin checkbox($checked: false) {
+@mixin checkbox($checked: false, $class: '') {
   @if $checked==true {
-    input[type='checkbox'].pretty:checked {
+    input[type='checkbox'].pretty#{$class}:checked {
       @content;
     }
   } @else {
-    input[type='checkbox'].pretty {
+    input[type='checkbox'].pretty#{$class} {
       @content;
     }
   }

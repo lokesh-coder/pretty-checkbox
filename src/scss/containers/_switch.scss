@@ -1,0 +1,22 @@
+@include checkbox($class: '.-type-switch') {
+  width: 2rem !important;
+}
+
+@include container($class: '.-type-switch') {
+  width: 2rem !important;
+  border-radius: 1rem;
+  left: -2.25rem !important;
+  justify-content: flex-start;
+}
+
+@include container(true, $class: '.-type-switch') {
+  justify-content: flex-end;
+}
+@include elem('*', $class: '.-type-switch') {
+  width: 0.5rem !important;
+  border-radius: 1rem;
+  display: inherit;
+}
+@include elem('*', $class: '.-type-switch.-size-xl') {
+  width: 0.8rem !important;
+}

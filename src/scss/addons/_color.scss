@@ -14,7 +14,7 @@
 }
 
 @each $color in $pretty--colors-theme {
-  @include container($class: '.-col-#{nth($color,1)}') {
+  @include container(true, $class: '.-col-#{nth($color,1)}') {
     @include color(nth($color, 2));
   }
 }
