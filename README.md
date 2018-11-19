@@ -285,6 +285,10 @@ Works in all modern browsers.
 * [Feathers](https://feathericons.com/)
 * Others
 
+### Libraries
+- VueJs - [pretty-checkbox-vue](https://github.com/hamed-ehtesham/pretty-checkbox-vue)
+- Angular - [ngx-pretty-checkbox](https://github.com/miladfm/ngx-pretty-checkbox)
+
 ### Inspiration
 - [Awesome Bootstrap Checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) - Idea
 - [Animista](http://animista.net) - Animations
