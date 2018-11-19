@@ -267,3 +267,8 @@ section {
     border-radius: 2px;
     padding: 0 0 10px;
 }
+
+.container:first-child > div span { 
+    position: relative;
+    top: 7px; 
+}

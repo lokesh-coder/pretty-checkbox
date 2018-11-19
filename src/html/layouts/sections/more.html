@@ -79,13 +79,21 @@
       <path d="m0.91068 9.5686 25.066-0.1711 38.151 65.658 37.852-65.654 25.11 0.0263-62.966 108.06z" fill="#41b883"></path>
     </svg>
   </a></div>
-{% endset %} 
+{% endset %}  
 
 {% set inspiration %}
   <div>
     <i class="mdi mdi-chevron-right"></i> <a href="https://github.com/flatlogic/awesome-bootstrap-checkbox" target="_blank">Awesome Bootstrap Checkbox</a> - Idea
     <br>
     <i class="mdi mdi-chevron-right"></i> <a href="http://animista.net" target="_blank">Animista</a> - Animations.
+  </div>
+{% endset %} 
+
+{% set frameworkPlugins %}
+  <div>
+    <i class="mdi mdi-chevron-right"></i> VueJS plugin - <a href="https://github.com/hamed-ehtesham/pretty-checkbox-vue" target="_blank">pretty-checkbox-vue</a>
+    <br>
+    <i class="mdi mdi-chevron-right"></i> Angular library - <a href="https://github.com/miladfm/ngx-pretty-checkbox" target="_blank">ngx-pretty-checkbox </a>
   </div>
 {% endset %} 
 
@@ -132,6 +140,7 @@
 
 {% set desc %}
         {{contentblock('Browser Compatability',browsers)}}
+        {{contentblock('Framework Plugins',frameworkPlugins)}}
         {{contentblock('Framework Compatability',frameworks)}}
         {{contentblock('Inspirations',inspiration)}}
         {{contentblock('Contributions',contributions)}}
