@@ -29,10 +29,10 @@ $pretty--2x: 1.2em !default;
 $pretty--colors: (primary, $pretty--color-primary), (info, $pretty--color-info), (success, $pretty--color-success), (warning, $pretty--color-warning), (danger, $pretty--color-danger) !default;
 
 // position
-$pretty-top: 8;
-$pretty-top-switch: ($pretty-top * 2) * 1%;
-$pretty-top-offset: calc((0% - (100% - 1em)) - #{$pretty-top * 1%});
-$pretty-top-offset-switch: calc((0% - (100% - 1em)) - #{$pretty-top-switch});
+$pretty-top: 8 !default;
+$pretty-top-switch: ($pretty-top * 2) * 1% !default;
+$pretty-top-offset: calc((0% - (100% - 1em)) - #{$pretty-top * 1%}) !default;
+$pretty-top-offset-switch: calc((0% - (100% - 1em)) - #{$pretty-top-switch}) !default;
 
 // dev 
 $pretty--debug: false !default;
