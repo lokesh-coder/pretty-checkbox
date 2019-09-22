@@ -27,7 +27,8 @@
     }
   }
 
-  input:checked ~ .state .svg {
+  input:checked ~ .state .svg,
+  input:indeterminate ~ .state .svg {
     opacity: 1;
   }
 }

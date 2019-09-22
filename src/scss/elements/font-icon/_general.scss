@@ -27,7 +27,8 @@
     }
   }
 
-  input:checked ~ .state {
+  input:checked ~ .state,
+  input:indeterminate ~ .state {
     .icon {
       opacity: 1;
     }

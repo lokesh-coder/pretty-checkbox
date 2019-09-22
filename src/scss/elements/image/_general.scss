@@ -15,7 +15,8 @@
     }
   }
 
-  input:checked ~ .state img {
+  input:checked ~ .state img,
+  input:indeterminate ~ .state img {
     opacity: 1;
   }
 }
