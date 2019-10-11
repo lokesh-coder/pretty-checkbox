@@ -6,7 +6,7 @@
  * Source: https://github.com/lokesh-coder/pretty-checkbox
  * Demo: https://lokesh-coder.github.io/pretty-checkbox
  *
- * Copyright (c) 2017 Lokesh rajendran
+ * Copyright (c) 2019 Lokesh rajendran
  */
 
 .pretty * {
@@ -73,222 +73,96 @@
   display: none;
 }
 
-@-webkit-keyframes zoom {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-}
-
 @keyframes zoom {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0);
     transform: scale(0);
-  }
-}
-
-@-webkit-keyframes tada {
-  0% {
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0;
-    -webkit-transform: scale(7);
-    transform: scale(7);
-  }
-  38% {
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  55% {
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  72% {
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  81% {
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-transform: scale(1.24);
-    transform: scale(1.24);
-  }
-  89% {
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  95% {
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
-  }
-  100% {
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
   }
 }
 
 @keyframes tada {
   0% {
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0;
-    -webkit-transform: scale(7);
     transform: scale(7);
   }
+
   38% {
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
+
   55% {
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
-    -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
+
   72% {
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
+
   81% {
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
-    -webkit-transform: scale(1.24);
     transform: scale(1.24);
   }
+
   89% {
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
+
   95% {
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
-    -webkit-transform: scale(1.04);
     transform: scale(1.04);
   }
-  100% {
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
 
-@-webkit-keyframes jelly {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(0.85, 1.15, 1);
-    transform: scale3d(0.85, 1.15, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    animation-timing-function: ease-out;
+    transform: scale(1);
   }
 }
 
 @keyframes jelly {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+
   30% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1);
   }
+
   40% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
   }
+
   50% {
-    -webkit-transform: scale3d(0.85, 1.15, 1);
     transform: scale3d(0.85, 1.15, 1);
   }
+
   65% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1);
   }
+
   75% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1);
   }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
 
-@-webkit-keyframes rotate {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateZ(-200px) rotate(-45deg);
-    transform: translateZ(-200px) rotate(-45deg);
-  }
   100% {
-    opacity: 1;
-    -webkit-transform: translateZ(0) rotate(0);
-    transform: translateZ(0) rotate(0);
+    transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes rotate {
   0% {
     opacity: 0;
-    -webkit-transform: translateZ(-200px) rotate(-45deg);
     transform: translateZ(-200px) rotate(-45deg);
   }
+
   100% {
     opacity: 1;
-    -webkit-transform: translateZ(0) rotate(0);
     transform: translateZ(0) rotate(0);
-  }
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0px 0px 0px 0px #bdc3c7;
-  }
-  100% {
-    box-shadow: 0px 0px 0px 1.5em rgba(189, 195, 199, 0);
   }
 }
 
@@ -296,19 +170,18 @@
   0% {
     box-shadow: 0px 0px 0px 0px #bdc3c7;
   }
+
   100% {
     box-shadow: 0px 0px 0px 1.5em rgba(189, 195, 199, 0);
   }
 }
 
 .pretty.p-default.p-fill .state label:after {
-  -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
 .pretty.p-default .state label:after {
-  -webkit-transform: scale(0.6);
   -ms-transform: scale(0.6);
   transform: scale(0.6);
 }
@@ -323,7 +196,6 @@
 }
 
 .pretty.p-default.p-thick .state label:after {
-  -webkit-transform: scale(0.4) !important;
   -ms-transform: scale(0.4) !important;
   transform: scale(0.4) !important;
 }
@@ -347,16 +219,12 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   line-height: 1;
@@ -389,16 +257,12 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   line-height: 1;
@@ -419,7 +283,6 @@
   z-index: 0;
   text-align: center;
   line-height: normal;
-  -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
@@ -460,7 +323,6 @@
   border-radius: 100%;
   left: 0;
   border-color: transparent;
-  -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
@@ -569,7 +431,6 @@
 }
 
 .pretty.p-plain.p-plain .icon {
-  -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -585,7 +446,6 @@
 }
 
 .pretty.p-round.p-icon .state .icon:before {
-  -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
@@ -609,18 +469,15 @@
 .pretty.p-smooth input:checked + .state .icon,
 .pretty.p-smooth input:checked + .state .svg,
 .pretty.p-smooth input:checked + .state img {
-  -webkit-animation: zoom 0.2s ease;
   animation: zoom 0.2s ease;
 }
 
 .pretty.p-smooth.p-default input:checked + .state label:after {
-  -webkit-animation: zoom 0.2s ease;
   animation: zoom 0.2s ease;
 }
 
 .pretty.p-smooth.p-plain input:checked + .state label:before {
   content: '';
-  -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
   transition: all 0.5s ease;
@@ -631,7 +488,6 @@
 .pretty.p-tada:not(.p-default) input:checked + .state img,
 .pretty.p-tada:not(.p-default) input:checked + .state label:before,
 .pretty.p-tada:not(.p-default) input:checked + .state label:after {
-  -webkit-animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   animation: tada 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1 alternate;
   opacity: 1;
 }
@@ -641,7 +497,6 @@
 .pretty.p-jelly:not(.p-default) input:checked + .state img,
 .pretty.p-jelly:not(.p-default) input:checked + .state label:before,
 .pretty.p-jelly:not(.p-default) input:checked + .state label:after {
-  -webkit-animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: jelly 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 1;
 }
@@ -655,7 +510,6 @@
 .pretty.p-rotate:not(.p-default) input:checked ~ .state img,
 .pretty.p-rotate:not(.p-default) input:checked ~ .state label:before,
 .pretty.p-rotate:not(.p-default) input:checked ~ .state label:after {
-  -webkit-animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: rotate 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 1;
 }
@@ -665,7 +519,6 @@
 }
 
 .pretty.p-pulse:not(.p-switch) input:checked ~ .state label:before {
-  -webkit-animation: pulse 1s;
   animation: pulse 1s;
 }
 
@@ -956,4 +809,14 @@
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+}
+
+.pretty[dir="rtl"] .state label:before,
+.pretty[dir="rtl"] .state label:after {
+  right: 0px;
+  left: auto;
+}
+
+.pretty.p-switch[dir="rtl"] input:checked ~ .state label:after {
+  right: 1em;
 }

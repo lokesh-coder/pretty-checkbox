@@ -1,0 +1,17 @@
+.#{$pretty--class-name}[dir="rtl"] {
+  .state label {
+    &:before,
+    &:after {
+      right: 0px;
+      left: auto;
+    }
+  }
+}
+
+.#{$pretty--class-name}.p-switch[dir="rtl"] {
+  input:checked ~ .state {
+    label:after {
+      right: 1em;
+    }
+  }
+}
