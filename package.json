@@ -4,7 +4,7 @@
   "description": "A pure css library to beautify checkbox and radio buttons.",
   "main": "dist/pretty-checkbox.min.css",
   "scripts": {
-    "lint":"gulp lint:scss",
+    "lint": "gulp lint:scss",
     "fix": "stylelint \"src\\**\\*.scss\" --syntax scss --fix",
     "format": "gulp css:format",
     "build": "gulp build",

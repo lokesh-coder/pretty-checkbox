@@ -1,0 +1,39 @@
+$pretty--class-name: pretty !default;
+
+// colors
+$pretty--color-default: #bdc3c7 !default;
+$pretty--color-primary: #428bca !default;
+$pretty--color-info: #5bc0de !default;
+$pretty--color-success: #5cb85c !default;
+$pretty--color-warning: #f0ad4e !default;
+$pretty--color-danger: #d9534f !default;
+$pretty--color-dark: #5a656b !default;
+
+// z-index
+$pretty--z-index-back: 0 !default;
+$pretty--z-index-between: 1 !default;
+$pretty--z-index-front: 2 !default;
+
+// box
+$pretty--curve-radius: 20% !default;
+$pretty--box-size: calc(1em + 2px) !default;
+
+// text
+$pretty--label-text-offset: 1.5em !default;
+$pretty--label-text-offset-switch: 2.5em !default;
+
+// scale
+$pretty--2x: 1.2em !default;
+
+// color set
+$pretty--colors: (primary, $pretty--color-primary), (info, $pretty--color-info), (success, $pretty--color-success), (warning, $pretty--color-warning), (danger, $pretty--color-danger) !default;
+
+// position
+$pretty-top: 8;
+$pretty-top-switch: ($pretty-top * 2) * 1%;
+$pretty-top-offset: calc((0% - (100% - 1em)) - #{$pretty-top * 1%});
+$pretty-top-offset-switch: calc((0% - (100% - 1em)) - #{$pretty-top-switch});
+
+// dev 
+$pretty--debug: false !default;
+$pretty--err-message: 'Error: Invalid input type!' !default;
