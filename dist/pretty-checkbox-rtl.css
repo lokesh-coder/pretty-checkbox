@@ -20,14 +20,14 @@
 .pretty {
   position: relative;
   display: inline-block;
-  margin-right: 1em;
+  margin-left: 1em;
   white-space: nowrap;
   line-height: 1;
 }
 
 .pretty input {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   min-width: 1em;
   width: 100%;
@@ -59,7 +59,7 @@
   border: 1px solid transparent;
   z-index: 0;
   position: absolute;
-  left: 0;
+  right: 0;
   top: calc((0% - (100% - 1em)) - 8%);
   background-color: transparent;
 }
@@ -205,7 +205,7 @@
   font-size: 1em;
   width: calc(1em + 2px);
   height: calc(1em + 2px);
-  left: 0;
+  right: 0;
   z-index: 1;
   text-align: center;
   line-height: normal;
@@ -243,7 +243,7 @@
   font-size: 1em;
   width: calc(1em + 2px);
   height: calc(1em + 2px);
-  left: 0;
+  right: 0;
   z-index: 1;
   text-align: center;
   line-height: normal;
@@ -279,7 +279,7 @@
   height: calc(1em + 2px);
   top: 0;
   top: calc((0% - (100% - 1em)) - 8%);
-  left: 0;
+  right: 0;
   z-index: 0;
   text-align: center;
   line-height: normal;
@@ -321,7 +321,7 @@
 .pretty.p-switch .state label:after {
   transition: all 0.5s ease;
   border-radius: 100%;
-  left: 0;
+  right: 0;
   border-color: transparent;
   -ms-transform: scale(0.8);
   transform: scale(0.8);
@@ -341,7 +341,7 @@
 
 .pretty.p-switch input:checked ~ .state label:after {
   background-color: #5a656b !important;
-  left: 1em;
+  right: 1em;
 }
 
 .pretty.p-switch.p-fill input:checked ~ .state:before {
@@ -355,7 +355,7 @@
 
 .pretty.p-switch.p-fill input:checked ~ .state label:after {
   background-color: #fff !important;
-  left: 1em;
+  right: 1em;
 }
 
 .pretty.p-switch.p-slim .state:before {
