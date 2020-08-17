@@ -30,3 +30,6 @@ test
 
 # Logs
 .log
+
+# Build
+dist/
