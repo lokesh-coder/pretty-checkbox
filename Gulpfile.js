@@ -1,21 +1,22 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var headerComment = require('gulp-header-comment');
-var gulpStylelint = require('gulp-stylelint');
-var stylefmt = require('gulp-stylefmt');
-let cleanCSS = require('gulp-clean-css');
-var gulpSequence = require('gulp-sequence')
-var del = require('del');
-var reload = browserSync.reload;
+const gulp = require('gulp');
+const browserSync = require('browser-sync');
 
-module.exports = gulp;
+const sass = require('gulp-sass');
+sass.compiler = require('sass');
+
+const rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const headerComment = require('gulp-header-comment');
+const gulpStylelint = require('gulp-stylelint');
+const cleanCSS = require('gulp-clean-css');
+const gulpSequence = require('gulp-sequence')
+const del = require('del');
+
+const reload = browserSync.reload;
 
 /* BROWSER SYNC */
-gulp.task('browser-sync', function () {
+exports['browser-sync'] = function serve() {
   browserSync({
     port: 3040,
     server: {
@@ -24,15 +25,15 @@ gulp.task('browser-sync', function () {
     },
     https: true
   });
-});
+};
 
 /* BROWSER SYNC RELOAD */
-gulp.task('browser-sync-reload', function () {
+exports['browser-sync-reload'] = function browserSyncReload() {
   browserSync.reload();
-});
+};
 
 /* LIST SCSS */
-gulp.task('lint:scss', function () {
+exports['lint:scss'] = function lintCSS() {
   return gulp
     .src('src/**/*.scss')
     .pipe(gulpStylelint({
@@ -41,10 +42,10 @@ gulp.task('lint:scss', function () {
         console: true
       }]
     }));
-});
+};
 
 /* COMPILE SCSS */
-gulp.task('compile:scss', function () {
+exports['compile:scss'] = function compileSCSS () {
   return gulp.src('src/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
@@ -52,7 +53,6 @@ gulp.task('compile:scss', function () {
       })
     .on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['> 5%', 'last 4 versions'],
       cascade: false
     }))
     .pipe(sourcemaps.write('./maps'))
@@ -60,22 +60,25 @@ gulp.task('compile:scss', function () {
     .pipe(browserSync.reload({
       stream: true
     }));
-});
+};
 
 /* FORMAT CSS */
-gulp.task('format:css', function () {
+exports['format:css'] = function formatCSS() {
   return gulp.src('dist/*.css')
-    .pipe(stylefmt())
+    .pipe(gulpStylelint({
+      fix: true,
+      failAfterError: false
+    }))
     .pipe(gulp.dest('dist'));
-})
+}
 
 /* CLEAN DIST */
-gulp.task('clean:dist', function () {
+exports['clean:dist'] = function cleanDist() {
   return del(['dist']);
-});
+};
 
 /* MINIFY CSS */
-gulp.task('minify:css', () => {
+exports['minify:css'] = function minifyCSS() {
   return gulp.src('dist/*.css')
     .pipe(cleanCSS({
       compatibility: 'ie9'
@@ -84,10 +87,10 @@ gulp.task('minify:css', () => {
       suffix: '.min'
     }))
     .pipe(gulp.dest('dist'));
-});
+}
 
 /* SET HEADER */
-gulp.task('set:header', function () {
+exports['set:header'] = function setHeader() {
   return gulp.src('dist/*.css')
     .pipe(headerComment(`
       pretty-checkbox.css
@@ -100,12 +103,18 @@ gulp.task('set:header', function () {
       Copyright (c) <%= moment().format('YYYY') %> <%= _.capitalize(pkg.author) %>
     `))
     .pipe(gulp.dest('dist'))
-});
+};
 
-gulp.task('build', function (cb) {
-  gulpSequence('lint:scss', 'clean:dist', 'compile:scss', 'format:css', 'minify:css', 'set:header', cb)
-});
+const build = gulp.series(
+  gulp.parallel(
+    exports['clean:dist'],
+    exports['lint:scss']
+  ),
+  exports['compile:scss'],
+  exports['format:css'],
+  exports['minify:css'],
+  exports['set:header']
+)
 
-gulp.task('default', ['compile:scss', 'browser-sync'], function () {
-  gulp.watch("src/**/*.scss", ['compile:scss', 'browser-sync-reload']);
-});
+exports.build = build;
+exports.default = build;
