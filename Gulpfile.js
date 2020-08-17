@@ -10,7 +10,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const headerComment = require('gulp-header-comment');
 const gulpStylelint = require('gulp-stylelint');
 const cleanCSS = require('gulp-clean-css');
-const gulpSequence = require('gulp-sequence');
 const del = require('del');
 
 const reload = browserSync.reload;

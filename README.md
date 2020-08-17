@@ -30,7 +30,7 @@
 <img src="preview.gif" alt="Pretty checkbox preview"/>
 </div>
 
-### Features
+## Features
 
 -   Basic
     -   **Shapes** - _Square_, _Curve_, _Round_
@@ -53,22 +53,20 @@
 -   Print friendly
 -   and more... ( _I am kidding, that's all!_ )
 
-### Installation
+## Installation
 
--   **From CLI**
+### **From CLI**
 
 Install using `npm` or `yarn`:
 
 ```sh
-> npm install @djthoms/pretty-checkbox // or
-> yarn add @djthoms/pretty-checkbox
+npm install @djthoms/pretty-checkbox # or
+yarn add @djthoms/pretty-checkbox
 ```
 
 Add `pretty-checkbox.min.css` in your html:
 
-<br>
-
--   **From CDN** ( [`unpkg`](https://www.jsdelivr.com/package/npm/pretty-checkbox) )
+### From CDN
 
 ```html
 <link
@@ -77,11 +75,9 @@ Add `pretty-checkbox.min.css` in your html:
 />
 ```
 
-<br>
+### Manual download
 
--   **Manual download** ( [`Github`](https://github.com/atomicpages/pretty-checkbox/archive/master.zip) )
-
-Download the source from Github.
+Download the source from [`Github`](https://github.com/atomicpages/pretty-checkbox/archive/master.zip).
 
 ```html
 <link rel="stylesheet" href="<PATH>/pretty-checkbox/dist/pretty-checkbox.min.css" />
@@ -89,9 +85,7 @@ Download the source from Github.
 
 `<PATH>` is where the library is downloaded.
 
-<br>
-
-**SCSS**
+### SCSS
 
 You can also import `pretty-checkbox.scss` in your main scss file.
 
@@ -101,7 +95,7 @@ You can also import `pretty-checkbox.scss` in your main scss file.
 
 Please refer the document for SCSS settings.
 
-### Usage
+## Usage
 
 Pretty checkbox comes with many styles,
 
@@ -115,7 +109,7 @@ Pretty checkbox comes with many styles,
 
 And three shapes `p-round` `p-curve` `p-square` (default)
 
-#### Basic checkbox
+### Basic checkbox
 
 ```html
 <div class="pretty p-default">
@@ -139,9 +133,7 @@ You can combine them.
 </div>
 ```
 
-<div align="center"><strong >---</strong></div>
-
-#### Switch checkbox
+### Switch checkbox
 
 Switch has three variants `p-outline` `p-fill` `p-slim`
 
@@ -154,9 +146,7 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 </div>
 ```
 
-<div align="center"><strong >---</strong></div>
-
-#### Custom Font icons
+### Custom Font icons
 
 ```html
 <div class="pretty p-icon">
@@ -185,9 +175,7 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
  more details</a></sub></i>
 </div>
 
-<div align="center"><strong >---</strong></div>
-
-#### SVG
+### SVG
 
 Supports SVG file in <img/> tag, markup (`<svg> ... </svg>`) and sprites
 
@@ -211,9 +199,7 @@ Supports SVG file in <img/> tag, markup (`<svg> ... </svg>`) and sprites
  <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#svg">more details</a></sub></i>
 </div>
 
-<div align="center"><strong >---</strong></div>
-
-#### Image
+### Image
 
 Supports any type of valid image format.
 
@@ -237,9 +223,7 @@ Supports any type of valid image format.
  <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#image">more details</a></sub></i>
 </div>
 
-<div align="center"><strong >---</strong></div>
-
-#### Colors
+### Colors
 
 There are five solid colors `p-primary` `p-success` `p-warning` `p-info` `p-danger`
 
@@ -264,19 +248,19 @@ And five outline colors `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p-
  <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#colors">more details</a></sub></i>
 </div>
 
-### More
+## More
 
 There are more features like **_Radio buttons_** , **_Toggle_** , **_States_** , **_Animations_** , **_Border less_** , **_Lock_** , **_Scale_**, **_SCSS Settings_**.
 
 Please refer the [documentation](https://lokesh-coder.github.io/pretty-checkbox/) to know about them.
 
-### Browser support
+## Browser support
 
 Works in all modern browsers.
 
 `Chrome >= 26` `Firefox >= 16` `Safari >= 6.1` `Opera >= 15` `IE >= 9`
 
-### Font Icon libraries
+## Font Icon libraries
 
 -   [Font awesome](http://fontawesome.io/icons/)
 -   [Bootstrap Glyphicons](https://getbootstrap.com/docs/3.3/components/#glyphicons)
@@ -287,28 +271,28 @@ Works in all modern browsers.
 -   [Material icon ( Google )](https://material.io/icons)
 -   Others not tested, but will work ( 99% ).
 
-### SVG
+## SVG
 
 -   [UIKit](https://getuikit.com/docs/icon)
 -   [Feathers](https://feathericons.com/)
 -   Others
 
-### Libraries
+## Libraries
 
 -   VueJs - [pretty-checkbox-vue](https://github.com/hamed-ehtesham/pretty-checkbox-vue)
 -   Angular - [ngx-pretty-checkbox](https://github.com/miladfm/ngx-pretty-checkbox)
 -   React - [pretty-checkbox-react](https://github.com/atomicpages/pretty-checkbox-react)
 
-### Inspiration
+## Inspiration
 
 -   [Awesome Bootstrap Checkbox](https://github.com/flatlogic/awesome-bootstrap-checkbox) - Idea
 -   [Animista](http://animista.net) - Animations
 
-### Contributions
+## Contributions
 
 Thanks to all those good people who spend their valuable time and helped to improve this library. Any Contributions are welcome!
 
-### License
+## License
 
 This project is licensed under the MIT License
 

@@ -7,10 +7,7 @@
         "lint": "gulp lint:scss",
         "fix": "stylelint \"src\\**\\*.scss\" --syntax scss --fix",
         "format": "gulp css:format",
-        "build": "gulp build",
-        "ci": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
-        "release": "corp-semantic-release",
-        "log": "conventional-github-releaser -p angular -r 0"
+        "build": "gulp build"
     },
     "publishConfig": {
         "access": "public"
@@ -19,8 +16,6 @@
     "devDependencies": {
         "@djthoms/prettier-config": "^2.0.0",
         "browser-sync": "^2.8.2",
-        "conventional-github-releaser": "^3.1.5",
-        "corp-semantic-release": "^7.0.0",
         "del": "^5.0.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.0",
@@ -28,7 +23,6 @@
         "gulp-header-comment": "^0.8.0",
         "gulp-rename": "^2.0.0",
         "gulp-sass": "^4.1.0",
-        "gulp-sequence": "^1.0.0",
         "gulp-sourcemaps": "^2.6.1",
         "gulp-stylelint": "^13.0.0",
         "prettier": "^2.0.5",
@@ -37,7 +31,6 @@
         "stylelint": "^13.6.1",
         "stylelint-config-recommended": "^3.0.0",
         "stylelint-config-recommended-scss": "^4.2.0",
-        "stylelint-config-sass-guidelines": "^7.0.0",
         "stylelint-scss": "^3.18.0"
     },
     "browserslist": [
@@ -46,8 +39,8 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lokesh-coder/pretty-checkbox.git",
-        "link": "https://github.com/lokesh-coder/pretty-checkbox"
+        "url": "git+https://github.com/atomicpages/pretty-checkbox.git",
+        "link": "https://github.com/atomicpages/pretty-checkbox"
     },
     "keywords": [
         "checkbox",
@@ -66,9 +59,12 @@
         "colors"
     ],
     "author": "Lokesh Rajendran",
+    "maintainers": [
+        "Dennis Thompson"
+    ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/lokesh-coder/pretty-checkbox/issues"
+        "url": "https://github.com/atomicpages/pretty-checkbox/issues"
     },
     "homepage": "https://lokesh-coder.github.io/pretty-checkbox",
     "prettier": "@djthoms/prettier-config"
