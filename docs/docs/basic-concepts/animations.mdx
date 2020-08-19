@@ -1,0 +1,111 @@
+---
+id: animations
+title: Animations
+---
+
+In terms of basic concepts we're at the end of the road folks. We've learned a lot about what pretty checkbox can do, now it's time to explore the crown jewel of the library: animations.
+
+<div align="center">
+    <img src="https://media.giphy.com/media/XRnbDusSE2cBG/giphy.gif" />
+</div>
+
+Animations are broken into two categories:
+
+1. Animations that **only** work with images
+2. Animations that work without images as well (i.e. universal animations)
+
+Possible values: `p-smooth`, `p-pulse`, `p-tada`, `p-jelly`, and `p-rotate`.
+
+## Universal Animations
+
+To recap, univeral animations are those that work with or without icons, svg, or images. There are two:
+
+1. `p-smooth`
+2. `p-pulse`
+
+Add to the root div and they'll work like a charm!
+
+```html {1,8}
+<div class="pretty p-default p-smooth">
+    <input type="checkbox" />
+    <div class="state p-primary">
+        <label>Smooth</label>
+    </div>
+</div>
+
+<div class="pretty p-default p-smooth">
+    <input type="checkbox" />
+    <div class="state p-primary">
+        <label>Smooth</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default p-smooth">
+    <input type="checkbox" />
+    <div className="state p-primary">
+        <label>Smooth</label>
+    </div>
+</div>
+<div className="pretty p-default p-pulse">
+    <input type="checkbox" />
+    <div className="state p-danger-o">
+        <label>Pulse</label>
+    </div>
+</div>
+
+## Icon Animations
+
+Icon animations means these animations are compatbile with `p-svg`, `p-icon`, or `p-image`, There are three:
+
+1. `p-tada`
+2. `p-jelly`
+3. `p-rotate`
+
+```html {1,9,17}
+<div class="pretty p-icon p-jelly">
+    <input type="checkbox" />
+    <div class="state p-success">
+        <i class="icon mdi mdi-check"></i>
+        <label>Jelly</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-tada">
+    <input type="checkbox" />
+    <div class="state p-danger">
+        <i class="icon mdi mdi-bug"></i>
+        <label>Tada</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-rotate p-plain">
+    <input type="checkbox" />
+    <div class="state p-info-o">
+        <i class="icon mdi mdi-close"></i>
+        <label>Rotate</label>
+    </div>
+</div>
+```
+
+<div class="pretty p-icon p-jelly">
+    <input type="checkbox" />
+    <div class="state p-success">
+        <i class="icon mdi mdi-check"></i>
+        <label>Jelly</label>
+    </div>
+</div>
+<div class="pretty p-icon p-tada">
+    <input type="checkbox" />
+    <div class="state p-danger">
+        <i class="icon mdi mdi-bug"></i>
+        <label>Tada</label>
+    </div>
+</div>
+<div class="pretty p-icon p-rotate p-plain">
+    <input type="checkbox" />
+    <div class="state p-info-o">
+        <i class="icon mdi mdi-close"></i>
+        <label>Rotate</label>
+    </div>
+</div>

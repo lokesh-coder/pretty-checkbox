@@ -1,0 +1,157 @@
+---
+id: checkbox
+title: Checkbox
+---
+
+import { IndeterminateCheckbox } from '../src/components/IndeterminateCheckbox';
+
+The cornerstone of any UI component is probably the checkbox. Pretty Checkbox support checkoxes with a wide range of usage. Be sure to checkout the [basic concepts guide](basic-concepts/intro) for more info!
+
+## Basic Checkbox
+
+Our basic checkbox can take on three different shapes: square, `p-curve`, `p-round`
+
+```html {1,8,15}
+<div class="pretty p-default">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Regular Checkbox</label>
+    </div>
+</div>
+
+<div class="pretty p-default p-curve">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Curved Checkbox</label>
+    </div>
+</div>
+
+<div class="pretty p-default p-round">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Round Checkbox</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Regular Checkbox</label>
+    </div>
+</div>
+
+<div className="pretty p-default p-curve">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Curved Checkbox</label>
+    </div>
+</div>
+
+<div className="pretty p-default p-round">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Round Checkbox</label>
+    </div>
+</div>
+
+## Colors, Icon, and Animations
+
+Checkbox supports [colors](basic-concepts/colors), [icons](basic-concepts/icons), [animations](basic-concepts/animations).
+There are five animations classes available that can be added to the root div: `p-smooth`, `p-pulse`, `p-tada`, `p-jelly`, and `p-rotate`.
+
+```html {1,8,16,24,32}
+<div class="pretty p-default p-round p-smooth">
+    <input type="checkbox" />
+    <div class="state p-primary">
+        <label>Smooth</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-round p-jelly">
+    <input type="checkbox" />
+    <div class="state p-primary">
+        <i class="icon mdi mdi-check"></i>
+        <label>Jelly</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-tada p-plain">
+    <input type="checkbox" />
+    <div class="state">
+        <i class="icon mdi mdi-weather-night"></i>
+        <label>Tada</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-rotate">
+    <input type="checkbox" />
+    <div class="state p-danger-o">
+        <i class="icon mdi mdi-close"></i>
+        <label>Rotate</label>
+    </div>
+</div>
+
+<div class="pretty p-default p-thick p-pulse">
+    <input type="checkbox" />
+    <div class="state p-warning-o">
+        <label>Pulse</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default p-round p-smooth">
+    <input type="checkbox" />
+    <div className="state p-primary">
+        <label>Smooth</label>
+    </div>
+</div>
+<div className="pretty p-icon p-curve p-jelly">
+    <input type="checkbox" />
+    <div className="state p-success">
+        <i className="icon mdi mdi-check"></i>
+        <label>Jelly</label>
+    </div>
+</div>
+<div className="pretty p-icon p-tada p-plain">
+    <input type="checkbox" />
+    <div className="state">
+        <i className="icon mdi mdi-weather-night"></i>
+        <label>Tada</label>
+    </div>
+</div>
+<div className="pretty p-icon p-curve p-rotate">
+    <input type="checkbox" />
+    <div className="state p-danger-o">
+        <i className="icon mdi mdi-close"></i>
+        <label>Rotate</label>
+    </div>
+</div>
+<div className="pretty p-default p-thick p-pulse">
+    <input type="checkbox" />
+    <div className="state p-warning-o">
+        <label>Pulse</label>
+    </div>
+</div>
+
+## Indeterminate
+
+Pretty checkbox supports indeterminate states, too althoughn you'll need to use a little javascript to make this happen:
+
+```js
+// checkbox: HTMLInputElement
+// indeterminate: boolean
+function toggleIndeterminate(checkbox, indeterminate) {
+    if (checkbox) {
+        checkbox.indeterminate = indeterminate;
+
+        // don't forget a11y
+        checkbox.setAttribute(
+            'aria-checked',
+            indeterminate ? 'mixed' : checkbox.checked
+        );
+    }
+}
+```
+
+<IndeterminateCheckbox />

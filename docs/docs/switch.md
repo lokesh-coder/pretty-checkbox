@@ -1,0 +1,4 @@
+---
+id: switch
+title: Switch
+---

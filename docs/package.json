@@ -1,0 +1,38 @@
+{
+    "name": "docs",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "docusaurus": "docusaurus",
+        "start": "docusaurus start",
+        "build": "docusaurus build",
+        "swizzle": "docusaurus swizzle",
+        "deploy": "docusaurus deploy",
+        "serve": "docusaurus serve"
+    },
+    "dependencies": {
+        "@docusaurus/core": "^2.0.0-alpha.61",
+        "@docusaurus/preset-classic": "^2.0.0-alpha.61",
+        "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.61",
+        "@mdi/js": "^5.5.55",
+        "@mdi/react": "^1.4.0",
+        "@mdx-js/react": "^1.5.8",
+        "clsx": "^1.1.1",
+        "docusaurus-plugin-sass": "^0.1.9",
+        "react": "^16.8.4",
+        "react-dom": "^16.8.4"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "prettier": "../node_modules/@djthoms/prettier-config"
+}

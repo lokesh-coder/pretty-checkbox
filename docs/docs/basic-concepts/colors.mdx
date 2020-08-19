@@ -1,0 +1,108 @@
+---
+id: colors
+title: Colors
+---
+
+One of the more fun features of pretty checkbox is a wide range of built-in colors to make your controls _even more_ stylish (or to provide users with visual feedback, your choice 😆).
+
+<div align="center">
+    <img
+        src="https://media.giphy.com/media/pjmB4vKPrebDSTk9QJ/giphy-downsized.gif"
+        alt="pretty colors"
+    />
+</div>
+<br />
+
+There are five colors and they can be used two ways: **solid** or **outline** <span class="color-preview primary"></span> <span class="color-preview success"></span> <span class="color-preview warning"></span> <span class="color-preview info"></span> <span class="color-preview danger"></span>
+
+## Solid Colors
+
+Like other selectors, colors are prefixed with `p-` and the the name of the color on `div.state`:
+
+```html {3}
+<div class="pretty p-default">
+    <input type="checkbox" />
+    <div class="state p-primary">
+        <label>Primary</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-primary">
+        <label>Primary</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-success">
+        <label>Success</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-warning">
+        <label>Warning</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-info">
+        <label>Info</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-danger">
+        <label>Danger</label>
+    </div>
+</div>
+
+## Outline Colors
+
+Like solid colors, outline colors go on `div.state`, but with the _suffix_ `-o`.
+
+:::info
+The nuisances of outline colors is easy to miss. The difference between solid and outlines colors is when we use the `-o` suffix we're _also_ changing the colors of the input control's border.
+:::
+
+```html {3}
+<div class="pretty p-default">
+    <input type="checkbox" />
+    <div class="state p-primary-o">
+        <label>Primary</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-primary-o">
+        <label>Primary</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-success-o">
+        <label>Success</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-warning-o">
+        <label>Warning</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-info-o">
+        <label>Info</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state p-danger-o">
+        <label>Danger</label>
+    </div>
+</div>

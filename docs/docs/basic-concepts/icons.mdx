@@ -1,0 +1,113 @@
+---
+id: icons
+title: Icons
+---
+
+import { mdiCheck } from '@mdi/js';
+
+Icon in tge generic sense can mean by image, svg, or font icon kit. Pretty Checkbox works with all three :tada:
+
+## Icons
+
+Using icons is easy as eating pie :pie:. It can be done in three easy steps:
+
+1. Add `p-icon` to the root div
+2. Add your icon _before_ the `label`
+3. Add an `icon` selector to the tag containing the icon font
+
+```html {1,4}
+<div class="pretty p-icon">
+    <input type="checkbox" />
+    <div class="state">
+        <i class="icon mdi mdi-check"></i>
+        <label>mdi-check</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-icon">
+    <input type="checkbox" />
+    <div className="state">
+        <i className="icon mdi mdi-check"></i>
+        <label>mdi-check</label>
+    </div>
+</div>
+
+### Supported Icon Libraries
+
+Pretty Checkbox has been tested with the following font icons libraries:
+
+-   [Font Awesome](https://fontawesome.com/icons?from=io)
+-   [Bootstrap Glyphicons](http://fontawesome.io/icons/)
+-   [Material Icon (MDI)](https://materialdesignicons.com/)
+-   [Material Icon (ZMDI)](http://zavoloklom.github.io/material-design-iconic-font/icons.html)
+-   [Material Icon (Google)](https://material.io/icons)
+-   [Typeicons](http://www.typicons.com/)
+-   [Ion icons](http://ionicons.com/)
+
+## SVG
+
+Similar to icon, using SVG images requires the same three basic steps:
+
+1. Add `p-svg` to the root div
+2. Add your svg _before_ the `label`
+3. Add a `svg` selector to the tag containing the SVG element
+
+```html {1,4}
+<div class="pretty p-svg">
+    <input type="checkbox" />
+    <div class="state">
+        <svg viewbox="0 0 24 24" class="svg">
+            <path fill="#fff" d="..." />
+        </svg>
+        <label>mdi-check</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-svg">
+    <input type="checkbox" />
+    <div className="state">
+        <svg viewBox="0 0 24 24" width="24" height="24" className="svg">
+            <path fill="#fff" d={mdiCheck} />
+        </svg>
+        <label>mdi-check (via svg)</label>
+    </div>
+</div>
+
+### Supported SVG Libraries
+
+-   [UIKit](https://getuikit.com/docs/icon)
+-   [Feather Icons](https://feathericons.com/)
+
+## Images
+
+Last, but surely not least, images are supported, too:
+
+1. Add `p-image` to the root div
+2. Add your svg _before_ the `label`
+3. Add an `image` selector to the tag containing the `img` element
+
+```html {1,4}
+<div class="pretty p-image">
+    <input type="checkbox" />
+    <div class="state">
+        <img src="checkmark.png" alt="check" class="image" />
+        <label>check (via <code>img</code>)</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-image">
+    <input type="checkbox" />
+    <div className="state">
+        <img
+            src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/004.png"
+            alt="check"
+            className="image"
+        />
+        <label>
+            check (via <code>img</code>)
+        </label>
+    </div>
+</div>

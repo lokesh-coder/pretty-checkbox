@@ -71,7 +71,7 @@ Add `pretty-checkbox.min.css` in your html:
 ```html
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+    href="https://unpkg.com/@djthoms/pretty-checkbox/dist/pretty-checkbox.min.css"
 />
 ```
 
