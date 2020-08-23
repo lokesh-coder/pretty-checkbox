@@ -39,6 +39,9 @@ dist/
 # Production
 /build
 
+# Docs
+docs/build/
+
 # Generated files
 .docusaurus
 .cache-loader
