@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://lokesh-coder.github.io/pretty-checkbox/"><img src="logo.png" alt="Pretty checkbox" width="100"></a>
+  <a href="https://pretty-checkbox.netlify.app/"><img src="logo.png" alt="Pretty checkbox" width="100"></a>
   <br> <br> pretty-checkbox.css <br>
 </h1>
 
@@ -8,13 +8,13 @@
 
 <p align="center">
  <a href="https://github.com/atomicpages/pretty-checkbox/releases">
-    <img src="https://img.shields.io/github/release/lokesh-coder/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Github Release">
+    <img src="https://img.shields.io/github/release/atomicpages/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Github Release">
   </a>
    <a href="LICENSE">
-    <img src="https://img.shields.io/npm/l/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Licence">
+    <img src="https://img.shields.io/npm/l/@djthoms/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Licence">
   </a>
    <a href="#">
-    <img src="https://img.shields.io/npm/dm/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Downloads">
+    <img src="https://img.shields.io/npm/dm/@djthoms/pretty-checkbox.svg?style=flat-square&colorA=8033b0&colorB=75b7dd" alt="Downloads">
   </a>
 </p>
 <br>
@@ -22,7 +22,7 @@
 <div class="highlight highlight-source-shell">
 <pre>
 <div align="center"><strong >Demo and documentation</strong></div>
-<div align="center"><a align="center" href="https://lokesh-coder.github.io/pretty-checkbox/">https://lokesh-coder.github.io/pretty-checkbox/</a></div>
+<div align="center"><a align="center" href="https://pretty-checkbox.netlify.app/">https://pretty-checkbox.netlify.app/</a></div>
 </pre>
 </div>
 
@@ -90,7 +90,7 @@ Download the source from [`Github`](https://github.com/atomicpages/pretty-checkb
 You can also import `pretty-checkbox.scss` in your main scss file.
 
 ```scss
-@import '~pretty-checkbox/src/pretty-checkbox.scss';
+@import '~@djthoms/pretty-checkbox/src/pretty-checkbox.scss';
 ```
 
 Please refer the document for SCSS settings.
@@ -171,7 +171,7 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#fonticons">
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/icons">
  more details</a></sub></i>
 </div>
 
@@ -196,7 +196,7 @@ Supports SVG file in <img/> tag, markup (`<svg> ... </svg>`) and sprites
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#svg">more details</a></sub></i>
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/icons#svg">more details</a></sub></i>
 </div>
 
 ### Image
@@ -220,7 +220,7 @@ Supports any type of valid image format.
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#image">more details</a></sub></i>
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/icons#images">more details</a></sub></i>
 </div>
 
 ### Colors
@@ -245,14 +245,14 @@ And five outline colors `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p-
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://lokesh-coder.github.io/pretty-checkbox#colors">more details</a></sub></i>
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/colors">more details</a></sub></i>
 </div>
 
 ## More
 
 There are more features like **_Radio buttons_** , **_Toggle_** , **_States_** , **_Animations_** , **_Border less_** , **_Lock_** , **_Scale_**, **_SCSS Settings_**.
 
-Please refer the [documentation](https://lokesh-coder.github.io/pretty-checkbox/) to know about them.
+Please refer the [documentation](https://pretty-checkbox.netlify.app/docs/) to know about them.
 
 ## Browser support
 
