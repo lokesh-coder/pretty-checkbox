@@ -34,7 +34,7 @@ Our basic checkbox can take on three different shapes: square, `p-curve`, `p-rou
 
 <div class="pretty p-default p-round">
     <input type="radio" name="a" />
-    <div class="state">
+    <div className="state">
         <label>Regular Radio</label>
     </div>
 </div>

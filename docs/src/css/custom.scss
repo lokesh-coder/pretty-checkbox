@@ -64,14 +64,17 @@ header.hero {
     }
 }
 
-html[data-theme="dark"] {
+html[data-theme='dark'] {
     a > code {
         color: var(--ifm-color-primary-lightest);
     }
 }
 
-html[data-theme="light"] {
+html[data-theme='light'] {
     a > code {
         color: var(--ifm-color-primary-darkest);
+    }
+    .docusaurus-highlight-code-line {
+        background-color: #fffbdd;
     }
 }

@@ -4,36 +4,34 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import preview from '../../static/img/preview.gif';
 import styles from './styles.module.css';
 
 const features = [
     {
         title: <>Easy to Use</>,
-        imageUrl: 'img/undraw_docusaurus_mountain.svg',
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and used to get
-                your website up and running quickly.
+                Simple CSS selectors makes pretty checkbox a breeze to use. Mix- n' match colors,
+                animations, and icons to create your perfect checkbox, radio, or switch control.
             </>
         ),
     },
     {
-        title: <>Focus on What Matters</>,
-        imageUrl: 'img/undraw_docusaurus_tree.svg',
+        title: <>Customization Ready</>,
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and
-                move your docs into the <code>docs</code> directory.
+                Pretty Checkbox is powered by Sass and allows you to easily customize colors so it
+                integrates nicely into your design system.
             </>
         ),
     },
     {
-        title: <>Powered by React</>,
-        imageUrl: 'img/undraw_docusaurus_react.svg',
+        title: <>Powered by HTML</>,
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can be extended
-                while reusing the same header and footer.
+                Pretty Checkbox is not a soft control. All inputs are powered by regular HTML which
+                means it's accessible by default. Show all users of the world-wide web some love ❤️
             </>
         ),
     },
@@ -41,6 +39,7 @@ const features = [
 
 function Feature({ imageUrl, title, description }) {
     const imgUrl = useBaseUrl(imageUrl);
+
     return (
         <div className={clsx('col col--4', styles.feature)}>
             {imgUrl && (
@@ -89,6 +88,9 @@ function Home() {
                         </div>
                     </section>
                 )}
+                <div className="text--center">
+                    <img src={preview} alt="preview" />
+                </div>
             </main>
         </Layout>
     );

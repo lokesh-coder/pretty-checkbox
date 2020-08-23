@@ -14,6 +14,20 @@ module.exports = {
     themes: ['@docusaurus/theme-live-codeblock'],
     plugins: ['docusaurus-plugin-sass'],
     themeConfig: {
+        // switchConfig: {
+        //     darkIcon: '🌙',
+        //     darkIconStyle: {
+        //         marginLeft: '2px',
+        //     },
+        //     lightIcon: '\u2600',
+        //     lightIconStyle: {
+        //         marginLeft: '1px',
+        //     },
+        // },
+        prism: {
+            theme: require('prism-react-renderer/themes/github'),
+            darkTheme: require('prism-react-renderer/themes/palenight'),
+        },
         navbar: {
             title: 'Pretty Checkbox',
             logo: {
@@ -46,8 +60,8 @@ module.exports = {
                         },
                         {
                             label: 'Basic Concepts',
-                            to: 'docs/basic-concepts/intro/'
-                        }
+                            to: 'docs/basic-concepts/intro/',
+                        },
                     ],
                 },
                 {
