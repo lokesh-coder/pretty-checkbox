@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const browserSync = require('browser-sync');
 
 const sass = require('gulp-sass');
 sass.compiler = require('sass');
@@ -11,39 +10,6 @@ const headerComment = require('gulp-header-comment');
 const gulpStylelint = require('gulp-stylelint');
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
-
-const reload = browserSync.reload;
-
-/* BROWSER SYNC */
-exports['browser-sync'] = function serve() {
-    browserSync({
-        port: 3040,
-        server: {
-            baseDir: './',
-            directory: true,
-        },
-        https: true,
-    });
-};
-
-/* BROWSER SYNC RELOAD */
-exports['browser-sync-reload'] = function browserSyncReload() {
-    browserSync.reload();
-};
-
-/* LIST SCSS */
-exports['lint:scss'] = function lintCSS() {
-    return gulp.src('src/**/*.scss').pipe(
-        gulpStylelint({
-            reporters: [
-                {
-                    formatter: 'string',
-                    console: true,
-                },
-            ],
-        })
-    );
-};
 
 /* COMPILE SCSS */
 exports['compile:scss'] = function compileSCSS() {
@@ -61,30 +27,7 @@ exports['compile:scss'] = function compileSCSS() {
             })
         )
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('dist'))
-        .pipe(
-            browserSync.reload({
-                stream: true,
-            })
-        );
-};
-
-/* FORMAT CSS */
-exports['format:css'] = function formatCSS() {
-    return gulp
-        .src('dist/*.css')
-        .pipe(
-            gulpStylelint({
-                fix: true,
-                failAfterError: false,
-            })
-        )
         .pipe(gulp.dest('dist'));
-};
-
-/* CLEAN DIST */
-exports['clean:dist'] = function cleanDist() {
-    return del(['dist']);
 };
 
 /* MINIFY CSS */
@@ -117,16 +60,15 @@ exports['set:header'] = function setHeader() {
       Source: <%= pkg.repository.link %>
       Demo: <%= pkg.homepage %>
 
-      Copyright (c) <%= moment().format('YYYY') %> <%= _.capitalize(pkg.author) %>
+      Copyright (c) <%= new Date().getFullYear() %> <%= pkg.maintainers[0] %>
+      Originally By: <%= _.capitalize(pkg.author) %>
     `)
         )
         .pipe(gulp.dest('dist'));
 };
 
 const build = gulp.series(
-    gulp.parallel(exports['clean:dist'], exports['lint:scss']),
     exports['compile:scss'],
-    exports['format:css'],
     exports['minify:css'],
     exports['set:header']
 );

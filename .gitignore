@@ -25,7 +25,7 @@ Desktop.ini
 # Temporary files
 coverage/
 tmp
-test
+test/*.css
 
 # Logs
 .log
