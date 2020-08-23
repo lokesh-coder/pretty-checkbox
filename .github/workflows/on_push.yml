@@ -7,9 +7,9 @@ jobs:
         steps:
             - uses: actions/checkout@master
             - name: Check changes in stories
-            uses: netlify/actions/diff-includes@master
-            with:
-                args: docs
+              uses: netlify/actions/diff-includes@master
+              with:
+                  args: docs
     build:
         runs-on: ubuntu-latest
         strategy:
@@ -25,4 +25,3 @@ jobs:
               run: |
                   npm i
                   npm run build
-
