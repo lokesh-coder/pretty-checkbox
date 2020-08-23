@@ -90,11 +90,41 @@ Pretty Checkbox allows you to show/hide different labels using nothing but CSS u
     </div>
 </div>
 
-### Toggle with Icons
+### Without Border
 
-Mix n' match icons with toggle, just be sure you review the [icons](icons) guide before proceeding!
+Using `p-plain` to skip the border:
 
-```html {1,3,7}
+```html {1}
+<div class="pretty p-icon p-toggle p-plain">
+    <input type="checkbox" />
+    <div class="state p-on">
+        <i class="icon mdi mdi-wifi"></i>
+        <label>Wifi on</label>
+    </div>
+    <div class="state p-off">
+        <i class="icon mdi mdi-wifi-off"></i>
+        <label>Wifi off</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-icon p-toggle p-plain">
+    <input type="checkbox" />
+    <div className="state p-on">
+        <i className="icon mdi mdi-wifi"></i>
+        <label>Wifi on</label>
+    </div>
+    <div className="state p-off">
+        <i className="icon mdi mdi-wifi-off"></i>
+        <label>Wifi off</label>
+    </div>
+</div>
+
+### Mo' Toggle
+
+Mix n' match icons with toggle, just be sure you review the [icons](icons) guide before proceeding! Make it extra fancy by adding [colors](colors), too!
+
+```html {1,13,25}
 <div class="pretty p-icon p-toggle">
     <input type="checkbox" />
     <div class="state p-on">
@@ -104,6 +134,30 @@ Mix n' match icons with toggle, just be sure you review the [icons](icons) guide
     <div class="state p-off">
         <i class="icon mdi mdi-microphone-off"></i>
         <label>OFF</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-toggle p-plain">
+    <input type="checkbox" />
+    <div class="state p-success-o p-on">
+        <i class="icon mdi mdi-eye"></i>
+        <label>Show preview</label>
+    </div>
+    <div class="state p-off">
+        <i class="icon mdi mdi-eye-off"></i>
+        <label>Hide preview</label>
+    </div>
+</div>
+
+<div class="pretty p-icon p-toggle p-plain">
+    <input type="checkbox" />
+    <div class="state p-warning-o p-off">
+        <i class="icon mdi mdi-play"></i>
+        <label>Playing...</label>
+    </div>
+    <div class="state p-on p-info-o">
+        <i class="icon mdi mdi-pause"></i>
+        <label>Paused</label>
     </div>
 </div>
 ```
@@ -117,5 +171,29 @@ Mix n' match icons with toggle, just be sure you review the [icons](icons) guide
     <div class="state p-off">
         <i className="icon mdi mdi-microphone-off"></i>
         <label>OFF</label>
+    </div>
+</div>
+
+ <div className="pretty p-icon p-toggle p-plain">
+    <input type="checkbox" />
+    <div className="state p-success-o p-on">
+        <i className="icon mdi mdi-eye"></i>
+        <label>Show preview</label>
+    </div>
+    <div className="state p-off">
+        <i className="icon mdi mdi-eye-off"></i>
+        <label>Hide preview</label>
+    </div>
+</div>
+
+<div className="pretty p-icon p-toggle p-plain">
+    <input type="checkbox" />
+    <div className="state p-warning-o p-off">
+        <i className="icon mdi mdi-play"></i>
+        <label>Playing...</label>
+    </div>
+    <div className="state p-on p-info-o">
+        <i className="icon mdi mdi-pause"></i>
+        <label>Paused</label>
     </div>
 </div>

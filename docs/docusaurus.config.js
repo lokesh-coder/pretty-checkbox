@@ -27,7 +27,6 @@ module.exports = {
                     label: 'Docs',
                     position: 'left',
                 },
-                { to: 'blog', label: 'Blog', position: 'left' },
                 {
                     href: 'https://github.com/atomicpages/pretty-checkbox',
                     label: 'GitHub',
@@ -42,35 +41,30 @@ module.exports = {
                     title: 'Docs',
                     items: [
                         {
-                            label: 'Style Guide',
+                            label: 'Getting Started',
                             to: 'docs/',
                         },
-                    ],
-                },
-                {
-                    title: 'Community',
-                    items: [
                         {
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/pretty-checkbox',
-                        },
+                            label: 'Basic Concepts',
+                            to: 'docs/basic-concepts/intro/'
+                        }
                     ],
                 },
                 {
                     title: 'More',
                     items: [
                         {
-                            label: 'Blog',
-                            to: 'blog',
+                            label: 'GitHub',
+                            href: 'https://github.com/atomicpages/pretty-checkbox',
                         },
                         {
-                            label: 'GitHub',
-                            href: 'https://github.com/facebook/docusaurus',
+                            label: 'Inspired by the original pretty checkbox',
+                            href: 'https://lokesh-coder.github.io/pretty-checkbox/',
                         },
                     ],
                 },
             ],
-            copyright: `Copyright &copy; ${new Date().getFullYear()} Dennis Thompson. Built with Docusaurus.`,
+            copyright: `Made with \u2665 by Dennis Thompson \uFF5C &copy; ${new Date().getFullYear()} \uFF5C Built with Docusaurus.`,
         },
     },
     presets: [
@@ -78,16 +72,9 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    // It is recommended to set document id as docs home page (`docs/` path).
                     homePageId: 'getting-started',
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
-                },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+                    editUrl: 'https://github.com/atomicpages/pretty-checkbox/edit/master/docs/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.scss'),

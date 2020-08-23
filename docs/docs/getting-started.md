@@ -18,7 +18,7 @@ yarn add @djthoms/pretty-checkbox
 Pretty checkbox works well with modern bundlers such as parcel or webpack (via `css-loader`):
 
 ```js
-import 'pretty-checkbox';
+import '@djthoms/pretty-checkbox';
 
 // rest of your app
 ```
@@ -26,7 +26,7 @@ import 'pretty-checkbox';
 If you want to import the `scss` source you can do that, too:
 
 ```js
-import 'pretty-checkbox/src/pretty-checkbox.scss';
+import '@djthoms/pretty-checkbox/src/pretty-checkbox.scss';
 ```
 
 ### Sass Usage
@@ -38,7 +38,7 @@ At the heart of Pretty Checkbox is Sass. If you're using `.sass` or `.scss` in y
 :::
 
 ```scss
-@import '~/pretty-checkbox/src/pretty-checkbox';
+@import '~@djthoms/pretty-checkbox/src/pretty-checkbox';
 ```
 
 ### Regular ol' HTML
@@ -54,10 +54,24 @@ And of course you can use a CDN and embed in your html file using the `link` tag
 Once pretty checkbox styles have been added, just add a little bit of markup and we're in business 👩‍💻
 
 ```jsx live
-<div className="pretty p-default">
-    <input type="checkbox" />
-    <div className="state">
-        <label>Check</label>
+<>
+    <div className="pretty p-default">
+        <input type="checkbox" />
+        <div className="state">
+            <label>Checkbox</label>
+        </div>
     </div>
-</div>
+    <div className="pretty p-default p-round">
+        <input type="radio" />
+        <div className="state">
+            <label>Radio</label>
+        </div>
+    </div>
+    <div className="pretty p-switch">
+        <input type="checkbox" />
+        <div className="state">
+            <label>Switch</label>
+        </div>
+    </div>
+</>
 ```

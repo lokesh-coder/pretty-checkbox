@@ -136,9 +136,9 @@ There are five animations classes available that can be added to the root div: `
 
 ## Indeterminate
 
-Pretty checkbox supports indeterminate states, too althoughn you'll need to use a little javascript to make this happen:
+Pretty checkbox supports indeterminate states, too although you'll need to use a little javascript to make this happen:
 
-```js
+```js title="toggleIndeterminate.js"
 // checkbox: HTMLInputElement
 // indeterminate: boolean
 function toggleIndeterminate(checkbox, indeterminate) {
@@ -146,12 +146,68 @@ function toggleIndeterminate(checkbox, indeterminate) {
         checkbox.indeterminate = indeterminate;
 
         // don't forget a11y
-        checkbox.setAttribute(
-            'aria-checked',
-            indeterminate ? 'mixed' : checkbox.checked
-        );
+        checkbox.setAttribute('aria-checked', indeterminate ? 'mixed' : checkbox.checked);
     }
 }
 ```
 
+### Indeterminates with React
+
+One way we can make this work is by exposing an `indeterminate` prop and passing a `ref` to the `HTMLInputElement`, the main point here is we want our effect to run whenever `indeterminate` changes:
+
+```jsx title="Checkbox.jsx"
+import React from 'react';
+
+function Checkbox({ children, indeterminate, color = '', className = '', ...rest }) {
+    const ref = React.useRef(null);
+
+    React.useEffect(() => {
+        if (ref.current) {
+            ref.current.indeterminate = indeterminate;
+        }
+    }, [indeterminate]);
+
+    return (
+        <div className={`pretty ${className}`} {...rest}>
+            <input type="checkbox" ref={ref} />
+            <div className={`state ${color}`}>
+                <label>{children}</label>
+            </div>
+        </div>
+    );
+}
+```
+
 <IndeterminateCheckbox />
+
+### Indeterminates with React Class
+
+Not on the hooks train yet 🚂 ? No biggie. Just remember we can register side effects in `componentDidMount` since it's called whenever props or state changes :wink:
+
+```jsx title="Checkbox.jsx"
+import React from 'react';
+
+export class Checkbox extends React.Component {
+    constructor(props) {
+        super(props);
+        this.ref = React.createRef();
+    }
+
+    componentDidMount() {
+        if (this.ref.current) {
+            this.ref.current.indeterminate = this.props.indeterminate;
+        }
+    }
+
+    render() {
+        return (
+            <div className={`pretty ${this.props.className}`}>
+                <input type="checkbox" ref={this.ref} />
+                <div className={`state ${this.props.color}`}>
+                    <label>{this.props.children}</label>
+                </div>
+            </div>
+        );
+    }
+}
+```
