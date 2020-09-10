@@ -12,7 +12,14 @@ module.exports = {
         'https://cdn.materialdesignicons.com/5.5.55/css/materialdesignicons.min.css',
     ],
     themes: ['@docusaurus/theme-live-codeblock'],
-    plugins: ['docusaurus-plugin-sass'],
+    plugins: [
+        [
+            '@djthoms/docusaurus-plugin-sass',
+            {
+                implementation: require('sass'),
+            },
+        ],
+    ],
     themeConfig: {
         // switchConfig: {
         //     darkIcon: '🌙',
@@ -86,7 +93,6 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    homePageId: 'getting-started',
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl: 'https://github.com/atomicpages/pretty-checkbox/edit/master/docs/',
                 },
