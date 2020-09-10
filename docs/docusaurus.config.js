@@ -67,7 +67,7 @@ module.exports = {
                         },
                         {
                             label: 'Basic Concepts',
-                            to: 'docs/basic-concepts/intro/',
+                            to: 'docs/main-concepts/intro/',
                         },
                     ],
                 },

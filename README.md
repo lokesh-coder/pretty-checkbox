@@ -171,7 +171,7 @@ Switch has three variants `p-outline` `p-fill` `p-slim`
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/icons">
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/main-concepts/icons">
  more details</a></sub></i>
 </div>
 
@@ -196,7 +196,7 @@ Supports SVG file in <img/> tag, markup (`<svg> ... </svg>`) and sprites
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/icons#svg">more details</a></sub></i>
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/main-concepts/icons#svg">more details</a></sub></i>
 </div>
 
 ### Image
@@ -220,7 +220,7 @@ Supports any type of valid image format.
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/icons#images">more details</a></sub></i>
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/main-concepts/icons#images">more details</a></sub></i>
 </div>
 
 ### Colors
@@ -245,7 +245,7 @@ And five outline colors `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p-
 </blockquote>
 
 <div align="right">
- <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/colors">more details</a></sub></i>
+ <i><sub><a href="https://pretty-checkbox.netlify.app/docs/main-concepts/colors">more details</a></sub></i>
 </div>
 
 ## RTL Support
