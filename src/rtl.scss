@@ -1,0 +1,8 @@
+@import './scss/variables';
+
+.#{$pretty--class-name} {
+    .state label {
+        margin-left: $pretty--label-text-offset;
+        text-indent: 0;
+    }
+}

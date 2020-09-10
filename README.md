@@ -55,7 +55,7 @@
 
 ## Installation
 
-### **From CLI**
+### From CLI
 
 Install using `npm` or `yarn`:
 
@@ -247,6 +247,10 @@ And five outline colors `p-primary-o` `p-success-o` `p-warning-o` `p-info-o` `p-
 <div align="right">
  <i><sub><a href="https://pretty-checkbox.netlify.app/docs/basic-concepts/colors">more details</a></sub></i>
 </div>
+
+## RTL Support
+
+Include `rtl.css` in your source file :smile:
 
 ## More
 
