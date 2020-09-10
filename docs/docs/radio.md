@@ -3,7 +3,7 @@ id: radio
 title: Radio
 ---
 
-Radio controls are another all-important input control that is widespread in the wild. Be sure to checkout the [basic concepts guide](basic-concepts/intro) for more info!
+Radio controls are another all-important input control that is widespread in the wild. Be sure to checkout the [basic concepts guide](main-concepts/intro) for more info!
 
 ## Basic Radio
 
@@ -55,7 +55,7 @@ Our basic checkbox can take on three different shapes: square, `p-curve`, `p-rou
 
 ## Colors, Icon, and Animations
 
-Radio supports [colors](basic-concepts/colors), [icons](basic-concepts/icons), [animations](basic-concepts/animations).
+Radio supports [colors](main-concepts/colors), [icons](main-concepts/icons), [animations](main-concepts/animations).
 There are five animations classes available that can be added to the root div: `p-smooth`, `p-pulse`, `p-tada`, `p-jelly`, and `p-rotate`.
 
 ```html {1,8,16,24,32}

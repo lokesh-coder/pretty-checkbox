@@ -32,7 +32,7 @@ Similar to Checkbox and Radio, switch contains a similar DOM structure, but we u
 ## Shapes &amp; Colors
 
 :::caution
-Switch is not compatible with [outline colors](basic-concepts/colors)
+Switch is not compatible with [outline colors](main-concepts/colors)
 :::
 
 Switch has three unique shapes that can be used: `p-outline`, `p-fill`, and `p-slim`.
