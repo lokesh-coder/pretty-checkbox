@@ -31,6 +31,11 @@ module.exports = {
         //         marginLeft: '1px',
         //     },
         // },
+        algolia: {
+            apiKey: 'd3db4a5e15b4370010535093e10fb8c7',
+            indexName: 'pretty-checkbox',
+            searchParameters: {}, // Optional (if provided by Algolia)
+        },
         prism: {
             theme: require('prism-react-renderer/themes/github'),
             darkTheme: require('prism-react-renderer/themes/palenight'),
