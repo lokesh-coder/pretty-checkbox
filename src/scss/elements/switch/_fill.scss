@@ -1,5 +1,5 @@
 .#{$pretty--class-name}.p-switch.p-fill {
-    input:checked~.state {
+    input:checked ~ .state {
         &:before {
             border-color: $pretty--color-dark;
             background-color: $pretty--color-dark !important;

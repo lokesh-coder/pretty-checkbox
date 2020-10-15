@@ -1,95 +1,58 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var sass = require('gulp-sass');
-var rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var headerComment = require('gulp-header-comment');
-var gulpStylelint = require('gulp-stylelint');
-var stylefmt = require('gulp-stylefmt');
-let cleanCSS = require('gulp-clean-css');
-var gulpSequence = require('gulp-sequence')
-var del = require('del');
-var reload = browserSync.reload;
+const gulp = require('gulp');
 
-module.exports = gulp;
+const sass = require('gulp-sass');
+sass.compiler = require('sass');
 
-/* BROWSER SYNC */
-gulp.task('browser-sync', function () {
-  browserSync({
-    port: 3040,
-    server: {
-      baseDir: "./",
-      directory: true
-    },
-    https: true
-  });
-});
-
-/* BROWSER SYNC RELOAD */
-gulp.task('browser-sync-reload', function () {
-  browserSync.reload();
-});
-
-/* LIST SCSS */
-gulp.task('lint:scss', function () {
-  return gulp
-    .src('src/**/*.scss')
-    .pipe(gulpStylelint({
-      reporters: [{
-        formatter: 'string',
-        console: true
-      }]
-    }));
-});
+const rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const headerComment = require('gulp-header-comment');
+const gulpStylelint = require('gulp-stylelint');
+const cleanCSS = require('gulp-clean-css');
+const del = require('del');
 
 /* COMPILE SCSS */
-gulp.task('compile:scss', function () {
-  return gulp.src('src/**/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-        outputStyle: 'expanded'
-      })
-    .on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['> 5%', 'last 4 versions'],
-      cascade: false
-    }))
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('dist'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
-});
-
-/* FORMAT CSS */
-gulp.task('format:css', function () {
-  return gulp.src('dist/*.css')
-    .pipe(stylefmt())
-    .pipe(gulp.dest('dist'));
-})
-
-/* CLEAN DIST */
-gulp.task('clean:dist', function () {
-  return del(['dist']);
-});
+exports['compile:scss'] = function compileSCSS() {
+    return gulp
+        .src('src/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(
+            sass({
+                outputStyle: 'expanded',
+            }).on('error', sass.logError)
+        )
+        .pipe(
+            autoprefixer({
+                cascade: false,
+            })
+        )
+        .pipe(sourcemaps.write('./maps'))
+        .pipe(gulp.dest('dist'));
+};
 
 /* MINIFY CSS */
-gulp.task('minify:css', () => {
-  return gulp.src('dist/*.css')
-    .pipe(cleanCSS({
-      compatibility: 'ie9'
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('dist'));
-});
+exports['minify:css'] = function minifyCSS() {
+    return gulp
+        .src('dist/*.css')
+        .pipe(
+            cleanCSS({
+                compatibility: 'ie9',
+            })
+        )
+        .pipe(
+            rename({
+                suffix: '.min',
+            })
+        )
+        .pipe(gulp.dest('dist'));
+};
 
 /* SET HEADER */
-gulp.task('set:header', function () {
-  return gulp.src('dist/*.css')
-    .pipe(headerComment(`
+exports['set:header'] = function setHeader() {
+    return gulp
+        .src('dist/*.css')
+        .pipe(
+            headerComment(`
       pretty-checkbox.css
 
       A pure CSS library to beautify checkbox and radio buttons
@@ -97,15 +60,18 @@ gulp.task('set:header', function () {
       Source: <%= pkg.repository.link %>
       Demo: <%= pkg.homepage %>
 
-      Copyright (c) <%= moment().format('YYYY') %> <%= _.capitalize(pkg.author) %>
-    `))
-    .pipe(gulp.dest('dist'))
-});
+      Copyright (c) <%= new Date().getFullYear() %> <%= pkg.maintainers[0] %>
+      Originally By: <%= _.capitalize(pkg.author) %>
+    `)
+        )
+        .pipe(gulp.dest('dist'));
+};
 
-gulp.task('build', function (cb) {
-  gulpSequence('lint:scss', 'clean:dist', 'compile:scss', 'format:css', 'minify:css', 'set:header', cb)
-});
+const build = gulp.series(
+    exports['compile:scss'],
+    exports['minify:css'],
+    exports['set:header']
+);
 
-gulp.task('default', ['compile:scss', 'browser-sync'], function () {
-  gulp.watch("src/**/*.scss", ['compile:scss', 'browser-sync-reload']);
-});
+exports.build = build;
+exports.default = build;

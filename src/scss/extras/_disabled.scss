@@ -1,12 +1,12 @@
 .#{$pretty--class-name} {
-  input {
-    &[disabled] {
-      cursor: not-allowed;
-      display: none;
+    input {
+        &[disabled] {
+            cursor: not-allowed;
+            display: none;
 
-      & ~ * {
-        opacity: .5;
-      }
+            & ~ * {
+                opacity: 0.5;
+            }
+        }
     }
-  }
 }

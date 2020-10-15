@@ -1,0 +1,80 @@
+@import '../../../src/scss/variables';
+
+/* stylelint-disable docusaurus/copyright-header */
+
+:root {
+    --ifm-color-primary: #8d38c2;
+    --ifm-color-primary-dark: #7f32af;
+    --ifm-color-primary-darker: #7830a5;
+    --ifm-color-primary-darkest: #632788;
+    --ifm-color-primary-light: #9949ca;
+    --ifm-color-primary-lighter: #9e52cd;
+    --ifm-color-primary-lightest: #ae6fd6;
+    --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+
+header.hero {
+    color: #fff;
+    background: linear-gradient(270deg, #124665, #8033b0);
+    border-bottom: 5px solid #75b7dd;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.4;
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm0-2A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z" fill="%239C92AC" fill-opacity=".4" fill-rule="evenodd"/></svg>');
+    }
+    .container {
+        z-index: 10;
+    }
+}
+
+.color-preview {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    margin: 0 2px;
+
+    &.primary {
+        background-color: $pretty--color-primary;
+    }
+    &.info {
+        background-color: $pretty--color-info;
+    }
+    &.success {
+        background-color: $pretty--color-success;
+    }
+    &.warning {
+        background-color: $pretty--color-warning;
+    }
+    &.danger {
+        background-color: $pretty--color-danger;
+    }
+}
+
+html[data-theme='dark'] {
+    a > code {
+        color: var(--ifm-color-primary-lightest);
+    }
+}
+
+html[data-theme='light'] {
+    a > code {
+        color: var(--ifm-color-primary-darkest);
+    }
+    .docusaurus-highlight-code-line {
+        background-color: #fffbdd;
+    }
+}

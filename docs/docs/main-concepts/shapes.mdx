@@ -1,0 +1,219 @@
+---
+id: shapes-size
+title: Shapes & Size
+---
+
+import { ScaleMe } from '../../src/components/ScaleMe';
+
+Among the many features of pretty checkbox, shapes might be the most widely used 🤔
+
+## Shapes
+
+:::info
+The below section covers regular checkbox and radio usage. For switch check out the switch docs for available shapes :+1:
+:::
+
+Pretty Checkbox offers three shapes that can be used by checkbox and radio controls:
+
+1. `p-square` (implicit)
+2. `p-curve`
+3. `p-round`
+
+add to the root `div` and see your control change!
+
+### Checkbox Shape
+
+```jsx live
+<div className="pretty p-default p-curve">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Curve</label>
+    </div>
+</div>
+```
+
+### Radio Shape
+
+```jsx live
+<div className="pretty p-default p-round">
+    <input type="radio" />
+    <div className="state">
+        <label>Round</label>
+    </div>
+</div>
+```
+
+### Mix-n-Match Shapes
+
+There's no limitation with mix-n-matching shapes. We can create round checkboxes or square radio controls if we want:
+
+```html {1,7}
+<div class="pretty p-default p-square">
+    <input type="radio" />
+    <div class="state">
+        <label>Square Radio</label>
+    </div>
+</div>
+<div class="pretty p-default p-round">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Round Checkbox</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default p-square">
+    <input type="radio" />
+    <div className="state">
+        <label>Square Radio</label>
+    </div>
+</div>
+<div className="pretty p-default p-round">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Round Checkbox</label>
+    </div>
+</div>
+
+### Switch Shapes
+
+Switch is different from checkbox and radio controls in terms of shapes. There are three shapes availale: `p-outline`, `p-fill`, and `p-slim` alongside the `p-switch` class on the root div.
+
+```html {1,8,15}
+<div class="pretty p-switch">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Basic Switch</label>
+    </div>
+</div>
+
+<div class="pretty p-switch p-fill">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Fill Switch</label>
+    </div>
+</div>
+
+<div class="pretty p-switch p-slim">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Slim Switch</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-switch">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Basic Switch</label>
+    </div>
+</div>
+<div className="pretty p-switch p-fill">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Fill Switch</label>
+    </div>
+</div>
+<div className="pretty p-switch p-slim">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Slim Switch</label>
+    </div>
+</div>
+
+## Fill Variants
+
+Fill variants change how the checkbox and radio controls are presented and there are two values that can be used in the root div: `p-fill` and `p-thick`
+
+```html {1,8}
+<div class="pretty p-default p-square p-fill">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Fill Checkbox</label>
+    </div>
+</div>
+
+<div class="pretty p-default p-thick">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Thick Checkbox</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default p-square p-fill">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Fill Checkbox</label>
+    </div>
+</div>
+
+<div className="pretty p-default p-thick">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Thick Checkbox</label>
+    </div>
+</div>
+
+## Size
+
+Pretty Checkbox is adaptable and can be scaled easily using `p-bigger` on the root div:
+
+```html {1}
+<div class="pretty p-default p-bigger">
+    <input type="checkbox" />
+    <div class="state">
+        <label>Bigger</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-default p-bigger">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Bigger</label>
+    </div>
+</div>
+<div className="pretty p-default">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Regular</label>
+    </div>
+</div>
+
+### Make it Big (or Tiny)
+
+Make it as big or as small as you need by using regular ol' CSS! Just add `font-size` to the root div:
+
+```html {1}
+<div className="pretty p-default" style="font-size: 48px;">
+    <input type="checkbox" />
+    <div className="state">
+        <label>Size Me</label>
+    </div>
+</div>
+```
+
+<ScaleMe />
+
+## Plain
+
+In some cases you might want to drop the border altogether. Pretty Checkbox has a style for that ✅, but it's best when using in conjunction with [icons](icons) and [animations](animations).
+
+```html {1,4}
+<div class="pretty p-icon p-plain p-smooth">
+    <input type="checkbox" />
+    <div class="state">
+        <i class="icon mdi mdi-check"></i>
+        <label>Plain</label>
+    </div>
+</div>
+```
+
+<div className="pretty p-icon p-plain p-smooth">
+    <input type="checkbox" />
+    <div className="state">
+        <i className="icon mdi mdi-check"></i>
+        <label>Plain</label>
+    </div>
+</div>

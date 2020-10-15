@@ -1,0 +1,15 @@
+[build]
+    base = "docs/"
+    publish = "build/"
+    command = "npm run build"
+
+[[headers]]
+    for = "/*"
+
+    [headers.values]
+        X-Frame-Options = "DENY"
+        X-XSS-Protection = "1; mode=block"
+        cache-control = '''
+        max-age=0,
+        no-cache,
+        must-revalidate'''
